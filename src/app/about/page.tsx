@@ -169,7 +169,7 @@ export default function AboutPage() {
           </h2>
           <div className="grid sm:grid-cols-3 gap-6 text-left">
             {[
-              { title: "NSW Fair Trading Licence", desc: "All our plumbers hold current NSW plumbing licences as required by law." },
+              { title: "NSW Fair Trading Licence No. 347993C", desc: "All our plumbers hold current NSW plumbing licences as required by law." },
               { title: "Public Liability Insurance", desc: "We carry comprehensive public liability insurance on every job." },
               { title: "Workers Compensation", desc: "Our team is covered by workers compensation insurance for your peace of mind." },
             ].map((c) => (

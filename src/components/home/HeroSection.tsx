@@ -77,7 +77,7 @@ export default function HeroSection() {
 
           {/* Trust bar */}
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8 text-sm" style={{ color: "rgba(255,255,255,0.65)" }}>
-            <span className="flex items-center gap-1.5"><CheckIcon />Licensed Plumber No. [XXXX]</span>
+            <span className="flex items-center gap-1.5"><CheckIcon />Licensed Plumber No. 347993C</span>
             <span className="flex items-center gap-1.5"><CheckIcon />Same-Day Available</span>
             <span className="flex items-center gap-1.5"><CheckIcon />Sydney-Wide Coverage</span>
           </div>
