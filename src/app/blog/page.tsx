@@ -9,12 +9,31 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "why-is-my-drain-blocked",
+    title: "Why Is My Drain Blocked? The Most Common Causes in Australian Homes",
+    excerpt: "A blocked drain is almost always caused by one of five things. Learn what's causing yours — and when to call a plumber.",
+    date: "7 April 2026",
+    category: "Blocked Drains",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
+    slug: "gas-leak-or-not",
+    title: "Gas Leak or Not? How to Tell — and What to Do Immediately",
+    excerpt: "If you smell gas indoors, treat it as a real leak until proven otherwise. Here's exactly what to do — and what not to do.",
+    date: "10 April 2026",
+    category: "Gas Safety",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
     slug: "signs-blocked-drain",
     title: "5 Warning Signs You Have a Blocked Drain",
     excerpt: "Caught early, a blocked drain is a quick fix. Left too long, it can cause serious damage. Here are the signs to watch for.",
     date: "March 2025",
     category: "Blocked Drains",
     readTime: "4 min read",
+    published: false,
   },
   {
     slug: "hot-water-system-life",
@@ -117,9 +136,13 @@ export default function BlogPage() {
                 </p>
                 <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
                   <span className="text-xs text-gray-400">{post.date}</span>
-                  <span className="text-sm font-semibold" style={{ color: "var(--color-brand-blue)" }}>
-                    Coming soon →
-                  </span>
+                  {post.published ? (
+                    <Link href={`/blog/${post.slug}`} className="text-sm font-semibold" style={{ color: "var(--color-brand-blue)" }}>
+                      Read article →
+                    </Link>
+                  ) : (
+                    <span className="text-sm font-semibold text-gray-400">Coming soon →</span>
+                  )}
                 </div>
               </div>
             </article>

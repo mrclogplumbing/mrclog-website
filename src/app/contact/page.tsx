@@ -152,7 +152,7 @@ export default function ContactPage() {
               <p className="text-sm text-gray-500 mb-6">We typically respond within 30 minutes.</p>
 
               <form
-                action="https://formspree.io/f/placeholder"
+                action="https://formspree.io/f/xwvwawnp"
                 method="POST"
                 className="space-y-4"
               >
