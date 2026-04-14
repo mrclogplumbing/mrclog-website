@@ -282,3 +282,8 @@ export function getLocation(slug: string): Location | undefined {
     metaDescription: "Local plumber on Sydney's lower north shore. Kirribilli, McMahons Point, North Sydney and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
   },
  
+];
+
+export function getLocation(slug: string): Location | undefined {
+    return locations.find((l) => l.slug === slug);
+}
