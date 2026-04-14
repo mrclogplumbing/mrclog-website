@@ -479,3 +479,8 @@ export function getService(slug: string): Service | undefined {
     metaTitle: "Low Water Pressure Plumber Sydney | PLV Repairs | Mr. Clog",
     metaDescription: "Fix low water pressure across Sydney. PLV testing and replacement, leak detection, pressure boosters. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
+];
+
+export function getService(slug: string): Service | undefined {
+    return services.find((s) => s.slug === slug);
+}
