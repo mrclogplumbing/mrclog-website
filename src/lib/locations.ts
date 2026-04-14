@@ -161,3 +161,124 @@ export const locations: Location[] = [
 export function getLocation(slug: string): Location | undefined {
   return locations.find((l) => l.slug === slug);
 }
+ slug: "northern-beaches",
+    label: "Northern Beaches",
+    headline: "Plumber Northern Beaches Sydney",
+    subheadline: "Fast, reliable plumbing across Manly, Dee Why, Brookvale, and the Northern Beaches.",
+    description:
+      "Mr. Clog is the Northern Beaches' trusted local plumber. From the high-rise apartments of Manly to the family homes of Dee Why and Brookvale, we service every property type across the Northern Beaches. Available 24/7 with $0 call-out fee.",
+    suburbs: [
+      "Manly", "Dee Why", "Brookvale", "Narrabeen", "Collaroy",
+      "Curl Curl", "Freshwater", "Fairlight", "Balgowlah", "Seaforth",
+      "Frenchs Forest", "Belrose", "Terrey Hills", "Warriewood", "Mona Vale",
+      "Newport", "Avalon", "Palm Beach",
+    ],
+    services: [
+      "Emergency Plumbing", "Blocked Drains", "Hot Water Systems", "Taps & Toilets",
+      "Leak Detection", "Pipe Relining", "Gas Fitting", "Bathroom Renovations",
+    ],
+    faqs: [
+      { q: "How quickly can you reach the Northern Beaches?", a: "We have plumbers based on the Northern Beaches. In most cases we can reach you within 30–60 minutes without needing to cross the bridge." },
+      { q: "Do you handle coastal corrosion issues?", a: "Yes — properties near the beach experience accelerated pipe and fixture corrosion. We use marine-appropriate materials and assess corrosion on every job." },
+      { q: "Do you service strata and apartment buildings in Manly?", a: "Yes — we work with unit owners, tenants, and strata managers across all Northern Beaches apartment buildings and complexes." },
+    ],
+    metaTitle: "Plumber Northern Beaches Sydney | 24/7 | Mr. Clog",
+    metaDescription: "Local plumber on Sydney's Northern Beaches. Manly, Dee Why, Brookvale, Narrabeen and more. Available 24/7, $0 call-out fee. Call (02) 9139 8945.",
+  },
+  {
+    slug: "sydney-cbd",
+    label: "Sydney CBD & City",
+    headline: "Plumber Sydney CBD & City",
+    subheadline: "Commercial and residential plumbing in the CBD, Surry Hills, Darlinghurst, and Redfern.",
+    description:
+      "Mr. Clog services Sydney's CBD and inner city suburbs — from commercial fit-outs in the CBD to terrace homes in Surry Hills and apartments in Darlinghurst. We understand the unique demands of city plumbing, including high-rise access, strata coordination, and after-hours work.",
+    suburbs: [
+      "Sydney CBD", "Surry Hills", "Darlinghurst", "Redfern", "Waterloo",
+      "Zetland", "Alexandria", "Erskineville", "Chippendale", "Ultimo",
+      "Haymarket", "Woolloomooloo", "Potts Point", "Elizabeth Bay", "Kings Cross",
+    ],
+    services: [
+      "Emergency Plumbing", "Blocked Drains", "Hot Water Systems", "Taps & Toilets",
+      "Leak Detection", "Pipe Relining", "Gas Fitting", "Bathroom Renovations",
+    ],
+    faqs: [
+      { q: "Do you work in high-rise commercial buildings in the CBD?", a: "Yes — we carry out commercial plumbing in offices, retail, and hospitality venues across the CBD, including after-hours work to minimise disruption." },
+      { q: "Can you coordinate with strata managers in city apartment buildings?", a: "Absolutely — we work closely with strata managers and building managers across all inner city apartment towers and complexes." },
+      { q: "Do you offer after-hours plumbing in the CBD?", a: "Yes — we're available 24/7 including weekends and public holidays with $0 call-out fee." },
+    ],
+    metaTitle: "Plumber Sydney CBD | City & Inner Suburbs | Mr. Clog",
+    metaDescription: "Local plumber in Sydney CBD, Surry Hills, Darlinghurst, Redfern and surrounds. 24/7, $0 call-out fee. Call (02) 9139 8945.",
+  },
+  {
+    slug: "ryde-macquarie-park",
+    label: "Ryde & Macquarie Park",
+    headline: "Plumber Ryde & Macquarie Park Sydney",
+    subheadline: "Trusted plumbing across Ryde, West Ryde, Meadowbank, and Macquarie Park.",
+    description:
+      "Mr. Clog services the Ryde and Macquarie Park area — one of Sydney's fastest-growing corridors. From the established homes of West Ryde to the new apartments of Meadowbank and Macquarie Park, we handle every type of plumbing job with fast response times and upfront pricing.",
+    suburbs: [
+      "Ryde", "West Ryde", "Meadowbank", "Macquarie Park", "Ermington",
+      "Shepherd's Bay", "Putney", "Gladesville", "Hunters Hill", "Boronia Park",
+      "Eastwood", "Epping", "North Ryde", "Marsfield", "Dundas",
+    ],
+    services: [
+      "Emergency Plumbing", "Blocked Drains", "Hot Water Systems", "Taps & Toilets",
+      "Leak Detection", "Pipe Relining", "Gas Fitting", "Bathroom Renovations",
+    ],
+    faqs: [
+      { q: "Do you service the new apartment developments in Meadowbank?", a: "Yes — we work with residents, building managers, and strata in all the new high-density developments along the Parramatta River corridor." },
+      { q: "Can you handle older homes in Ryde and Gladesville?", a: "Absolutely — older properties in this area often have ageing clay or cast iron drainage. We inspect, repair, and reline these systems regularly." },
+      { q: "Is there a call-out fee for Ryde?", a: "No — $0 call-out fee applies across all Ryde and Macquarie Park suburbs." },
+    ],
+    metaTitle: "Plumber Ryde & Macquarie Park Sydney | Mr. Clog | 24/7",
+    metaDescription: "Local plumber in Ryde, West Ryde, Meadowbank, Macquarie Park and surrounds. 24/7, $0 call-out fee. Call (02) 9139 8945.",
+  },
+  {
+    slug: "canterbury-bankstown",
+    label: "Canterbury-Bankstown",
+    headline: "Plumber Canterbury-Bankstown Sydney",
+    subheadline: "Reliable plumbing across Bankstown, Canterbury, Campsie, and surrounds.",
+    description:
+      "Mr. Clog services the entire Canterbury-Bankstown area — one of Sydney's most densely populated regions. We work on everything from post-war brick homes to modern apartment blocks across Bankstown, Canterbury, Campsie, and surrounding suburbs, delivering fast, affordable plumbing with $0 call-out fee.",
+    suburbs: [
+      "Bankstown", "Canterbury", "Campsie", "Belmore", "Lakemba",
+      "Wiley Park", "Punchbowl", "Roselands", "Beverly Hills", "Narwee",
+      "Padstow", "Revesby", "Panania", "East Hills", "Condell Park",
+    ],
+    services: [
+      "Emergency Plumbing", "Blocked Drains", "Hot Water Systems", "Taps & Toilets",
+      "Leak Detection", "Pipe Relining", "Gas Fitting", "Bathroom Renovations",
+    ],
+    faqs: [
+      { q: "Do you service older properties in Canterbury-Bankstown?", a: "Yes — post-war homes in this area commonly have clay and cast iron drainage. We repair, reline, and replace these pipes regularly." },
+      { q: "How quickly can you reach Bankstown?", a: "We aim to reach most Canterbury-Bankstown suburbs within 30–60 minutes for emergency jobs." },
+      { q: "Do you work on apartment buildings and strata in the area?", a: "Yes — we work with unit owners, tenants, and strata managers across all types of multi-residential properties." },
+    ],
+    metaTitle: "Plumber Canterbury-Bankstown Sydney | Mr. Clog | 24/7",
+    metaDescription: "Local plumber in Canterbury-Bankstown. Bankstown, Campsie, Canterbury, Lakemba and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
+  },
+  {
+    slug: "lower-north-shore",
+    label: "Lower North Shore",
+    headline: "Plumber Lower North Shore Sydney",
+    subheadline: "Premium plumbing service across Kirribilli, McMahons Point, Lavender Bay, and surrounds.",
+    description:
+      "Mr. Clog services Sydney's prestigious lower north shore — from the heritage apartments of Kirribilli to the harbourside homes of McMahons Point and Lavender Bay. We're experienced with older plumbing systems, high-value properties, and the tight access that comes with many lower north shore homes.",
+    suburbs: [
+      "Kirribilli", "McMahons Point", "Lavender Bay", "Blues Point",
+      "Milsons Point", "North Sydney", "Cammeray", "Naremburn",
+      "Waverton", "Wollstonecraft", "Crows Nest", "St Leonards",
+    ],
+    services: [
+      "Emergency Plumbing", "Blocked Drains", "Hot Water Systems", "Taps & Toilets",
+      "Leak Detection", "Pipe Relining", "Gas Fitting", "Bathroom Renovations",
+    ],
+    faqs: [
+      { q: "Do you work on heritage apartments in Kirribilli?", a: "Yes — we're experienced with the older plumbing systems common in lower north shore heritage buildings, including cast iron, lead, and galvanised steel pipes." },
+      { q: "Can you access properties with difficult access or steep blocks?", a: "Yes — many lower north shore properties have challenging terrain and access. We're equipped to handle these situations safely." },
+      { q: "Do you work on North Sydney commercial buildings?", a: "Yes — we carry out commercial and strata plumbing in North Sydney's office towers and apartment buildings." },
+    ],
+    metaTitle: "Plumber Lower North Shore Sydney | Kirribilli, North Sydney | Mr. Clog",
+    metaDescription: "Local plumber on Sydney's lower north shore. Kirribilli, McMahons Point, North Sydney and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
+  },
+ 
