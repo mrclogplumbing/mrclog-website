@@ -34,7 +34,7 @@ export default function ServicesGrid() {
                         </div>
                 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                          {services.map(({ Icon, title, description, href }) =>h (
+                          {services.map(({ Icon, title, description, href }) => (
                         <Link key={href} href={href} className="card p-6 flex flex-col group no-underline">
                                       <div
                                                         className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 flex-shrink-0"
@@ -70,4 +70,4 @@ export default function ServicesGrid() {
                 </div>
           </section>
         );
-}</section>
+}
