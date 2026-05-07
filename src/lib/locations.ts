@@ -156,12 +156,8 @@ export const locations: Location[] = [
     metaTitle: "Plumber Western Sydney | Parramatta, Blacktown, Penrith | Mr. Clog",
     metaDescription: "Local plumber across Western Sydney. Parramatta, Blacktown, Penrith, Liverpool and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
   },
-];
-
-export function getLocation(slug: string): Location | undefined {
-  return locations.find((l) => l.slug === slug);
-}
- slug: "northern-beaches",
+  {
+    slug: "northern-beaches",
     label: "Northern Beaches",
     headline: "Plumber Northern Beaches Sydney",
     subheadline: "Fast, reliable plumbing across Manly, Dee Why, Brookvale, and the Northern Beaches.",
@@ -281,9 +277,8 @@ export function getLocation(slug: string): Location | undefined {
     metaTitle: "Plumber Lower North Shore Sydney | Kirribilli, North Sydney | Mr. Clog",
     metaDescription: "Local plumber on Sydney's lower north shore. Kirribilli, McMahons Point, North Sydney and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
   },
- 
 ];
 
 export function getLocation(slug: string): Location | undefined {
-    return locations.find((l) => l.slug === slug);
+  return locations.find((l) => l.slug === slug);
 }

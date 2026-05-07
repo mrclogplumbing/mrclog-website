@@ -302,11 +302,8 @@ export const services: Service[] = [
     metaTitle: "Roof Plumber Sydney | Gutters & Stormwater | Mr. Clog",
     metaDescription: "Roof plumbing across Sydney. Gutters, downpipes, stormwater, and flashings. Mr. Clog — licensed, $0 call-out fee. Call (02) 9139 8945.",
   },
-];
-
-export function getService(slug: string): Service | undefined {
-  return services.find((s) => s.slug === slug);
-}slug: "stormwater-drainage",
+  {
+    slug: "stormwater-drainage",
     label: "Stormwater Drainage",
     headline: "Stormwater Drainage Solutions Sydney",
     subheadline: "Blocked stormwater, flooding, and drainage design — solved fast.",
@@ -482,5 +479,5 @@ export function getService(slug: string): Service | undefined {
 ];
 
 export function getService(slug: string): Service | undefined {
-    return services.find((s) => s.slug === slug);
+  return services.find((s) => s.slug === slug);
 }
