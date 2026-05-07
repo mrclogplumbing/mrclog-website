@@ -24,50 +24,50 @@ export default function ServicesGrid() {
                         <div className="text-center mb-12">
                                   <p className="font-display text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--color-brand-blue)" }}>
                                               What We Do
-                                  </p>p>
+                                  </p>
                                   <h2 className="font-logo font-extrabold text-3xl md:text-4xl mb-4" style={{ color: "var(--color-black)" }}>
                                               Everything Plumbing, All Across Sydney
-                                  </h2>h2>
+                                  </h2>
                                   <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--color-grey-600)" }}>
                                               From a dripping tap to a full renovation — we handle it all, with upfront pricing and same-day availability.
-                                  </p>p>
-                        </div>div>
+                                  </p>
+                        </div>
                 
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                          {services.map(({ Icon, title, description, href }) => (
+                          {services.map(({ Icon, title, description, href }) =>h (
                         <Link key={href} href={href} className="card p-6 flex flex-col group no-underline">
                                       <div
                                                         className="w-11 h-11 rounded-xl flex items-center justify-center mb-4 flex-shrink-0"
                                                         style={{ background: "var(--color-brand-blue-light)" }}
                                                       >
                                                       <Icon size={22} />
-                                      </div>div>
+                                      </div>
                                       <h3
                                                         className="font-logo font-bold text-base mb-2 group-hover:text-brand-blue transition-colors"
                                                         style={{ color: "var(--color-black)" }}
                                                       >
                                         {title}
-                                      </h3>h3>
+                                      </h3>
                                       <p className="text-sm flex-1 leading-relaxed" style={{ color: "var(--color-grey-600)" }}>
                                         {description}
-                                      </p>p>
+                                      </p>
                                       <span
                                                         className="mt-4 text-sm font-semibold inline-flex items-center gap-1.5 transition-colors"
                                                         style={{ color: "var(--color-brand-blue)" }}
                                                       >
                                                       Learn More
                                                       <ArrowRightIcon size={14} className="transition-transform group-hover:translate-x-1" />
-                                      </span>span>
-                        </Link>Link>
+                                      </span>
+                        </Link>
                       ))}
-                        </div>div>
+                        </div>
                 
                         <div className="text-center mt-10">
                                   <Link href="/services" className="btn-outline">
                                               View All Services →
-                                  </Link>Link>
-                        </div>div>
-                </div>div>
-          </section>section>
+                                  </Link>
+                        </div>
+                </div>
+          </section>
         );
 }</section>
