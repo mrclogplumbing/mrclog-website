@@ -12,7 +12,7 @@ const services = [
   { Icon: TapIcon,       title: "Taps & Toilets",     description: "Repairs, replacements & upgrades",                 href: "/services/taps-and-toilets" },
   { Icon: PipeIcon,      title: "Pipe Relining",      description: "No-dig pipe repairs that last 50+ years",          href: "/services/pipe-relining" },
   { Icon: LeakIcon,      title: "Leak Detection",     description: "Find hidden leaks before they cost you more",      href: "/services/leak-detection" },
-  { Icon: JettIcon,      title: "Jet Blasting",      description: "High-pressure drain cleaning for serious clogs",   href: "/services/jet-blasting" },
+  { Icon: JettIcon,      title: "Jet Blasting",      description: "High-pressure drain cleaning for serious clogs",   href: "/services/jett-blasting" },
   { Icon: GasIcon,       title: "Gas Fitting",        description: "Licensed gas work for appliances & installations", href: "/services/gas-fitting" },
 ];
 
@@ -21,9 +21,9 @@ export default function ServicesGrid() {
     <section className="section-padding bg-white">
       <div className="section-container">
 
-        <div className="text-center mb-12">
+  /jett-blasting      <div className="text-center mb-12">
           <p className="font-display text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--color-brand-blue)" }}>
-            What We Do
+/jett-blasting            What We Do
           </p>
           <h2 className="font-logo font-extrabold text-3xl md:text-4xl mb-4" style={{ color: "var(--color-black)" }}>
             Everything Plumbing, All Across Sydney
