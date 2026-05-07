@@ -12,7 +12,7 @@ const services = [
   { Icon: TapIcon,       title: "Taps & Toilets",     description: "Repairs, replacements & upgrades",                 href: "/services/taps-and-toilets" },
   { Icon: PipeIcon,      title: "Pipe Relining",      description: "No-dig pipe repairs that last 50+ years",          href: "/services/pipe-relining" },
   { Icon: LeakIcon,      title: "Leak Detection",     description: "Find hidden leaks before they cost you more",      href: "/services/leak-detection" },
-  { Icon: JettIcon,      title: "Jett Blasting",      description: "High-pressure drain cleaning for serious clogs",   href: "/services/jett-blasting" },
+  { Icon: JettIcon,      title: "Jet Blasting",      description: "High-pressure drain cleaning for serious clogs",   href: "/services/jet-blasting" },
   { Icon: GasIcon,       title: "Gas Fitting",        description: "Licensed gas work for appliances & installations", href: "/services/gas-fitting" },
 ];
 
