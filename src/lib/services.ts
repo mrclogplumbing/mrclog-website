@@ -187,7 +187,7 @@ export const services: Service[] = [
     metaDescription: "Professional leak detection in Sydney. Find leaks under slabs, walls, and underground without damage. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
-    slug: "jet-blasting",
+    slug: "jett-blasting",
     label: "Jet Blasting",
     headline: "High-Pressure Jet Blasting Sydney",
     subheadline: "The most effective way to clear stubborn blockages and clean your drains.",
