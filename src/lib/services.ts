@@ -187,12 +187,12 @@ export const services: Service[] = [
     metaDescription: "Professional leak detection in Sydney. Find leaks under slabs, walls, and underground without damage. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
-    slug: "jett-blasting",
-    label: "Jett Blasting",
-    headline: "High-Pressure Jett Blasting Sydney",
+    slug: "jet-blasting",
+    label: "Jet Blasting",
+    headline: "High-Pressure Jet Blasting Sydney",
     subheadline: "The most effective way to clear stubborn blockages and clean your drains.",
     description:
-      "Jett blasting uses a high-pressure water jet to blast through even the most stubborn blockages — grease, roots, scale, and built-up debris — and leave your pipes clean and flowing freely. It's faster and more thorough than a drain snake, and leaves no chemical residue.",
+      "Jet Blasting uses a high-pressure water jet to blast through even the most stubborn blockages — grease, roots, scale, and built-up debris — and leave your pipes clean and flowing freely. It's faster and more thorough than a drain snake, and leaves no chemical residue.",
     benefits: [
       "Clears grease, roots, scale, and debris",
       "Environmentally friendly — no chemicals",
@@ -207,13 +207,13 @@ export const services: Service[] = [
       { step: "04", title: "Re-inspect", desc: "We camera the pipe again to confirm it's fully clear and flowing." },
     ],
     faqs: [
-      { q: "Is jett blasting different from drain snaking?", a: "Yes — a drain snake punctures a blockage, while jett blasting clears the entire pipe diameter and cleans the walls. It's more thorough and longer-lasting." },
-      { q: "Can jett blasting damage my pipes?", a: "Our operators adjust pressure for your pipe type. Modern jett blasting is safe for most pipes when performed correctly." },
+      { q: "Is Jet Blasting different from drain snaking?", a: "Yes — a drain snake punctures a blockage, while Jet Blasting clears the entire pipe diameter and cleans the walls. It's more thorough and longer-lasting." },
+      { q: "Can Jet Blasting damage my pipes?", a: "Our operators adjust pressure for your pipe type. Modern Jet Blasting is safe for most pipes when performed correctly." },
       { q: "How often should I have my drains jett blasted?", a: "For residential properties, every 2–3 years is a good preventative measure. Commercial kitchens may need it more frequently." },
-      { q: "Does it remove tree roots?", a: "Jett blasting can cut through fine root intrusions. For heavier root infestations, we may use root cutting attachments or recommend pipe relining." },
+      { q: "Does it remove tree roots?", a: "Jet Blasting can cut through fine root intrusions. For heavier root infestations, we may use root cutting attachments or recommend pipe relining." },
     ],
-    metaTitle: "Jett Blasting Sydney | High-Pressure Drain Cleaning | Mr. Clog",
-    metaDescription: "Professional jett blasting across Sydney. Clear stubborn drains with high-pressure water jetting. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
+    metaTitle: "Jet Blasting Sydney | High-Pressure Drain Cleaning | Mr. Clog",
+    metaDescription: "Professional Jet Blasting across Sydney. Clear stubborn drains with high-pressure water jetting. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
     slug: "gas-fitting",
