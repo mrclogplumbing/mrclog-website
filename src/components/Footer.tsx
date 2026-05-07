@@ -3,7 +3,7 @@ import Logo from "@/components/ui/Logo";
 import { PhoneCallIcon, StarIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
-const PHONE_HREF = "tel:+61291398945";h
+const PHONE_HREF = "tel:+61291398945";
 const EMAIL = "info@mrclog.com.au";
 
 const serviceLinks = [
