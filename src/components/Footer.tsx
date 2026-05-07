@@ -13,7 +13,7 @@ const serviceLinks = [
   { label: "Taps & Toilets",       href: "/services/taps-and-toilets" },
   { label: "Pipe Relining",        href: "/services/pipe-relining" },
   { label: "Leak Detection",       href: "/services/leak-detection" },
-  { label: "Jet Blasting",        href: "/services/jet-blasting" },
+  { label: "Jet Blasting",        href: "/services/jett-blasting" },
   { label: "Gas Fitting",          href: "/services/gas-fitting" },
   { label: "Bathroom Renovations", href: "/services/bathroom-renovations" },
   { label: "Roof Plumbing",        href: "/services/roof-plumbing" },
