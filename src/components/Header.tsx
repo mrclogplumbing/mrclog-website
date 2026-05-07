@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "@/components/ui/Logo";h
+import Logo from "@/components/ui/Logo";
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
@@ -15,7 +15,7 @@ const services = [
   { label: "Taps & Toilets", href: "/services/taps-and-toilets" },
   { label: "Pipe Relining", href: "/services/pipe-relining" },
   { label: "Leak Detection", href: "/services/leak-detection" },
-  { label: "Jet Blasting", href: "/services/jet-blasting" },
+  { label: "Jet Blasting", href: "/services/jett-blasting" },
   { label: "Gas Fitting", href: "/services/gas-fitting" },
   { label: "Bathroom Renovations", href: "/services/bathroom-renovations" },
   { label: "Roof Plumbing", href: "/services/roof-plumbing" },
