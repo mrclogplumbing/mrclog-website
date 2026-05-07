@@ -228,7 +228,7 @@ export default function ContactPage() {
                     <option>Taps &amp; Toilets</option>
                     <option>Pipe Relining</option>
                     <option>Leak Detection</option>
-                    <option>Jett Blasting</option>
+                    <option>Jet Blasting</option>
                     <option>Gas Fitting</option>
                     <option>Bathroom Renovations</option>
                     <option>Roof Plumbing</option>

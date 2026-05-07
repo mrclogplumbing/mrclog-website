@@ -209,7 +209,7 @@ export const services: Service[] = [
     faqs: [
       { q: "Is Jet Blasting different from drain snaking?", a: "Yes — a drain snake punctures a blockage, while Jet Blasting clears the entire pipe diameter and cleans the walls. It's more thorough and longer-lasting." },
       { q: "Can Jet Blasting damage my pipes?", a: "Our operators adjust pressure for your pipe type. Modern Jet Blasting is safe for most pipes when performed correctly." },
-      { q: "How often should I have my drains jett blasted?", a: "For residential properties, every 2–3 years is a good preventative measure. Commercial kitchens may need it more frequently." },
+      { q: "How often should I have my drains jet blasted?", a: "For residential properties, every 2–3 years is a good preventative measure. Commercial kitchens may need it more frequently." },
       { q: "Does it remove tree roots?", a: "Jet Blasting can cut through fine root intrusions. For heavier root infestations, we may use root cutting attachments or recommend pipe relining." },
     ],
     metaTitle: "Jet Blasting Sydney | High-Pressure Drain Cleaning | Mr. Clog",
