@@ -163,6 +163,7 @@ export default function Footer() {
         <div className="section-container py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs" style={{ color: "rgba(255,255,255,0.45)" }}>
           <p>© {new Date().getFullYear()} Mr. Clog Plumbing. All rights reserved. ABN [91 677 640 596]</p>
           <div className="flex gap-4">
+            <Link href="/guarantee" className="hover:text-white transition-colors">Guarantee</Link>
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
