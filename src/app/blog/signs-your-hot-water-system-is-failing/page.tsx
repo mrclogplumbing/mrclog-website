@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
+import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
   title: "7 Signs Your Hot Water System Is About to Fail | Mr. Clog Blog",
   description:
     "Don\u2019t get caught with a cold shower. Spot these 7 warning signs that your Sydney hot water system needs attention before it gives up completely.",
+  openGraph: {
+    type: "article",
+    title: "7 Signs Your Hot Water System Is About to Fail | Mr. Clog Blog",
+    description: "Don’t get caught with a cold shower. Spot these 7 warning signs that your Sydney hot water system needs attention before it gives up completely.",
+    url: "https://www.mrclog.com.au/blog/signs-your-hot-water-system-is-failing",
+    siteName: "Mr. Clog Plumbing",
+    publishedTime: "2026-05-08",
+    modifiedTime: "2026-05-08",
+    authors: ["Mr. Clog Plumbing"],
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog/signs-your-hot-water-system-is-failing" },
 };
 
 const PHONE = "(02) 9139 8945";
@@ -25,6 +38,13 @@ const tocItems = [
 export default function BlogHotWaterSignsPage() {
   return (
     <>
+      <BlogPostSchema
+        slug="signs-your-hot-water-system-is-failing"
+        title="7 Signs Your Hot Water System Is About to Fail"
+        description="Don’t get caught with a cold shower. Spot these 7 warning signs that your Sydney hot water system needs attention before it gives up completely."
+        datePublished="2026-05-08"
+        faqs={[{"q":"How long does a hot water system last?","a":"Storage tanks last 8–12 years. Continuous flow (instantaneous) units last 15–20 years. Heat pump systems last 10–15 years."},{"q":"Can I replace a hot water system myself?","a":"No — in NSW, hot water installation must be done by a licensed plumber (and a licensed gasfitter for gas systems). DIY work voids insurance and warranties."}]}
+      />
       {/* Hero */}
       <section className="relative pt-16 flex items-center min-h-[38vh]" style={{ background: "var(--color-dark)" }}>
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(26,31,46,0.97) 0%, rgba(26,159,255,0.15) 100%)" }} aria-hidden="true" />
