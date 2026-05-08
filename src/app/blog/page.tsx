@@ -44,6 +44,33 @@ const posts = [
     readTime: "7 min read",
     published: true,
   },
+  {
+    slug: "how-to-choose-a-plumber-in-sydney",
+    title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off)",
+    excerpt: "Choosing the wrong plumber can cost you hundreds. Here's exactly what to check before you hire — licence, insurance, pricing, and the red flags to avoid.",
+    date: "8 May 2026",
+    category: "Plumbing Advice",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
+    slug: "signs-your-hot-water-system-is-failing",
+    title: "7 Signs Your Hot Water System Is About to Fail",
+    excerpt: "Don't get caught with a cold shower. These 7 warning signs mean your hot water system is struggling — and what to do before it fails completely.",
+    date: "8 May 2026",
+    category: "Hot Water",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
+    slug: "how-to-prevent-blocked-drains",
+    title: "How to Prevent Blocked Drains: A Room-by-Room Guide",
+    excerpt: "Most blocked drains are 100% preventable. Here's exactly what to do in each room of your home to keep your drains clear and avoid expensive callouts.",
+    date: "8 May 2026",
+    category: "Blocked Drains",
+    readTime: "5 min read",
+    published: true,
+  },
 ];
 
 export default function BlogPage() {
