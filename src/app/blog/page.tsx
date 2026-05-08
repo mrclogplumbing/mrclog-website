@@ -5,6 +5,15 @@ export const metadata: Metadata = {
   title: "Plumbing Tips & Advice | Mr. Clog Blog | Sydney",
   description:
     "Plumbing tips, how-to guides, and advice from Sydney's trusted plumbers. Read the Mr. Clog blog for expert insights on blocked drains, hot water, and more.",
+  openGraph: {
+    type: "website",
+    title: "Plumbing Tips & Advice | Mr. Clog Blog | Sydney",
+    description: "Plumbing tips, how-to guides, and advice from Sydney's trusted plumbers. Read the Mr. Clog blog for expert insights on blocked drains, hot water, and more.",
+    url: "https://www.mrclog.com.au/blog",
+    siteName: "Mr. Clog Plumbing",
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog" },
 };
 
 const posts = [
@@ -76,6 +85,43 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "Mr. Clog Blog",
+            "description": "Plumbing tips, how-to guides, and advice from Sydney's trusted plumbers.",
+            "url": "https://www.mrclog.com.au/blog",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Mr. Clog Plumbing",
+              "url": "https://www.mrclog.com.au",
+            },
+            "blogPost": posts.map((p) => ({
+              "@type": "BlogPosting",
+              "headline": p.title,
+              "description": p.excerpt,
+              "url": `https://www.mrclog.com.au/blog/${p.slug}`,
+              "datePublished": p.date,
+            })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.mrclog.com.au" },
+              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.mrclog.com.au/blog" },
+            ],
+          }),
+        }}
+      />
       {/* Hero */}
       <section
         className="relative pt-16 flex items-center min-h-[35vh]"
