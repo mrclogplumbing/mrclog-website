@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
+import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
   title: "Why Is My Drain Blocked? The Most Common Causes | Mr. Clog Blog",
   description:
     "A blocked drain is almost always caused by one of five things. Learn what causes blocked drains in Australian homes and when to call a plumber.",
+  openGraph: {
+    type: "article",
+    title: "Why Is My Drain Blocked? The Most Common Causes in Australian Homes | Mr. Clog Blog",
+    description: "A blocked drain is almost always caused by one of five things. Learn what is causing yours and when to call a plumber.",
+    url: "https://www.mrclog.com.au/blog/why-is-my-drain-blocked",
+    siteName: "Mr. Clog Plumbing",
+    publishedTime: "2026-04-07",
+    modifiedTime: "2026-04-07",
+    authors: ["Mr. Clog Plumbing"],
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog/why-is-my-drain-blocked" },
 };
 
 const PHONE = "(02) 9139 8945";
@@ -24,6 +37,13 @@ const tocItems = [
 export default function Blog1Page() {
   return (
     <>
+      <BlogPostSchema
+        slug="why-is-my-drain-blocked"
+        title="Why Is My Drain Blocked? The Most Common Causes in Australian Homes"
+        description="A blocked drain is almost always caused by one of five things. Learn what is causing yours and when to call a plumber."
+        datePublished="2026-04-07"
+        faqs={[{"q":"What is the most common cause of blocked drains?","a":"Hair, grease/fat buildup, food scraps, wet wipes (even \"flushable\"), and tree roots are the top five causes in Sydney homes."},{"q":"Can I unblock a drain myself?","a":"For minor blockages, a plunger or boiling water can help. For anything stubborn, especially in main drains, call a licensed plumber to avoid making it worse."},{"q":"How much does drain unblocking cost in Sydney?","a":"Most jobs range from $150 for a simple sink blockage to $500+ for main drain or sewer line clearing with CCTV."}]}
+      />
       {/* Hero */}
       <section
         className="relative pt-16 flex items-center min-h-[38vh]"
