@@ -40,6 +40,9 @@ const blogSlugs = [
   'gas-leak-or-not',
   'how-much-does-a-leaking-tap-cost',
   'what-to-do-in-a-plumbing-emergency',
+  'how-to-choose-a-plumber-in-sydney',
+  'signs-your-hot-water-system-is-failing',
+  'how-to-prevent-blocked-drains',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
