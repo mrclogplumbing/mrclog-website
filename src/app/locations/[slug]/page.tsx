@@ -20,6 +20,7 @@ export async function generateMetadata({
   const location = getLocation(slug);
   if (!location) return {};
   return {
+    alternates: { canonical: `/locations/${slug}` },
     title: location.metaTitle,
     description: location.metaDescription,
   };
