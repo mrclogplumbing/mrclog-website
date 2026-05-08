@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     modifiedTime: "2026-05-08",
     authors: ["Mr. Clog Plumbing"],
     locale: "en_AU",
+    images: [{ url: "/logo-light.webp", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
   },
   alternates: { canonical: "https://www.mrclog.com.au/blog/what-to-do-in-a-plumbing-emergency" },
 };
