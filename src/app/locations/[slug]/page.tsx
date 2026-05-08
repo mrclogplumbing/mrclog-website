@@ -85,7 +85,12 @@ export default async function LocationPage({
             </h2>
             <p className="text-gray-600 leading-relaxed text-base mb-6">
               {location.description}
-            </p>
+            </p>            {location.localContent && (
+              <p className="text-gray-600 leading-relaxed text-base mb-6 mt-4 p-4 border-l-4 rounded-r-xl" style={{ borderColor: "var(--color-brand-blue)", background: "rgba(26,159,255,0.04)" }}>
+                {location.localContent}
+              </p>
+            )}
+
             <div className="flex items-start gap-3 p-4 rounded-xl" style={{ background: "var(--color-brand-blue-light)" }}>
               <MapPinIcon size={20} className="flex-shrink-0 mt-0.5" />
               <p className="text-sm text-gray-700">
