@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: "Privacy Policy | Mr. Clog Plumbing",
   description: "Privacy Policy for Mr. Clog Plumbing. Learn how we collect, use, and protect your personal information.",
 };
