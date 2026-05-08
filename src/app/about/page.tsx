@@ -158,7 +158,50 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Credentials */}
+      
+      {/* Meet the Team */}
+      <section style={{ background: "var(--color-grey-100)" }} className="py-16 md:py-20">
+        <div className="section-container">
+          <div className="text-center mb-12">
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+              Meet the Team
+            </p>
+            <h2 className="font-logo font-bold text-3xl md:text-4xl" style={{ color: "var(--color-dark)" }}>
+              The People Behind Mr. Clog
+            </h2>
+          </div>
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 text-3xl font-bold text-white font-logo" style={{ background: "var(--color-brand-blue)" }}>
+                A
+              </div>
+              <div>
+                <h3 className="font-logo font-bold text-2xl mb-1" style={{ color: "var(--color-dark)" }}>
+                  Anthony
+                </h3>
+                <p className="font-display text-sm font-semibold mb-4" style={{ color: "var(--color-brand-blue)" }}>
+                  Founder &amp; Master Plumber
+                </p>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Anthony has been a licensed plumber in Sydney for over 15 years. He started Mr. Clog after seeing too many customers get burned by dodgy operators — hidden fees, no-shows, and poor workmanship. His goal was simple: build a plumbing business he&rsquo;d be happy to recommend to his own family.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  He personally oversees every job and still gets his hands dirty on the tools most days. When he&rsquo;s not unblocking drains or installing hot water systems, he&rsquo;s training the next generation of Sydney plumbers to the same standard.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {["NSW Lic. No. 347993C", "Gas Fitting Certified", "15+ Years Experience"].map((badge) => (
+                    <span key={badge} className="inline-block text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.1)", color: "var(--color-brand-blue)" }}>
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{/* Credentials */}
       <section className="section-container py-16 md:py-20">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-display text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--color-brand-blue)" }}>
