@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms" },
   title: "Terms of Service | Mr. Clog Plumbing",
   description: "Terms of Service for Mr. Clog Plumbing. Read our terms and conditions for plumbing services across Sydney.",
 };
