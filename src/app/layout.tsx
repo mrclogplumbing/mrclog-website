@@ -28,6 +28,8 @@ const jakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.mrclog.com.au"),
+  alternates: { canonical: "/" },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -49,16 +51,18 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_AU",
-    url: "https://mrclog.com.au",
+    url: "https://www.mrclog.com.au",
     siteName: "Mr. Clog Plumbing",
     title: "Mr. Clog | Sydney's #1 Plumber | 24/7 Emergency",
     description:
       "Sydney's trusted plumbers. 5-star rated, available 24/7, $0 call-out fee.",
+    images: [{ url: "/logo-light.webp", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mr. Clog | Sydney's #1 Plumber",
     description: "Sydney's trusted plumbers. 5-star rated, 24/7, $0 call-out fee.",
+    images: ["/logo-light.webp"],
   },
   robots: {
     index: true,
