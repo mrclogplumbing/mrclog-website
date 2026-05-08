@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
+import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
   title: "What to Do in a Plumbing Emergency | Mr. Clog Blog",
   description:
     "Burst pipe? Flooding? Gas leak? Here's a clear step-by-step guide for Sydney homeowners on exactly what to do in a plumbing emergency — and when to call.",
+  openGraph: {
+    type: "article",
+    title: "What to Do in a Plumbing Emergency: A Step-by-Step Guide for Sydney Homeowners | Mr. Clog Blog",
+    description: "Burst pipe? Flooding? Gas leak? Here is a clear, calm plan for the most common plumbing emergencies — so you know exactly what to do.",
+    url: "https://www.mrclog.com.au/blog/what-to-do-in-a-plumbing-emergency",
+    siteName: "Mr. Clog Plumbing",
+    publishedTime: "2026-05-08",
+    modifiedTime: "2026-05-08",
+    authors: ["Mr. Clog Plumbing"],
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog/what-to-do-in-a-plumbing-emergency" },
 };
 
 const PHONE = "(02) 9139 8945";
@@ -25,6 +38,13 @@ const tocItems = [
 export default function BlogEmergencyPage() {
   return (
     <>
+      <BlogPostSchema
+        slug="what-to-do-in-a-plumbing-emergency"
+        title="What to Do in a Plumbing Emergency: A Step-by-Step Guide for Sydney Homeowners"
+        description="Burst pipe? Flooding? Gas leak? Here is a clear, calm plan for the most common plumbing emergencies — so you know exactly what to do."
+        datePublished="2026-05-08"
+        faqs={[{"q":"Where is my water shutoff valve?","a":"Most Sydney homes have the main water shutoff valve at the front boundary, usually near the water meter. Locate it now, before an emergency."},{"q":"What counts as a plumbing emergency?","a":"Burst pipes, sewer backups, gas leaks, no hot water in winter, and any flooding all count as emergencies. Most plumbers respond within 1 hour for true emergencies."}]}
+      />
       {/* Hero */}
       <section
         className="relative pt-16 flex items-center min-h-[38vh]"
