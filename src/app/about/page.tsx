@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PhoneCallIcon, CheckCircleIcon, StarIcon } from "@/components/ui/ServiceIcons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Mr. Clog Plumbing | Sydney's Trusted Local Plumbers",
   description:
     "Learn about Mr. Clog — Sydney's trusted local plumbers. 5-star rated, fully licensed, available 24/7. $0 call-out fee across all Sydney metro areas.",
