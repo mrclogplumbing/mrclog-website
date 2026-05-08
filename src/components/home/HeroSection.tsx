@@ -59,7 +59,7 @@ export default function HeroSection() {
             <span className="flex items-center gap-0.5">
               {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
             </span>
-            <span>5.0 Google Rating · 18 Reviews</span>
+            <span>5.0 Google Rating</span>
           </div>
 
           {/* H1 */}
