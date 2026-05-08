@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
+import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
   title: "How Much Does a Leaking Tap Actually Cost You? | Mr. Clog Blog",
   description:
     "A dripping tap might seem minor, but the numbers add up fast. Find out exactly how much a leaking tap costs in water bills — and why you should fix it now.",
+  openGraph: {
+    type: "article",
+    title: "How Much Does a Leaking Tap Actually Cost You? (The Numbers Might Surprise You) | Mr. Clog Blog",
+    description: "A dripping tap might seem minor, but the water waste and hidden damage costs add up fast. Here is exactly what a leaking tap costs.",
+    url: "https://www.mrclog.com.au/blog/how-much-does-a-leaking-tap-cost",
+    siteName: "Mr. Clog Plumbing",
+    publishedTime: "2026-05-08",
+    modifiedTime: "2026-05-08",
+    authors: ["Mr. Clog Plumbing"],
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog/how-much-does-a-leaking-tap-cost" },
 };
 
 const PHONE = "(02) 9139 8945";
@@ -24,6 +37,13 @@ const tocItems = [
 export default function BlogLeakingTapPage() {
   return (
     <>
+      <BlogPostSchema
+        slug="how-much-does-a-leaking-tap-cost"
+        title="How Much Does a Leaking Tap Actually Cost You? (The Numbers Might Surprise You)"
+        description="A dripping tap might seem minor, but the water waste and hidden damage costs add up fast. Here is exactly what a leaking tap costs."
+        datePublished="2026-05-08"
+        faqs={[{"q":"How much water does a leaking tap waste?","a":"A tap dripping once per second wastes around 20 litres per day, or over 7,000 litres per year."},{"q":"Can I fix a leaking tap myself?","a":"For a worn washer or O-ring, yes — it is a 15-minute job. For mixer cartridges, ceramic disc faucets, or anything behind a wall, call a licensed plumber."}]}
+      />
       {/* Hero */}
       <section
         className="relative pt-16 flex items-center min-h-[38vh]"
