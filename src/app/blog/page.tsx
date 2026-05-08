@@ -26,6 +26,24 @@ const posts = [
     readTime: "5 min read",
     published: true,
   },
+  {
+    slug: "how-much-does-a-leaking-tap-cost",
+    title: "How Much Does a Leaking Tap Actually Cost You? (The Numbers Might Surprise You)",
+    excerpt: "A dripping tap might seem minor, but the water waste and hidden damage costs add up fast. Here's exactly what a leaking tap costs — and why you should fix it now.",
+    date: "8 May 2026",
+    category: "Taps & Toilets",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
+    slug: "what-to-do-in-a-plumbing-emergency",
+    title: "What to Do in a Plumbing Emergency: A Step-by-Step Guide for Sydney Homeowners",
+    excerpt: "Burst pipe? Flooding? Gas leak? Here's a clear, calm plan for the most common plumbing emergencies — so you know exactly what to do before a plumber arrives.",
+    date: "8 May 2026",
+    category: "Emergency Plumbing",
+    readTime: "7 min read",
+    published: true,
+  },
 ];
 
 export default function BlogPage() {
