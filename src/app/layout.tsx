@@ -74,6 +74,41 @@ export default function RootLayout({
   return (
     <html lang="en-AU" className={`${inter.variable} ${sora.variable} ${jakartaSans.variable}`}>
       <body className="font-body antialiased">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Plumber",
+            "name": "Mr. Clog Plumbing",
+            "url": "https://www.mrclog.com.au",
+            "telephone": "+61291398945",
+            "email": "info@mrclog.com.au",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Sydney",
+              "addressRegion": "NSW",
+              "addressCountry": "AU"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Sydney"
+            },
+            "openingHours": "Mo-Su 00:00-23:59",
+            "priceRange": "$$",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "reviewCount": "18",
+              "bestRating": "5"
+            },
+            "description": "Sydney\'s trusted local plumbers. 5-star rated, available 24/7, $0 call-out fee. Blocked drains, emergency plumbing, hot water systems and more.",
+            "image": "https://www.mrclog.com.au/favicon.svg",
+            "sameAs": []
+          })
+        }}
+      />
+
         <Header />
         <main>{children}</main>
         <Footer />
