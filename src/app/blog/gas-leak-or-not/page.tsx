@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
+import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
   title: "Gas Leak or Not? How to Tell — and What to Do | Mr. Clog Blog",
   description:
     "If you smell gas, treat it as a real leak until proven otherwise. Learn the signs of a gas leak, exactly what to do, and what not to do.",
+  openGraph: {
+    type: "article",
+    title: "Gas Leak or Not? How to Tell — and What to Do Immediately | Mr. Clog Blog",
+    description: "If you smell gas indoors, treat it as a real leak until proven otherwise. Here is exactly what to do and what not to do.",
+    url: "https://www.mrclog.com.au/blog/gas-leak-or-not",
+    siteName: "Mr. Clog Plumbing",
+    publishedTime: "2026-04-10",
+    modifiedTime: "2026-04-10",
+    authors: ["Mr. Clog Plumbing"],
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog/gas-leak-or-not" },
 };
 
 const PHONE = "(02) 9139 8945";
@@ -24,6 +37,13 @@ const tocItems = [
 export default function Blog2Page() {
   return (
     <>
+      <BlogPostSchema
+        slug="gas-leak-or-not"
+        title="Gas Leak or Not? How to Tell — and What to Do Immediately"
+        description="If you smell gas indoors, treat it as a real leak until proven otherwise. Here is exactly what to do and what not to do."
+        datePublished="2026-04-10"
+        faqs={[{"q":"What does a gas leak smell like?","a":"Natural gas is given a deliberate \"rotten egg\" or sulphur smell so leaks are easy to detect. If you can smell it, treat it as a real leak."},{"q":"Should I call 000 for a gas leak?","a":"For any major leak, evacuate first, then call 000 and your gas distributor. For minor smells outdoors, call your gas distributor and a licensed gas fitter."}]}
+      />
       {/* Hero */}
       <section
         className="relative pt-16 flex items-center min-h-[38vh]"
