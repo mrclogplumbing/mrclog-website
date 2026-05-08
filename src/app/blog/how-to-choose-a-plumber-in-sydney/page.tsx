@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
+import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
   title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off) | Mr. Clog Blog",
   description:
     "Choosing the wrong plumber can cost you hundreds. Here is exactly what to check before you hire \u2014 licence, insurance, pricing, and red flags.",
+  openGraph: {
+    type: "article",
+    title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off) | Mr. Clog Blog",
+    description: "Choosing the wrong plumber can cost you hundreds. Here is exactly what to check before you hire — licence, insurance, pricing, and red flags.",
+    url: "https://www.mrclog.com.au/blog/how-to-choose-a-plumber-in-sydney",
+    siteName: "Mr. Clog Plumbing",
+    publishedTime: "2026-05-08",
+    modifiedTime: "2026-05-08",
+    authors: ["Mr. Clog Plumbing"],
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog/how-to-choose-a-plumber-in-sydney" },
 };
 
 const PHONE = "(02) 9139 8945";
@@ -23,6 +36,13 @@ const tocItems = [
 export default function BlogChoosePlumberPage() {
   return (
     <>
+      <BlogPostSchema
+        slug="how-to-choose-a-plumber-in-sydney"
+        title="How to Choose a Plumber in Sydney (Without Getting Ripped Off)"
+        description="Choosing the wrong plumber can cost you hundreds. Here is exactly what to check before you hire — licence, insurance, pricing, and red flags."
+        datePublished="2026-05-08"
+        faqs={[{"q":"How much does a Sydney plumber cost?","a":"Most jobs range from $150 for a minor repair to $500+ for blocked drain clearing or hot water repair. Always get a fixed upfront quote."},{"q":"How do I check a plumber’s licence?","a":"Search the plumber’s licence number on the NSW Fair Trading licence check website. Mr. Clog’s NSW licence is 347993C."}]}
+      />
       {/* Hero */}
       <section className="relative pt-16 flex items-center min-h-[38vh]" style={{ background: "var(--color-dark)" }}>
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(26,31,46,0.97) 0%, rgba(26,159,255,0.15) 100%)" }} aria-hidden="true" />
