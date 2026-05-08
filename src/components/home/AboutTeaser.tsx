@@ -17,7 +17,7 @@ export default function AboutTeaser() {
             <div className="space-y-4 text-base leading-relaxed" style={{ color: "var(--color-grey-800)" }}>
               <p>
                 Mr. Clog was built by two Sydney plumbers who were tired of the industry standard:
-                overcharging, slow response times, and leaving a mess. Anthony and the team bring
+                overcharging, slow response times, and leaving a mess. Anthony, Matthew, and the team bring
                 the opposite — fast, honest, and affordable plumbing for Sydney homes and businesses.
               </p>
               <p>
