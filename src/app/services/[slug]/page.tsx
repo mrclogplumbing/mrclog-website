@@ -20,6 +20,7 @@ export async function generateMetadata({
   const service = getService(slug);
   if (!service) return {};
   return {
+    alternates: { canonical: `/services/${slug}` },
     title: service.metaTitle,
     description: service.metaDescription,
   };
