@@ -2,11 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
+import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
   title: "How to Prevent Blocked Drains: A Room-by-Room Guide | Mr. Clog Blog",
   description:
     "Most blocked drains are 100% preventable. Here is exactly what to do in your kitchen, bathroom, toilet, laundry, and outdoors to keep your drains flowing.",
+  openGraph: {
+    type: "article",
+    title: "How to Prevent Blocked Drains: A Room-by-Room Guide | Mr. Clog Blog",
+    description: "Most blocked drains are 100% preventable. Here is exactly what to do in your kitchen, bathroom, toilet, laundry, and outdoors to keep your drains flowing.",
+    url: "https://www.mrclog.com.au/blog/how-to-prevent-blocked-drains",
+    siteName: "Mr. Clog Plumbing",
+    publishedTime: "2026-05-08",
+    modifiedTime: "2026-05-08",
+    authors: ["Mr. Clog Plumbing"],
+    locale: "en_AU",
+  },
+  alternates: { canonical: "https://www.mrclog.com.au/blog/how-to-prevent-blocked-drains" },
 };
 
 const PHONE = "(02) 9139 8945";
@@ -25,6 +38,13 @@ const tocItems = [
 export default function BlogPreventBlockedDrainsPage() {
   return (
     <>
+      <BlogPostSchema
+        slug="how-to-prevent-blocked-drains"
+        title="How to Prevent Blocked Drains: A Room-by-Room Guide"
+        description="Most blocked drains are 100% preventable. Here is exactly what to do in your kitchen, bathroom, toilet, laundry, and outdoors to keep your drains flowing."
+        datePublished="2026-05-08"
+        faqs={[{"q":"What are the early signs of a blocked drain?","a":"Slow drainage, gurgling sounds, mild smells, and water backing up when you run another fixture (e.g. shower drains slowly when toilet flushes)."},{"q":"Are enzyme drain treatments safe?","a":"Yes — enzyme-based treatments are safe for pipes and can help prevent buildup. Avoid harsh chemical drain cleaners; they corrode pipes and don’t solve serious blockages."}]}
+      />
       {/* Hero */}
       <section className="relative pt-16 flex items-center min-h-[38vh]" style={{ background: "var(--color-dark)" }}>
         <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(26,31,46,0.97) 0%, rgba(26,159,255,0.15) 100%)" }} aria-hidden="true" />
