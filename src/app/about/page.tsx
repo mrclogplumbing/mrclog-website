@@ -180,16 +180,16 @@ export default function AboutPage() {
                   Anthony
                 </h3>
                 <p className="font-display text-sm font-semibold mb-4" style={{ color: "var(--color-brand-blue)" }}>
-                  Founder &amp; Master Plumber
+                  Co-Founder &amp; Business Partner
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Anthony has been a licensed plumber in Sydney for over 15 years. He started Mr. Clog after seeing too many customers get burned by dodgy operators — hidden fees, no-shows, and poor workmanship. His goal was simple: build a plumbing business he&rsquo;d be happy to recommend to his own family.
+                  Anthony co-founded Mr. Clog alongside Matthew, bringing the business and operational expertise that keeps the company running smoothly. With a background in trade business management, Anthony ensures every customer interaction, quote, and job is handled with care and professionalism.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   He personally oversees every job and still gets his hands dirty on the tools most days. When he&rsquo;s not unblocking drains or installing hot water systems, he&rsquo;s training the next generation of Sydney plumbers to the same standard.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2">
-                  {["NSW Lic. No. 347993C", "Gas Fitting Certified", "15+ Years Experience"].map((badge) => (
+                  {["Co-Founder", "Business Operations", "Customer Experience"].map((badge) => (
                     <span key={badge} className="inline-block text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.1)", color: "var(--color-brand-blue)" }}>
                       {badge}
                     </span>
@@ -206,16 +206,16 @@ export default function AboutPage() {
                   Matthew
                 </h3>
                 <p className="font-display text-sm font-semibold mb-4" style={{ color: "var(--color-brand-blue)" }}>
-                  Co-Founder &amp; Business Partner
+                  Founder &amp; Master Plumber
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  Matthew co-founded Mr. Clog alongside Anthony, bringing the business and operational expertise that keeps the company running smoothly. With a background in trade business management, Matthew ensures every customer interaction, quote, and job is handled with care and professionalism.
+                  Matthew has been a licensed plumber in Sydney for over 15 years. He started Mr. Clog after seeing too many customers get burned by dodgy operators — hidden fees, no-shows, and poor workmanship. His goal was simple: build a plumbing business he’d be happy to recommend to his own family.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   Matthew handles everything from scheduling and customer service to business development — freeing Anthony and the team to focus on delivering exceptional plumbing work on the tools every day.
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2">
-                  {["Co-Founder", "Business Operations", "Customer Experience"].map((badge) => (
+                  {["NSW Lic. No. 347993C", "Gas Fitting Certified", "15+ Years Experience"].map((badge) => (
                     <span key={badge} className="inline-block text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.1)", color: "var(--color-brand-blue)" }}>
                       {badge}
                     </span>
