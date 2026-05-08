@@ -99,6 +99,13 @@ export default async function ServicePage({
                 </li>
               ))}
             </ul>
+            {service.typicalCost && (
+              <div className="mb-4 p-3 rounded-xl" style={{ background: "rgba(26,159,255,0.08)", border: "1px solid rgba(26,159,255,0.2)" }}>
+                <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: "var(--color-brand-blue)" }}>Typical Cost</p>
+                <p className="text-sm font-medium text-gray-800">{service.typicalCost}</p>
+                <p className="text-xs text-gray-400 mt-0.5">Get an exact quote — call us or submit a request.</p>
+              </div>
+            )}
             <div className="mt-6 pt-5" style={{ borderTop: "1px solid rgba(26,159,255,0.2)" }}>
               <p className="text-sm font-semibold text-gray-800 mb-1">Ready to book?</p>
               <a
