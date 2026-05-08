@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function ZeroFeeIcon() {
   return (
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A9FFF" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -34,10 +36,11 @@ function BadgeCheckIcon() {
   );
 }
 
-function StarBadgeIcon() {
+function ShieldCheckIcon() {
   return (
     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A9FFF" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      <polyline points="9 12 11 14 15 10" />
     </svg>
   );
 }
@@ -47,7 +50,7 @@ const reasons = [
   { Icon: ClockIcon,   title: "24/7 Availability", description: "Including weekends and public holidays. Plumbing emergencies don't keep office hours." },
   { Icon: TagIcon,     title: "Upfront Pricing",   description: "You'll know the full cost before we start. No surprise charges, no add-ons mid-job." },
   { Icon: BadgeCheckIcon, title: "Fully Licensed", description: "NSW Fair Trading licensed and fully insured — public liability and workers compensation." },
-  { Icon: StarBadgeIcon,  title: "5-Star Service", description: "Perfect Google rating from real Sydney customers. We're proud of it and intend to keep it." },
+  { Icon: ShieldCheckIcon, title: "12-Month Guarantee", description: "Every job is backed in writing. If it's not right, we come back and fix it — free.", href: "/guarantee", linkText: "Read the full guarantee" },
 ];
 
 export default function WhyChooseUs() {
@@ -65,7 +68,7 @@ export default function WhyChooseUs() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
-          {reasons.map(({ Icon, title, description }) => (
+          {reasons.map(({ Icon, title, description, href, linkText }) => (
             <div
               key={title}
               className="flex flex-col items-center text-center p-6 rounded-xl transition-all duration-200 hover:scale-[1.02]"
@@ -79,6 +82,15 @@ export default function WhyChooseUs() {
               </div>
               <h3 className="font-logo font-bold text-base text-white mb-2">{title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>{description}</p>
+              {href && linkText && (
+                <Link
+                  href={href}
+                  className="mt-3 text-xs font-semibold hover:underline"
+                  style={{ color: "var(--color-brand-blue)" }}
+                >
+                  {linkText} →
+                </Link>
+              )}
             </div>
           ))}
         </div>
