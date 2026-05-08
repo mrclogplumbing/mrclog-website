@@ -170,7 +170,7 @@ export default function AboutPage() {
               The People Behind Mr. Clog
             </h2>
           </div>
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm flex flex-col md:flex-row gap-8 items-start">
               <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 text-3xl font-bold text-white font-logo" style={{ background: "var(--color-brand-blue)" }}>
                 A
@@ -196,7 +196,33 @@ export default function AboutPage() {
                   ))}
                 </div>
               </div>
-            </div>
+
+            <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm flex flex-col md:flex-row gap-8 items-start">
+              <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 text-3xl font-bold text-white font-logo" style={{ background: "var(--color-brand-blue)" }}>
+                M
+              </div>
+              <div>
+                <h3 className="font-logo font-bold text-2xl mb-1" style={{ color: "var(--color-dark)" }}>
+                  Matthew
+                </h3>
+                <p className="font-display text-sm font-semibold mb-4" style={{ color: "var(--color-brand-blue)" }}>
+                  Co-Founder &amp; Business Partner
+                </p>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Matthew co-founded Mr. Clog alongside Anthony, bringing the business and operational expertise that keeps the company running smoothly. With a background in trade business management, Matthew ensures every customer interaction, quote, and job is handled with care and professionalism.
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  Matthew handles everything from scheduling and customer service to business development — freeing Anthony and the team to focus on delivering exceptional plumbing work on the tools every day.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {["Co-Founder", "Business Operations", "Customer Experience"].map((badge) => (
+                    <span key={badge} className="inline-block text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.1)", color: "var(--color-brand-blue)" }}>
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>            </div>
           </div>
         </div>
       </section>
