@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
+himport type { Metadata } from "next";
 import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 export const metadata: Metadata = {
   title: "Contact Mr. Clog Plumbing | Get a Free Quote | Sydney",
   description:
-    "Contact Mr. Clog Plumbing for a free quote or to book a plumber in Sydney. Call (02) 9139 8945 or fill in the form — we respond within 30 minutes.",
+    "Contact Mr. Clog Plumbing for a free quote orh to book a plumber in Sydney. Call (02) 9139 8945 or fill in the form — we respond within 30 minutes.",
 };
 
 const PHONE = "(02) 9139 8945";
@@ -228,7 +228,7 @@ export default function ContactPage() {
                     <option>Taps &amp; Toilets</option>
                     <option>Pipe Relining</option>
                     <option>Leak Detection</option>
-                    <option>Jett Blasting</option>
+                    <option>Jet Blasting</option>
                     <option>Gas Fitting</option>
                     <option>Bathroom Renovations</option>
                     <option>Roof Plumbing</option>
