@@ -3,6 +3,7 @@ import Link from "next/link";
 import { locations } from "@/lib/locations";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/locations" },
   title: "Service Areas Sydney | Mr. Clog Plumbing Locations",
   description:
     "Mr. Clog services every Sydney metro area — Inner West, Eastern Suburbs, North Shore, Hills, Western Sydney, Northern Beaches and more. 24/7, $0 call-out fee.",
