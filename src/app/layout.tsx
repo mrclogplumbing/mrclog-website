@@ -5,9 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileStickyBar from "@/components/MobileStickyBar";
 
-const PHONE_HREF = "tel:+61291398945";
-const PHONE = "(02) 9139 8945";
-
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
