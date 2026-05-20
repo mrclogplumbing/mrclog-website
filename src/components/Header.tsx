@@ -195,9 +195,15 @@ export default function Header() {
             </Link>
             <Link
               href="/blog"
-              className="px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50 transition-colors duration-150"
+              className="px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50 transition-colors"
             >
               Blog
+            </Link>
+            <Link
+              href="/reviews"
+              className="px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50 transition-colors"
+            >
+              Reviews
             </Link>
           </nav>
 
@@ -303,6 +309,9 @@ export default function Header() {
           </Link>
           <Link href="/blog" className="block px-3 py-3 text-sm font-medium text-gray-800 hover:bg-blue-50 rounded-lg">
             Blog
+          </Link>
+          <Link href="/reviews" className="block px-3 py-3 text-sm font-medium text-gray-800 hover:bg-blue-50 rounded-lg">
+            Reviews
           </Link>
 
           <div className="pt-2 pb-2 flex flex-col gap-2">
