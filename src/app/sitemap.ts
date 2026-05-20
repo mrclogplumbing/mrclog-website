@@ -46,6 +46,9 @@ const blogSlugs = [
   'gas-vs-electric-vs-heat-pump-hot-water',
   'tree-roots-in-drains',
   'water-pressure-too-high-or-too-low',
+  'burst-pipe-first-5-minutes',
+  'how-to-read-your-sydney-water-bill',
+  'bathroom-renovation-plumbing-checklist',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
