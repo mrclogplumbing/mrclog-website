@@ -277,7 +277,7 @@ export default function ReviewsPage() {
 
       <section className="bg-gray-900 text-white py-16">
         <div className="section-container text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3" style={{ color: "#fff" }}>
             Worked with us? We&apos;d love to hear from you.
           </h2>
           <p className="text-gray-300 max-w-xl mx-auto mb-6">
