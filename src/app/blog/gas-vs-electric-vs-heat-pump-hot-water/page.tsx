@@ -66,16 +66,16 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
             <div className="rounded-2xl p-6 mb-10 border-l-4" style={{ background: "var(--color-brand-blue-light)", borderColor: "var(--color-brand-blue)" }}>
               <p className="font-logo font-bold text-sm uppercase tracking-wider mb-2" style={{ color: "var(--color-brand-blue)" }}>Quick Answer</p>
               <p className="text-gray-700 text-sm leading-relaxed">
-                For most Sydney homes with rooftop solar, a heat pump is the best long-term choice. If gas is already connected and you don't have solar, instantaneous gas is still a strong option. Avoid plain electric storage unless install budget is the only consideration.
+                For most Sydney homes with rooftop solar, a heat pump is the best long-term choice. If gas is already connected and you don&apos;t have solar, instantaneous gas is still a strong option. Avoid plain electric storage unless install budget is the only consideration.
               </p>
             </div>
 
             <div className="space-y-6 text-gray-700 leading-relaxed">
-              <p>Replacing a hot water system is one of the biggest plumbing decisions a homeowner makes — and one of the easiest to get wrong. The wrong system can leave you paying more than you should every year, or fail years before it should because it wasn't suited to your home.</p>
+              <p>Replacing a hot water system is one of the biggest plumbing decisions a homeowner makes — and one of the easiest to get wrong. The wrong system can leave you paying more than you should every year, or fail years before it should because it wasn&apos;t suited to your home.</p>
               <p>Here is how the three main options stack up in Sydney conditions.</p>
 
               <h2 id="gas" className="font-logo font-bold text-2xl mt-10 mb-4" style={{ color: "var(--color-dark)" }}>Gas (instantaneous or storage)</h2>
-              <p>Gas remains popular in Sydney because mains gas is widely available and recovery rates are fast — you won't run out of hot water during back-to-back showers. Instantaneous gas units are compact, wall-mounted, and tend to last well over a decade.</p>
+              <p>Gas remains popular in Sydney because mains gas is widely available and recovery rates are fast — you won&apos;t run out of hot water during back-to-back showers. Instantaneous gas units are compact, wall-mounted, and tend to last well over a decade.</p>
               <p>The downside: gas prices have climbed sharply in recent years, and new-build estates are increasingly being built all-electric.</p>
 
               <h2 id="electric" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Electric storage</h2>
@@ -87,7 +87,7 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
               <p>They are noisier than gas and need outdoor clearance, but the running cost savings are real and add up year on year.</p>
 
               <h2 id="verdict" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Our verdict</h2>
-              <p>If you have solar, go heat pump. If you don't and gas is already connected, instantaneous gas is still a solid choice. Avoid plain electric storage unless budget at install time is the only factor.</p>
+              <p>If you have solar, go heat pump. If you don&apos;t and gas is already connected, instantaneous gas is still a solid choice. Avoid plain electric storage unless budget at install time is the only factor.</p>
               <p>Need help choosing? We do free on-site assessments across Sydney.</p>
             </div>
 
