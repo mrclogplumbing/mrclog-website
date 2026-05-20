@@ -43,6 +43,9 @@ const blogSlugs = [
   'how-to-choose-a-plumber-in-sydney',
   'signs-your-hot-water-system-is-failing',
   'how-to-prevent-blocked-drains',
+  'gas-vs-electric-vs-heat-pump-hot-water',
+  'tree-roots-in-drains',
+  'water-pressure-too-high-or-too-low',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
