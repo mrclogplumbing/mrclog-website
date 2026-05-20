@@ -80,6 +80,33 @@ const posts = [
     readTime: "5 min read",
     published: true,
   },
+  {
+    slug: "gas-vs-electric-vs-heat-pump-hot-water",
+    title: "Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home?",
+    excerpt: "Choosing a hot water system is a 10-year decision. Compare gas, electric, and heat pump systems for Sydney homes — running costs, install costs, and reliability.",
+    date: "20 May 2026",
+    category: "Hot Water",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
+    slug: "tree-roots-in-drains",
+    title: "Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It)",
+    excerpt: "If your drain keeps blocking every few months, tree roots are almost always the culprit. Here's how they get in, and the three real fixes — from temporary to permanent.",
+    date: "20 May 2026",
+    category: "Blocked Drains",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
+    slug: "water-pressure-too-high-or-too-low",
+    title: "Water Pressure Too High or Too Low? How to Diagnose It Yourself",
+    excerpt: "Bad water pressure isn't just annoying — it can damage appliances or signal a hidden leak. Here's how to test your own pressure in 5 minutes and know when it's serious.",
+    date: "20 May 2026",
+    category: "Plumbing Advice",
+    readTime: "6 min read",
+    published: true,
+  },
 ];
 
 export default function BlogPage() {
