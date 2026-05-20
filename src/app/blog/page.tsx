@@ -107,6 +107,33 @@ const posts = [
     readTime: "6 min read",
     published: true,
   },
+  {
+    slug: "burst-pipe-first-5-minutes",
+    title: "Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives",
+    excerpt: "A burst pipe can dump hundreds of litres into your home in minutes. Here is exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives.",
+    date: "20 May 2026",
+    category: "Emergency Plumbing",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
+    slug: "how-to-read-your-sydney-water-bill",
+    title: "How to Read Your Sydney Water Bill (and Spot a Hidden Leak)",
+    excerpt: "Your Sydney Water bill tells a story most people miss. Here is how to read it properly and how to spot a hidden leak that could be quietly draining hundreds of litres a day.",
+    date: "20 May 2026",
+    category: "Plumbing Advice",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
+    slug: "bathroom-renovation-plumbing-checklist",
+    title: "Bathroom Renovation Plumbing Checklist for Sydney Homes",
+    excerpt: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly. Get it wrong and you will pay for it twice. Here is the checklist every Sydney homeowner needs.",
+    date: "20 May 2026",
+    category: "Bathroom Renovations",
+    readTime: "7 min read",
+    published: true,
+  },
 ];
 
 export default function BlogPage() {
