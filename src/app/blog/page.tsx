@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "winter-plumbing-checklist-sydney",
+    title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home for Cold Weather",
+    excerpt: "Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here's a simple checklist to prepare your home before the cold hits.",
+    date: "3 June 2026",
+    category: "Seasonal",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
+    slug: "why-hot-water-struggles-in-winter",
+    title: "Why Your Hot Water Struggles in Winter (and How to Fix It)",
+    excerpt: "Lukewarm showers, water that runs out fast, or no hot water at all? Here's why hot water systems struggle every Sydney winter — and what to do before yours fails.",
+    date: "3 June 2026",
+    category: "Hot Water",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
     slug: "why-is-my-drain-blocked",
     title: "Why Is My Drain Blocked? The Most Common Causes in Australian Homes",
     excerpt: "A blocked drain is almost always caused by one of five things. Learn what's causing yours — and when to call a plumber.",

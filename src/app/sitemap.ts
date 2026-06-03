@@ -36,6 +36,8 @@ const locationSlugs = [
 ];
 
 const blogSlugs = [
+  'winter-plumbing-checklist-sydney',
+  'why-hot-water-struggles-in-winter',
   'why-is-my-drain-blocked',
   'gas-leak-or-not',
   'how-much-does-a-leaking-tap-cost',
