@@ -4,14 +4,14 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const STORAGE_KEY = "mrclog_promo_dismissed";
-const OFFER_HREF = "/offers/winter-hot-water-check";
+const STORAGE_KEY = "mrclog_promo_dismissed_hhc";
+const OFFER_HREF = "/offers/household-plumbing-health-check";
 
 export default function PromoBanner() {
   const pathname = usePathname();
 
   // Don't show the banner on the offer page itself.
-  const onOfferPage = pathname?.startsWith("/offers/winter-hot-water-check");
+  const onOfferPage = pathname?.startsWith("/offers/household-plumbing-health-check");
 
   useEffect(() => {
     const root = document.documentElement;
@@ -52,16 +52,15 @@ export default function PromoBanner() {
             href={OFFER_HREF}
             className="group flex items-center gap-2 text-xs sm:text-sm font-medium no-underline text-white min-w-0"
           >
-            <span aria-hidden="true">❄️</span>
+            <span aria-hidden="true">🏠</span>
             <span className="truncate">
-              <strong className="font-bold">Winter Special:</strong>{" "}
-              $49 Hot Water Health Check
+              <strong className="font-bold">Household Plumbing Health Check</strong>
               <span className="hidden sm:inline">
-                {" "}— fully credited to any repair
+                {" "}— 10-point inspection, $149.99 incl GST
               </span>
             </span>
             <span className="font-bold whitespace-nowrap underline underline-offset-2 group-hover:no-underline">
-              Claim&nbsp;→
+              Book&nbsp;→
             </span>
           </Link>
         </div>

@@ -83,7 +83,7 @@ export default function RootLayout({
       <script
         dangerouslySetInnerHTML={{
           __html:
-            "(function(){try{if(window.location.pathname.indexOf('/offers/winter-hot-water-check')!==0&&localStorage.getItem('mrclog_promo_dismissed')!=='1'){document.documentElement.classList.add('has-promo')}}catch(e){}})()",
+            "(function(){try{if(window.location.pathname.indexOf('/offers/household-plumbing-health-check')!==0&&localStorage.getItem('mrclog_promo_dismissed_hhc')!=='1'){document.documentElement.classList.add('has-promo')}}catch(e){}})()",
         }}
       />
       <PromoBanner />
