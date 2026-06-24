@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/offers/household-plumbing-health-check" },
   title: "Household Plumbing Health Check $149.99 | Mr. Clog Plumbing Sydney",
   description:
-    "Mr. Clog's 9-point Household Plumbing Health Check — a whole-home inspection by a licensed Sydney plumber for $149.99 incl GST. Catch small problems before they become big bills. Call (02) 9139 8945.",
+    "Mr. Clog's 10-point Household Plumbing Health Check — a whole-home inspection by a licensed Sydney plumber for $149.99 incl GST. Catch small problems before they become big bills. Call (02) 9139 8945.",
 };
 
-// The 9-point inspection — displayed as a tick-off checklist.
+// The 10-point inspection — displayed as a tick-off checklist.
 const checklist = [
   "Visible & hidden leak inspection — under sinks, vanities & exposed pipework",
   "All taps & mixers checked for drips and worn washers",
@@ -23,6 +23,7 @@ const checklist = [
   "Drains & gullies checked for free flow and early blockage signs",
   "Visible gas appliance & gas line safety check",
   "Main shut-off & isolation valves checked",
+  "Main water meter checked",
 ];
 
 const steps = [
@@ -34,7 +35,7 @@ const steps = [
 const faqs = [
   {
     q: "What does the $149.99 cover?",
-    a: "A complete 9-point inspection of your home's plumbing by a licensed plumber, plus a written health report on its condition and any risks. It's $149.99 incl GST, with no call-out fee on top.",
+    a: "A complete 10-point inspection of your home's plumbing by a licensed plumber, plus a written health report on its condition and any risks. It's $149.99 incl GST, with no call-out fee on top.",
   },
   {
     q: "How long does it take?",
@@ -56,7 +57,7 @@ export default function HouseholdHealthCheckOfferPage() {
     "@type": "Offer",
     name: "Household Plumbing Health Check",
     description:
-      "A 9-point whole-home plumbing inspection by a licensed Sydney plumber, with a written report.",
+      "A 10-point whole-home plumbing inspection by a licensed Sydney plumber, with a written report.",
     price: "149.99",
     priceCurrency: "AUD",
     availability: "https://schema.org/InStock",
@@ -98,7 +99,7 @@ export default function HouseholdHealthCheckOfferPage() {
                 className="inline-flex items-center gap-2 mb-5 px-4 py-2 rounded-full text-sm font-semibold"
                 style={{ background: "rgba(26,159,255,0.18)", border: "1px solid rgba(26,159,255,0.4)", color: "#BFE4FF" }}
               >
-                🏠 9-Point Whole-Home Inspection
+                🏠 10-Point Whole-Home Inspection
               </div>
               <h1
                 className="font-logo font-extrabold text-white mb-4"
@@ -132,7 +133,7 @@ export default function HouseholdHealthCheckOfferPage() {
                   {[1, 2, 3, 4, 5].map((i) => <StarIcon key={i} size={16} />)}
                   <span className="ml-1 text-xs text-gray-500">5.0 · 18 Google reviews</span>
                 </div>
-                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">9-Point Health Check</p>
+                <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">10-Point Health Check</p>
                 <div className="flex items-baseline gap-2 mb-1">
                   <span className="font-logo font-extrabold text-5xl" style={{ color: "var(--color-dark)" }}>$149.99</span>
                 </div>
@@ -145,7 +146,7 @@ export default function HouseholdHealthCheckOfferPage() {
                     </li>
                   ))}
                   <li className="text-sm font-semibold pl-6" style={{ color: "var(--color-brand-blue)" }}>
-                    + 5 more checks ↓
+                    + 6 more checks ↓
                   </li>
                 </ul>
                 <a href="#book" className="btn-primary w-full py-3.5 text-base font-bold">
@@ -164,7 +165,7 @@ export default function HouseholdHealthCheckOfferPage() {
             What We Check
           </p>
           <h2 className="font-logo font-extrabold text-3xl md:text-4xl mb-3" style={{ color: "var(--color-dark)" }}>
-            Your 9-point plumbing checklist
+            Your 10-point plumbing checklist
           </h2>
           <p className="text-base leading-relaxed" style={{ color: "var(--color-grey-600)" }}>
             Every check below is worked through on-site and ticked off in your written report — a complete picture of your home&rsquo;s plumbing health.
@@ -175,7 +176,7 @@ export default function HouseholdHealthCheckOfferPage() {
           <div className="flex items-center justify-between px-6 py-4" style={{ background: "var(--color-dark)" }}>
             <span className="font-logo font-bold text-white">Household Plumbing Health Check</span>
             <span className="text-xs font-semibold px-3 py-1 rounded-full text-white" style={{ background: "var(--color-brand-blue)" }}>
-              9 checks
+              10 checks
             </span>
           </div>
           <ul className="divide-y divide-gray-100">
@@ -252,7 +253,7 @@ export default function HouseholdHealthCheckOfferPage() {
             <div className="p-6 rounded-2xl" style={{ background: "var(--color-brand-blue-light)" }}>
               <ul className="space-y-2">
                 {[
-                  "$149.99 incl GST, all 9 checks included",
+                  "$149.99 incl GST, all 10 checks included",
                   "$0 call-out fee, any time",
                   "NSW Fair Trading licensed & fully insured",
                   "5-star rated across Sydney",
@@ -359,7 +360,7 @@ export default function HouseholdHealthCheckOfferPage() {
             Know your home is in good hands
           </h2>
           <p className="font-display text-lg mb-8 max-w-2xl mx-auto" style={{ color: "rgba(255,255,255,0.8)" }}>
-            Catch the small stuff before it becomes a big bill. Book your 9-point Household Plumbing Health Check today.
+            Catch the small stuff before it becomes a big bill. Book your 10-point Household Plumbing Health Check today.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href={PHONE_HREF} className="btn-primary text-base px-8 py-4 inline-flex items-center justify-center gap-2">
