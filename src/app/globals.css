@@ -197,3 +197,22 @@
     text-wrap: balance;
   }
 }
+
+/* ── PROMO BANNER ──
+   Hidden by default. Shown only when <html> has the `has-promo` class
+   (added synchronously by an inline script in layout.tsx, and removed
+   when the user dismisses the banner). When shown, the page content and
+   the fixed header are pushed down by the banner's height so nothing is
+   covered. */
+.promo-banner {
+  display: none;
+}
+html.has-promo .promo-banner {
+  display: block;
+}
+html.has-promo body {
+  padding-top: 2.5rem; /* 40px — matches banner height (h-10) */
+}
+html.has-promo header {
+  top: 2.5rem;
+}

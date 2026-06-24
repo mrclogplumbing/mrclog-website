@@ -3,6 +3,7 @@ import { Inter, Sora, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PromoBanner from "@/components/PromoBanner";
 
 const PHONE_HREF = "tel:+61291398945";
 const PHONE = "(02) 9139 8945";
@@ -78,6 +79,14 @@ export default function RootLayout({
   return (
     <html lang="en-AU" className={`${inter.variable} ${sora.variable} ${jakartaSans.variable}`}>
       <body className="font-body antialiased">
+      {/* Adds the promo offset class before paint to avoid layout shift / flash */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html:
+            "(function(){try{if(window.location.pathname.indexOf('/offers/winter-hot-water-check')!==0&&localStorage.getItem('mrclog_promo_dismissed')!=='1'){document.documentElement.classList.add('has-promo')}}catch(e){}})()",
+        }}
+      />
+      <PromoBanner />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
