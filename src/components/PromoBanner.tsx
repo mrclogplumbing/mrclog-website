@@ -56,7 +56,7 @@ export default function PromoBanner() {
             <span className="truncate">
               <strong className="font-bold">Household Plumbing Health Check</strong>
               <span className="hidden sm:inline">
-                {" "}— 10-point inspection, $149.99 incl GST
+                {" "}— 9-point inspection, $149.99 incl GST
               </span>
             </span>
             <span className="font-bold whitespace-nowrap underline underline-offset-2 group-hover:no-underline">
