@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PromoBanner from "@/components/PromoBanner";
+import { featuredOffer } from "@/lib/offers";
 
 const PHONE_HREF = "tel:+61291398945";
 const PHONE = "(02) 9139 8945";
@@ -80,12 +81,13 @@ export default function RootLayout({
     <html lang="en-AU" className={`${inter.variable} ${sora.variable} ${jakartaSans.variable}`}>
       <body className="font-body antialiased">
       {/* Adds the promo offset class before paint to avoid layout shift / flash */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html:
-            "(function(){try{if(window.location.pathname.indexOf('/offers/household-plumbing-health-check')!==0&&localStorage.getItem('mrclog_promo_dismissed_hhc')!=='1'){document.documentElement.classList.add('has-promo')}}catch(e){}})()",
-        }}
-      />
+      {featuredOffer && (
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var p='/offers/${featuredOffer.slug}';if(window.location.pathname.indexOf(p)!==0&&localStorage.getItem('mrclog_promo_dismissed_${featuredOffer.slug}')!=='1'){document.documentElement.classList.add('has-promo')}}catch(e){}})()`,
+          }}
+        />
+      )}
       <PromoBanner />
       <script
         type="application/ld+json"

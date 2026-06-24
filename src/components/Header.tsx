@@ -188,6 +188,12 @@ export default function Header() {
             </div>
 
             <Link
+              href="/offers"
+              className="px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50 transition-colors duration-150"
+            >
+              Offers
+            </Link>
+            <Link
               href="/about"
               className="px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:text-brand-blue hover:bg-blue-50 transition-colors duration-150"
             >
@@ -304,6 +310,9 @@ export default function Header() {
             </div>
           )}
 
+          <Link href="/offers" className="block px-3 py-3 text-sm font-medium text-gray-800 hover:bg-blue-50 rounded-lg">
+            Offers
+          </Link>
           <Link href="/about" className="block px-3 py-3 text-sm font-medium text-gray-800 hover:bg-blue-50 rounded-lg">
             About
           </Link>

@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { activeOffers } from '@/lib/offers';
 
 const BASE_URL = 'https://www.mrclog.com.au';
 
@@ -62,8 +63,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/contact`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/blog`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: `${BASE_URL}/reviews`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: `${BASE_URL}/offers/household-plumbing-health-check`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: `${BASE_URL}/offers`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ];
+
+  const offerPages = activeOffers.map((offer) => ({
+    url: `${BASE_URL}/offers/${offer.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
 
   const servicePages = servicesSlugs.map((slug) => ({
     url: `${BASE_URL}/services/${slug}`,
@@ -86,5 +94,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...locationPages, ...blogPages];
+  return [...staticPages, ...offerPages, ...servicePages, ...locationPages, ...blogPages];
 }

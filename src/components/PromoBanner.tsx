@@ -3,19 +3,20 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { featuredOffer } from "@/lib/offers";
 
-const STORAGE_KEY = "mrclog_promo_dismissed_hhc";
-const OFFER_HREF = "/offers/household-plumbing-health-check";
+const OFFER_HREF = featuredOffer ? `/offers/${featuredOffer.slug}` : "";
+const STORAGE_KEY = featuredOffer ? `mrclog_promo_dismissed_${featuredOffer.slug}` : "";
 
 export default function PromoBanner() {
   const pathname = usePathname();
 
-  // Don't show the banner on the offer page itself.
-  const onOfferPage = pathname?.startsWith("/offers/household-plumbing-health-check");
+  // Don't show the banner on the featured offer's own page.
+  const onOfferPage = !!OFFER_HREF && pathname?.startsWith(OFFER_HREF);
 
   useEffect(() => {
     const root = document.documentElement;
-    if (onOfferPage) {
+    if (!featuredOffer || onOfferPage) {
       root.classList.remove("has-promo");
       return;
     }
@@ -37,7 +38,7 @@ export default function PromoBanner() {
     document.documentElement.classList.remove("has-promo");
   }
 
-  if (onOfferPage) return null;
+  if (!featuredOffer || onOfferPage) return null;
 
   return (
     <div
@@ -54,9 +55,9 @@ export default function PromoBanner() {
           >
             <span aria-hidden="true">🏠</span>
             <span className="truncate">
-              <strong className="font-bold">Household Plumbing Health Check</strong>
+              <strong className="font-bold">{featuredOffer.label}</strong>
               <span className="hidden sm:inline">
-                {" "}— 9-point inspection, $149.99 incl GST
+                {" "}— {featuredOffer.bannerText}
               </span>
             </span>
             <span className="font-bold whitespace-nowrap underline underline-offset-2 group-hover:no-underline">
