@@ -32,6 +32,18 @@ export const offers: Offer[] = [
     featured: true,
     active: true,
   },
+  {
+    slug: "kitchen-mixer-upgrade",
+    label: "Kitchen Mixer Upgrade",
+    tagline:
+      "Tired tap? Swap it for a premium chrome gooseneck mixer — supplied and installed by a licensed plumber, usually in under an hour.",
+    price: "$399",
+    priceNote: "incl GST · supplied & installed",
+    badge: "Supplied & Installed",
+    bannerText: "premium chrome mixer, supplied & installed $399",
+    featured: false,
+    active: true,
+  },
 ];
 
 /** Offers currently live — used by the hub, sitemap and banner. */
