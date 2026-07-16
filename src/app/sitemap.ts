@@ -37,6 +37,9 @@ const locationSlugs = [
 ];
 
 const blogSlugs = [
+  'why-your-toilet-keeps-running',
+  'how-to-detect-a-hidden-water-leak',
+  'blocked-stormwater-drains',
   'winter-plumbing-checklist-sydney',
   'why-hot-water-struggles-in-winter',
   'why-is-my-drain-blocked',
