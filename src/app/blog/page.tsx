@@ -18,6 +18,33 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "why-your-toilet-keeps-running",
+    title: "Why Your Toilet Keeps Running (and How to Fix It)",
+    excerpt: "That constant hiss in the bathroom is wasting thousands of litres a month. Here are the three usual culprits inside the cistern — and how to fix them before your water bill spikes.",
+    date: "16 July 2026",
+    category: "Taps & Toilets",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
+    slug: "how-to-detect-a-hidden-water-leak",
+    title: "How to Detect a Hidden Water Leak Before It Costs You Thousands",
+    excerpt: "A hidden leak can rot timber and ruin ceilings before you ever see a drop. Here's how to catch one early using the water meter test and six warning signs.",
+    date: "16 July 2026",
+    category: "Leak Detection",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
+    slug: "blocked-stormwater-drains",
+    title: "Blocked Stormwater Drains: Why Your Yard Floods When It Rains",
+    excerpt: "If your yard turns into a lake every time it rains hard, your stormwater drains are blocked. Here's what causes it, the warning signs, and how to fix it before water reaches your home.",
+    date: "16 July 2026",
+    category: "Stormwater",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
     slug: "winter-plumbing-checklist-sydney",
     title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home for Cold Weather",
     excerpt: "Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here's a simple checklist to prepare your home before the cold hits.",
