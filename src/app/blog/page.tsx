@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     url: "https://www.mrclog.com.au/blog",
     siteName: "Mr. Clog Plumbing",
     locale: "en_AU",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
   },
   alternates: { canonical: "https://www.mrclog.com.au/blog" },
 };

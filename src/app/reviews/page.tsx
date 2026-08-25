@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "Read what Sydney customers say about Mr. Clog Plumbing on Google. 5.0 stars across 18+ reviews.",
     url: "https://www.mrclog.com.au/reviews",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
   },
 };
 

@@ -58,13 +58,13 @@ export const metadata: Metadata = {
     title: "Mr. Clog | Sydney's #1 Plumber | 24/7 Emergency",
     description:
       "Sydney's trusted plumbers. 5-star rated, available 24/7, $0 call-out fee.",
-    images: [{ url: "/logo-light.webp", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Mr. Clog | Sydney's #1 Plumber",
     description: "Sydney's trusted plumbers. 5-star rated, 24/7, $0 call-out fee.",
-    images: ["/logo-light.webp"],
+    images: ["/og-default.png"],
   },
   robots: {
     index: true,
@@ -111,6 +111,16 @@ export default function RootLayout({
             },
             "openingHours": "Mo-Su 00:00-23:59",
             "priceRange": "$$",
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "NSW Fair Trading Plumbing Licence",
+              "identifier": "347993C"
+            },
+            "identifier": {
+              "@type": "PropertyValue",
+              "name": "ABN",
+              "value": "91677640596"
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "5.0",
@@ -118,7 +128,7 @@ export default function RootLayout({
               "bestRating": "5"
             },
             "description": "Sydney\'s trusted local plumbers. 5-star rated, available 24/7, $0 call-out fee. Blocked drains, emergency plumbing, hot water systems and more.",
-            "image": "https://www.mrclog.com.au/favicon.svg",
+            "image": "https://www.mrclog.com.au/og-default.png",
             "sameAs": []
           })
         }}
