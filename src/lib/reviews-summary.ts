@@ -14,7 +14,7 @@
  */
 export const reviewSummary = {
   /** Average star rating, as shown on the Google Business Profile. */
-  ratingValue: "5.0",
+  ratingValue: "4.9",
   /** Total number of Google reviews. */
   reviewCount: 29,
   /**
