@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
-const REVIEW_URL = "https://g.page/r/mrclog/review";
-const GOOGLE_REVIEWS_URL = "https://g.page/r/mrclog";
+const REVIEW_URL = reviewSummary.reviewUrl;
+const GOOGLE_REVIEWS_URL = reviewSummary.profileUrl;
 
 export type Review = {
   name: string;
@@ -253,6 +253,15 @@ export default function ReviewsPage() {
               </svg>
               Verified on Google Business
             </div>
+            <a
+              href={reviewSummary.profileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold mt-3 hover:underline"
+              style={{ color: "var(--color-brand-blue)" }}
+            >
+              Read them on Google &rarr;
+            </a>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-3">
