@@ -56,6 +56,13 @@ implementation. Read it before writing. Every post has, in order:
 1. `metadata` export — title suffixed `| Mr. Clog Blog`, description,
    `openGraph` (type `article`, url, siteName, publishedTime,
    modifiedTime, authors, locale `en_AU`), and `alternates.canonical`.
+   The `openGraph` block **must** include its own `images` entry:
+   ```ts
+   images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
+   ```
+   Next.js merges metadata shallowly, so a page that declares `openGraph`
+   without `images` silently drops the site-wide share image and renders
+   no `og:image` tag at all. Copy the line from any existing post.
 2. `const PHONE` / `const PHONE_HREF` constants.
 3. `tocItems` array — one entry per `<h2>`, ending with `{ id: "faq", title: "FAQs" }`.
 4. Default export named `Blog<PascalCaseSlug>Page`.

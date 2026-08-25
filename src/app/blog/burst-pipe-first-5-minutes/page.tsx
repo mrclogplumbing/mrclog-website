@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     modifiedTime: "2026-05-20",
     authors: ["Mr. Clog Plumbing"],
     locale: "en_AU",
+    images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
   },
   alternates: { canonical: "https://www.mrclog.com.au/blog/burst-pipe-first-5-minutes" },
 };
