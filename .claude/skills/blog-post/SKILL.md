@@ -164,19 +164,40 @@ number this prints. Do not round up to make a post look meatier — a
 1,000-word post is a 5 min read. If the word count comes in under 900,
 the post is too thin: add substance rather than relabelling it.
 
-## Step 7 — Branch, commit, PR
+## Step 7 — Commit and publish
 
-Never commit blog posts directly to `main`. Always:
+Posts publish automatically: `main` is the production branch and Vercel
+deploys every push to it. That makes Step 6 the only gate between a draft
+and the live site, so it is not optional.
+
+**Only commit to `main` if `npm run lint` and `npm run build` both
+passed.** If either failed, or the self-check found a dead link, a TOC
+mismatch, or a post under 900 words, do not push to `main`. Push the work
+to a branch instead and report the problem:
 
 ```bash
-git checkout -b blog/<short-description>-<YYYY-MM-DD>
+git checkout -b blog/needs-review-<YYYY-MM-DD>
 git add -A
-git commit -m "Add 2 blog posts: <topic one>, <topic two>"
-git push -u origin blog/<short-description>-<YYYY-MM-DD>
+git commit -m "Draft blog posts needing review: <reason>"
+git push -u origin blog/needs-review-<YYYY-MM-DD>
 ```
 
-Then open a pull request against `main` with the GitHub MCP tools
-(`mcp__github__create_pull_request`). The PR body should list each post
-with its title, slug, target keyword, and word count, and confirm that
-lint and build passed. Merging the PR is the owner's decision — publishing
-happens automatically on merge via Vercel.
+When everything is green, publish:
+
+```bash
+git add -A
+git commit -m "Add 2 blog posts: <topic one>, <topic two>"
+git pull --rebase origin main
+git push origin main
+```
+
+Pull with `--rebase` before pushing — the owner may have changed the site
+since this session started, and a stale push will be rejected. If the
+rebase produces conflicts you cannot resolve cleanly, stop and fall back
+to the branch-and-report path above rather than forcing anything.
+
+After pushing, state plainly what went live: each post's title, slug, and
+live URL (`https://www.mrclog.com.au/blog/<slug>`). The owner reads that
+summary in a notification instead of reviewing a pull request, so it is
+the only record of what was published — make it accurate. Never overstate
+it: if only one post made it, say one.
