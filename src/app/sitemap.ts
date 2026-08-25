@@ -37,6 +37,8 @@ const locationSlugs = [
 ];
 
 const blogSlugs = [
+  'pipe-relining-vs-pipe-replacement',
+  'gutters-downpipes-storm-season-checklist',
   'why-your-toilet-keeps-running',
   'how-to-detect-a-hidden-water-leak',
   'blocked-stormwater-drains',

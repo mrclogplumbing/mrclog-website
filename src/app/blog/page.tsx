@@ -18,6 +18,24 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "pipe-relining-vs-pipe-replacement",
+    title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need?",
+    excerpt: "Relining rebuilds a damaged pipe from the inside with no digging. Replacement means excavation. Here's how to tell which one your drain actually needs — and what to ask before you commit.",
+    date: "25 August 2026",
+    category: "Pipe Relining",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
+    slug: "gutters-downpipes-storm-season-checklist",
+    title: "Gutters and Downpipes: The Storm Season Checklist for Sydney Homes",
+    excerpt: "Most storm damage inside a home starts with a blocked gutter, not a hole in the roof. Here's how to check your gutters, downpipes, and flashings before the first big downpour.",
+    date: "25 August 2026",
+    category: "Roof Plumbing",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
     slug: "why-your-toilet-keeps-running",
     title: "Why Your Toilet Keeps Running (and How to Fix It)",
     excerpt: "That constant hiss in the bathroom is wasting thousands of litres a month. Here are the three usual culprits inside the cistern — and how to fix them before your water bill spikes.",

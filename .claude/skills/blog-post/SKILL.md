@@ -17,8 +17,10 @@ This is a Next.js 14 App Router site. Every blog post is a hand-built
 - Locale: `en_AU` — **Australian English and Australian context throughout**
   ("litres", "metres", "colour", "tap" not "faucet", "cistern" not "tank",
   Sydney Water, NSW Fair Trading, licensed plumber)
-- Standing offers to reference in CTAs: **$0 call-out fee**, **upfront
-  fixed pricing before work starts**, 24/7 emergency service.
+- Standing offers to reference in CTAs: **zero call-out fee**, **upfront
+  fixed pricing before work starts**, 24/7 emergency service. Existing
+  posts render the first one as a dollar-sign-zero call-out — copy their
+  exact wording from the reference post rather than rephrasing it.
 - Never state a specific dollar price for a job, never promise an arrival
   time, never claim an award, certification, or statistic you cannot
   support. Ranges and "typically" are fine; invented precision is not.
@@ -133,6 +135,34 @@ npm run build
 Fix anything that fails. The most common breakages are unescaped
 apostrophes in JSX, a `<Link>` to a route that does not exist, and a
 `tocItems` id with no matching `<h2 id="...">`.
+
+A green build does **not** prove the post is correct — Next.js will
+happily build a dead internal link or a broken TOC. Run this self-check on
+each new post as well, and fix anything it reports:
+
+```bash
+f="src/app/blog/<slug>/page.tsx"
+
+# TOC ids must match the h2 ids exactly
+diff <(grep -o 'id: "[^"]*"' "$f" | sed 's/id: //' | tr -d '"' | sort) \
+     <(grep -o '<h2 id="[^"]*"' "$f" | sed 's/<h2 id=//' | tr -d '"' | sort) \
+     && echo "TOC OK"
+
+# every internal link must resolve to a real route
+for href in $(grep -o 'href="/[^"]*"' "$f" | sed 's/href=//' | tr -d '"' | sort -u); do
+  if [ -f "src/app$href/page.tsx" ] || grep -q "\"${href##*/}\"" src/lib/services.ts; then
+    echo "  OK   $href"; else echo "  DEAD $href"; fi
+done
+
+# read time must be honest, not guessed
+w=$(grep -oE '<(p|h2|h3)[^>]*>.*</(p|h2|h3)>' "$f" | sed 's/<[^>]*>//g' | wc -w)
+echo "$w words -> $(( (w + 100) / 200 )) min read"
+```
+
+Set the `readTime` in **both** the hero and the blog index entry to the
+number this prints. Do not round up to make a post look meatier — a
+1,000-word post is a 5 min read. If the word count comes in under 900,
+the post is too thin: add substance rather than relabelling it.
 
 ## Step 7 — Branch, commit, PR
 
