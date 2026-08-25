@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ReviewsList from "./ReviewsList";
+import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
 
 export const metadata: Metadata = {
   title: "Customer Reviews | Mr. Clog Plumbing Sydney",
@@ -206,8 +207,8 @@ export default function ReviewsPage() {
     areaServed: { "@type": "City", name: "Sydney" },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "18",
+      ratingValue: reviewSummary.ratingValue,
+      reviewCount: String(reviewSummary.reviewCount),
       bestRating: "5",
     },
     review: schemaReviews,
@@ -241,10 +242,10 @@ export default function ReviewsPage() {
           </p>
 
           <div className="inline-flex flex-col items-center bg-white border border-gray-200 rounded-2xl px-9 py-6 shadow-md mb-6">
-            <div className="text-5xl font-extrabold text-gray-900 leading-none">5.0</div>
+            <div className="text-5xl font-extrabold text-gray-900 leading-none">{reviewSummary.ratingValue}</div>
             <div className="text-yellow-500 text-2xl tracking-widest mt-2 mb-1">★★★★★</div>
             <div className="text-sm text-gray-500">
-              Based on <strong className="text-gray-800">18 Google reviews</strong>
+              Based on <strong className="text-gray-800">{reviewCountLabel}</strong>
             </div>
             <div className="flex items-center gap-2 mt-3 text-xs text-gray-500">
               <svg viewBox="0 0 24 24" width="16" height="16" fill="#4285F4" aria-hidden="true">

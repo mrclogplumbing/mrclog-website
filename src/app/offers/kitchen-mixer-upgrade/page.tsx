@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircleIcon, PhoneCallIcon, StarIcon } from "@/components/ui/ServiceIcons";
+import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
@@ -127,7 +128,7 @@ export default function KitchenMixerUpgradeOfferPage() {
               <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-sm ml-auto">
                 <div className="flex items-center gap-1 mb-4">
                   {[1, 2, 3, 4, 5].map((i) => <StarIcon key={i} size={16} />)}
-                  <span className="ml-1 text-xs text-gray-500">5.0 · 18 Google reviews</span>
+                  <span className="ml-1 text-xs text-gray-500">{reviewSummary.ratingValue} · {reviewCountLabel}</span>
                 </div>
                 <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Supplied &amp; Installed</p>
                 <div className="flex items-baseline gap-2 mb-1">

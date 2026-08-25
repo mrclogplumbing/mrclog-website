@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { reviewSummary } from "@/lib/reviews-summary";
 
 export default function AboutTeaser() {
   return (
@@ -35,7 +36,7 @@ export default function AboutTeaser() {
           {/* Stats panel */}
           <div className="grid grid-cols-2 gap-4">
             {[
-              { stat: "5.0★", label: "Google Rating", sub: "18 reviews" },
+              { stat: `${reviewSummary.ratingValue}★`, label: "Google Rating", sub: `${reviewSummary.reviewCount} reviews` },
               { stat: "24/7", label: "Availability", sub: "365 days a year" },
               { stat: "$0", label: "Call-Out Fee", sub: "No surprise charges" },
               { stat: "30min", label: "Avg. Response", sub: "Sydney-wide" },

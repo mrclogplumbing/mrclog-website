@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PromoBanner from "@/components/PromoBanner";
 import { featuredOffer } from "@/lib/offers";
+import { reviewSummary } from "@/lib/reviews-summary";
 
 const PHONE_HREF = "tel:+61291398945";
 const PHONE = "(02) 9139 8945";
@@ -123,8 +124,8 @@ export default function RootLayout({
             },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5.0",
-              "reviewCount": "18",
+              "ratingValue": reviewSummary.ratingValue,
+              "reviewCount": String(reviewSummary.reviewCount),
               "bestRating": "5"
             },
             "description": "Sydney\'s trusted local plumbers. 5-star rated, available 24/7, $0 call-out fee. Blocked drains, emergency plumbing, hot water systems and more.",

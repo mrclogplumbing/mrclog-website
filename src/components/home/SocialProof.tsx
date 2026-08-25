@@ -1,4 +1,5 @@
 import { StarIcon } from "@/components/ui/ServiceIcons";
+import { reviewCountLabel } from "@/lib/reviews-summary";
 
 const reviews = [
   {
@@ -52,7 +53,7 @@ export default function SocialProof() {
             {[1,2,3,4,5].map(i => <StarIcon key={i} size={20} />)}
           </div>
           <span className="font-logo font-bold text-lg" style={{ color: "var(--color-black)" }}>5.0</span>
-          <span style={{ color: "var(--color-grey-600)" }} className="text-sm">based on 18 Google reviews</span>
+          <span style={{ color: "var(--color-grey-600)" }} className="text-sm">based on {reviewCountLabel}</span>
         </div>
 
         {/* Review cards */}
@@ -90,7 +91,7 @@ export default function SocialProof() {
               {[1,2,3,4,5].map(i => <StarIcon key={i} size={20} />)}
             </div>
             <p className="font-logo font-bold text-3xl mb-0.5" style={{ color: "var(--color-dark)" }}>5.0</p>
-            <p className="text-sm text-gray-500 mb-5">Based on 18 Google reviews</p>
+            <p className="text-sm text-gray-500 mb-5">Based on {reviewCountLabel}</p>
             <a
               href="https://g.page/r/mrclog"
               target="_blank"
