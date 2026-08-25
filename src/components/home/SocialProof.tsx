@@ -1,5 +1,5 @@
 import { StarIcon } from "@/components/ui/ServiceIcons";
-import { reviewCountLabel } from "@/lib/reviews-summary";
+import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
 
 const reviews = [
   {
@@ -52,7 +52,7 @@ export default function SocialProof() {
           <div className="flex gap-0.5">
             {[1,2,3,4,5].map(i => <StarIcon key={i} size={20} />)}
           </div>
-          <span className="font-logo font-bold text-lg" style={{ color: "var(--color-black)" }}>5.0</span>
+          <span className="font-logo font-bold text-lg" style={{ color: "var(--color-black)" }}>{reviewSummary.ratingValue}</span>
           <span style={{ color: "var(--color-grey-600)" }} className="text-sm">based on {reviewCountLabel}</span>
         </div>
 
@@ -90,10 +90,10 @@ export default function SocialProof() {
             <div className="flex items-center justify-center gap-1 mb-2">
               {[1,2,3,4,5].map(i => <StarIcon key={i} size={20} />)}
             </div>
-            <p className="font-logo font-bold text-3xl mb-0.5" style={{ color: "var(--color-dark)" }}>5.0</p>
+            <p className="font-logo font-bold text-3xl mb-0.5" style={{ color: "var(--color-dark)" }}>{reviewSummary.ratingValue}</p>
             <p className="text-sm text-gray-500 mb-5">Based on {reviewCountLabel}</p>
             <a
-              href="https://g.page/r/mrclog"
+              href={reviewSummary.profileUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-display font-bold text-sm text-white shadow-sm hover:opacity-90 transition-opacity"

@@ -18,11 +18,17 @@ export const reviewSummary = {
   /** Total number of Google reviews. */
   reviewCount: 29,
   /**
-   * Public Google Business Profile URL, so visitors can verify the rating
-   * themselves. Set this to enable the "Read them on Google" links.
+   * Public Google Business Profile, so visitors can verify the rating
+   * themselves rather than taking the site's word for it.
    */
-  profileUrl: "",
-} as const;
+  profileUrl: "https://share.google/SiTBAAAuVbgFkgbHi",
+  /**
+   * Direct "write a review" link. Opens the star-rating box in one tap,
+   * which converts far better than sending someone to the profile to find
+   * the button. This is the link to put in post-job follow-up texts.
+   */
+  reviewUrl: "https://g.page/r/CVDiDNRCxg7ZEAE/review",
+};
 
 /** e.g. "29 Google reviews" — used in body copy. */
 export const reviewCountLabel = `${reviewSummary.reviewCount} Google reviews`;

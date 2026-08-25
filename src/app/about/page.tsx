@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PhoneCallIcon, CheckCircleIcon, StarIcon } from "@/components/ui/ServiceIcons";
+import { reviewSummary } from "@/lib/reviews-summary";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
@@ -41,7 +42,7 @@ const values = [
 
 const stats = [
   { value: "500+", label: "Jobs Completed" },
-  { value: "5.0", label: "Google Rating" },
+  { value: reviewSummary.ratingValue, label: "Google Rating" },
   { value: "24/7", label: "Always Available" },
   { value: "$0", label: "Call-Out Fee" },
 ];
