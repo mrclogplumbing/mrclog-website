@@ -40,7 +40,7 @@ export default async function ServicePage({
   const service = getService(slug);
   if (!service) notFound();
 
-  const { hero: heroPhoto, proof: proofPhoto } = photosForService(slug);
+  const { hero: heroPhoto, proof: proofPhotos = [] } = photosForService(slug);
 
   return (
     <>
@@ -127,24 +127,28 @@ export default async function ServicePage({
             <p className="text-gray-600 leading-relaxed text-base">
               {service.description}
             </p>
-            {proofPhoto && (
-              <figure className="mt-8">
-                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
-                  <Image
-                    src={proofPhoto.src}
-                    alt={proofPhoto.alt}
-                    fill
-                    sizes="(min-width: 768px) 45vw, 100vw"
-                    className="object-cover"
-                    style={{ objectPosition: proofPhoto.focus ?? "center" }}
-                  />
-                </div>
-                {proofPhoto.caption && (
-                  <figcaption className="text-sm text-gray-500 mt-3 leading-relaxed">
-                    {proofPhoto.caption}
-                  </figcaption>
-                )}
-              </figure>
+            {proofPhotos.length > 0 && (
+              <div className={`mt-8 grid gap-6 ${proofPhotos.length > 1 ? "sm:grid-cols-2" : ""}`}>
+                {proofPhotos.map((photo) => (
+                  <figure key={photo.src}>
+                    <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                      <Image
+                        src={photo.src}
+                        alt={photo.alt}
+                        fill
+                        sizes={proofPhotos.length > 1 ? "(min-width: 768px) 22vw, 50vw" : "(min-width: 768px) 45vw, 100vw"}
+                        className="object-cover"
+                        style={{ objectPosition: photo.focus ?? "center" }}
+                      />
+                    </div>
+                    {photo.caption && (
+                      <figcaption className="text-sm text-gray-500 mt-3 leading-relaxed">
+                        {photo.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                ))}
+              </div>
             )}
           </div>
           <div className="bg-blue-50 rounded-2xl p-8">
