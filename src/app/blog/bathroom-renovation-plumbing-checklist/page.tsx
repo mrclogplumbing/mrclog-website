@@ -56,7 +56,7 @@ export default function BlogBathroomRenoPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Bathroom Renovations</span>
-              <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 &middot; 7 min read</span>
+              <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 &middot; 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>Bathroom Renovation Plumbing Checklist</h1>
             <p className="font-display text-lg" style={{ color: "rgba(255,255,255,0.75)" }}>Everything Sydney homeowners need to plan and sequence the plumbing.</p>

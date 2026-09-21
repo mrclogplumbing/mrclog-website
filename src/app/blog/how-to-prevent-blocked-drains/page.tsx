@@ -33,6 +33,10 @@ const tocItems = [
   { id: "laundry", title: "Laundry" },
   { id: "outdoor", title: "Outdoor and Stormwater" },
   { id: "maintenance", title: "Regular Maintenance" },
+  { id: "real-causes", title: "What Actually Causes Most Blockages" },
+  { id: "makes-it-worse", title: "Products That Make It Worse" },
+  { id: "when-prevention-fails", title: "When Prevention Is Not the Answer" },
+  { id: "monthly-routine", title: "A Ten-Minute Monthly Routine" },
   { id: "faq", title: "FAQs" },
 ];
 
@@ -99,6 +103,63 @@ export default function BlogPreventBlockedDrainsPage() {
               <h2 id="maintenance" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Regular Maintenance</h2>
               <p>Pour a kettle of boiling water down kitchen and bathroom drains once a month to dissolve early grease and soap buildup before it sets.</p>
               <p>For older homes (or homes with large trees), book a CCTV drain inspection every 2–3 years to catch tree-root intrusion before it causes a full blockage.</p>
+
+              <h2 id="real-causes" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>What Actually Causes Most Blockages</h2>
+
+              <p>Prevention works better when you know what you are preventing. In Sydney homes, the overwhelming majority of blockages come down to four things.</p>
+
+              <p><strong>Fat and grease</strong> poured down the kitchen sink, which cools and hardens on the pipe wall and then catches everything that follows.</p>
+
+              <p><strong>Hair and soap</strong> in bathroom wastes, binding into a mat that water eventually cannot pass.</p>
+
+              <p><strong>Wipes and sanitary products</strong> in toilets, which do not break down the way paper does regardless of what the packet claims.</p>
+
+              <p><strong>Tree roots</strong> entering through cracked or perished joints in older drainage — the one cause no amount of careful use will prevent, covered in our guide on <Link href="/blog/tree-roots-in-drains" style={{ color: "var(--color-brand-blue)" }}>tree roots in drains</Link>.</p>
+
+              <p>The first three are entirely within your control. The fourth is a pipe condition problem, and knowing the difference tells you whether better habits will help.</p>
+
+
+              <h2 id="makes-it-worse" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Products That Make It Worse</h2>
+
+              <p>Some of the things marketed for drains actively shorten the life of your plumbing.</p>
+
+              <p><strong>Caustic drain cleaners</strong> generate heat and can soften or damage PVC and older pipework. They frequently fail to clear a real blockage, and they leave the drain hazardous for whoever opens it next — including a plumber, who should be told if you have used one.</p>
+
+              <p><strong>“Flushable” wipes</strong> are the single biggest change in blockage patterns over the last decade. They pass the toilet and then do not break down, catching on any irregularity downstream.</p>
+
+              <p><strong>In-sink food waste disposers</strong> reduce visible waste but send fine organic matter into a system that was not designed for it. If you have one, it makes careful fat disposal more important rather than less.</p>
+
+
+              <h2 id="when-prevention-fails" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>When Prevention Is Not the Answer</h2>
+
+              <p>If you are doing everything right and a drain still blocks on a cycle of months, the problem is the pipe rather than the use.</p>
+
+              <p>Repeat blockages in the same location, several fixtures draining slowly at once, gurgling when another fixture is used, or water rising in the shower when the washing machine empties all point to a shared line problem rather than anything happening at the plughole.</p>
+
+              <p>At that point the useful spend is a camera inspection rather than another clearing. Clearing treats the symptom; knowing whether the pipe is root-damaged, cracked, sagging or simply coated tells you what will actually stop it.</p>
+
+
+              <h2 id="monthly-routine" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>A Ten-Minute Monthly Routine</h2>
+
+
+              <p>Most of this is habit rather than work. A short routine once a month prevents the large majority of callouts.</p>
+
+
+              <p><strong>Flush the drains you use most</strong> with a kettle of hot — not boiling — water and a squirt of dish soap, poured slowly. Boiling water can damage PVC joints and older fittings, so keep it just off the boil.</p>
+
+
+              <p><strong>Pull and clean the shower and basin grates.</strong> Two minutes with an old toothbrush removes the hair and soap film before it becomes a mat.</p>
+
+
+              <p><strong>Run every tap you rarely use</strong>, including the spare bathroom and the laundry tub, and tip water down any floor waste. This keeps trap seals full and stops sewer gas getting in.</p>
+
+
+              <p><strong>Check the outside.</strong> Clear leaves from gully grates and stormwater inlets, particularly before storm season.</p>
+
+
+              <p>Do that monthly and the only blockages left are the ones caused by the pipe itself rather than by what goes into it.</p>
+
+
 
               <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
               <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>What are the early signs of a blocked drain?</h3>

@@ -32,6 +32,10 @@ const tocItems = [
   { id: "foaming", title: "Root Foaming" },
   { id: "relining", title: "Pipe Relining" },
   { id: "which-fix", title: "Which Should You Choose?" },
+  { id: "early-warning-signs", title: "The Warning Signs Before a Full Blockage" },
+  { id: "which-trees", title: "Which Trees Cause the Most Trouble" },
+  { id: "what-cctv-shows", title: "What a Camera Inspection Actually Shows You" },
+  { id: "after-the-repair", title: "Stopping Them Coming Back" },
   { id: "faq", title: "FAQs" },
 ];
 
@@ -90,6 +94,46 @@ export default function BlogTreeRootsInDrainsPage() {
 
               <h2 id="which-fix" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Which should you choose?</h2>
               <p>If you have cleared the same blockage more than twice, stop paying for repeat jetting and get a CCTV inspection. We will show you exactly where the roots are entering and what the line actually looks like — then you can make an informed call.</p>
+
+              <h2 id="early-warning-signs" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>The Warning Signs Before a Full Blockage</h2>
+
+              <p>Roots rarely block a drain overnight. The line narrows over months, and the house tells you well before it stops entirely.</p>
+
+              <p><strong>Gurgling after heavy use.</strong> Air being forced past a partial obstruction — usually heard at the lowest fixture when the washing machine or bath empties.</p>
+
+              <p><strong>Slow drainage in more than one fixture.</strong> One slow basin is a local problem. Two or more suggests something shared, further down the line.</p>
+
+              <p><strong>A smell with no obvious source.</strong> Waste sitting against an obstruction rots where it sits. Our guide on <Link href="/blog/why-does-my-drain-smell" style={{ color: "var(--color-brand-blue)" }}>why drains smell</Link> covers the other causes worth ruling out.</p>
+
+              <p><strong>Soggy ground or unusually green grass</strong> along the line of the drain. Roots go where the water is; if the grass above knows, so should you.</p>
+
+
+              <h2 id="which-trees" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Which Trees Cause the Most Trouble</h2>
+
+              <p>Any tree will send roots toward a leaking joint — they follow moisture, not malice. But some species are far more determined than others.</p>
+
+              <p>The worst offenders in Sydney yards are the fast-growing, water-hungry ones with aggressive surface root systems: willows, poplars, liquidambars, rubber trees, and several of the larger figs. Camphor laurels are a recurring problem across the older suburbs. Even a modest tree can reach a drain twenty metres away if the drain is leaking.</p>
+
+              <p>Worth knowing: the tree causing your blockage is not always yours. Roots cross boundaries freely, and a neighbour&rsquo;s tree reaching your drain is a common and awkward discovery. What matters legally is usually where the damaged pipe sits, not where the tree is planted.</p>
+
+
+              <h2 id="what-cctv-shows" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>What a Camera Inspection Actually Shows You</h2>
+
+              <p>A CCTV inspection is the difference between a diagnosis and a guess, and you should insist on seeing the footage rather than a summary of it.</p>
+
+              <p>It shows where the roots are entering — a specific joint, a crack, a collapsed section — and how far along the line that point is, so a repair can be targeted instead of exploratory. It also shows the condition of the pipe either side, which decides whether the line can be relined or whether a section genuinely needs replacing.</p>
+
+              <p>The other thing it does is settle arguments. Footage of the defect, dated and located, is useful with insurers, with neighbours, and with anyone quoting for the repair after you.</p>
+
+
+              <h2 id="after-the-repair" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Stopping Them Coming Back</h2>
+
+              <p>Roots return to the same drain for a simple reason: the entry point is still there. Cutting them out and doing nothing else is buying time, not fixing anything.</p>
+
+              <p>Sealing the line is what ends it. A cured liner presents roots with a jointless surface and nothing to exploit, which is why relining holds where cutting does not. If only one section is relined, the rest of the run still has joints, so it is worth knowing exactly which metres are covered.</p>
+
+              <p>Where relining is not justified yet, a foaming treatment slows regrowth for a few years. Treat that as managing the problem rather than solving it, and plan the permanent repair rather than being surprised by it.</p>
+
 
               <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
               <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>Will cutting down the tree fix the problem?</h3>

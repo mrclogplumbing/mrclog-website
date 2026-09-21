@@ -49,7 +49,7 @@ export const posts: BlogPost[] = [
     excerpt: "Most storm damage inside a home starts with a blocked gutter, not a hole in the roof. Here's how to check your gutters, downpipes, and flashings before the first big downpour.",
     date: "25 August 2026",
     category: "Roof Plumbing",
-    readTime: "5 min read",
+    readTime: "6 min read",
     published: true,
   },
   {
@@ -58,7 +58,7 @@ export const posts: BlogPost[] = [
     excerpt: "That constant hiss in the bathroom is wasting thousands of litres a month. Here are the three usual culprits inside the cistern — and how to fix them before your water bill spikes.",
     date: "16 July 2026",
     category: "Taps & Toilets",
-    readTime: "5 min read",
+    readTime: "4 min read",
     published: true,
   },
   {
@@ -67,7 +67,7 @@ export const posts: BlogPost[] = [
     excerpt: "A hidden leak can rot timber and ruin ceilings before you ever see a drop. Here's how to catch one early using the water meter test and six warning signs.",
     date: "16 July 2026",
     category: "Leak Detection",
-    readTime: "6 min read",
+    readTime: "4 min read",
     published: true,
   },
   {
@@ -76,7 +76,7 @@ export const posts: BlogPost[] = [
     excerpt: "If your yard turns into a lake every time it rains hard, your stormwater drains are blocked. Here's what causes it, the warning signs, and how to fix it before water reaches your home.",
     date: "16 July 2026",
     category: "Stormwater",
-    readTime: "6 min read",
+    readTime: "4 min read",
     published: true,
   },
   {
@@ -85,7 +85,7 @@ export const posts: BlogPost[] = [
     excerpt: "Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here's a simple checklist to prepare your home before the cold hits.",
     date: "3 June 2026",
     category: "Seasonal",
-    readTime: "6 min read",
+    readTime: "4 min read",
     published: true,
   },
   {
@@ -94,7 +94,7 @@ export const posts: BlogPost[] = [
     excerpt: "Lukewarm showers, water that runs out fast, or no hot water at all? Here's why hot water systems struggle every Sydney winter — and what to do before yours fails.",
     date: "3 June 2026",
     category: "Hot Water",
-    readTime: "6 min read",
+    readTime: "4 min read",
     published: true,
   },
   {
@@ -103,7 +103,7 @@ export const posts: BlogPost[] = [
     excerpt: "A blocked drain is almost always caused by one of five things. Learn what's causing yours — and when to call a plumber.",
     date: "7 April 2026",
     category: "Blocked Drains",
-    readTime: "6 min read",
+    readTime: "5 min read",
     published: true,
   },
   {
@@ -130,7 +130,7 @@ export const posts: BlogPost[] = [
     excerpt: "Burst pipe? Flooding? Gas leak? Here's a clear, calm plan for the most common plumbing emergencies — so you know exactly what to do before a plumber arrives.",
     date: "8 May 2026",
     category: "Emergency Plumbing",
-    readTime: "7 min read",
+    readTime: "6 min read",
     published: true,
   },
   {
@@ -139,7 +139,7 @@ export const posts: BlogPost[] = [
     excerpt: "Choosing the wrong plumber can cost you hundreds. Here's exactly what to check before you hire — licence, insurance, pricing, and the red flags to avoid.",
     date: "8 May 2026",
     category: "Plumbing Advice",
-    readTime: "6 min read",
+    readTime: "5 min read",
     published: true,
   },
   {
@@ -166,7 +166,7 @@ export const posts: BlogPost[] = [
     excerpt: "Choosing a hot water system is a 10-year decision. Compare gas, electric, and heat pump systems for Sydney homes — running costs, install costs, and reliability.",
     date: "20 May 2026",
     category: "Hot Water",
-    readTime: "6 min read",
+    readTime: "5 min read",
     published: true,
   },
   {
@@ -184,7 +184,7 @@ export const posts: BlogPost[] = [
     excerpt: "Bad water pressure isn't just annoying — it can damage appliances or signal a hidden leak. Here's how to test your own pressure in 5 minutes and know when it's serious.",
     date: "20 May 2026",
     category: "Plumbing Advice",
-    readTime: "6 min read",
+    readTime: "5 min read",
     published: true,
   },
   {
@@ -202,7 +202,7 @@ export const posts: BlogPost[] = [
     excerpt: "Your Sydney Water bill tells a story most people miss. Here is how to read it properly and how to spot a hidden leak that could be quietly draining hundreds of litres a day.",
     date: "20 May 2026",
     category: "Plumbing Advice",
-    readTime: "6 min read",
+    readTime: "4 min read",
     published: true,
   },
   {
@@ -211,7 +211,7 @@ export const posts: BlogPost[] = [
     excerpt: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly. Get it wrong and you will pay for it twice. Here is the checklist every Sydney homeowner needs.",
     date: "20 May 2026",
     category: "Bathroom Renovations",
-    readTime: "7 min read",
+    readTime: "5 min read",
     published: true,
   },
 ];

@@ -33,6 +33,10 @@ const tocItems = [
   { id: "cold", title: "Running Out of Hot Water" },
   { id: "age", title: "Age of System" },
   { id: "energy", title: "Rising Energy Bills" },
+  { id: "check-yourself", title: "What to Check Yourself First" },
+  { id: "relief-valve", title: "The Relief Valve — the Part Everyone Ignores" },
+  { id: "plan-replacement", title: "Planning a Replacement Before It Fails" },
+  { id: "how-long-they-last", title: "How Long Systems Actually Last" },
   { id: "faq", title: "FAQs" },
 ];
 
@@ -93,6 +97,61 @@ export default function BlogHotWaterSignsPage() {
 
               <h2 id="energy" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>6. Rising Energy Bills</h2>
               <p>A failing element or sediment-coated burner has to work harder to heat the same amount of water. If your gas or electricity bill keeps climbing without explanation, your hot water system is often the culprit.</p>
+
+              <h2 id="check-yourself" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>What to Check Yourself First</h2>
+
+              <p>Before you book anyone, five minutes of looking can tell you whether this is a system failure or something simpler.</p>
+
+              <p><strong>Check the isolation valve is fully open.</strong> Valves get knocked, and a partly closed one produces exactly the weak, inconsistent hot water people assume is a dying system.</p>
+
+              <p><strong>Check the thermostat setting</strong> if yours is accessible. Someone may have turned it down, and a setting that is too low is also a bacteria risk in a storage system.</p>
+
+              <p><strong>Check whether it is every outlet or just one.</strong> Weak hot water at a single tap is a tap problem. Weak hot water everywhere is a system problem. This one distinction saves a lot of wasted diagnosis.</p>
+
+              <p><strong>Look underneath.</strong> A damp patch, rust staining, or mineral crust on the floor around the base tells you the tank is already leaking, whatever else is happening.</p>
+
+
+              <h2 id="relief-valve" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>The Relief Valve — the Part Everyone Ignores</h2>
+
+              <p>Every storage hot water system has a temperature and pressure relief valve, and it is the single most neglected component in Australian homes.</p>
+
+              <p>Its job is to release pressure if the system overheats. It is a safety device, and a failed one is not a minor fault. Relief valves are generally designed to be eased open periodically so mineral buildup does not seize them — check the manufacturer&rsquo;s instructions for your unit, or have it done at a service.</p>
+
+              <p>Two symptoms worth acting on: a valve that drips constantly rather than occasionally, which usually means it is failing or the system pressure is too high; and a valve that has never been operated in a decade, which may well be seized. Neither is expensive to address. Both are unpleasant if ignored.</p>
+
+
+              <h2 id="plan-replacement" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Planning a Replacement Before It Fails</h2>
+
+              <p>Hot water systems almost always fail at the worst time, because the worst time is winter when they are working hardest.</p>
+
+              <p>If your system is past ten years and showing any of the signs above, the useful move is to decide now what you would replace it with — type, size, and roughly what it costs. That turns an emergency into a phone call.</p>
+
+              <p>It also gives you the option of choosing properly rather than taking whatever is on the van. If you are weighing options, our comparison of <Link href="/blog/gas-vs-electric-vs-heat-pump-hot-water" style={{ color: "var(--color-brand-blue)" }}>gas, electric and heat pump systems</Link> covers what each suits.</p>
+
+              <p>The other benefit is timing. A planned replacement can be scheduled; an emergency one happens at whatever rate applies on a Sunday.</p>
+
+
+              <h2 id="how-long-they-last" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>How Long Systems Actually Last</h2>
+
+
+              <p>Knowing the typical service life of your type of system turns guesswork into planning.</p>
+
+
+              <p><strong>Electric storage</strong> units generally give around ten to fifteen years, depending heavily on water quality and whether the sacrificial anode was ever replaced. Most never are, which shortens tank life considerably.</p>
+
+
+              <p><strong>Gas storage</strong> tends to run a similar course, often slightly shorter, since the tank faces the same corrosion pressures with added thermal cycling.</p>
+
+
+              <p><strong>Instantaneous gas</strong> units have no tank to corrode and frequently outlast storage systems, though the electronics and heat exchanger eventually become the limiting parts.</p>
+
+
+              <p><strong>Heat pumps</strong> are newer to most Australian homes, with expected life typically quoted around ten to fifteen years. The compressor is the component that decides it.</p>
+
+
+              <p>Against those ranges, work out how old yours is. If you do not know, the compliance plate on the unit usually carries a manufacture date. A system in the last third of its expected life showing any warning sign is telling you something worth listening to.</p>
+
+
 
               <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
               <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>How long does a hot water system last?</h3>

@@ -31,6 +31,11 @@ const tocItems = [
   { id: "too-high", title: "If Pressure Is Too High" },
   { id: "too-low", title: "If Pressure Is Too Low" },
   { id: "hidden-leak", title: "The Hidden Warning Sign" },
+  { id: "pressure-vs-flow", title: "Pressure and Flow Are Different Problems" },
+  { id: "only-one-tap", title: "When It Is Only One Outlet" },
+  { id: "plv-lifespan", title: "Pressure-Limiting Valves Do Not Last Forever" },
+  { id: "when-to-call", title: "When It Is Worth Calling Someone" },
+  { id: "what-normal-looks-like", title: "What Normal Actually Looks Like" },
   { id: "faq", title: "FAQs" },
 ];
 
@@ -51,7 +56,7 @@ export default function BlogWaterPressurePage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Plumbing Advice</span>
-              <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 · 6 min read</span>
+              <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>
               Water Pressure Too High or Too Low?
@@ -88,6 +93,55 @@ export default function BlogWaterPressurePage() {
               <h2 id="hidden-leak" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>The hidden warning sign</h2>
               <p>If your water meter is ticking over while every tap and appliance in the house is off, you have a leak somewhere — and pressure issues often go hand in hand with it. Do not ignore it; underground leaks can cause significant damage by the time they surface.</p>
               <p>Not sure what your reading means? Send us a photo of the gauge and we will tell you straight up whether it is a callout job or a DIY fix.</p>
+
+              <h2 id="pressure-vs-flow" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Pressure and Flow Are Different Problems</h2>
+
+              <p>These two get used interchangeably and they are not the same thing, which is why so many pressure complaints get misdiagnosed.</p>
+
+              <p><strong>Pressure</strong> is the force in the pipe when nothing is running. <strong>Flow</strong> is how much water actually comes out per minute when you open a tap. You can have perfectly good pressure and poor flow — that is a restriction somewhere, not a pressure problem.</p>
+
+              <p>The practical difference: a shower that feels weak but fills a bucket quickly has a flow-spreading issue at the head. A shower that is weak and fills the bucket slowly has a genuine supply problem upstream. Two very different jobs, and worth establishing before anyone quotes.</p>
+
+
+              <h2 id="only-one-tap" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>When It Is Only One Outlet</h2>
+
+              <p>If the problem is confined to a single tap or shower, the cause is almost always local and often trivial.</p>
+
+              <p>The usual suspects are a blocked aerator on the tap spout, a clogged shower head, a partly closed isolation valve under the sink, or a perished washer or cartridge inside the tap itself. Aerators and shower heads unscrew and soak clean in vinegar in an afternoon.</p>
+
+              <p>It is worth ruling these out before calling anyone. A plumber attending to unscrew a shower head is an expensive way to learn that lesson.</p>
+
+
+              <h2 id="plv-lifespan" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Pressure-Limiting Valves Do Not Last Forever</h2>
+
+              <p>If your home has a pressure-limiting valve — and in NSW most newer homes do — it is a mechanical part with a finite life, typically around a decade.</p>
+
+              <p>When one fails it can go either way. Fail open and your household pressure climbs to whatever the street is delivering, which is what damages appliances, flexible hoses and tap seals. Fail closed and pressure drops off across the whole house at once.</p>
+
+              <p>A sudden change in pressure throughout the home, in either direction, points at the valve before it points at the network. It is a comparatively cheap part, and replacing a failing one is considerably cheaper than the burst flexible hose it can eventually cause.</p>
+
+
+              <h2 id="when-to-call" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>When It Is Worth Calling Someone</h2>
+
+              <p>Some pressure problems are worth living with for a week; others are not.</p>
+
+              <p>Call promptly if pressure has changed suddenly rather than gradually, if you are hearing banging or hammering in the walls when taps shut off, if pressure is low across the whole house with no obvious cause, or if you have noticed damp, staining or an unexplained rise in your water bill alongside it.</p>
+
+              <p>That last combination matters most. Falling pressure together with rising usage is the classic signature of a leak somewhere you cannot see, and it is worth investigating quickly.</p>
+
+
+              <h2 id="what-normal-looks-like" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>What Normal Actually Looks Like</h2>
+
+
+              <p>It helps to know what you are aiming for before deciding something is wrong.</p>
+
+
+              <p>Australian plumbing standards put a maximum static pressure at the fixture of 500 kPa, and most homes sit comfortably between about 350 and 500. Below roughly 200 kPa, showers and appliances start to underperform noticeably. Above 500, you are shortening the life of flexible hoses, tap seals, and the inlet valves on your washing machine and dishwasher.</p>
+
+
+              <p>Worth remembering that pressure varies naturally through the day. Early morning and early evening are peak demand across the network, so a reading taken at 7am will usually be lower than the same tap at 11am. If you are measuring, take a couple of readings at different times before concluding anything.</p>
+
+
 
               <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
               <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>What is normal household water pressure?</h3>
