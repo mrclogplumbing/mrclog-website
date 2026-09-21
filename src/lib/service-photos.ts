@@ -117,7 +117,13 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
         src: "/photos/leak-detection-dye-test.webp",
         alt: "Bath filled with bright fluorescent yellow dyed water during a leak detection dye test",
         caption:
-          "A dye test in progress. Tracer dye in the water shows exactly where it is escaping — which is how a leak gets found without pulling up a floor.",
+          "A dye test in progress: the bath filled with water carrying fluorescent tracer dye.",
+      },
+      {
+        src: "/photos/leak-detection-dye-on-floor.webp",
+        alt: "Yellow tracer dye seeping up through the grout lines of a tiled bathroom floor, marking the path of a hidden leak",
+        caption:
+          "The same dye coming up through the floor outside the bath. Where it surfaces is where the water is escaping — no floor lifted to find it.",
       },
     ],
   },
@@ -161,11 +167,16 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
   "kitchen-plumbing": {
     proof: [
       {
-        src: "/photos/kitchen-sink-install.webp",
-        alt: "Double-bowl stainless kitchen sink and mixer tap with the cupboard below open to the waste and water connections",
-        focus: "center 40%",
+        src: "/photos/kitchen-sink-before.webp",
+        alt: "Original drop-in stainless kitchen sink with a drainer board and plain mixer tap, cupboard below open ready for removal",
         caption:
-          "Sink, mixer and waste connected in an original kitchen. Most kitchen work is replacing fittings in a cabinet someone still likes.",
+          "Before: the original drop-in sink and tap, cupboard open ready to disconnect.",
+      },
+      {
+        src: "/photos/kitchen-sink-after.webp",
+        alt: "The same kitchen after installation, with a flush-mounted stainless sink and a pull-out mixer tap",
+        caption:
+          "After: a flush-mounted sink and pull-out mixer in the same benchtop. No new kitchen, no new cabinetry.",
       },
     ],
   },
