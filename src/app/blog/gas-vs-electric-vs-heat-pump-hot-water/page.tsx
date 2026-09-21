@@ -90,6 +90,12 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
               <h2 id="verdict" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Our verdict</h2>
               <p>If you have solar, go heat pump. If you don&apos;t and gas is already connected, instantaneous gas is still a solid choice. Avoid plain electric storage unless budget at install time is the only factor.</p>
               <p>Need help choosing? We do free on-site assessments across Sydney.</p>
+
+              <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
+              <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>Which hot water system is cheapest to run?</h3>
+              <p>For most Sydney homes, a heat pump system has the lowest ongoing running cost, especially when paired with rooftop solar.</p>
+              <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>Are heat pumps noisy?</h3>
+              <p>Heat pumps make a low hum similar to a split-system air conditioner unit. They should be installed with adequate clearance and ideally away from bedroom windows.</p>
             </div>
 
             <div className="mt-14 rounded-2xl p-8 text-center" style={{ background: "var(--color-dark)" }}>

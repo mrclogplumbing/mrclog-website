@@ -90,6 +90,12 @@ export default function BlogTreeRootsInDrainsPage() {
 
               <h2 id="which-fix" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Which should you choose?</h2>
               <p>If you have cleared the same blockage more than twice, stop paying for repeat jetting and get a CCTV inspection. We will show you exactly where the roots are entering and what the line actually looks like — then you can make an informed call.</p>
+
+              <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
+              <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>Will cutting down the tree fix the problem?</h3>
+              <p>Not always. Root systems can survive for months after a tree is removed, and existing damage to the pipe still allows new roots from neighbouring vegetation to enter. The pipe itself needs to be sealed for a permanent fix.</p>
+              <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>How do I know if I have tree roots in my drain?</h3>
+              <p>Repeat blockages every few months, gurgling sounds, slow draining across multiple fixtures, and unexplained soggy patches in the lawn are classic signs. A CCTV drain inspection will confirm it.</p>
             </div>
 
             <div className="mt-14 rounded-2xl p-8 text-center" style={{ background: "var(--color-dark)" }}>

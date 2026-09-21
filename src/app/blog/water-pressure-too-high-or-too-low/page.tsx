@@ -88,6 +88,12 @@ export default function BlogWaterPressurePage() {
               <h2 id="hidden-leak" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>The hidden warning sign</h2>
               <p>If your water meter is ticking over while every tap and appliance in the house is off, you have a leak somewhere — and pressure issues often go hand in hand with it. Do not ignore it; underground leaks can cause significant damage by the time they surface.</p>
               <p>Not sure what your reading means? Send us a photo of the gauge and we will tell you straight up whether it is a callout job or a DIY fix.</p>
+
+              <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
+              <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>What is normal household water pressure?</h3>
+              <p>Normal household water pressure sits between 350 and 500 kPa. Above 500 kPa is too high and risks damaging appliances; below 200 kPa is too low and may indicate a partial blockage or failing valve.</p>
+              <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>Do I need a pressure-limiting valve?</h3>
+              <p>In NSW, all homes built since 2008 are required to have a pressure-limiting valve. They typically last around a decade before they need replacement.</p>
             </div>
 
             <div className="mt-14 rounded-2xl p-8 text-center" style={{ background: "var(--color-dark)" }}>
