@@ -16,6 +16,15 @@ export interface Location {
    * location page worth ranking; keep it specific and true, never padding.
    */
   commonProblems?: { title: string; body: string }[];
+  /**
+   * For a suburb page, the slug of the region it sits inside. Regions leave
+   * this undefined. It drives the breadcrumb up to the region page and the
+   * list of sibling suburbs, which is most of the point of having suburb
+   * pages at all — a single page for "plumber Newtown" ranks for very little
+   * on its own, but a region page linking down to twenty suburb pages that
+   * link back up is a structure search engines can read.
+   */
+  parent?: string;
 }
 
 export const locations: Location[] = [

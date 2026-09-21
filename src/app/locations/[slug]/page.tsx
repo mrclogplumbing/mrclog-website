@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 import QuoteForm from "@/components/QuoteForm";
 import ReviewStrip from "@/components/ReviewStrip";
 import Link from "next/link";
-import { locations, getLocation } from "@/lib/locations";
+import { allAreas, getArea, suburbPageFor } from "@/lib/areas";
 import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
 
 export async function generateStaticParams() {
-  return locations.map((l) => ({ slug: l.slug }));
+  return allAreas.map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({
@@ -19,7 +19,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const location = getLocation(slug);
+  const location = getArea(slug);
   if (!location) return {};
   return {
     alternates: { canonical: `/locations/${slug}` },
@@ -34,8 +34,10 @@ export default async function LocationPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const location = getLocation(slug);
+  const location = getArea(slug);
   if (!location) notFound();
+
+  const parentRegion = location.parent ? getArea(location.parent) : undefined;
 
   return (
     <>
@@ -73,6 +75,14 @@ export default async function LocationPage({
             <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
               Mr. Clog Plumbing
             </p>
+            {parentRegion && (
+              <p className="font-display text-sm mb-3">
+                <Link href={`/locations/${parentRegion.slug}`} className="text-white/70 hover:text-white no-underline">
+                  {parentRegion.label}
+                </Link>
+                <span className="text-white/40"> / {location.label}</span>
+              </p>
+            )}
             <h1
               className="font-logo font-extrabold text-white mb-4"
               style={{ fontSize: "clamp(2rem, 5vw, 3.25rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}
@@ -170,18 +180,30 @@ export default async function LocationPage({
               Coverage Area
             </p>
             <h2 className="font-logo font-bold text-3xl md:text-4xl" style={{ color: "var(--color-dark)" }}>
-              Suburbs We Service
+              {parentRegion ? "Nearby Suburbs We Cover" : "Suburbs We Service"}
             </h2>
           </div>
           <div className="flex flex-wrap gap-2 justify-center max-w-4xl mx-auto">
-            {location.suburbs.map((suburb) => (
-              <span
-                key={suburb}
-                className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-gray-200 text-gray-700"
-              >
-                {suburb}
-              </span>
-            ))}
+            {location.suburbs.map((suburb) => {
+              const page = suburbPageFor(suburb);
+              return page ? (
+                <Link
+                  key={suburb}
+                  href={`/locations/${page.slug}`}
+                  className="px-4 py-2 rounded-full text-sm font-semibold bg-white border no-underline transition-colors hover:bg-blue-50"
+                  style={{ borderColor: "rgba(26,159,255,0.45)", color: "var(--color-brand-blue)" }}
+                >
+                  {suburb} &rarr;
+                </Link>
+              ) : (
+                <span
+                  key={suburb}
+                  className="px-4 py-2 rounded-full text-sm font-medium bg-white border border-gray-200 text-gray-700"
+                >
+                  {suburb}
+                </span>
+              );
+            })}
           </div>
           <p className="text-center text-sm text-gray-500 mt-6">
             Don&rsquo;t see your suburb? <a href={PHONE_HREF} style={{ color: "var(--color-brand-blue)" }} className="font-semibold">Call us</a> — we likely cover it.
