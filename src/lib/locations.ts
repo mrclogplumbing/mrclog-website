@@ -111,6 +111,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber across Sydney's North Shore. Chatswood, Lane Cove, Mosman, Wahroonga, Hornsby and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "The North Shore stretches from leafy Wahroonga and Pymble down through Chatswood and Lane Cove. Mr. Clog handles everything from large heritage Federation homes on bushland blocks to modern apartment towers in Chatswood and St Ives. We’re familiar with Ku-ring-gai and Willoughby Council requirements and the unique drainage challenges of properties built on sandstone bushland with steep gradients.",
+    commonProblems: [
+      { title: "Mature tree roots in long drain runs", body: "The North Shore's tree canopy is its best feature and its most expensive plumbing problem. Established eucalypts, camphor laurels and figs sit close to drainage lines that often run a long way from the house to the street on these big blocks. Roots find the smallest perished joint and work in from there. The long runs also mean a blockage can sit well away from the house, so guessing where to dig gets costly quickly — a camera survey is the cheaper first move." },
+      { title: "Steep and sloping blocks", body: "A lot of North Shore homes sit well above or below the street. That affects drainage fall, where stormwater ends up, and whether a lower-level bathroom or granny flat can drain by gravity at all. Homes cut into a slope often rely on a pump system for the lowest fixtures, and when that pump fails the symptoms show up fast. Any renovation below street level is worth checking for fall before the tiling starts." },
+      { title: "Older homes with original pipework", body: "Large Federation and mid-century homes across Wahroonga, Gordon and Pymble frequently still run substantial lengths of original pipe. Galvanised steel water lines corrode internally and narrow, which shows up as falling pressure and occasional discoloured water after the house sits unused. Replacement is usually staged rather than done all at once, and knowing which sections matter most is the difference between a sensible budget and a blank cheque." },
+      { title: "Tree protection and excavation", body: "Councils across the North Shore protect significant trees, which means digging near one is not always straightforward even on your own land. This is where no-dig repair earns its place: relining a damaged drain through an existing access point avoids the root zone entirely. It is worth raising early, because it can change both the approvals needed and the cost of the job." },
+    ],
   },
   {
     slug: "hills-district",
@@ -138,6 +144,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber in the Hills District. Castle Hill, Kellyville, Baulkham Hills, Norwest, Bella Vista and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "The Hills District is one of Sydney’s fastest-growing regions, with new home releases in Rouse Hill and Box Hill alongside established Federation and post-war homes in Castle Hill and Baulkham Hills. Mr. Clog regularly services Hills Shire Council and Hornsby Council areas, and we’re familiar with the modern plumbing requirements of new builds as well as the older infrastructure in long-settled streets.",
+    commonProblems: [
+      { title: "Long service runs on large blocks", body: "Castle Hill, Kellyville and Dural properties often sit a long way back from the street, with correspondingly long sewer and water runs. That means more pipe, more joints, and more distance between the symptom at the fixture and the fault in the ground. It also means a blockage can be many metres from the house, which makes camera locating the sensible first step rather than an optional extra." },
+      { title: "Irrigation systems and backflow obligations", body: "Garden irrigation is common across the Hills, and an in-ground system connected to mains water creates exactly the cross-connection that backflow prevention exists to stop. Many owners inherit a device with the property and never learn it needs regular testing. If your property has irrigation, a pool auto-fill or a plumbed rainwater tank, it is worth confirming your obligations with Sydney Water." },
+      { title: "Early defects in newer estates", body: "The newer estates around Rouse Hill and Kellyville throw up a consistent set of early faults: waste pipes laid at insufficient fall, shower waterproofing failing at the junction, and fittings never fully tightened at handover. Caught in the first year or two these are minor. Left alone while water tracks into a wall cavity or slab, they stop being minor." },
+      { title: "Clay soil moving drainage", body: "Much of the Hills sits on soil that swells when wet and shrinks in dry spells. That seasonal movement is hard on rigid drainage — joints separate, sections sag and hold water, and pipes crack. It is the usual explanation when a drain blocks in the same place year after year with no obvious cause at the fixture." },
+    ],
   },
   {
     slug: "south-sydney",
@@ -165,6 +177,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber in Sydney's Inner South. Mascot, Botany, Rosebery, Eastlakes, Pagewood and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Sydney’s Inner South sits between the CBD and the airport — a working precinct with apartment towers in Wolli Creek and Zetland alongside warehouses and light industrial buildings in Mascot and Botany. Mr. Clog services Bayside Council and City of Sydney properties here, and we’re familiar with the area’s flat terrain, ageing stormwater drainage, and the commercial plumbing demands of the airport-adjacent business parks.",
+    commonProblems: [
+      { title: "New apartment towers and early defects", body: "Mascot, Zetland and Green Square have added enormous numbers of apartments in a short time, and newer buildings carry a recognisable set of early plumbing faults: waste pipes at marginal fall, waterproofing failing at the shower junction, and fittings never fully tightened at handover. In strata these are worth documenting early, because responsibility and defect periods both have time limits." },
+      { title: "Converted warehouses and mixed old-new services", body: "Alexandria and Rosebery are full of industrial buildings converted to homes and offices, where new fixtures have been connected to drainage laid for an entirely different use decades earlier. The common result is recurring slow drainage rather than a clean blockage — the line works, but it was never sized or graded for what it now carries." },
+      { title: "Low-lying ground and stormwater", body: "Much of South Sydney sits low and flat near Botany Bay, so stormwater has little fall to work with and drains slowly once a line is partly restricted. Yards that hold water after rain, or basement and ground-floor areas that take water in a downpour, usually point at stormwater capacity rather than a single blockage." },
+      { title: "Sandy soils moving into pipework", body: "The sandy ground across the area migrates into cracked stormwater and drainage lines, silting them up progressively. It rarely presents as a sudden blockage — more often as a line that drains a little worse each season until it stops coping with heavy rain." },
+    ],
   },
   {
     slug: "western-sydney",
@@ -192,6 +210,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber across Western Sydney. Blacktown, Penrith, Auburn, Strathfield, Burwood and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Western Sydney covers a huge area with very different plumbing needs. Established suburbs like Strathfield, Burwood, and Concord have older Federation and post-war homes with original cast iron drainage. The Penrith and Blacktown corridor mixes long-settled streets with newer estates. Mr. Clog services Cumberland, Blacktown, Penrith, Strathfield, and Burwood Council areas, and we’re set up for both heritage repairs and modern fit-outs.",
+    commonProblems: [
+      { title: "Asbestos cement pipework in older homes", body: "Homes built through the middle of last century across Western Sydney often contain asbestos cement pipe, in drainage and sometimes in water supply. It is stable while undisturbed and hazardous when cut or broken. Any work involving it needs correct identification and licensed handling, which is a genuine reason to be wary of a cheap quote on an older property. If your home is from that era, it is worth knowing what is in the ground before work starts." },
+      { title: "Hot water systems working harder", body: "Western Sydney runs hotter in summer and colder in winter than the coastal suburbs. Hot water systems here cycle harder across the year than the same unit near the water, which tends to shorten the comfortable working life of an ageing system. If yours is over ten years old and already struggling, planning the replacement beats discovering the problem mid-winter." },
+      { title: "Large blocks, long drain runs", body: "Older Western Sydney homes on generous blocks carry long drainage runs with many joints, often in clay pipe. More joints means more entry points for roots and more places for ground movement to pull a line apart. It also means the fault is frequently nowhere near the fixture that is misbehaving." },
+      { title: "Pressure variation across the network", body: "Water pressure varies more across Western Sydney than many owners expect, and properties on higher ground can sit noticeably lower than the suburb average. Persistently weak pressure is worth testing properly rather than assuming — it can equally be a partly closed valve, a failing pressure-limiting valve, or a corroded supply line inside the house." },
+    ],
   },
   {
     slug: "northern-beaches",
@@ -220,6 +244,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber across Sydney's Northern Beaches. Manly, Dee Why, Mona Vale, Avalon, Palm Beach and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Sydney’s Northern Beaches stretch nearly 30km from Manly to Palm Beach, separated from the rest of the city by water. Mr. Clog has plumbers based on the peninsula so we don’t leave you waiting. Coastal homes here face salt-air corrosion, sand-clogged drains, and bushfire-overlay restrictions in the upper beaches. We’re familiar with Northern Beaches Council and the unique demands of beachfront, hillside, and bushland properties from Freshwater through to Palm Beach.",
+    commonProblems: [
+      { title: "Steep blocks and pump systems", body: "From Seaforth up through Avalon, a great many homes sit on slopes where the lowest bathroom or laundry cannot drain to the sewer by gravity. Those properties rely on a pump, and a pump is the component most likely to fail with no warning at all. Gurgling or backing up at the lowest fixture during normal use points at the pump before it points at a blockage." },
+      { title: "Salt, sand and coastal wear", body: "Close to the water at Manly, Dee Why and Narrabeen, salt-laden air works on exposed metal continuously while sand finds its way into stormwater lines. Gutters, downpipes and outdoor fittings wear faster than they would a few kilometres inland, and a stormwater line can silt up with sand without any single obvious blockage." },
+      { title: "Holiday homes and dry traps", body: "The Northern Beaches has a high share of weekenders and holiday lets, and an unused house develops a very specific problem: the water seal in each drain trap evaporates, letting sewer gas into the house. Owners often return to a smell they assume is a blockage. Running every tap and tipping water into floor wastes solves a surprising share of these calls before a plumber is needed." },
+      { title: "Stormwater on sloping sites", body: "Water coming off a steep block arrives fast and concentrated. Where stormwater lines are undersized, blocked or discharging poorly, the result is erosion around footings and water tracking towards the house rather than away from it. It is worth checking before storm season rather than after the first serious downpour." },
+    ],
   },
   {
     slug: "sydney-cbd",
@@ -248,6 +278,12 @@ export const locations: Location[] = [
     metaDescription: "24/7 plumber for Sydney CBD, Surry Hills, Darlinghurst, Redfern, Pyrmont and the city core. $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Sydney CBD plumbing is a different game — high-rise apartment towers, hospitality fit-outs, retail tenancies, and the heritage buildings of The Rocks all sit within a few kilometres. Mr. Clog regularly services strata buildings, office tenancies, and hospitality venues across the City of Sydney. We’re familiar with the access constraints, after-hours work requirements, and trade waste regulations that make CBD plumbing more complex than suburban work.",
+    commonProblems: [
+      { title: "Commercial kitchens and grease traps", body: "Food businesses in the CBD typically need a grease trap, serviced on a schedule, with records kept. A neglected trap is both a compliance exposure and the most common cause of a kitchen drain backing up mid-service. The cost of scheduled servicing is trivial next to closing a kitchen at dinner time." },
+      { title: "High-rise pressure zones and hot water", body: "Tall buildings split the water supply into pressure zones, with valves and often shared hot water plant. When an apartment or tenancy loses pressure or hot water, the fault may be in your space or in building services several floors away. Working out which comes first — it decides who is responsible and who pays." },
+      { title: "Backflow prevention on building services", body: "Fire services, cooling systems and commercial equipment create cross-connections that require backflow prevention devices, and testable devices generally need annual testing by an accredited plumber with results submitted to the water authority. In a managed building this is one of the easiest obligations to let slip, because nothing visibly goes wrong when it is overdue." },
+      { title: "Access, after-hours work and older buildings", body: "CBD work runs on building access rules, loading dock bookings and after-hours windows, and the older stock carries pipework that has been modified repeatedly over decades. Both realities are worth building into the plan rather than discovering on the day — an isolation that affects other tenancies needs arranging in advance, not at the moment the water goes off." },
+    ],
   },
   {
     slug: "ryde-macquarie-park",
@@ -275,6 +311,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber across Ryde, Macquarie Park, Eastwood, Epping, Hunters Hill and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Ryde and Macquarie Park combine established residential suburbs with a major business and university precinct. Mr. Clog services everything from older Federation homes in Hunters Hill and Gladesville through to high-rise apartments along the Macquarie Park corridor and commercial offices in the business park. We’re familiar with City of Ryde and Hunters Hill Council requirements.",
+    commonProblems: [
+      { title: "Mid-century homes with galvanised supply", body: "A lot of the housing through Ryde, Denistone and Eastwood dates from the 1950s to 70s, and galvanised steel water pipe from that era corrodes internally. The bore narrows over decades, so pressure falls gradually enough that owners stop noticing until a new shower or appliance underperforms. Discoloured water after the house sits unused is the other classic sign." },
+      { title: "High-density towers around Macquarie Park", body: "The tower developments bring strata plumbing: shared hot water plant, pressure-limiting valves, and a boundary between your lot and common property that decides responsibility. A lukewarm shower in a unit is a different diagnostic problem from the same complaint in a freestanding house, and it starts with establishing where your lot ends." },
+      { title: "Commercial and office fitouts", body: "The business park and university precinct generate a steady stream of tenancy fitouts — new kitchens, amenities and staff facilities added to buildings whose services were sized for something else. The common failure is a new fixture connected to drainage that was never intended to carry it, which shows up as recurring slow drainage rather than an outright blockage." },
+      { title: "Trees on established streets", body: "The older residential streets carry mature street trees close to drainage laid in clay. Roots enter at perished joints and the drain then blocks on a predictable cycle. Cutting them back clears it for a season; sealing the joints is what actually stops the cycle." },
+    ],
   },
   {
     slug: "canterbury-bankstown",
@@ -303,6 +345,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber across Canterbury-Bankstown. Bankstown, Canterbury, Campsie, Lakemba, Padstow, Revesby and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Canterbury-Bankstown is one of Sydney’s largest LGAs by population, mixing established post-war housing with newer townhouse and apartment developments. Mr. Clog services the entire area from the Canterbury end through to Padstow and East Hills. We’re familiar with the area’s ageing terracotta drainage, the demands of multi-tenant townhouse complexes, and the commercial plumbing needs of the busy Bankstown and Campsie shopping strips.",
+    commonProblems: [
+      { title: "Granny flats and secondary dwellings", body: "Secondary dwellings are common across Canterbury-Bankstown, and the plumbing is where corners most often get cut. A granny flat needs its drainage properly connected and the work done by a licensed plumber — not tied into a convenient nearby line. Badly connected secondary dwellings cause recurring blockages and become a problem at sale time, when the paperwork gets examined." },
+      { title: "Older clay sewer lines", body: "Much of the area's post-war housing drains through clay pipe laid in short sections. Every joint is a potential entry point for roots and a place for ground movement to pull the line apart. Where a house blocks repeatedly in the same spot, the pipe itself is usually the cause rather than what is being flushed." },
+      { title: "Heavy fixture use in multi-generational homes", body: "Plenty of homes here run more people through the same bathrooms and laundry than the plumbing was designed for. That accelerates everything — more hair and soap through the same waste, more demand on the hot water system, more cycles on tap washers. Systems that would last a decade in a two-person household need looking at sooner." },
+      { title: "Low-lying land near the river", body: "Parts of the area sit low relative to the Georges and Cooks River systems, and in heavy rain stormwater capacity becomes the limiting factor. Yards that pond, water tracking back towards the house, or a stormwater line that cannot clear as fast as the roof fills it are all worth resolving before storm season rather than during it." },
+    ],
   },
   {
     slug: "lower-north-shore",
@@ -330,6 +378,12 @@ export const locations: Location[] = [
     metaDescription: "Plumber for the Lower North Shore. Kirribilli, North Sydney, Crows Nest, Cammeray, Waverton and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The Lower North Shore packs a lot into a small area: high-rise commercial and residential towers in North Sydney, harbour-front heritage homes in Kirribilli and Lavender Bay, and dense apartment-and-terrace neighbourhoods in Crows Nest, Cammeray, and Naremburn. Mr. Clog handles the full mix — strata maintenance, heritage repairs, and commercial fit-outs — with North Sydney and Lane Cove Council requirements front of mind.",
+    commonProblems: [
+      { title: "Inter-war apartment blocks and shared risers", body: "Mosman, Neutral Bay and Cremorne are full of 1920s and 30s walk-up blocks, and many still run original cast iron or galvanised risers shared between units. A leak inside a riser affects several apartments at once and sits in common property, not your lot. Establishing that boundary early matters — it decides whether you are arranging the repair or the owners corporation is." },
+      { title: "Harbourside blocks below street level", body: "Plenty of homes here sit well below the road, with the bathroom or laundry lower than the sewer connection. Those properties depend on a pump-out system, and pumps are the part of a plumbing system most likely to fail without warning. If your lowest fixtures back up during heavy use, the pump is the first thing to check, not the drain." },
+      { title: "Heritage constraints on visible work", body: "Much of the Lower North Shore sits in conservation areas where external pipework, flashings and gutter profiles are not a free choice. Replacing a rusted gutter on a heritage-listed home can mean matching a profile rather than fitting the nearest stock item. Worth knowing before a quote, because it changes both material cost and lead time." },
+      { title: "Narrow streets and access", body: "Steep, narrow streets with limited parking make machinery access genuinely difficult around the harbour foreshore. For a drain repair that would normally mean an excavator, the practical options here are often relining or a hand-dug repair. Both are worth pricing before committing, since access can cost more than the plumbing." },
+    ],
   },
   {
     slug: "sutherland-shire",
@@ -358,6 +412,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber for the Sutherland Shire. Cronulla, Miranda, Sutherland, Caringbah, Engadine, Menai and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The Sutherland Shire stretches from Cronulla’s beaches across to the bushland suburbs of Heathcote and Engadine, with the busy commercial centres of Miranda, Sutherland, and Caringbah in between. Mr. Clog services the full Shire under the Sutherland Shire Council area. Coastal properties in Cronulla, Burraneer, and Woolooware face salt corrosion and storm-water blockages from sand and seaweed; bushland suburbs like Engadine and Heathcote sit on rocky, steep blocks where pipe alignment and root intrusion are common issues.",
+    commonProblems: [
+      { title: "Salt and sand near the coast", body: "Around Cronulla and the beachside suburbs, salt-laden air works continuously on exposed metal while sand finds its way into stormwater lines. Gutters, downpipes, flashings and outdoor fittings wear faster than they do inland, and a stormwater line can silt with sand rather than blocking on debris." },
+      { title: "Pools, outdoor showers and backflow", body: "Pools are common across the Shire, and a pool with an automatic mains top-up creates the exact cross-connection backflow prevention exists to stop. The same applies to irrigation and to rainwater tanks plumbed into the house supply. Many owners inherit a device with the property and never learn it requires regular testing — worth confirming with Sydney Water if any of those apply." },
+      { title: "Rainwater tanks plumbed into the house", body: "Tank water feeding toilets, laundry or garden taps is widespread here. Where a tank is connected to the household supply it needs proper separation from mains water, and the switching arrangement is a common point of failure. Symptoms are usually intermittent rather than dramatic: pressure that changes for no clear reason, or a toilet that fills inconsistently." },
+      { title: "Established trees on older streets", body: "The Shire's older residential streets carry mature trees alongside clay drainage. Roots enter at perished joints and the line then blocks on a cycle of months rather than years. Cutting them back buys a season; sealing the joints is the repair that ends it." },
+    ],
   },
   {
     slug: "st-george",
@@ -386,6 +446,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber for the St George area. Hurstville, Kogarah, Rockdale, Bexley, Brighton-Le-Sands and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The St George area sits between the Inner South and the Sutherland Shire, covering Georges River and Bayside Council territory. Mr. Clog regularly works on the area’s mix of post-war family homes, the high-rise apartment corridor along the Princes Highway in Hurstville and Rockdale, and the beachfront properties in Brighton-Le-Sands and Sans Souci. The proximity to Botany Bay means salt-driven corrosion is a recurring issue, and the older terracotta drainage in suburbs like Bexley and Penshurst is prone to root intrusion.",
+    commonProblems: [
+      { title: "Apartment growth over older infrastructure", body: "Hurstville, Kogarah and Rockdale have added dense apartment development above suburbs whose underlying drainage is considerably older. That mix produces two very different jobs: strata plumbing in new towers, and ageing clay and galvanised pipe in the houses around them. Which one you are dealing with changes the first question entirely." },
+      { title: "Low-lying land near the river and bay", body: "Parts of St George sit low relative to the Cooks River and Botany Bay, and heavy rain finds the limits of stormwater quickly. Ponding yards, water moving towards footings, or a stormwater line that cannot keep up with the roof are worth addressing before storm season, not after." },
+      { title: "Post-war homes with original pipework", body: "The area's brick homes from the 1950s and 60s often still run galvanised water pipe and clay drainage. Galvanised corrodes inward and quietly strangles pressure; clay drainage gives roots an entry at every joint. Both are manageable when planned and expensive when they fail unexpectedly." },
+      { title: "Parking and site access", body: "Dense streets with limited parking make machinery access genuinely awkward in parts of St George. For drain repairs that would ordinarily call for excavation, relining through an existing access point is often the practical option — worth pricing early, because access constraints can drive the cost more than the repair itself." },
+    ],
   },
   {
     slug: "parramatta",
@@ -448,6 +514,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber for Liverpool, Fairfield, Cabramatta, Wetherill Park and Sydney's south-west. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Liverpool and Fairfield form a major south-western Sydney service area with a mix of post-war housing, busy multicultural retail strips, and large light-industrial precincts in Wetherill Park, Smithfield, and Prestons. Mr. Clog services Liverpool and Fairfield Council areas. The flat terrain and ageing terracotta drainage common across these suburbs make blocked drains a frequent issue; we use CCTV inspection and high-pressure jetting to clear and diagnose without unnecessary digging.",
+    commonProblems: [
+      { title: "Trade waste from commercial premises", body: "The area carries a large number of food businesses, workshops and light industrial premises, and anything discharging more than ordinary household waste generally needs a trade waste arrangement and the right pre-treatment — a grease trap for a kitchen, an interceptor for a workshop. Neglected equipment is both a compliance exposure and the usual cause of a drain backing up at the worst moment." },
+      { title: "Flood-prone land near the Georges River", body: "Parts of Liverpool and Fairfield sit low relative to the Georges River system, where heavy rain tests stormwater capacity quickly. Ponding, water tracking towards the house, or a stormwater line that cannot clear as fast as the roof fills it are worth resolving before the season rather than during it." },
+      { title: "Older housing with asbestos cement pipe", body: "Homes from the middle of last century across the area often contain asbestos cement pipe in drainage and sometimes in supply. It is stable undisturbed and hazardous when cut or broken, so any work involving it requires correct identification and licensed handling. On an older property it is worth establishing what is in the ground before work starts." },
+      { title: "Secondary dwellings and added bathrooms", body: "Granny flats and added bathrooms are common here, and they are where shortcuts show up. New fixtures connected to drainage never intended to carry them produce recurring slow drainage rather than a clean blockage, and unlicensed work becomes a problem at sale time when the paperwork is examined." },
+    ],
   },
   {
     slug: "macarthur",
@@ -477,6 +549,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber for the Macarthur region. Campbelltown, Camden, Narellan, Ingleburn, Mount Annan, Oran Park and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The Macarthur region is one of Sydney’s biggest growth corridors. Established suburbs like Campbelltown, Ingleburn, and Camden sit alongside the rapidly developing release areas of Oran Park, Gregory Hills, and Spring Farm. Mr. Clog services Campbelltown and Camden Council areas — we work on the older Federation and post-war housing common in established streets, and we’re set up for the modern materials and connection requirements of new-estate plumbing.",
+    commonProblems: [
+      { title: "Brand-new estates and handover defects", body: "Camden, Narellan and the Campbelltown growth areas are dominated by recent construction, and new builds carry a consistent set of early plumbing faults: waste pipes laid at marginal fall, shower waterproofing failing at the junction, and fittings never properly tightened. These are cheap to fix inside the defect period and expensive once water has been tracking into a slab or wall cavity." },
+      { title: "Expansive clay soils", body: "Much of the Macarthur region sits on soil that swells and shrinks substantially with the seasons. That movement is hard on rigid drainage — joints pull apart, lines sag and hold water, pipes crack. It is the usual explanation for a drain that blocks in the same place every year or two with nothing obviously wrong at the fixture." },
+      { title: "Acreage properties and long service runs", body: "Rural-fringe properties around Camden and Razorback carry very long runs between the house, the tank, the shed and the street. More distance means more joints, more ground movement, and a fault that can sit a hundred metres from the symptom. Locating before digging is not optional on a property like that; it is the only affordable way to work." },
+      { title: "Rainwater tanks and pump systems", body: "Tank water is part of everyday supply on many properties here, and the pump is the component most likely to fail without warning. Pressure that drops off under demand, a pump that cycles constantly, or a system that loses prime are the common presentations — and each points somewhere different, so testing beats replacing on a guess." },
+    ],
   },
 ];
 
