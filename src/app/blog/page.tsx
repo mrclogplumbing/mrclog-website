@@ -19,6 +19,24 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    slug: "why-does-my-drain-smell",
+    title: "Why Does My Drain Smell? The Five Usual Causes",
+    excerpt: "A smelly drain is telling you something. Here are the five things that actually cause it, how to tell which one you have, and the 30-second fix that solves a good share of them.",
+    date: "21 September 2026",
+    category: "Blocked Drains",
+    readTime: "5 min read",
+    published: true,
+  },
+  {
+    slug: "backflow-prevention-testing-explained",
+    title: "Backflow Prevention: Does Your Property Need Annual Testing?",
+    excerpt: "Backflow devices stop contaminated water being drawn back into the drinking supply, and testable ones need checking yearly. Here's who needs one and what a test involves.",
+    date: "21 September 2026",
+    category: "Backflow Prevention",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
     slug: "pipe-relining-vs-pipe-replacement",
     title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need?",
     excerpt: "Relining rebuilds a damaged pipe from the inside with no digging. Replacement means excavation. Here's how to tell which one your drain actually needs — and what to ask before you commit.",
