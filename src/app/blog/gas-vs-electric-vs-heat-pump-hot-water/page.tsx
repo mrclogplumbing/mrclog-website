@@ -31,6 +31,10 @@ const tocItems = [
   { id: "electric", title: "Electric Storage" },
   { id: "heat-pump", title: "Heat Pump" },
   { id: "verdict", title: "Our Verdict" },
+  { id: "sizing", title: "Sizing: What Capacity You Actually Need" },
+  { id: "installation", title: "What Installation Involves for Each Type" },
+  { id: "running-costs", title: "Comparing Running Costs Honestly" },
+  { id: "repair-or-replace", title: "Repair or Replace?" },
   { id: "faq", title: "FAQs" },
 ];
 
@@ -51,7 +55,7 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
               <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Hot Water</span>
-              <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 · 6 min read</span>
+              <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>
               Gas vs Electric vs Heat Pump Hot Water
@@ -90,6 +94,50 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
               <h2 id="verdict" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Our verdict</h2>
               <p>If you have solar, go heat pump. If you don&apos;t and gas is already connected, instantaneous gas is still a solid choice. Avoid plain electric storage unless budget at install time is the only factor.</p>
               <p>Need help choosing? We do free on-site assessments across Sydney.</p>
+
+              <h2 id="sizing" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Sizing: What Capacity You Actually Need</h2>
+
+              <p>Choosing the technology is only half the decision. A well-chosen system that is too small will annoy you daily for a decade.</p>
+
+              <p>For storage systems, capacity is driven by how many people shower in the same window rather than by household size alone. Two people who shower twelve hours apart put far less strain on a tank than two who shower back to back. Baths, a second bathroom, and a dishwasher drawing hot water all push the requirement up.</p>
+
+              <p>For instantaneous systems, the limiting number is flow rate rather than volume — how many outlets can run at once before the temperature drops. If two showers running together is normal in your house, say so before anyone recommends a unit.</p>
+
+              <p>Undersizing is the most common regret we hear about, and it is the one thing you cannot fix later without replacing the system.</p>
+
+
+              <h2 id="installation" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>What Installation Involves for Each Type</h2>
+
+              <p>The unit price is rarely the whole cost, and the gap between types is mostly installation.</p>
+
+              <p><strong>Gas</strong> needs an adequate gas supply and correct flueing, and switching from electric to gas means running a gas line to the location. That work has to be done by a licensed gas fitter.</p>
+
+              <p><strong>Electric storage</strong> is usually the simplest swap when replacing like with like, particularly if the existing unit is in the same spot on a compatible circuit.</p>
+
+              <p><strong>Heat pumps</strong> need outdoor space with airflow around the unit, and they are not silent — they hum like a split-system air conditioner. Placement matters, and under a bedroom window is a decision people regret.</p>
+
+              <p>Get the installation described specifically in the quote. Two quotes for the same unit can differ substantially, and the difference is usually in what each assumes about the work around it.</p>
+
+
+              <h2 id="running-costs" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Comparing Running Costs Honestly</h2>
+
+              <p>Running-cost comparisons are where hot water marketing gets slippery, because the answer genuinely depends on your household.</p>
+
+              <p>Heat pumps use electricity to move heat rather than generate it, which is why they use markedly less energy than conventional electric storage for the same hot water. That advantage grows if you have solar and can run the unit during the day.</p>
+
+              <p>Gas costs depend on your supply charges as much as usage — if the hot water is the only gas appliance in the house, the standing charge is carried entirely by it, which changes the maths considerably.</p>
+
+              <p>The honest way to compare is over the life of the system: purchase, installation, running cost, and expected lifespan together. A cheaper unit that costs more to run and lasts less time is not cheaper.</p>
+
+
+              <h2 id="repair-or-replace" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Repair or Replace?</h2>
+
+              <p>Not every fault means a new system. The question worth asking is what has failed and how old the unit is.</p>
+
+              <p>Thermostats, elements and valves are ordinary replaceable parts, and on a system under about eight years old, replacing one is usually sensible. A leaking tank is different — once the cylinder itself has corroded through, there is no repair, only replacement.</p>
+
+              <p>Past ten to twelve years, weigh a significant repair carefully. Spending several hundred dollars on a system that may fail completely within a year or two rarely pays off. If yours is in that range and showing symptoms, our guide on <Link href="/blog/signs-your-hot-water-system-is-failing" style={{ color: "var(--color-brand-blue)" }}>the warning signs of a failing hot water system</Link> covers what to watch for.</p>
+
 
               <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
               <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>Which hot water system is cheapest to run?</h3>

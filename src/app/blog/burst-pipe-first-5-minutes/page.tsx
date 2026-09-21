@@ -32,6 +32,8 @@ const tocItems = [
   { id: "drain", title: "Step 4: Drain the Pipes" },
   { id: "call", title: "Step 5: Call a Plumber" },
   { id: "after", title: "What to Do After" },
+  { id: "find-stop-tap", title: "Find Your Stop Tap Before You Need It" },
+  { id: "insurance", title: "What Your Insurer Will Want" },
   { id: "faq", title: "FAQs" },
 ];
 
@@ -92,6 +94,26 @@ export default function BlogBurstPipePage() {
 
               <h2 id="after" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>What to Do After</h2>
               <p>Take photos of everything before you start cleaning up — your home insurer will want them. Most home insurance policies cover sudden burst pipe damage but not the pipe itself. Get the plumber&apos;s invoice in writing and keep it with your claim. Run a fan or dehumidifier on wet carpet and walls for several days to prevent mould — Sydney humidity makes this a real risk.</p>
+
+              <h2 id="find-stop-tap" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>Find Your Stop Tap Before You Need It</h2>
+
+              <p>Every minute of this guide depends on step one, and step one depends on knowing where your water shut-off is. Looking for it while water is pouring through a light fitting is the worst possible time to start.</p>
+
+              <p>In most Sydney homes the main stop tap is at the water meter, usually near the front boundary in a ground-level box. Many houses also have an isolation valve where the supply enters the building, and individual fixtures often have their own small valves underneath.</p>
+
+              <p>Go and find yours now. Open the meter box, check the tap actually turns — they seize when untouched for years — and make sure everyone in the house knows where it is. A valve that has not moved in a decade may need a plumber to free it, and that is a far better discovery today than during a burst.</p>
+
+
+              <h2 id="insurance" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>What Your Insurer Will Want</h2>
+
+              <p>Water damage claims turn on evidence, and the evidence is easiest to collect in the first hour while you are least inclined to think about it.</p>
+
+              <p>Photograph everything before you start cleaning: the source of the leak, standing water, and every affected surface and possession. Keep the damaged materials where practical — a section of failed pipe or hose is worth holding onto. Keep receipts for emergency work, drying equipment and accommodation.</p>
+
+              <p>Get the plumber&rsquo;s report in writing, including the cause. Insurers routinely distinguish between a sudden failure and gradual deterioration, and a clear professional statement of what failed and why is often what decides a claim.</p>
+
+              <p>Call your insurer early even if you do not yet know the extent. Most have a 24-hour line, and many will arrange drying themselves — which is both faster and cheaper than arranging it and arguing later.</p>
+
 
               <h2 id="faq" className="font-logo font-bold text-2xl mb-4" style={{ color: "var(--color-dark)" }}>FAQs</h2>
               <h3 className="font-logo font-bold text-lg mb-2 mt-6" style={{ color: "var(--color-dark)" }}>Where is my water main shut-off valve?</h3>
