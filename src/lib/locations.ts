@@ -272,7 +272,7 @@ export const locations: Location[] = [
     faqs: [
       { q: "Do you service high-rise apartments in the CBD?", a: "Yes — we work with high-rise residents, building managers, and strata across the Sydney CBD and surrounding city precincts." },
       { q: "Can you handle commercial plumbing in city offices?", a: "Yes — we service office buildings, retail tenants, hospitality venues, and shopfronts across the city core." },
-      { q: "How fast can you reach the CBD for an emergency?", a: "Usually within 30 minutes — we have plumbers covering the city 24/7." },
+      { q: "How fast can you reach the CBD for an emergency?", a: "Usually within 30–60 minutes — we cover the city 24/7 and will give you an accurate ETA when you call." },
     ],
     metaTitle: "Plumber Sydney CBD | 24/7 City Plumber",
     metaDescription: "24/7 plumber for Sydney CBD, Surry Hills, Darlinghurst, Redfern, Pyrmont and the city core. $0 call-out fee. Call (02) 9139 8945.",

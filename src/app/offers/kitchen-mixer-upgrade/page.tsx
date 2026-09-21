@@ -244,7 +244,7 @@ export default function KitchenMixerUpgradeOfferPage() {
             <h3 className="font-logo font-bold text-2xl mb-2" style={{ color: "var(--color-dark)" }}>
               Book My Upgrade
             </h3>
-            <p className="text-sm text-gray-500 mb-6">We typically respond within 30 minutes.</p>
+            <p className="text-sm text-gray-500 mb-6">We reply to enquiries within 30 minutes during the day.</p>
 
             <form action="https://formspree.io/f/xwvwawnp" method="POST" className="space-y-4">
               <input type="hidden" name="_subject" value="Kitchen Mixer Upgrade booking" />

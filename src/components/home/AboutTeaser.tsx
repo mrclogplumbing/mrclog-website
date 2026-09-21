@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { responseTimes } from "@/lib/response-times";
 import { reviewSummary } from "@/lib/reviews-summary";
 
 export default function AboutTeaser() {
@@ -39,7 +40,7 @@ export default function AboutTeaser() {
               { stat: `${reviewSummary.ratingValue}★`, label: "Google Rating", sub: `${reviewSummary.reviewCount} reviews` },
               { stat: "24/7", label: "Availability", sub: "365 days a year" },
               { stat: "$0", label: "Call-Out Fee", sub: "No surprise charges" },
-              { stat: "30min", label: "Avg. Response", sub: "Sydney-wide" },
+              { stat: responseTimes.arrivalShort, label: "Emergency Response", sub: "Sydney-wide" },
             ].map(({ stat, label, sub }) => (
               <div key={label} className="card p-5 text-center">
                 <div className="font-logo text-3xl font-extrabold mb-1" style={{ color: "var(--color-brand-blue)" }}>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { responseTimes } from "@/lib/response-times";
 import { reviews } from "@/lib/reviews";
 import ReviewsList from "./ReviewsList";
 import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
@@ -117,7 +118,7 @@ export default function ReviewsPage() {
       <div className="bg-white border-y border-gray-200">
         <div className="section-container py-5 flex flex-wrap justify-center gap-6 md:gap-10 text-sm text-gray-700">
           <span>✅ <strong>Licensed</strong> NSW 347993C</span>
-          <span>⏱ <strong>30 min</strong> avg response</span>
+          <span>⏱ <strong>{responseTimes.arrival}</strong> emergency response</span>
           <span>💵 <strong>$0</strong> call-out fee</span>
           <span>🛡 <strong>Fully insured</strong></span>
         </div>
