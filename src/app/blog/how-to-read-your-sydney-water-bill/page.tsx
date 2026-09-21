@@ -5,11 +5,11 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How to Read Your Sydney Water Bill (and Spot a Hidden Leak) | Mr. Clog Blog",
+  title: "How to Read Your Sydney Water Bill (and Spot a Hidden Leak)",
   description: "Your Sydney Water bill tells a story most people miss. Here is how to read it properly — and how to spot a hidden leak that could be quietly draining hundreds of litres a day.",
   openGraph: {
     type: "article",
-    title: "How to Read Your Sydney Water Bill (and Spot a Hidden Leak) | Mr. Clog Blog",
+    title: "How to Read Your Sydney Water Bill (and Spot a Hidden Leak)",
     description: "Your Sydney Water bill tells a story most people miss. Here is how to read it properly — and how to spot a hidden leak that could be quietly draining hundreds of litres a day.",
     url: "https://www.mrclog.com.au/blog/how-to-read-your-sydney-water-bill",
     siteName: "Mr. Clog Plumbing",

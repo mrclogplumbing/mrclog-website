@@ -5,11 +5,11 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Bathroom Renovation Plumbing Checklist for Sydney Homes | Mr. Clog Blog",
+  title: "Bathroom Renovation Plumbing Checklist for Sydney Homes",
   description: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly. Get it wrong and you will pay for it twice. Here is the checklist every Sydney homeowner needs.",
   openGraph: {
     type: "article",
-    title: "Bathroom Renovation Plumbing Checklist for Sydney Homes | Mr. Clog Blog",
+    title: "Bathroom Renovation Plumbing Checklist for Sydney Homes",
     description: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly. Get it wrong and you will pay for it twice. Here is the checklist every Sydney homeowner needs.",
     url: "https://www.mrclog.com.au/blog/bathroom-renovation-plumbing-checklist",
     siteName: "Mr. Clog Plumbing",

@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Does My Drain Smell? The Five Usual Causes | Mr. Clog Blog",
+  title: "Why Does My Drain Smell? The Five Usual Causes",
   description:
     "A smelly drain is telling you something. Here are the five things that actually cause it, how to tell which one you have, and the fixes that work — from a 30-second one to the ones that need a plumber.",
   openGraph: {
     type: "article",
-    title: "Why Does My Drain Smell? The Five Usual Causes | Mr. Clog Blog",
+    title: "Why Does My Drain Smell? The Five Usual Causes",
     description: "A smelly drain is telling you something. Here are the five things that actually cause it, how to tell which one you have, and the fixes that work — from a 30-second one to the ones that need a plumber.",
     url: "https://www.mrclog.com.au/blog/why-does-my-drain-smell",
     siteName: "Mr. Clog Plumbing",

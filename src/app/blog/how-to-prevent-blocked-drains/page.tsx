@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How to Prevent Blocked Drains: A Room-by-Room Guide | Mr. Clog Blog",
+  title: "How to Prevent Blocked Drains: A Room-by-Room Guide",
   description:
     "Most blocked drains are 100% preventable. Here is exactly what to do in your kitchen, bathroom, toilet, laundry, and outdoors to keep your drains flowing.",
   openGraph: {
     type: "article",
-    title: "How to Prevent Blocked Drains: A Room-by-Room Guide | Mr. Clog Blog",
+    title: "How to Prevent Blocked Drains: A Room-by-Room Guide",
     description: "Most blocked drains are 100% preventable. Here is exactly what to do in your kitchen, bathroom, toilet, laundry, and outdoors to keep your drains flowing.",
     url: "https://www.mrclog.com.au/blog/how-to-prevent-blocked-drains",
     siteName: "Mr. Clog Plumbing",

@@ -3,12 +3,12 @@ import Link from "next/link";
 import { posts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Plumbing Tips & Advice | Mr. Clog Blog | Sydney",
+  title: "Plumbing Tips & Advice | Sydney",
   description:
     "Plumbing tips, how-to guides, and advice from Sydney's trusted plumbers. Read the Mr. Clog blog for expert insights on blocked drains, hot water, and more.",
   openGraph: {
     type: "website",
-    title: "Plumbing Tips & Advice | Mr. Clog Blog | Sydney",
+    title: "Plumbing Tips & Advice | Sydney",
     description: "Plumbing tips, how-to guides, and advice from Sydney's trusted plumbers. Read the Mr. Clog blog for expert insights on blocked drains, hot water, and more.",
     url: "https://www.mrclog.com.au/blog",
     siteName: "Mr. Clog Plumbing",

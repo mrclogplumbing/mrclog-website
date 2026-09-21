@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Gutters and Downpipes: The Storm Season Checklist for Sydney Homes | Mr. Clog Blog",
+  title: "Gutters and Downpipes: The Storm Season Checklist for Sydney Homes",
   description:
     "Sydney storm season arrives fast in spring, and blocked gutters cause more ceiling damage than leaking roofs do. Here is a practical checklist to get your gutters, downpipes, and flashings ready before the first big downpour.",
   openGraph: {
     type: "article",
-    title: "Gutters and Downpipes: The Storm Season Checklist for Sydney Homes | Mr. Clog Blog",
+    title: "Gutters and Downpipes: The Storm Season Checklist for Sydney Homes",
     description: "Sydney storm season arrives fast in spring, and blocked gutters cause more ceiling damage than leaking roofs do. Here is a practical checklist to get your gutters, downpipes, and flashings ready before the first big downpour.",
     url: "https://www.mrclog.com.au/blog/gutters-downpipes-storm-season-checklist",
     siteName: "Mr. Clog Plumbing",

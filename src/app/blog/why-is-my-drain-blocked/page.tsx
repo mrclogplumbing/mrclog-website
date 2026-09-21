@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Is My Drain Blocked? The Most Common Causes | Mr. Clog Blog",
+  title: "Why Is My Drain Blocked? The Most Common Causes",
   description:
     "A blocked drain is almost always caused by one of five things. Learn what causes blocked drains in Australian homes and when to call a plumber.",
   openGraph: {
     type: "article",
-    title: "Why Is My Drain Blocked? The Most Common Causes in Australian Homes | Mr. Clog Blog",
+    title: "Why Is My Drain Blocked? The Most Common Causes in Australian Homes",
     description: "A blocked drain is almost always caused by one of five things. Learn what is causing yours and when to call a plumber.",
     url: "https://www.mrclog.com.au/blog/why-is-my-drain-blocked",
     siteName: "Mr. Clog Plumbing",

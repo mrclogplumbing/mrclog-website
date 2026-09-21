@@ -4,7 +4,7 @@ import { activeOffers } from "@/lib/offers";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/offers" },
-  title: "Special Offers & Promotions | Mr. Clog Plumbing Sydney",
+  title: "Special Offers & Promotions",
   description:
     "Current plumbing specials and promotions from Mr. Clog. Save on inspections, repairs and more — licensed Sydney plumbers, 24/7, $0 call-out fee. Call (02) 9139 8945.",
 };

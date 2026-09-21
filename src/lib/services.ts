@@ -40,7 +40,7 @@ export const services: Service[] = [
       { q: "Are your plumbers licensed?", a: "Yes — all Mr. Clog plumbers hold current NSW Fair Trading licences and are fully insured." },
     ],
     typicalCost: "From $180–$350 depending on job complexity",
-  metaTitle: "24/7 Emergency Plumber Sydney | Mr. Clog | Fast Response",
+  metaTitle: "24/7 Emergency Plumber Sydney | Fast Response",
     metaDescription: "Emergency plumber in Sydney available 24/7. Burst pipes, leaks, flooding — Mr. Clog responds in 60 min or less. $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -70,7 +70,7 @@ export const services: Service[] = [
       { q: "Will you make a mess?", a: "We take every precaution to protect your property. We use drop sheets and clean up thoroughly when the job is done." },
     ],
     typicalCost: "From $150–$400 for simple to complex blockages",
-  metaTitle: "Blocked Drain Plumber Sydney | Mr. Clog | Same-Day Service",
+  metaTitle: "Blocked Drain Plumber Sydney | Same-Day Service",
     metaDescription: "Blocked drains cleared fast in Sydney. CCTV inspection, high-pressure jetting, same-day service. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -100,7 +100,7 @@ export const services: Service[] = [
       { q: "Do you offer solar or heat pump systems?", a: "Yes — we supply, install and service solar hot water and heat pump systems and can advise on rebates available." },
     ],
     typicalCost: "Repairs from $150 · New system install from $800",
-  metaTitle: "Hot Water System Repairs Sydney | Mr. Clog | Same-Day Service",
+  metaTitle: "Hot Water System Repairs Sydney | Same-Day Service",
     metaDescription: "Hot water repairs and replacements across Sydney. All brands, all system types. Mr. Clog — fast, reliable, $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -130,7 +130,7 @@ export const services: Service[] = [
       { q: "Do you fix outdoor taps?", a: "Yes — garden taps, hose taps, and outdoor fixtures are all in our scope." },
     ],
     typicalCost: "From $120–$250 for washer replacement to full install",
-  metaTitle: "Tap & Toilet Repairs Sydney | Mr. Clog Plumbing",
+  metaTitle: "Tap & Toilet Repairs Sydney",
     metaDescription: "Dripping taps and running toilets fixed fast across Sydney. Mr. Clog — quality repairs, $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -160,7 +160,7 @@ export const services: Service[] = [
       { q: "Will my garden be dug up?", a: "No — that's the key benefit of relining. We access the pipe through existing inspection openings wherever possible." },
     ],
     typicalCost: "From $500 per metre (no-dig pipe repair)",
-  metaTitle: "Pipe Relining Sydney | No-Dig Pipe Repair | Mr. Clog",
+  metaTitle: "Pipe Relining Sydney | No-Dig Pipe Repair",
     metaDescription: "No-dig pipe relining across Sydney. Fix cracked or root-damaged pipes without excavation. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -190,7 +190,7 @@ export const services: Service[] = [
       { q: "Is the detection charge separate from the repair?", a: "We provide one transparent quote covering detection and repair. No hidden fees." },
     ],
     typicalCost: "From $180–$350 for electronic leak detection",
-  metaTitle: "Leak Detection Sydney | Find Hidden Leaks | Mr. Clog",
+  metaTitle: "Leak Detection Sydney | Find Hidden Leaks",
     metaDescription: "Professional leak detection in Sydney. Find leaks under slabs, walls, and underground without damage. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -220,7 +220,7 @@ export const services: Service[] = [
       { q: "Does it remove tree roots?", a: "Jet Blasting can cut through fine root intrusions. For heavier root infestations, we may use root cutting attachments or recommend pipe relining." },
     ],
     typicalCost: "From $250–$500 for residential drain cleaning",
-  metaTitle: "Jet Blasting Sydney | High-Pressure Drain Cleaning | Mr. Clog",
+  metaTitle: "Jet Blasting Sydney | High-Pressure Drain Cleaning",
     metaDescription: "Professional Jet Blasting across Sydney. Clear stubborn drains with high-pressure water jetting. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -250,7 +250,7 @@ export const services: Service[] = [
       { q: "Do you work on natural gas and LPG?", a: "Yes — we're licensed for both natural gas and LPG systems." },
     ],
     typicalCost: "From $150–$400 for appliance connection to new install",
-  metaTitle: "Licensed Gas Fitter Sydney | Gas Leaks & Installations | Mr. Clog",
+  metaTitle: "Licensed Gas Fitter Sydney | Gas Leaks & Installations",
     metaDescription: "Licensed gas fitting in Sydney. Gas leaks, appliance connections, safety inspections. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -280,7 +280,7 @@ export const services: Service[] = [
       { q: "How long does bathroom plumbing take?", a: "Rough-in typically takes 1 day. Fit-off is another 1–2 days depending on the number of fixtures." },
     ],
     typicalCost: "Plumbing fit-out from $1,500 (scope dependent)",
-  metaTitle: "Bathroom Renovation Plumber Sydney | Mr. Clog Plumbing",
+  metaTitle: "Bathroom Renovation Plumber Sydney",
     metaDescription: "Expert bathroom renovation plumbing across Sydney. Rough-in, fit-off, all fixtures. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -310,7 +310,7 @@ export const services: Service[] = [
       { q: "Are you licensed for roof plumbing in NSW?", a: "Yes — roof plumbing requires a specific licence endorsement in NSW. All Mr. Clog roof plumbers hold the required endorsements." },
     ],
     typicalCost: "From $200–$600 for gutter repair to full replacement",
-  metaTitle: "Roof Plumber Sydney | Gutters & Stormwater | Mr. Clog",
+  metaTitle: "Roof Plumber Sydney | Gutters & Stormwater",
     metaDescription: "Roof plumbing across Sydney. Gutters, downpipes, stormwater, and flashings. Mr. Clog — licensed, $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -340,7 +340,7 @@ export const services: Service[] = [
       { q: "Do you install ag drains and subsoil drainage?", a: "Yes — subsoil drainage and agricultural drains are part of our stormwater drainage service for properties with persistent wet areas." },
     ],
     typicalCost: "From $300–$1,200 for inspection to drainage design",
-  metaTitle: "Stormwater Drainage Sydney | Blocked Pits & Drainage Design | Mr. Clog",
+  metaTitle: "Stormwater Drainage Sydney | Blocked Pits & Drainage Design",
     metaDescription: "Stormwater drainage solutions across Sydney. Blocked pits, new drainage systems, CCTV inspection. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -370,7 +370,7 @@ export const services: Service[] = [
       { q: "Is CCTV inspection included with blocked drain jobs?", a: "Yes — we include a camera inspection on blocked drain jobs to identify the cause and confirm the drain is clear after jetting." },
     ],
     typicalCost: "From $150–$280 for a single camera inspection",
-  metaTitle: "CCTV Drain Camera Inspection Sydney | Mr. Clog Plumbing",
+  metaTitle: "CCTV Drain Camera Inspection Sydney",
     metaDescription: "Professional CCTV drain inspections across Sydney. Identify blockages, cracks, and root intrusion fast. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -400,7 +400,7 @@ export const services: Service[] = [
       { q: "Do you do kitchen renovation plumbing?", a: "Yes — we carry out full kitchen renovation plumbing including repositioning waste and supply points, installing new sinks, and connecting all appliances." },
     ],
     typicalCost: "From $150–$400 for repair to full kitchen fit-out",
-  metaTitle: "Kitchen Plumber Sydney | Sinks, Dishwashers & Renovations | Mr. Clog",
+  metaTitle: "Kitchen Plumber Sydney | Sinks, Dishwashers & Renovations",
     metaDescription: "Kitchen plumbing across Sydney. Sink repairs, dishwasher connections, filter taps, and kitchen renovations. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -430,7 +430,7 @@ export const services: Service[] = [
       { q: "Do you do full laundry fit-outs for renovations?", a: "Yes — including repositioning waste and supply points, new tapware, and troughs as part of a full laundry renovation." },
     ],
     typicalCost: "From $150–$350 for connection to full fit-out",
-  metaTitle: "Laundry Plumber Sydney | Washing Machine Connections | Mr. Clog",
+  metaTitle: "Laundry Plumber Sydney | Washing Machine Connections",
     metaDescription: "Laundry plumbing across Sydney. Washing machine connections, trough installation, drain repairs. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
   {
@@ -460,7 +460,7 @@ export const services: Service[] = [
       { q: "Do residential properties need backflow devices?", a: "Some do — especially properties with irrigation systems, pools, or other non-drinking water connections to the mains. We can advise whether your property requires one." },
     ],
     typicalCost: "From $120–$300 for test only to device install",
-  metaTitle: "Backflow Prevention Testing Sydney | Certified Testers | Mr. Clog",
+  metaTitle: "Backflow Prevention Testing Sydney | Certified Testers",
     metaDescription: "Backflow prevention testing, certification, and installation across Sydney. Certified testers, compliance certificates. Mr. Clog — Call (02) 9139 8945.",
   },
   {
@@ -490,7 +490,7 @@ export const services: Service[] = [
       { q: "Is high water pressure a problem too?", a: "Yes — excessively high pressure accelerates wear on fixtures, valves, and appliances. A correctly set PLV protects your entire plumbing system." },
     ],
     typicalCost: "From $150–$350 for diagnosis to regulator install",
-  metaTitle: "Low Water Pressure Plumber Sydney | PLV Repairs | Mr. Clog",
+  metaTitle: "Low Water Pressure Plumber Sydney | PLV Repairs",
     metaDescription: "Fix low water pressure across Sydney. PLV testing and replacement, leak detection, pressure boosters. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
   },
 ];

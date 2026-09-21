@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off) | Mr. Clog Blog",
+  title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off)",
   description:
     "Choosing the wrong plumber can cost you hundreds. Here is exactly what to check before you hire \u2014 licence, insurance, pricing, and red flags.",
   openGraph: {
     type: "article",
-    title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off) | Mr. Clog Blog",
+    title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off)",
     description: "Choosing the wrong plumber can cost you hundreds. Here is exactly what to check before you hire — licence, insurance, pricing, and red flags.",
     url: "https://www.mrclog.com.au/blog/how-to-choose-a-plumber-in-sydney",
     siteName: "Mr. Clog Plumbing",

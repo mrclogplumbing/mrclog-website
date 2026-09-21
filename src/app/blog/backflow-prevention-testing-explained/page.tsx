@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Backflow Prevention: Does Your Property Need Annual Testing? | Mr. Clog Blog",
+  title: "Backflow Prevention: Does Your Property Need Annual Testing?",
   description:
     "Backflow devices protect drinking water from contamination, and testable ones generally need checking every year by an accredited plumber. Here is what backflow is, who it applies to, and what a test involves.",
   openGraph: {
     type: "article",
-    title: "Backflow Prevention: Does Your Property Need Annual Testing? | Mr. Clog Blog",
+    title: "Backflow Prevention: Does Your Property Need Annual Testing?",
     description: "Backflow devices protect drinking water from contamination, and testable ones generally need checking every year by an accredited plumber. Here is what backflow is, who it applies to, and what a test involves.",
     url: "https://www.mrclog.com.au/blog/backflow-prevention-testing-explained",
     siteName: "Mr. Clog Plumbing",

@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "What to Do in a Plumbing Emergency | Mr. Clog Blog",
+  title: "What to Do in a Plumbing Emergency",
   description:
     "Burst pipe? Flooding? Gas leak? Here's a clear step-by-step guide for Sydney homeowners on exactly what to do in a plumbing emergency — and when to call.",
   openGraph: {
     type: "article",
-    title: "What to Do in a Plumbing Emergency: A Step-by-Step Guide for Sydney Homeowners | Mr. Clog Blog",
+    title: "What to Do in a Plumbing Emergency: A Step-by-Step Guide for Sydney Homeowners",
     description: "Burst pipe? Flooding? Gas leak? Here is a clear, calm plan for the most common plumbing emergencies — so you know exactly what to do.",
     url: "https://www.mrclog.com.au/blog/what-to-do-in-a-plumbing-emergency",
     siteName: "Mr. Clog Plumbing",

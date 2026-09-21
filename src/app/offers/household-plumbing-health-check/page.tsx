@@ -8,7 +8,7 @@ const PHONE_HREF = "tel:+61291398945";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/offers/household-plumbing-health-check" },
-  title: "Household Plumbing Health Check $149.99 | Mr. Clog Plumbing Sydney",
+  title: "Household Plumbing Health Check $149.99",
   description:
     "Mr. Clog's 10-point Household Plumbing Health Check — a whole-home inspection by a licensed Sydney plumber for $149.99 incl GST. Catch small problems before they become big bills. Call (02) 9139 8945.",
 };

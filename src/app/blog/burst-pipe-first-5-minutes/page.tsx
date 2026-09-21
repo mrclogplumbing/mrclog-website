@@ -5,11 +5,11 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives | Mr. Clog Blog",
+  title: "Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives",
   description: "A burst pipe can dump hundreds of litres into your home in minutes. Here is exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives.",
   openGraph: {
     type: "article",
-    title: "Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives | Mr. Clog Blog",
+    title: "Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives",
     description: "A burst pipe can dump hundreds of litres into your home in minutes. Here is exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives.",
     url: "https://www.mrclog.com.au/blog/burst-pipe-first-5-minutes",
     siteName: "Mr. Clog Plumbing",

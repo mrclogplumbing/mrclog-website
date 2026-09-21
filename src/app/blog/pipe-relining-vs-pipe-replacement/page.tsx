@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need? | Mr. Clog Blog",
+  title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need?",
   description:
     "Relining repairs a damaged pipe from the inside without digging. Replacement means excavation. Here is how to tell which one your Sydney home actually needs, and what to ask before you commit.",
   openGraph: {
     type: "article",
-    title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need? | Mr. Clog Blog",
+    title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need?",
     description: "Relining repairs a damaged pipe from the inside without digging. Replacement means excavation. Here is how to tell which one your Sydney home actually needs, and what to ask before you commit.",
     url: "https://www.mrclog.com.au/blog/pipe-relining-vs-pipe-replacement",
     siteName: "Mr. Clog Plumbing",
