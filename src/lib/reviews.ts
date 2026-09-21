@@ -27,7 +27,7 @@ export const reviews: Review[] = [
     when: "4 days ago",
     tag: "General",
     text:
-      "Absolute legend. Turned up on time, sorted the problem quickly and didn&apos;t charge a fortune. Super easy to deal with and cleaned up after the job too. Will definitely be using him again and would happily recommend to anyone needing a good plumber.",
+      "Absolute legend. Turned up on time, sorted the problem quickly and didn’t charge a fortune. Super easy to deal with and cleaned up after the job too. Will definitely be using him again and would happily recommend to anyone needing a good plumber.",
   },
   {
     name: "Stephano A.",
@@ -43,7 +43,7 @@ export const reviews: Review[] = [
     when: "1 week ago",
     tag: "General",
     text:
-      "Turned up on time and honest service, couldn&apos;t ask for much more.",
+      "Turned up on time and honest service, couldn’t ask for much more.",
   },
   {
     name: "Daniel M.",
@@ -99,7 +99,7 @@ export const reviews: Review[] = [
     when: "a year ago",
     tag: "Hot Water",
     text:
-      "Had trouble with our hot water system for weeks and was unable to figure out the issue. Matt and Anthony came out the same day I enquired and the issue was resolved within an hour. Couldn&apos;t recommend enough!",
+      "Had trouble with our hot water system for weeks and was unable to figure out the issue. Matt and Anthony came out the same day I enquired and the issue was resolved within an hour. Couldn’t recommend enough!",
   },
   {
     name: "Valerie",
@@ -163,7 +163,7 @@ export const reviews: Review[] = [
     when: "a year ago",
     tag: "General",
     text:
-      "I&apos;ve used Matt and Anthony on multiple plumbing jobs at our house and can&apos;t speak highly enough of them. They walk through all the options and explain pros/cons to let you make a decision and always at a reasonable price. Will definitely use them again for my next plumbing work.",
+      "I’ve used Matt and Anthony on multiple plumbing jobs at our house and can’t speak highly enough of them. They walk through all the options and explain pros/cons to let you make a decision and always at a reasonable price. Will definitely use them again for my next plumbing work.",
   },
 ];
 

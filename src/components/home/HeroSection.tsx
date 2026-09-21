@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { responseTimes } from "@/lib/response-times";
 import Image from "next/image";
 import { reviewSummary } from "@/lib/reviews-summary";
 
@@ -126,7 +127,7 @@ export default function HeroSection() {
 
           {/* Micro-copy */}
           <p className="text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
-            <em>We typically respond within 30 minutes. No hidden fees. No surprises.</em>
+            <em>We reply to every enquiry {responseTimes.enquiry}. No hidden fees. No surprises.</em>
           </p>
         </div>
       </div>

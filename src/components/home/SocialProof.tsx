@@ -1,26 +1,20 @@
 import { StarIcon } from "@/components/ui/ServiceIcons";
 import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
+import { reviews as allReviews } from "@/lib/reviews";
 
-const reviews = [
-  {
-    name: "Sarah M.",
-    time: "2 weeks ago",
-    rating: 5,
-    text: "Called Mr. Clog at 10pm for a burst pipe — they were at my door within 45 minutes. Incredibly professional, fixed everything on the spot, and the price was exactly what they quoted. Couldn't recommend them more highly.",
-  },
-  {
-    name: "James T.",
-    time: "1 month ago",
-    rating: 5,
-    text: "Had a really stubborn blocked drain that two other plumbers couldn't fix. Mr. Clog came out, used their CCTV camera to find the root cause (literally — tree roots), and sorted it same day. These guys know what they're doing.",
-  },
-  {
-    name: "Michelle K.",
-    time: "3 months ago",
-    rating: 5,
-    text: "Replaced our entire hot water system in a few hours. Anthony was transparent about the options, didn't push us to the most expensive choice, and the work was clean and tidy. Hot water restored by lunchtime. 10/10.",
-  },
-];
+/**
+ * Three verified Google reviews, read from the same file every other
+ * surface uses.
+ *
+ * What was here before were three invented ones — "Sarah M.", "James T."
+ * and "Michelle K." — presented under a Google logo and a "Google Reviews"
+ * heading, which made them a representation that Google held reviews it
+ * does not. None of those names appear in the Google profile.
+ *
+ * Taking the first three keeps the newest reviews on the homepage, since
+ * the data file is ordered newest first.
+ */
+const reviews = allReviews.slice(0, 3);
 
 function GoogleLogo() {
   return (
@@ -62,7 +56,7 @@ export default function SocialProof() {
             <div key={review.name} className="card p-6 flex flex-col">
               <div className="flex items-center justify-between mb-3">
                 <div className="flex gap-0.5">
-                  {Array.from({ length: review.rating }).map((_, i) => <StarIcon key={i} size={16} />)}
+                  {[1, 2, 3, 4, 5].map((i) => <StarIcon key={i} size={16} />)}
                 </div>
                 <GoogleLogo />
               </div>
@@ -72,14 +66,14 @@ export default function SocialProof() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm font-semibold" style={{ color: "var(--color-black)" }}>{review.name}</p>
-                  <p className="text-xs mt-0.5" style={{ color: "var(--color-grey-600)" }}>{review.time}</p>
+                  <p className="text-xs mt-0.5" style={{ color: "var(--color-grey-600)" }}>{review.when}</p>
                 </div>
                 <div
                   className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold font-logo flex-shrink-0"
                   style={{ background: "var(--color-brand-blue)" }}
                   aria-hidden="true"
                 >
-                  {review.name.charAt(0)}
+                  {review.initial}
                 </div>
               </div>
             </div>
