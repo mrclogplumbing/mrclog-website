@@ -134,6 +134,32 @@ export default async function LocationPage({
         </div>
       </section>
 
+      {/* Common local problems */}
+      {location.commonProblems && location.commonProblems.length > 0 && (
+        <section className="section-container pb-4 md:pb-8">
+          <div className="max-w-3xl">
+            <h2 className="font-logo font-bold text-3xl mb-4" style={{ color: "var(--color-dark)" }}>
+              Common Plumbing Problems in {location.label}
+            </h2>
+            <p className="text-gray-600 leading-relaxed text-base mb-8">
+              Every part of Sydney has its own plumbing character, shaped by the age of the
+              housing, the ground it sits on, and the weather it takes. Here is what we are
+              called out for most often around {location.label}.
+            </p>
+            <div className="space-y-8">
+              {location.commonProblems.map((problem) => (
+                <div key={problem.title}>
+                  <h3 className="font-logo font-bold text-xl mb-2" style={{ color: "var(--color-dark)" }}>
+                    {problem.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-base">{problem.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Suburbs */}
       <section style={{ background: "var(--color-grey-100)" }} className="py-16 md:py-20">
         <div className="section-container">

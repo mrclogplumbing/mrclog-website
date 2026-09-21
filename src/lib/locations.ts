@@ -10,6 +10,12 @@ export interface Location {
   metaTitle: string;
   metaDescription: string;
   localContent?: string;
+  /**
+   * Plumbing problems that are genuinely characteristic of this area —
+   * driven by its housing stock, soil, or coastline. This is what makes a
+   * location page worth ranking; keep it specific and true, never padding.
+   */
+  commonProblems?: { title: string; body: string }[];
 }
 
 export const locations: Location[] = [
@@ -39,6 +45,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber in Sydney's Inner West. Newtown, Balmain, Leichhardt, Marrickville and more. Available 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Mr. Clog regularly works on the Inner West's distinctive housing stock — Victorian and Federation-era terraces with original cast iron waste pipes, sandstone foundations, and narrow side easements that demand specialist knowledge. We’re familiar with Inner West Council’s requirements and the ageing water infrastructure common in suburbs like Balmain, Glebe, and Newtown. From CCTV drain surveys under heritage sandstone to emergency repairs in tight Marrickville terrace alleyways, our team has seen it all.",
+    commonProblems: [
+      { title: "Tree roots in old earthenware drains", body: "The Inner West's plane trees and figs are the reason so many terraces block every few months. Pre-war drainage here is mostly earthenware laid in short sections, and every joint is a seam that roots can find once it perishes. Cutting the roots clears the line for a season; sealing the joints is what ends the cycle. We camera the run first so you can see whether the pipe is sound enough to reline or whether one collapsed section needs replacing." },
+      { title: "Shared and party-wall drainage between terraces", body: "Terraces in Balmain, Newtown and Annandale frequently share a drainage line running along or under the party wall. That means a blockage at your neighbour's end backs up into your bathroom, and a repair may need access from both properties. It also complicates who pays. We work out where the boundary trap sits before quoting, so responsibility is clear before anyone starts digging." },
+      { title: "Cast iron waste pipes reaching end of life", body: "Federation and Victorian homes across the Inner West still run original cast iron waste stacks. Cast iron rusts from the inside out, so the first symptoms are slow drainage, staining on the wall below a joint, or a persistent smell with no obvious source. By the time it weeps visibly the pipe wall is usually thin throughout, and patching one section buys very little time." },
+      { title: "Access in narrow terrace sites", body: "A Marrickville terrace with a metre-wide side passage and no rear lane changes how a job gets done. Machinery may not fit, and excavation can undermine a shared wall. This is where no-dig methods earn their keep — relining a damaged drain through an existing inspection opening avoids both the access problem and the cost of reinstating tiled courtyards." },
+    ],
   },
   {
     slug: "eastern-suburbs",
@@ -66,6 +78,12 @@ export const locations: Location[] = [
     metaDescription: "Trusted plumber in Sydney's Eastern Suburbs. Bondi, Randwick, Coogee, Paddington and more. Available 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Properties in Sydney’s Eastern Suburbs face unique plumbing challenges: salt-laden sea air accelerates pipe corrosion in Bondi and Coogee, older infrastructure in Paddington and Woollahra requires heritage-sensitive repairs, and high-density apartment towers in Randwick and Bondi Junction demand plumbers experienced with strata. Mr. Clog works closely with Randwick City Council and Woollahra Council inspectors and understands the building codes for this area inside out.",
+    commonProblems: [
+      { title: "Salt air corroding fittings and roof plumbing", body: "Within a few streets of the water at Bondi, Bronte and Coogee, salt-laden air attacks exposed metal continuously. Gutters, downpipes, flashings and outdoor tap fittings corrode noticeably faster than the same components a few kilometres inland. It is the reason coastal homes need roof plumbing checked on a shorter cycle, and why material choice matters more here than almost anywhere else in Sydney." },
+      { title: "Hot water and pressure in apartment blocks", body: "Much of the Eastern Suburbs lives in strata. That changes the problem: a lukewarm shower in a unit may be your own system, a shared plant issue, or a pressure-limiting valve somewhere in the building. Diagnosing it means establishing quickly whether the fault is inside your lot or in common property — which decides both who fixes it and who pays." },
+      { title: "Sand-based soils and stormwater", body: "The sandy ground across much of the Eastern Suburbs drains well until it does not. Sand migrates into cracked stormwater lines, and a pipe can silt up substantially without any single obvious blockage. Yards that flood in heavy rain despite clean gutters are often carrying a stormwater line partly full of sand rather than debris." },
+      { title: "Pool top-ups and backflow requirements", body: "Pools are common here, and an automatic top-up connected to the mains creates exactly the cross-connection that backflow prevention exists to stop. Many owners inherit a device with the property and have no idea it needs testing. If your property has a pool auto-fill, irrigation, or a plumbed rainwater tank, it is worth confirming your obligations with Sydney Water." },
+    ],
   },
   {
     slug: "north-shore",
@@ -396,6 +414,12 @@ export const locations: Location[] = [
     metaDescription: "Local plumber for Parramatta and surrounds. Parramatta CBD, Westmead, Harris Park, Granville, Merrylands and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Parramatta is Sydney’s second CBD with one of the densest mixes of property types anywhere in the city: high-rise residential and commercial towers in the CBD, the Westmead health and education precinct, post-war family homes in Harris Park and Granville, and the older Federation properties in North Parramatta and Northmead. Mr. Clog services City of Parramatta and Cumberland Council areas, and we’re set up for both the access requirements of high-rise plumbing and the heritage drainage of older streets.",
+    commonProblems: [
+      { title: "Reactive clay soil moving drains out of line", body: "Much of the Parramatta area sits on reactive clay that swells when wet and shrinks back in dry spells. That seasonal movement is hard on rigid drainage: joints pull apart, sections sag, and pipes crack. It explains a pattern we see constantly here — a drain that blocks reliably every year or two, in the same spot, with no obvious cause at the fixture." },
+      { title: "Two very different housing stocks, two different problems", body: "Parramatta spans post-war brick and fibro homes with ageing clay drainage, and a dense band of newer apartment towers. The older homes bring root intrusion and perished joints. The newer buildings bring pressure-limiting valves, shared hot water plant, and strata boundaries that decide who is responsible. Knowing which you are in changes the first question worth asking." },
+      { title: "Hot water systems working harder", body: "Western Sydney summers run hotter than the coast, and winters get colder. Heat pump and electric systems here cycle harder across the year than the same unit in a coastal suburb, which tends to shorten the comfortable working life of a tired system. If yours is over ten years old and struggling, it is worth planning the replacement rather than waiting for a cold shower." },
+      { title: "Defects in newer builds", body: "Newer estates and apartments around Parramatta throw up a recognisable set of early faults: waste pipes laid at insufficient fall, shower waterproofing that fails at the junction, and fittings that were never fully tightened at handover. These are cheap to fix early and expensive once water has been tracking into a wall or slab for a year." },
+    ],
   },
   {
     slug: "liverpool-fairfield",
