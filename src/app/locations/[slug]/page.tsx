@@ -4,6 +4,7 @@ import QuoteForm from "@/components/QuoteForm";
 import ReviewStrip from "@/components/ReviewStrip";
 import Link from "next/link";
 import { allAreas, getArea, suburbPageFor } from "@/lib/areas";
+import { getBlockedDrainArea } from "@/lib/blocked-drain-areas";
 import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
@@ -38,6 +39,7 @@ export default async function LocationPage({
   if (!location) notFound();
 
   const parentRegion = location.parent ? getArea(location.parent) : undefined;
+  const hasDrainPage = Boolean(getBlockedDrainArea(slug));
 
   return (
     <>
@@ -210,6 +212,24 @@ export default async function LocationPage({
           </p>
         </div>
       </section>
+
+      {hasDrainPage && (
+        <section className="section-container pb-4">
+          <div className="max-w-3xl mx-auto rounded-2xl p-6 bg-blue-50 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+            <div>
+              <p className="font-semibold text-sm" style={{ color: "var(--color-dark)" }}>
+                Blocked drain in {location.label}?
+              </p>
+              <p className="text-sm text-gray-600 mt-1">
+                What causes blockages here, and what it takes to clear them properly.
+              </p>
+            </div>
+            <Link href={`/blocked-drains/${location.slug}`} className="btn-outline whitespace-nowrap no-underline text-sm">
+              Blocked Drains {location.label} &rarr;
+            </Link>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="section-container py-16 md:py-20">

@@ -731,4 +731,72 @@ export const suburbPages: Location[] = [
     metaTitle: "Plumber Campsie | Blocked Drains & Strata Plumbing",
     metaDescription: "Local plumber in Campsie, Canterbury and Belmore. Blocked drains, apartment plumbing, hot water and emergency repairs. Call (02) 9139 8945.",
   },
+  {
+    slug: "point-piper",
+    parent: "eastern-suburbs",
+    label: "Point Piper",
+    headline: "Plumber Point Piper",
+    subheadline: "Drainage, relining and discreet plumbing work across Point Piper, Double Bay and Rose Bay.",
+    description:
+      "Point Piper is a small peninsula of large, old, harbourside homes. Steep blocks, established gardens and drainage laid a long time ago make it a suburb where the cost of a repair depends far more on access than on the fault itself.",
+    localContent:
+      "Two things shape plumbing here. The first is gradient — properties stepping down to the water move stormwater fast, so a line that has silted up or lost fall overflows rather than draining slowly. The second is what sits over the pipe. Excavating a mature harbourside garden or a tiled terrace is expensive, which is why a camera inspection before quoting matters more in Point Piper than almost anywhere: relining through existing access points is very often the cheaper answer.",
+    suburbs: ["Double Bay", "Rose Bay", "Darling Point", "Vaucluse", "Edgecliff", "Woollahra"],
+    services: ["Pipe Relining", "Blocked Drains", "Stormwater Drainage", "CCTV Drain Inspection", "Leak Detection", "Bathroom Renovations"],
+    commonProblems: [
+      {
+        title: "Stormwater on steep harbourside blocks",
+        body: "Water arrives fast on a gradient. A silted or misaligned line does not drain slowly — it overflows, and on these blocks the overflow finds the house rather than the garden.",
+      },
+      {
+        title: "Old drainage under established gardens",
+        body: "Original clay sewer beneath mature landscaping. Digging it up is the expensive option here, which is why relining through existing access points usually wins on cost as well as disruption.",
+      },
+      {
+        title: "Access and reinstatement costs",
+        body: "Sandstone, terracing, tiled terraces and pool surrounds all sit over drainage. What it costs to put the surface back is often more than the plumbing, so the repair method matters.",
+      },
+    ],
+    faqs: [
+      { q: "Can a drain be repaired without digging up the garden?", a: "Usually. Relining works through existing access points, and in Point Piper avoiding excavation is normally the difference between a manageable job and an expensive one." },
+      { q: "Do you work discreetly on occupied properties?", a: "Yes. Drop sheets down, equipment in and out the same day, and we clean up properly before leaving." },
+      { q: "Is there a call-out fee?", a: "No — no call-out fee at any hour, any day." },
+    ],
+    metaTitle: "Plumber Point Piper | Drainage & Pipe Relining",
+    metaDescription: "Local plumber in Point Piper, Double Bay and Rose Bay. Blocked drains, pipe relining, stormwater and emergency plumbing. $0 call-out fee. Call (02) 9139 8945.",
+  },
+  {
+    slug: "hunters-hill",
+    parent: "ryde-macquarie-park",
+    label: "Hunters Hill",
+    headline: "Plumber Hunters Hill",
+    subheadline: "Heritage drainage, relining and stormwater across Hunters Hill, Woolwich and Gladesville.",
+    description:
+      "Hunters Hill is one of the oldest surviving suburbs in Sydney, and its plumbing reflects that. Sandstone houses from the 1850s onwards, mature gardens, and drainage that in many cases has been in the ground longer than anywhere else we work.",
+    localContent:
+      "The age of the housing stock is the whole story here. Original earthenware drainage under a home built in the 1870s has had a very long time to crack, settle and take on roots, and the gardens above it are just as old. Add a peninsula that falls away to the water on both sides and you get the second theme, which is stormwater with a great deal of gradient behind it. Heritage controls across much of the suburb also mean excavation is rarely the simple option.",
+    suburbs: ["Woolwich", "Gladesville", "Henley", "Huntleys Point", "Boronia Park", "Ryde"],
+    services: ["Pipe Relining", "Blocked Drains", "CCTV Drain Inspection", "Stormwater Drainage", "Leak Detection", "Bathroom Renovations"],
+    commonProblems: [
+      {
+        title: "Some of the oldest drainage in Sydney",
+        body: "Houses here predate most of the city. Earthenware laid in the nineteenth century has cracked joints and root intrusion as a matter of course, and clearing it is a maintenance cycle rather than a repair.",
+      },
+      {
+        title: "Heritage controls limiting excavation",
+        body: "Much of Hunters Hill is heritage-controlled, and sandstone sits shallow. Between the two, digging up a damaged line is slow, expensive and sometimes needs approval. Relining avoids all three.",
+      },
+      {
+        title: "Stormwater falling to the river",
+        body: "The peninsula drops away on both sides, so stormwater moves quickly. Lines that have silted or lost fall overflow during heavy rain rather than backing up gradually.",
+      },
+    ],
+    faqs: [
+      { q: "Our house is from the 1800s. Is the original drainage still in use?", a: "Very often yes, at least in part. A camera inspection shows what you actually have and what condition it is in, which is worth knowing before a renovation rather than during one." },
+      { q: "Will drain work need heritage approval?", a: "Repairs generally do not, but excavation near a heritage structure can. We will tell you upfront if that applies and it is another reason relining usually suits this suburb." },
+      { q: "Do you do pre-purchase drain inspections in Hunters Hill?", a: "Yes, and in a suburb with housing this old it is worth doing. We provide camera footage and a written report." },
+    ],
+    metaTitle: "Plumber Hunters Hill | Heritage Drainage & Relining",
+    metaDescription: "Local plumber in Hunters Hill, Woolwich and Gladesville. Blocked drains, pipe relining, heritage drainage and stormwater. Call (02) 9139 8945.",
+  },
 ];

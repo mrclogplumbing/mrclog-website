@@ -73,6 +73,7 @@ export const locations: Location[] = [
       "Rose Bay", "Vaucluse", "Edgecliff", "Woollahra",
       "Paddington", "Randwick", "Coogee", "Maroubra",
       "Kingsford", "Kensington", "Bronte", "Clovelly",
+      "Point Piper",
     ],
     services: [
       "Emergency Plumbing", "Blocked Drains", "Hot Water Systems", "Taps & Toilets",
