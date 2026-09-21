@@ -74,7 +74,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-1">
             <div className="mb-4">
-              <Logo variant="light" height={52} />
+              <Logo variant="light" height={64} />
             </div>
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>
               Sydney&rsquo;s trusted plumbers. 5-star rated, available 24/7, $0 call-out fee.
