@@ -5,6 +5,7 @@ import AboutTeaser from "@/components/home/AboutTeaser";
 import ServicesGrid from "@/components/home/ServicesGrid";
 import SocialProof from "@/components/home/SocialProof";
 import ServiceAreas from "@/components/home/ServiceAreas";
+import Guarantee from "@/components/Guarantee";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import FinalCTA from "@/components/home/FinalCTA";
 
@@ -24,6 +25,7 @@ export default function HomePage() {
       <SocialProof />
       <ServiceAreas />
       <WhyChooseUs />
+      <Guarantee />
       <FinalCTA />
     </>
   );

@@ -47,7 +47,7 @@ export default function TermsPage() {
           <div>
             <h2 className="font-logo font-bold text-xl mb-3" style={{ color: "var(--color-dark)" }}>5. Warranty</h2>
             <p>
-              All workmanship is warranted for 12 months from the date of completion. Manufacturer warranties apply to fixtures and materials supplied by us. Warranty does not cover damage caused by misuse, accidental damage, or work performed by others.
+              All workmanship is warranted for 12 months from the date of completion. If something we installed or repaired fails because of how we did it, we return and put it right at no charge. Manufacturer warranties apply to fixtures and materials supplied by us, and we will make the claim on your behalf. The warranty does not cover a new blockage in a pipe that was cleared but not repaired, damage caused by misuse or accident, work performed by others, or faults we identified and you elected not to have repaired. This is in addition to your rights under the Australian Consumer Law and nothing here limits them.
             </p>
           </div>
 
