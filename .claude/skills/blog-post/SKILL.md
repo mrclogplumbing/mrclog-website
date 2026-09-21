@@ -113,16 +113,19 @@ and matches the URL you put in `metadata`, `canonical`, and `BlogPostSchema`.
 
 ## Step 5 — Register the post in all three places
 
-A post that is not registered is invisible. All three are required:
+A post that is not registered is invisible. Both are required:
 
-1. **`src/app/blog/page.tsx`** — add an entry to the **top** of the `posts`
+1. **`src/lib/blog.ts`** — add an entry to the **top** of the `posts`
    array (newest first) with `slug`, `title`, `excerpt` (1–2 sentences,
-   ~30 words), `date` (`"25 August 2026"` format), `category`, `readTime`,
-   `published: true`. Reuse an existing `category` string unless the topic
-   genuinely needs a new one.
-2. **`src/app/sitemap.ts`** — add the slug to the top of the `blogSlugs`
-   array.
-3. The post file itself must exist at `src/app/blog/<slug>/page.tsx`.
+   ~30 words), `date` (`"21 September 2026"` format), `category`,
+   `readTime`, `published: true`. Reuse an existing `category` string
+   unless the topic genuinely needs a new one.
+2. The post file itself must exist at `src/app/blog/<slug>/page.tsx`.
+
+The blog listing page and `src/app/sitemap.ts` both read `src/lib/blog.ts`,
+so there is no separate sitemap list to update — adding the entry above puts
+the post in both. Do not reintroduce a hand-maintained slug list; the old
+one silently drifted and left five pages out of the sitemap.
 
 The `date` in the blog index, the hero date, `publishedTime` in metadata,
 and `datePublished` in `BlogPostSchema` must all be **the same day** —
