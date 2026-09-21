@@ -5,6 +5,8 @@ import ReviewStrip from "@/components/ReviewStrip";
 import Link from "next/link";
 import { allAreas, getArea, suburbPageFor } from "@/lib/areas";
 import { getBlockedDrainArea } from "@/lib/blocked-drain-areas";
+import { getPipeReliningArea } from "@/lib/pipe-relining-areas";
+import { getHotWaterArea } from "@/lib/hot-water-areas";
 import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
@@ -39,7 +41,12 @@ export default async function LocationPage({
   if (!location) notFound();
 
   const parentRegion = location.parent ? getArea(location.parent) : undefined;
-  const hasDrainPage = Boolean(getBlockedDrainArea(slug));
+  // Service pages that exist for this specific suburb, for the cross-links.
+  const suburbServices = [
+    getBlockedDrainArea(slug) && { href: `/blocked-drains/${slug}`, label: "Blocked Drains" },
+    getPipeReliningArea(slug) && { href: `/pipe-relining/${slug}`, label: "Pipe Relining" },
+    getHotWaterArea(slug) && { href: `/hot-water/${slug}`, label: "Hot Water Systems" },
+  ].filter(Boolean) as { href: string; label: string }[];
 
   return (
     <>
@@ -213,20 +220,28 @@ export default async function LocationPage({
         </div>
       </section>
 
-      {hasDrainPage && (
+      {suburbServices.length > 0 && (
         <section className="section-container pb-4">
-          <div className="max-w-3xl mx-auto rounded-2xl p-6 bg-blue-50 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
-            <div>
-              <p className="font-semibold text-sm" style={{ color: "var(--color-dark)" }}>
-                Blocked drain in {location.label}?
-              </p>
-              <p className="text-sm text-gray-600 mt-1">
-                What causes blockages here, and what it takes to clear them properly.
-              </p>
+          <div className="max-w-3xl mx-auto">
+            <p className="font-semibold text-sm mb-3" style={{ color: "var(--color-dark)" }}>
+              Written for {location.label} specifically
+            </p>
+            <div className="grid gap-3 sm:grid-cols-3">
+              {suburbServices.map((svc) => (
+                <Link
+                  key={svc.href}
+                  href={svc.href}
+                  className="rounded-2xl p-5 bg-blue-50 no-underline transition-colors hover:bg-blue-100"
+                >
+                  <span className="font-semibold text-sm block" style={{ color: "var(--color-dark)" }}>
+                    {svc.label}
+                  </span>
+                  <span className="text-sm font-semibold mt-1 block" style={{ color: "var(--color-brand-blue)" }}>
+                    in {location.label} &rarr;
+                  </span>
+                </Link>
+              ))}
             </div>
-            <Link href={`/blocked-drains/${location.slug}`} className="btn-outline whitespace-nowrap no-underline text-sm">
-              Blocked Drains {location.label} &rarr;
-            </Link>
           </div>
         </section>
       )}
