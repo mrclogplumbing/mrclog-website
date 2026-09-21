@@ -1,4 +1,5 @@
-import { suburbPages } from "@/lib/suburbs";
+import type { ServiceArea } from "@/lib/service-areas";
+import { areaLinks, suburbForArea } from "@/lib/service-areas";
 import type { Location } from "@/lib/locations";
 
 /**
@@ -26,16 +27,7 @@ import type { Location } from "@/lib/locations";
  * than a bet. If Search Console shows it working, hot water and emergency
  * follow; if not, nothing much was spent finding out.
  */
-export interface BlockedDrainArea {
-  /** Matches a slug in src/lib/suburbs.ts. */
-  suburb: string;
-  /** One paragraph on what blocked drains are like in this suburb. */
-  intro: string;
-  /** Why drains block here specifically. Two or three, never padded to three. */
-  causes: { title: string; body: string }[];
-  /** Questions this suburb actually raises. */
-  faqs: { q: string; a: string }[];
-}
+export type BlockedDrainArea = ServiceArea;
 
 export const blockedDrainAreas: BlockedDrainArea[] = [
   {
@@ -469,16 +461,10 @@ export function getBlockedDrainArea(suburb: string): BlockedDrainArea | undefine
 
 /** The suburb page this drains page belongs to, for the breadcrumb and links. */
 export function suburbFor(area: BlockedDrainArea): Location | undefined {
-  return suburbPages.find((s) => s.slug === area.suburb);
+  return suburbForArea(area);
 }
 
 /** Every blocked-drain suburb with its label, for listing on the service page. */
 export function blockedDrainSuburbLinks(): { slug: string; label: string }[] {
-  return blockedDrainAreas
-    .map((a) => {
-      const s = suburbPages.find((x) => x.slug === a.suburb);
-      return s ? { slug: a.suburb, label: s.label } : null;
-    })
-    .filter((x): x is { slug: string; label: string } => x !== null)
-    .sort((a, b) => a.label.localeCompare(b.label));
+  return areaLinks(blockedDrainAreas);
 }

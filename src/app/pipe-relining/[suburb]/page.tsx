@@ -1,14 +1,14 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import ServiceSuburbPage from "@/components/ServiceSuburbPage";
-import { blockedDrainAreas, getBlockedDrainArea } from "@/lib/blocked-drain-areas";
-import { getPipeReliningArea } from "@/lib/pipe-relining-areas";
+import { pipeReliningAreas, getPipeReliningArea } from "@/lib/pipe-relining-areas";
+import { getBlockedDrainArea } from "@/lib/blocked-drain-areas";
 import { suburbForArea } from "@/lib/service-areas";
 
 const BASE = "https://www.mrclog.com.au";
 
 export async function generateStaticParams() {
-  return blockedDrainAreas.map((a) => ({ suburb: a.suburb }));
+  return pipeReliningAreas.map((a) => ({ suburb: a.suburb }));
 }
 
 export async function generateMetadata({
@@ -17,13 +17,13 @@ export async function generateMetadata({
   params: Promise<{ suburb: string }>;
 }): Promise<Metadata> {
   const { suburb } = await params;
-  const area = getBlockedDrainArea(suburb);
+  const area = getPipeReliningArea(suburb);
   const place = area && suburbForArea(area);
   if (!area || !place) return {};
   return {
-    alternates: { canonical: `/blocked-drains/${suburb}` },
-    title: `Blocked Drains ${place.label} | Same-Day Drain Clearing`,
-    description: `Blocked drain in ${place.label}? Mr. Clog clears blocked drains across ${place.label} with CCTV inspection and high-pressure jetting. $0 call-out fee, any hour. Call (02) 9139 8945.`,
+    alternates: { canonical: `/pipe-relining/${suburb}` },
+    title: `Pipe Relining ${place.label} | No-Dig Drain Repair`,
+    description: `Pipe relining in ${place.label} — repair a cracked or root-damaged drain without excavating. CCTV inspection first, fixed price before we start. Call (02) 9139 8945.`,
   };
 }
 
@@ -33,11 +33,11 @@ export default async function Page({
   params: Promise<{ suburb: string }>;
 }) {
   const { suburb } = await params;
-  const area = getBlockedDrainArea(suburb);
+  const area = getPipeReliningArea(suburb);
   const place = area && suburbForArea(area);
   if (!area || !place) notFound();
 
-  const hasRelining = Boolean(getPipeReliningArea(suburb));
+  const hasDrains = Boolean(getBlockedDrainArea(suburb));
 
   return (
     <>
@@ -58,8 +58,8 @@ export default async function Page({
               {
                 "@type": "BreadcrumbList",
                 itemListElement: [
-                  { "@type": "ListItem", position: 1, name: "Blocked Drains", item: `${BASE}/services/blocked-drains` },
-                  { "@type": "ListItem", position: 2, name: place.label, item: `${BASE}/blocked-drains/${suburb}` },
+                  { "@type": "ListItem", position: 1, name: "Pipe Relining", item: `${BASE}/services/pipe-relining` },
+                  { "@type": "ListItem", position: 2, name: place.label, item: `${BASE}/pipe-relining/${suburb}` },
                 ],
               },
             ],
@@ -67,19 +67,19 @@ export default async function Page({
         }}
       />
       <ServiceSuburbPage
-        serviceSlug="blocked-drains"
-        serviceLabel="Blocked Drains"
-        causesHeading={`Why Drains Block in ${place.label}`}
-        subheadline={`Same-day drain clearing across ${place.label} — camera inspection, high-pressure jetting, and a fixed price before we start.`}
+        serviceSlug="pipe-relining"
+        serviceLabel="Pipe Relining"
+        causesHeading={`Pipe Relining in ${place.label}`}
+        subheadline={`Repair a cracked or root-damaged drain in ${place.label} without digging it up — inspected first, fixed price before we start.`}
         reviewTag="Blocked Drains"
         area={area}
         place={place}
         related={
-          hasRelining
+          hasDrains
             ? {
-                href: `/pipe-relining/${suburb}`,
-                label: `Pipe Relining ${place.label}`,
-                blurb: `Drain blocking again and again in ${place.label}?`,
+                href: `/blocked-drains/${suburb}`,
+                label: `Blocked Drains ${place.label}`,
+                blurb: `Blocked right now in ${place.label}?`,
               }
             : undefined
         }
