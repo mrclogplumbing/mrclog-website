@@ -80,7 +80,16 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
       alt: "Mr. Clog plumber excavating a burst water main in a Sydney front yard",
       focus: "center 24%",
     },
-    proof: [FLEXI_HOSE, OFFICE_FLOOD],
+    proof: [
+      {
+        src: "/photos/burst-pipe-repair-demolition.webp",
+        alt: "Mr. Clog plumber soldering a repair to a water pipe broken in a wall during a bathroom demolition",
+        caption:
+          "Repairing a water pipe a demolition crew put through during a bathroom strip-out. Trade damage is one of the more common reasons we get called out mid-job.",
+      },
+      FLEXI_HOSE,
+      OFFICE_FLOOD,
+    ],
   },
   "blocked-drains": {
     hero: ROOTS_REMOVED,
