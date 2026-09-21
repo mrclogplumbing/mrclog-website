@@ -183,12 +183,6 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
           "After: a rain head and hand shower on a rail, same tiles, same recess. Not every bathroom needs gutting.",
       },
       {
-        src: "/photos/copper-soldering-roughin.webp",
-        alt: "Mr. Clog plumber soldering copper pipework at floor level during a bathroom rough-in, before the walls are tiled",
-        caption:
-          "Rough-in on a full fit-out: copper soldered in place before anything is tiled over. This is the part nobody sees and the part that has to be right.",
-      },
-      {
         src: "/photos/ensuite-microcement.webp",
         alt: "Completed ensuite in pink microcement and fluted tile, with aged brass tapware, a ceiling-mounted rain head and a vessel basin on a tiled bench",
         focus: "center 50%",
