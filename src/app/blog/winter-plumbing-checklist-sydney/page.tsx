@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home | Mr. Clog Blog",
+  title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home",
   description:
     "Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here is a simple checklist to prepare your home before the cold hits.",
   openGraph: {
     type: "article",
-    title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home | Mr. Clog Blog",
+    title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home",
     description: "Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here is a simple checklist to prepare your home before the cold hits.",
     url: "https://www.mrclog.com.au/blog/winter-plumbing-checklist-sydney",
     siteName: "Mr. Clog Plumbing",

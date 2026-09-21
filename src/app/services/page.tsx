@@ -4,7 +4,7 @@ import { services } from "@/lib/services";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
-  title: "Plumbing Services Sydney | Mr. Clog | Full Service List",
+  title: "Plumbing Services Sydney | Full Service List",
   description:
     "Every plumbing service Mr. Clog offers across Sydney — emergency plumbing, blocked drains, hot water, gas fitting, pipe relining and more. 24/7, $0 call-out fee.",
 };

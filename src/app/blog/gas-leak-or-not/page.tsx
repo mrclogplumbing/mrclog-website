@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Gas Leak or Not? How to Tell — and What to Do | Mr. Clog Blog",
+  title: "Gas Leak or Not? How to Tell — and What to Do",
   description:
     "If you smell gas, treat it as a real leak until proven otherwise. Learn the signs of a gas leak, exactly what to do, and what not to do.",
   openGraph: {
     type: "article",
-    title: "Gas Leak or Not? How to Tell — and What to Do Immediately | Mr. Clog Blog",
+    title: "Gas Leak or Not? How to Tell — and What to Do Immediately",
     description: "If you smell gas indoors, treat it as a real leak until proven otherwise. Here is exactly what to do and what not to do.",
     url: "https://www.mrclog.com.au/blog/gas-leak-or-not",
     siteName: "Mr. Clog Plumbing",

@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Blocked Stormwater Drains: Why Your Yard Floods When It Rains | Mr. Clog Blog",
+  title: "Blocked Stormwater Drains: Why Your Yard Floods When It Rains",
   description:
     "If your yard pools with water every time it rains hard, your stormwater drains are blocked. Here is what causes it, the warning signs, and how to fix it before water reaches your home.",
   openGraph: {
     type: "article",
-    title: "Blocked Stormwater Drains: Why Your Yard Floods When It Rains | Mr. Clog Blog",
+    title: "Blocked Stormwater Drains: Why Your Yard Floods When It Rains",
     description: "If your yard pools with water every time it rains hard, your stormwater drains are blocked. Here is what causes it, the warning signs, and how to fix it before water reaches your home.",
     url: "https://www.mrclog.com.au/blog/blocked-stormwater-drains",
     siteName: "Mr. Clog Plumbing",

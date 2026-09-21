@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "7 Signs Your Hot Water System Is About to Fail | Mr. Clog Blog",
+  title: "7 Signs Your Hot Water System Is About to Fail",
   description:
     "Don\u2019t get caught with a cold shower. Spot these 7 warning signs that your Sydney hot water system needs attention before it gives up completely.",
   openGraph: {
     type: "article",
-    title: "7 Signs Your Hot Water System Is About to Fail | Mr. Clog Blog",
+    title: "7 Signs Your Hot Water System Is About to Fail",
     description: "Don’t get caught with a cold shower. Spot these 7 warning signs that your Sydney hot water system needs attention before it gives up completely.",
     url: "https://www.mrclog.com.au/blog/signs-your-hot-water-system-is-failing",
     siteName: "Mr. Clog Plumbing",

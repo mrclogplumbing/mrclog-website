@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Your Toilet Keeps Running (and How to Fix It) | Mr. Clog Blog",
+  title: "Why Your Toilet Keeps Running (and How to Fix It)",
   description:
     "A toilet that keeps running wastes thousands of litres a month and quietly inflates your water bill. Here is what causes it, how to diagnose it, and when to call a plumber.",
   openGraph: {
     type: "article",
-    title: "Why Your Toilet Keeps Running (and How to Fix It) | Mr. Clog Blog",
+    title: "Why Your Toilet Keeps Running (and How to Fix It)",
     description: "A toilet that keeps running wastes thousands of litres a month and quietly inflates your water bill. Here is what causes it, how to diagnose it, and when to call a plumber.",
     url: "https://www.mrclog.com.au/blog/why-your-toilet-keeps-running",
     siteName: "Mr. Clog Plumbing",

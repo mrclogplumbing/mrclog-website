@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Your Hot Water Struggles in Winter (and How to Fix It) | Mr. Clog Blog",
+  title: "Why Your Hot Water Struggles in Winter (and How to Fix It)",
   description:
     "Lukewarm showers, water that runs out fast, or no hot water at all? Here is why hot water systems struggle every Sydney winter — and what to do before yours fails.",
   openGraph: {
     type: "article",
-    title: "Why Your Hot Water Struggles in Winter (and How to Fix It) | Mr. Clog Blog",
+    title: "Why Your Hot Water Struggles in Winter (and How to Fix It)",
     description: "Lukewarm showers, water that runs out fast, or no hot water at all? Here is why hot water systems struggle every Sydney winter — and what to do before yours fails.",
     url: "https://www.mrclog.com.au/blog/why-hot-water-struggles-in-winter",
     siteName: "Mr. Clog Plumbing",

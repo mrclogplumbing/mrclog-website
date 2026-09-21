@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It) | Mr. Clog Blog",
+  title: "Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It)",
   description:
     "If your drain keeps blocking every few months, tree roots are almost always the culprit. Here is how they get in, and the three real fixes — from temporary to permanent.",
   openGraph: {
     type: "article",
-    title: "Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It) | Mr. Clog Blog",
+    title: "Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It)",
     description: "If your drain keeps blocking every few months, tree roots are almost always the culprit. Here is how they get in, and the three real fixes — from temporary to permanent.",
     url: "https://www.mrclog.com.au/blog/tree-roots-in-drains",
     siteName: "Mr. Clog Plumbing",

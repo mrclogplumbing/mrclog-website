@@ -41,7 +41,7 @@ export const locations: Location[] = [
       { q: "Do you work on heritage and terrace properties?", a: "Yes — we have extensive experience with Inner West's older housing stock, including heritage sandstone, cast iron pipes, and terrace drainage systems." },
       { q: "Do you service strata and apartment buildings?", a: "Yes — we work with both individual unit owners and strata managers across Inner West apartment buildings." },
     ],
-    metaTitle: "Plumber Inner West Sydney | 24/7 | Mr. Clog",
+    metaTitle: "Plumber Inner West Sydney | 24/7",
     metaDescription: "Local plumber in Sydney's Inner West. Newtown, Balmain, Leichhardt, Marrickville and more. Available 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Mr. Clog regularly works on the Inner West's distinctive housing stock — Victorian and Federation-era terraces with original cast iron waste pipes, sandstone foundations, and narrow side easements that demand specialist knowledge. We’re familiar with Inner West Council’s requirements and the ageing water infrastructure common in suburbs like Balmain, Glebe, and Newtown. From CCTV drain surveys under heritage sandstone to emergency repairs in tight Marrickville terrace alleyways, our team has seen it all.",
@@ -74,7 +74,7 @@ export const locations: Location[] = [
       { q: "Can you handle saltwater corrosion issues?", a: "Yes — properties near the coast often have accelerated pipe corrosion. We assess and replace corroded pipework using marine-appropriate materials." },
       { q: "Are you available on weekends in the Eastern Suburbs?", a: "Yes — we're available 24/7 including weekends and public holidays with $0 call-out fee." },
     ],
-    metaTitle: "Plumber Eastern Suburbs Sydney | Mr. Clog | 24/7",
+    metaTitle: "Plumber Eastern Suburbs Sydney | 24/7",
     metaDescription: "Trusted plumber in Sydney's Eastern Suburbs. Bondi, Randwick, Coogee, Paddington and more. Available 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Properties in Sydney’s Eastern Suburbs face unique plumbing challenges: salt-laden sea air accelerates pipe corrosion in Bondi and Coogee, older infrastructure in Paddington and Woollahra requires heritage-sensitive repairs, and high-density apartment towers in Randwick and Bondi Junction demand plumbers experienced with strata. Mr. Clog works closely with Randwick City Council and Woollahra Council inspectors and understands the building codes for this area inside out.",
@@ -107,7 +107,7 @@ export const locations: Location[] = [
       { q: "Can you handle large family homes in Wahroonga and Pymble?", a: "Absolutely. We regularly service larger Federation and post-war homes across the upper North Shore, including hot water systems, drainage, and bathroom renovations." },
       { q: "Do you offer same-day service on the North Shore?", a: "Yes — in most cases we can reach Chatswood, Lane Cove and the upper North Shore within 30–60 minutes for emergency calls." },
     ],
-    metaTitle: "Plumber North Shore Sydney | Mr. Clog | 24/7",
+    metaTitle: "Plumber North Shore Sydney | 24/7",
     metaDescription: "Local plumber across Sydney's North Shore. Chatswood, Lane Cove, Mosman, Wahroonga, Hornsby and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "The North Shore stretches from leafy Wahroonga and Pymble down through Chatswood and Lane Cove. Mr. Clog handles everything from large heritage Federation homes on bushland blocks to modern apartment towers in Chatswood and St Ives. We’re familiar with Ku-ring-gai and Willoughby Council requirements and the unique drainage challenges of properties built on sandstone bushland with steep gradients.",
@@ -140,7 +140,7 @@ export const locations: Location[] = [
       { q: "Can you do hot water replacements in Castle Hill?", a: "Yes — we replace and install all major hot water systems including gas, electric, heat pump, and solar." },
       { q: "Do you handle commercial plumbing in Norwest Business Park?", a: "Yes — we service offices, retail, and light industrial properties across the Norwest precinct." },
     ],
-    metaTitle: "Plumber Hills District Sydney | Castle Hill, Kellyville | Mr. Clog",
+    metaTitle: "Plumber Hills District Sydney | Castle Hill, Kellyville",
     metaDescription: "Local plumber in the Hills District. Castle Hill, Kellyville, Baulkham Hills, Norwest, Bella Vista and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "The Hills District is one of Sydney’s fastest-growing regions, with new home releases in Rouse Hill and Box Hill alongside established Federation and post-war homes in Castle Hill and Baulkham Hills. Mr. Clog regularly services Hills Shire Council and Hornsby Council areas, and we’re familiar with the modern plumbing requirements of new builds as well as the older infrastructure in long-settled streets.",
@@ -173,7 +173,7 @@ export const locations: Location[] = [
       { q: "Can you handle blocked stormwater in Mascot and Botany?", a: "Yes — the area’s flat terrain and ageing stormwater pipes mean blockages are common. We have CCTV cameras and high-pressure jetters to clear them fast." },
       { q: "Do you respond after hours in the Inner South?", a: "Yes — 24/7 emergency plumbing across Mascot, Botany, Rosebery and the wider Inner South with $0 call-out." },
     ],
-    metaTitle: "Plumber Inner South Sydney | Mascot, Botany | Mr. Clog",
+    metaTitle: "Plumber Inner South Sydney | Mascot, Botany",
     metaDescription: "Local plumber in Sydney's Inner South. Mascot, Botany, Rosebery, Eastlakes, Pagewood and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Sydney’s Inner South sits between the CBD and the airport — a working precinct with apartment towers in Wolli Creek and Zetland alongside warehouses and light industrial buildings in Mascot and Botany. Mr. Clog services Bayside Council and City of Sydney properties here, and we’re familiar with the area’s flat terrain, ageing stormwater drainage, and the commercial plumbing demands of the airport-adjacent business parks.",
@@ -206,7 +206,7 @@ export const locations: Location[] = [
       { q: "Can you replace hot water systems in Strathfield?", a: "Yes — we install and replace all major brands of gas, electric, and heat pump hot water units across Strathfield, Burwood, and Homebush." },
       { q: "Do you handle commercial work in Auburn and Lidcombe?", a: "Yes — we work on commercial properties, warehouses, and shopfronts across Auburn, Lidcombe, and the wider Inner West-adjacent corridor." },
     ],
-    metaTitle: "Plumber Western Sydney | Blacktown, Penrith | Mr. Clog",
+    metaTitle: "Plumber Western Sydney | Blacktown, Penrith",
     metaDescription: "Local plumber across Western Sydney. Blacktown, Penrith, Auburn, Strathfield, Burwood and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Western Sydney covers a huge area with very different plumbing needs. Established suburbs like Strathfield, Burwood, and Concord have older Federation and post-war homes with original cast iron drainage. The Penrith and Blacktown corridor mixes long-settled streets with newer estates. Mr. Clog services Cumberland, Blacktown, Penrith, Strathfield, and Burwood Council areas, and we’re set up for both heritage repairs and modern fit-outs.",
@@ -240,7 +240,7 @@ export const locations: Location[] = [
       { q: "Can you handle salt corrosion on coastal properties?", a: "Yes — we’re experienced with the accelerated pipe and fixture corrosion common in beachfront homes from Manly to Avalon." },
       { q: "Do you service strata buildings in Dee Why and Manly?", a: "Yes — we work with apartment owners, residents, and strata managers across the beaches." },
     ],
-    metaTitle: "Plumber Northern Beaches Sydney | Manly, Mona Vale | Mr. Clog",
+    metaTitle: "Plumber Northern Beaches Sydney | Manly, Mona Vale",
     metaDescription: "Local plumber across Sydney's Northern Beaches. Manly, Dee Why, Mona Vale, Avalon, Palm Beach and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Sydney’s Northern Beaches stretch nearly 30km from Manly to Palm Beach, separated from the rest of the city by water. Mr. Clog has plumbers based on the peninsula so we don’t leave you waiting. Coastal homes here face salt-air corrosion, sand-clogged drains, and bushfire-overlay restrictions in the upper beaches. We’re familiar with Northern Beaches Council and the unique demands of beachfront, hillside, and bushland properties from Freshwater through to Palm Beach.",
@@ -274,7 +274,7 @@ export const locations: Location[] = [
       { q: "Can you handle commercial plumbing in city offices?", a: "Yes — we service office buildings, retail tenants, hospitality venues, and shopfronts across the city core." },
       { q: "How fast can you reach the CBD for an emergency?", a: "Usually within 30 minutes — we have plumbers covering the city 24/7." },
     ],
-    metaTitle: "Plumber Sydney CBD | 24/7 City Plumber | Mr. Clog",
+    metaTitle: "Plumber Sydney CBD | 24/7 City Plumber",
     metaDescription: "24/7 plumber for Sydney CBD, Surry Hills, Darlinghurst, Redfern, Pyrmont and the city core. $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Sydney CBD plumbing is a different game — high-rise apartment towers, hospitality fit-outs, retail tenancies, and the heritage buildings of The Rocks all sit within a few kilometres. Mr. Clog regularly services strata buildings, office tenancies, and hospitality venues across the City of Sydney. We’re familiar with the access constraints, after-hours work requirements, and trade waste regulations that make CBD plumbing more complex than suburban work.",
@@ -307,7 +307,7 @@ export const locations: Location[] = [
       { q: "Can you handle townhouse complexes in Eastwood and Epping?", a: "Yes — we work with townhouse owners, body corporates, and individual residents across the area." },
       { q: "Do you do hot water replacements in Ryde?", a: "Yes — we replace gas, electric, heat pump, and solar hot water systems across Ryde and the surrounding suburbs." },
     ],
-    metaTitle: "Plumber Ryde & Macquarie Park | Mr. Clog | 24/7",
+    metaTitle: "Plumber Ryde & Macquarie Park | 24/7",
     metaDescription: "Local plumber across Ryde, Macquarie Park, Eastwood, Epping, Hunters Hill and more. 24/7, $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Ryde and Macquarie Park combine established residential suburbs with a major business and university precinct. Mr. Clog services everything from older Federation homes in Hunters Hill and Gladesville through to high-rise apartments along the Macquarie Park corridor and commercial offices in the business park. We’re familiar with City of Ryde and Hunters Hill Council requirements.",
@@ -341,7 +341,7 @@ export const locations: Location[] = [
       { q: "Can you handle commercial plumbing in Bankstown?", a: "Yes — we service shopfronts, offices, and warehouses across Bankstown CBD and the surrounding industrial areas." },
       { q: "Do you offer same-day service in Lakemba and Punchbowl?", a: "Yes — in most cases we can be there within 30–60 minutes during business hours, and we're available 24/7 for emergencies." },
     ],
-    metaTitle: "Plumber Canterbury-Bankstown | Mr. Clog | 24/7",
+    metaTitle: "Plumber Canterbury-Bankstown | 24/7",
     metaDescription: "Local plumber across Canterbury-Bankstown. Bankstown, Canterbury, Campsie, Lakemba, Padstow, Revesby and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Canterbury-Bankstown is one of Sydney’s largest LGAs by population, mixing established post-war housing with newer townhouse and apartment developments. Mr. Clog services the entire area from the Canterbury end through to Padstow and East Hills. We’re familiar with the area’s ageing terracotta drainage, the demands of multi-tenant townhouse complexes, and the commercial plumbing needs of the busy Bankstown and Campsie shopping strips.",
@@ -374,7 +374,7 @@ export const locations: Location[] = [
       { q: "Can you handle heritage homes in Kirribilli and Cammeray?", a: "Yes — we have experience with the Federation and Edwardian homes common across the Lower North Shore, including original drainage and gas fittings." },
       { q: "How quickly can you reach the Lower North Shore?", a: "Usually within 30–45 minutes — we have plumbers covering the area daily." },
     ],
-    metaTitle: "Plumber Lower North Shore | Kirribilli, North Sydney | Mr. Clog",
+    metaTitle: "Plumber Lower North Shore | Kirribilli, North Sydney",
     metaDescription: "Plumber for the Lower North Shore. Kirribilli, North Sydney, Crows Nest, Cammeray, Waverton and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The Lower North Shore packs a lot into a small area: high-rise commercial and residential towers in North Sydney, harbour-front heritage homes in Kirribilli and Lavender Bay, and dense apartment-and-terrace neighbourhoods in Crows Nest, Cammeray, and Naremburn. Mr. Clog handles the full mix — strata maintenance, heritage repairs, and commercial fit-outs — with North Sydney and Lane Cove Council requirements front of mind.",
@@ -408,7 +408,7 @@ export const locations: Location[] = [
       { q: "Can you handle saltwater corrosion in Cronulla and Burraneer?", a: "Yes — properties near the coast and the Georges River often have accelerated pipe and fitting corrosion. We replace corroded sections with marine-grade or copper alternatives." },
       { q: "Do you service the bushland suburbs like Engadine and Heathcote?", a: "Yes — we work across the Shire including the bushland fringe suburbs. We understand the bushfire-overlay requirements and the steep, rocky blocks common in those areas." },
     ],
-    metaTitle: "Plumber Sutherland Shire | Cronulla, Miranda | Mr. Clog 24/7",
+    metaTitle: "Plumber Sutherland Shire | Cronulla, Miranda | 24/7",
     metaDescription: "Local plumber for the Sutherland Shire. Cronulla, Miranda, Sutherland, Caringbah, Engadine, Menai and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The Sutherland Shire stretches from Cronulla’s beaches across to the bushland suburbs of Heathcote and Engadine, with the busy commercial centres of Miranda, Sutherland, and Caringbah in between. Mr. Clog services the full Shire under the Sutherland Shire Council area. Coastal properties in Cronulla, Burraneer, and Woolooware face salt corrosion and storm-water blockages from sand and seaweed; bushland suburbs like Engadine and Heathcote sit on rocky, steep blocks where pipe alignment and root intrusion are common issues.",
@@ -442,7 +442,7 @@ export const locations: Location[] = [
       { q: "Can you handle high-rise apartments in Hurstville and Rockdale?", a: "Yes — we work with strata, building managers, and individual unit owners across the high-rise developments along the Princes Highway corridor." },
       { q: "Do you do emergency plumbing in the St George area?", a: "Yes — 24/7 emergency plumbing across St George with $0 call-out fee. We’re usually onsite within 30–60 minutes." },
     ],
-    metaTitle: "Plumber St George Sydney | Hurstville, Kogarah | Mr. Clog",
+    metaTitle: "Plumber St George Sydney | Hurstville, Kogarah",
     metaDescription: "Local plumber for the St George area. Hurstville, Kogarah, Rockdale, Bexley, Brighton-Le-Sands and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The St George area sits between the Inner South and the Sutherland Shire, covering Georges River and Bayside Council territory. Mr. Clog regularly works on the area’s mix of post-war family homes, the high-rise apartment corridor along the Princes Highway in Hurstville and Rockdale, and the beachfront properties in Brighton-Le-Sands and Sans Souci. The proximity to Botany Bay means salt-driven corrosion is a recurring issue, and the older terracotta drainage in suburbs like Bexley and Penshurst is prone to root intrusion.",
@@ -476,7 +476,7 @@ export const locations: Location[] = [
       { q: "Can you handle commercial plumbing in Westmead?", a: "Yes — we service medical and commercial properties in the Westmead health and education precinct." },
       { q: "Are you available 24/7 in Parramatta?", a: "Yes — 24/7 emergency plumbing across Parramatta and the wider area with $0 call-out fee." },
     ],
-    metaTitle: "Plumber Parramatta | Westmead, Harris Park | Mr. Clog 24/7",
+    metaTitle: "Plumber Parramatta | Westmead, Harris Park | 24/7",
     metaDescription: "Local plumber for Parramatta and surrounds. Parramatta CBD, Westmead, Harris Park, Granville, Merrylands and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Parramatta is Sydney’s second CBD with one of the densest mixes of property types anywhere in the city: high-rise residential and commercial towers in the CBD, the Westmead health and education precinct, post-war family homes in Harris Park and Granville, and the older Federation properties in North Parramatta and Northmead. Mr. Clog services City of Parramatta and Cumberland Council areas, and we’re set up for both the access requirements of high-rise plumbing and the heritage drainage of older streets.",
@@ -510,7 +510,7 @@ export const locations: Location[] = [
       { q: "Can you handle commercial plumbing in Cabramatta and Wetherill Park?", a: "Yes — we service shopfronts, restaurants, and warehouses across the south-west’s busy commercial precincts." },
       { q: "How quickly can you reach Liverpool for an emergency?", a: "Usually within 45–60 minutes — we have plumbers covering the south-west corridor with 24/7 emergency response." },
     ],
-    metaTitle: "Plumber Liverpool & Fairfield | Cabramatta | Mr. Clog 24/7",
+    metaTitle: "Plumber Liverpool & Fairfield | Cabramatta | 24/7",
     metaDescription: "Local plumber for Liverpool, Fairfield, Cabramatta, Wetherill Park and Sydney's south-west. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Liverpool and Fairfield form a major south-western Sydney service area with a mix of post-war housing, busy multicultural retail strips, and large light-industrial precincts in Wetherill Park, Smithfield, and Prestons. Mr. Clog services Liverpool and Fairfield Council areas. The flat terrain and ageing terracotta drainage common across these suburbs make blocked drains a frequent issue; we use CCTV inspection and high-pressure jetting to clear and diagnose without unnecessary digging.",
@@ -545,7 +545,7 @@ export const locations: Location[] = [
       { q: "Can you handle blocked drains in older Campbelltown homes?", a: "Yes — we use CCTV cameras and high-pressure jetters to clear blockages in the older terracotta drainage common in established Campbelltown and Ingleburn streets." },
       { q: "Are you available for emergency plumbing in Camden?", a: "Yes — 24/7 emergency plumbing across the Macarthur region with $0 call-out. We have plumbers covering the south-west growth corridor." },
     ],
-    metaTitle: "Plumber Macarthur | Campbelltown, Camden | Mr. Clog 24/7",
+    metaTitle: "Plumber Macarthur | Campbelltown, Camden | 24/7",
     metaDescription: "Local plumber for the Macarthur region. Campbelltown, Camden, Narellan, Ingleburn, Mount Annan, Oran Park and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "The Macarthur region is one of Sydney’s biggest growth corridors. Established suburbs like Campbelltown, Ingleburn, and Camden sit alongside the rapidly developing release areas of Oran Park, Gregory Hills, and Spring Farm. Mr. Clog services Campbelltown and Camden Council areas — we work on the older Federation and post-war housing common in established streets, and we’re set up for the modern materials and connection requirements of new-estate plumbing.",

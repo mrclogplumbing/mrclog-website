@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Water Pressure Too High or Too Low? How to Diagnose It Yourself | Mr. Clog Blog",
+  title: "Water Pressure Too High or Too Low? How to Diagnose It Yourself",
   description:
     "Bad water pressure isn't just annoying — it can damage appliances or signal a hidden leak. Here's how to test your own pressure in 5 minutes and know when it's serious.",
   openGraph: {
     type: "article",
-    title: "Water Pressure Too High or Too Low? How to Diagnose It Yourself | Mr. Clog Blog",
+    title: "Water Pressure Too High or Too Low? How to Diagnose It Yourself",
     description: "Bad water pressure isn't just annoying — it can damage appliances or signal a hidden leak. Here's how to test your own pressure in 5 minutes and know when it's serious.",
     url: "https://www.mrclog.com.au/blog/water-pressure-too-high-or-too-low",
     siteName: "Mr. Clog Plumbing",

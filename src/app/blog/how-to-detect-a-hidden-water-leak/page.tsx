@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How to Detect a Hidden Water Leak Before It Costs You Thousands | Mr. Clog Blog",
+  title: "How to Detect a Hidden Water Leak Before It Costs You Thousands",
   description:
     "A hidden water leak can rot timber, ruin ceilings, and waste thousands of litres before you ever see a drop. Here is how to detect one early using the meter test and six warning signs.",
   openGraph: {
     type: "article",
-    title: "How to Detect a Hidden Water Leak Before It Costs You Thousands | Mr. Clog Blog",
+    title: "How to Detect a Hidden Water Leak Before It Costs You Thousands",
     description: "A hidden water leak can rot timber, ruin ceilings, and waste thousands of litres before you ever see a drop. Here is how to detect one early using the meter test and six warning signs.",
     url: "https://www.mrclog.com.au/blog/how-to-detect-a-hidden-water-leak",
     siteName: "Mr. Clog Plumbing",

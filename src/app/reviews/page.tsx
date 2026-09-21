@@ -4,12 +4,12 @@ import ReviewsList from "./ReviewsList";
 import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews | Mr. Clog Plumbing Sydney",
+  title: "Customer Reviews",
   description:
     "Real Google reviews for Mr. Clog Plumbing. Sydney homeowners share their experience with our emergency plumbing, blocked drains, hot water, and bathroom renovation work.",
   alternates: { canonical: "/reviews" },
   openGraph: {
-    title: "Customer Reviews | Mr. Clog Plumbing Sydney",
+    title: "Customer Reviews",
     description:
       `Read what Sydney customers say about Mr. Clog Plumbing on Google. ${reviewSummary.ratingValue} stars across ${reviewSummary.reviewCount} reviews.`,
     url: "https://www.mrclog.com.au/reviews",

@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How Much Does a Leaking Tap Actually Cost You? | Mr. Clog Blog",
+  title: "How Much Does a Leaking Tap Actually Cost You?",
   description:
     "A dripping tap might seem minor, but the numbers add up fast. Find out exactly how much a leaking tap costs in water bills — and why you should fix it now.",
   openGraph: {
     type: "article",
-    title: "How Much Does a Leaking Tap Actually Cost You? (The Numbers Might Surprise You) | Mr. Clog Blog",
+    title: "How Much Does a Leaking Tap Actually Cost You? (The Numbers Might Surprise You)",
     description: "A dripping tap might seem minor, but the water waste and hidden damage costs add up fast. Here is exactly what a leaking tap costs.",
     url: "https://www.mrclog.com.au/blog/how-much-does-a-leaking-tap-cost",
     siteName: "Mr. Clog Plumbing",

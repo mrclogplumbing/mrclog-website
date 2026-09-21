@@ -5,12 +5,12 @@ import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home? | Mr. Clog Blog",
+  title: "Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home?",
   description:
     "Choosing a hot water system is a 10-year decision. Compare gas, electric, and heat pump systems for Sydney homes — running costs, install costs, and reliability.",
   openGraph: {
     type: "article",
-    title: "Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home? | Mr. Clog Blog",
+    title: "Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home?",
     description: "Choosing a hot water system is a 10-year decision. Compare gas, electric, and heat pump systems for Sydney homes — running costs, install costs, and reliability.",
     url: "https://www.mrclog.com.au/blog/gas-vs-electric-vs-heat-pump-hot-water",
     siteName: "Mr. Clog Plumbing",

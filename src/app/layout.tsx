@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   title: {
     default: "Mr. Clog | Sydney's #1 Plumber | (02) 9139 8945 | 24/7 Emergency",
-    template: "%s | Mr. Clog Plumbing Sydney",
+    template: "%s | Mr. Clog Plumbing",
   },
   description:
     "Sydney's trusted plumbers. 5-star rated, available 24/7, $0 call-out fee. Blocked drains, emergency plumbing, hot water & more. Call (02) 9139 8945 now.",
@@ -57,7 +57,10 @@ export const metadata: Metadata = {
     locale: "en_AU",
     url: "https://www.mrclog.com.au",
     siteName: "Mr. Clog Plumbing",
-    title: "Mr. Clog | Sydney's #1 Plumber | 24/7 Emergency",
+    title: {
+      default: "Mr. Clog | Sydney's #1 Plumber | 24/7 Emergency",
+      template: "%s | Mr. Clog Plumbing",
+    },
     description:
       "Sydney's trusted plumbers. 5-star rated, available 24/7, $0 call-out fee.",
     images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
