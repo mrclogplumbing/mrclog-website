@@ -9,6 +9,7 @@ import { services, getService } from "@/lib/services";
 import { photosForService } from "@/lib/service-photos";
 import { blockedDrainSuburbLinks } from "@/lib/blocked-drain-areas";
 import { pipeReliningSuburbLinks } from "@/lib/pipe-relining-areas";
+import { hotWaterSuburbLinks } from "@/lib/hot-water-areas";
 import { PhoneCallIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
@@ -48,7 +49,9 @@ export default async function ServicePage({
       ? { prefix: "blocked-drains", items: blockedDrainSuburbLinks() }
       : slug === "pipe-relining"
         ? { prefix: "pipe-relining", items: pipeReliningSuburbLinks() }
-        : null;
+        : slug === "hot-water-systems"
+          ? { prefix: "hot-water", items: hotWaterSuburbLinks() }
+          : null;
 
   return (
     <>

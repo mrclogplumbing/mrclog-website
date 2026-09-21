@@ -4,6 +4,7 @@ import { services } from '@/lib/services';
 import { allAreas } from '@/lib/areas';
 import { blockedDrainAreas } from '@/lib/blocked-drain-areas';
 import { pipeReliningAreas } from '@/lib/pipe-relining-areas';
+import { hotWaterAreas } from '@/lib/hot-water-areas';
 import { posts } from '@/lib/blog';
 
 const BASE_URL = 'https://www.mrclog.com.au';
@@ -17,6 +18,8 @@ const blogSlugs = posts.map((p) => p.slug);
 const blockedDrainSlugs = blockedDrainAreas.map((a) => a.suburb);
 
 const pipeReliningSlugs = pipeReliningAreas.map((a) => a.suburb);
+
+const hotWaterSlugs = hotWaterAreas.map((a) => a.suburb);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
@@ -58,6 +61,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  const hotWaterPages = hotWaterSlugs.map((slug) => ({
+    url: `${BASE_URL}/hot-water/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
   const locationPages = locationSlugs.map((slug) => ({
     url: `${BASE_URL}/locations/${slug}`,
     lastModified: new Date(),
@@ -72,5 +82,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...offerPages, ...servicePages, ...locationPages, ...blockedDrainPages, ...pipeReliningPages, ...blogPages];
+  return [...staticPages, ...offerPages, ...servicePages, ...locationPages, ...blockedDrainPages, ...pipeReliningPages, ...hotWaterPages, ...blogPages];
 }

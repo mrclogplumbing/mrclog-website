@@ -261,6 +261,141 @@ export const hotWaterAreas: ServiceArea[] = [
       { q: "Can you replace it the same day?", a: "In most cases yes." },
     ],
   },
+  {
+    suburb: "randwick",
+    intro:
+      "Randwick hot water splits with the housing. In the older streets there is space beside the house and the full range of options is open. Around the hospital and the university the stock is denser, the units are in cupboards, and a good many of them are well past the age where a landlord should have replaced them.",
+    causes: [
+      { title: "Rental stock running units past their life", body: "High-turnover housing often keeps a system going until it fails. Rust at the base or water on the floor means it is going, and a failure in a unit floods more than one apartment." },
+      { title: "Cupboard units with no floor waste", body: "A cylinder in an internal cupboard has nowhere to drain. That is how one tenancy's tank becomes the ceiling of the one below." },
+      { title: "Houses with room for anything", body: "In the older streets there is space and airflow beside the house, so heat pumps and solar are genuinely on the table." },
+    ],
+    faqs: [
+      { q: "I rent. Who pays to replace it?", a: "Hot water is the owner's responsibility. We can attend, diagnose and report so the agent has something written to act on." },
+      { q: "How do I know it is failing?", a: "Rust staining down the tank, water pooling underneath, or hot water running out faster than it used to." },
+      { q: "Can you replace it the same day?", a: "Usually. We carry common units and can generally have hot water back before we leave." },
+    ],
+  },
+  {
+    suburb: "maroubra",
+    intro:
+      "Maroubra is post-war brick with the unit outside, close enough to the coast that salt shortens its life. Most of these homes have space beside the house, so the options are open — the thing worth getting right is sizing for a household that is bigger than the one the system was bought for.",
+    causes: [
+      { title: "Coastal corrosion nearer the beach", body: "External tanks and fittings corrode faster closer to the water. A unit rated for coastal conditions is worth the difference when replacing." },
+      { title: "Systems sized for a smaller household", body: "A tank that suited the previous owners may not suit you. Running out mid-shower is usually capacity rather than a fault." },
+      { title: "Original galvanised supply", body: "Older homes may still feed the unit through galvanised pipe rusted closed internally. Poor hot flow is sometimes the pipe, not the tank." },
+    ],
+    faqs: [
+      { q: "We keep running out of hot water. Is the system broken?", a: "Often not — it is usually undersized for the household. We size on how many showers run at once in the morning rather than on the size of the house." },
+      { q: "Repair or replace?", a: "Under about eight years, repair usually wins. Past twelve, replacement generally pays for itself. Near the coast that point arrives sooner." },
+      { q: "Is there a call-out fee?", a: "No — none at any hour, any day." },
+    ],
+  },
+  {
+    suburb: "hurstville",
+    intro:
+      "Hurstville has post-war houses with external units and towers with everything in a cupboard, and the replacement conversation is completely different depending on which you are in. In the towers, the building usually decides what is possible.",
+    causes: [
+      { title: "Tower cupboards and fixed flues", body: "In high-rise, the cupboard and flue set what can replace your unit. Upgrading capacity is often simply not available." },
+      { title: "Building access for the changeover", body: "Getting a cylinder in and the old one out means lifts, corridor protection and building management. It is a booking question as much as a plumbing one." },
+      { title: "Older house systems past their age", body: "Post-war homes frequently have units fifteen years or older. Replacing before failure avoids a flooded cupboard." },
+    ],
+    faqs: [
+      { q: "Do I need building approval to replace my unit?", a: "For lift access and corridor protection, usually yes. If the unit is entirely within your lot the replacement itself usually is not a strata matter." },
+      { q: "Can I upgrade to a bigger tank in an apartment?", a: "Rarely. The cupboard sets a hard limit, so the usual path is a more efficient unit of the same footprint." },
+      { q: "How fast can you get here?", a: "Usually within 30–60 minutes, 24/7, no call-out fee." },
+    ],
+  },
+  {
+    suburb: "rockdale",
+    intro:
+      "Rockdale is post-war housing with the unit outside and room to work, which makes it one of the more straightforward suburbs for a hot water changeover. The main thing worth checking is the supply pipework, because poor hot flow here is often not the system at all.",
+    causes: [
+      { title: "Galvanised supply feeding the unit", body: "Older homes still fed through galvanised pipe that has rusted closed internally. Weak hot flow is frequently the pipe rather than the tank." },
+      { title: "Units well past their service life", body: "A great many systems here are fifteen years or older. Rust at the base or water pooling underneath means the tank is going." },
+      { title: "Room for heat pumps and solar", body: "Most blocks have space and roof area, so the full range of replacement options is genuinely available." },
+    ],
+    faqs: [
+      { q: "New system but the hot water pressure is still poor. Why?", a: "Almost certainly the supply pipework rather than the unit. Galvanised pipe rusts closed from the inside and replacing that run in copper restores flow." },
+      { q: "Is a heat pump worth it?", a: "On a block with space and airflow, generally yes on running costs. Placement relative to bedrooms matters for noise." },
+      { q: "Can you replace it today?", a: "In most cases yes." },
+    ],
+  },
+  {
+    suburb: "bankstown",
+    intro:
+      "Bankstown homes are on generous blocks with the unit outside and plenty of room around it, so hot water here is about choosing well rather than working around constraints. Most of what we replace is simply old.",
+    causes: [
+      { title: "Systems fifteen years and older", body: "A large share of units here are well past their design life. Replacing before failure costs far less than dealing with a flooded cupboard afterwards." },
+      { title: "Space for heat pumps and solar", body: "Blocks have the clearance, airflow and roof area, so the efficient options are genuinely available rather than theoretical." },
+      { title: "Galvanised supply limiting flow", body: "Older homes feeding the unit through galvanised pipe. Poor hot flow is sometimes the supply rather than the system." },
+    ],
+    faqs: [
+      { q: "How long should a hot water system last?", a: "Ten to fifteen years for most electric storage units. Past that, replacing on your terms beats replacing after it floods a cupboard." },
+      { q: "Is a heat pump worth the extra cost?", a: "On a block with space, usually yes over its life on running costs. They do make noise, so placement matters." },
+      { q: "Do you charge extra on weekends?", a: "No. Same pricing, no call-out fee, seven days." },
+    ],
+  },
+  {
+    suburb: "campsie",
+    intro:
+      "Campsie is walk-up apartment blocks and interwar houses. In the blocks the unit is in a cupboard and the options are narrow; in the houses there is room outside and the full range is open. The blocks are where most of the calls come from.",
+    causes: [
+      { title: "Cupboard units in walk-up blocks", body: "Confined internal cupboards with no floor waste. When a tank fails there the water goes into the floor and the apartment below." },
+      { title: "Common systems in some blocks", body: "A few older blocks run a central system rather than individual units, which changes who is responsible and who authorises replacement." },
+      { title: "Older house systems and galvanised supply", body: "Interwar houses with ageing units and original supply pipework that restricts flow." },
+    ],
+    faqs: [
+      { q: "Is my hot water system mine or the building's?", a: "Individual units inside your lot are yours; a central system is common property. We will tell you which you have on the first visit." },
+      { q: "No hot water across several apartments — what does that mean?", a: "Almost certainly a common system fault rather than anything in your apartment. That is a strata matter." },
+      { q: "Are you available on weekends?", a: "Yes, seven days and 24 hours, no call-out fee." },
+    ],
+  },
+  {
+    suburb: "miranda",
+    intro:
+      "Miranda is post-war brick with the unit outside and space around it. Far enough from the water that salt is less of a factor than it is at Cronulla, so systems here reach a normal age — and a great many of them have reached it.",
+    causes: [
+      { title: "Units at the end of a normal life", body: "Away from the coast, tanks last their expected span and then go. Fifteen years and older is common here and worth acting on before it fails." },
+      { title: "Room for heat pumps and solar", body: "Blocks have the clearance and roof area. The efficient options are genuinely available rather than theoretical." },
+      { title: "Sizing for a changed household", body: "A system bought for a different family may not suit yours. Running out mid-shower is capacity rather than a fault." },
+    ],
+    faqs: [
+      { q: "Should I repair or replace?", a: "Under about eight years, repair usually wins. Past twelve, replacement generally pays for itself on running costs." },
+      { q: "What size do I need?", a: "It depends on peak demand — how many showers run at once — rather than house size." },
+      { q: "Can you replace it the same day?", a: "In most cases yes. We carry common units." },
+    ],
+  },
+  {
+    suburb: "ryde",
+    intro:
+      "Ryde has post-war houses with external units and newer apartments closer to Macquarie Park. The houses are straightforward; the apartments have the usual cupboard and flue constraints, and often a building process to work through as well.",
+    causes: [
+      { title: "House systems reaching their age", body: "Post-war homes with units well past a decade. Rust at the base or water underneath means it is going." },
+      { title: "Apartment cupboards near Macquarie Park", body: "Newer blocks put units in confined internal cupboards. Access is usually the complication rather than the work itself." },
+      { title: "Space for efficient options in the houses", body: "Most house blocks have clearance and roof area, so heat pumps and solar are practical." },
+    ],
+    faqs: [
+      { q: "Can you replace a unit in an apartment cupboard?", a: "Yes. Access is the constraint rather than the work. We assess it and tell you upfront if anything unusual is needed." },
+      { q: "Do you cover Macquarie Park?", a: "Yes — Ryde, West Ryde, Macquarie Park, Eastwood and surrounds." },
+      { q: "Is there a call-out fee?", a: "No, and that applies after hours and weekends too." },
+    ],
+  },
+  {
+    suburb: "parramatta-cbd",
+    intro:
+      "Parramatta is towers over older housing, and hot water follows the same split. In high-rise the building decides what is possible — cupboard, flue, lift access and sometimes a central system. Around Harris Park it is older houses with external units and room to work.",
+    causes: [
+      { title: "Central systems in some towers", body: "Some buildings run central hot water rather than individual units. No hot water across several apartments points there rather than to anything in yours." },
+      { title: "Lift access and building management", body: "Getting a cylinder into a tower means booking lift access and protecting corridors. It is a scheduling question as much as a plumbing one." },
+      { title: "Older houses with ageing systems", body: "The surrounding streets have units well past their service life and original supply pipework restricting flow." },
+    ],
+    faqs: [
+      { q: "No hot water but my neighbours have none either. What is it?", a: "Almost certainly a central system fault, which is common property rather than yours. We can attend and report for the committee." },
+      { q: "What do I need to arrange before you come to a tower?", a: "Lift booking and corridor protection where the building requires it. We will tell you what to organise when you book." },
+      { q: "How quickly can you get to Parramatta?", a: "Usually within 30–60 minutes, 24/7, no call-out fee." },
+    ],
+  },
 ];
 
 export function getHotWaterArea(suburb: string): ServiceArea | undefined {
