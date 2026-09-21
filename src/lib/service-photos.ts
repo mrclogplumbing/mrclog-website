@@ -188,6 +188,13 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
         caption:
           "Rough-in on a full fit-out: copper soldered in place before anything is tiled over. This is the part nobody sees and the part that has to be right.",
       },
+      {
+        src: "/photos/ensuite-microcement.webp",
+        alt: "Completed ensuite in pink microcement and fluted tile, with aged brass tapware, a ceiling-mounted rain head and a vessel basin on a tiled bench",
+        focus: "center 50%",
+        caption:
+          "The other end of the same trade: a full ensuite in microcement and brass, ceiling-mounted rain head, wall-mounted basin mixer.",
+      },
     ],
   },
   "hot-water-systems": {
@@ -240,6 +247,13 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
         caption:
           "The replacement length for the roofline above, outlet fitted and ready to go up. Gutter is measured and made up on site, not ordered in and waited for.",
       },
+      {
+        src: "/photos/gutter-installation.webp",
+        alt: "Mr. Clog plumber on a ladder in a narrow side passage fixing the new gutter length into place along the roofline",
+        focus: "center 45%",
+        caption:
+          "And going up, off a ladder in a side passage barely wider than the ladder itself.",
+      },
     ],
   },
   "laundry-plumbing": {
@@ -250,6 +264,11 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
     },
   },
   "kitchen-plumbing": {
+    hero: {
+      src: "/photos/kitchen-stone-benchtop.webp",
+      alt: "Completed Sydney kitchen with a stone benchtop and full slab splashback, undermount sink and gooseneck mixer tap",
+      focus: "center 55%",
+    },
     proof: [
       {
         src: "/photos/kitchen-sink-before.webp",
