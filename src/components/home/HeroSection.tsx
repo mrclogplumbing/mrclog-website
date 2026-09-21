@@ -104,7 +104,7 @@ export default function HeroSection() {
 
           {/* Subheadline */}
           <p className="font-display text-lg md:text-xl font-medium mb-5" style={{ color: "rgba(255,255,255,0.85)" }}>
-            5-Star Rated &nbsp;·&nbsp; Available 24/7 &nbsp;·&nbsp; $0 Call-Out Fee &nbsp;·&nbsp; Fully Licensed &amp; Insured
+            5-Star Rated &nbsp;·&nbsp; Available 24/7 &nbsp;·&nbsp; $0 Call-Out Fee, Any Hour &nbsp;·&nbsp; Fully Licensed &amp; Insured
           </p>
 
           {/* Trust bar */}

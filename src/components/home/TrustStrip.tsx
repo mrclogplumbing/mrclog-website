@@ -36,7 +36,7 @@ function ShieldIcon() {
 
 const items = [
   { Icon: ClockIcon, text: "Same-Day Available" },
-  { Icon: ZeroFeeIcon, text: "$0 Call-Out Fee" },
+  { Icon: ZeroFeeIcon, text: "$0 Call-Out, Any Hour" },
   { Icon: StarSolidIcon, text: `${reviewSummary.ratingValue} Google Rated` },
   { Icon: ShieldIcon, text: "Licensed & Insured" },
 ];

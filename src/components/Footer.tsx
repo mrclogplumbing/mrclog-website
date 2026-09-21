@@ -77,7 +77,7 @@ export default function Footer() {
               <Logo variant="light" height={48} />
             </div>
             <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>
-              Sydney&rsquo;s trusted plumbers. 5-star rated, available 24/7, $0 call-out fee.
+              Sydney&rsquo;s trusted plumbers. 5-star rated, available 24/7, $0 call-out fee — any hour, any day.
             </p>
             <div className="mt-5 space-y-2.5">
               <a href={PHONE_HREF} data-call-cta className="flex items-center gap-2 text-sm font-semibold text-white hover:text-blue-300 transition-colors">
