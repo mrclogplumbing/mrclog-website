@@ -1,4 +1,5 @@
 import { reviewSummary } from "@/lib/reviews-summary";
+import { calloutFee } from "@/lib/offer-terms";
 
 function ZeroFeeIcon() {
   return (
@@ -45,7 +46,7 @@ function StarBadgeIcon() {
 }
 
 const reasons = [
-  { Icon: ZeroFeeIcon, title: "$0 Call-Out Fee",   description: "No charge just for showing up. You only pay when we fix your problem." },
+  { Icon: ZeroFeeIcon, title: "$0 Call-Out Fee",   description: calloutFee.full },
   { Icon: ClockIcon,   title: "24/7 Availability", description: "Including weekends and public holidays. Plumbing emergencies don't keep office hours." },
   { Icon: TagIcon,     title: "Upfront Pricing",   description: "You'll know the full cost before we start. No surprise charges, no add-ons mid-job." },
   { Icon: BadgeCheckIcon, title: "Fully Licensed", description: "NSW Fair Trading licensed and fully insured — public liability and workers compensation." },
