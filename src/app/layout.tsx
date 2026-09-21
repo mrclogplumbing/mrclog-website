@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import PromoBanner from "@/components/PromoBanner";
 import { featuredOffer } from "@/lib/offers";
 import { reviewSummary } from "@/lib/reviews-summary";
+import Analytics from "@/components/Analytics";
 
 const PHONE_HREF = "tel:+61291398945";
 const PHONE = "(02) 9139 8945";
@@ -135,12 +136,13 @@ export default function RootLayout({
         }}
       />
 
+        <Analytics />
         <Header />
         <main>{children}</main>
         <Footer />
               {/* Sticky mobile call bar */}
         <a
-          href={PHONE_HREF}
+          href={PHONE_HREF} data-call-cta
           className="md:hidden fixed bottom-0 inset-x-0 z-50 flex items-center justify-center gap-3 py-4 text-white font-display font-bold text-base shadow-lg"
           style={{ background: "var(--color-brand-blue)" }}
           aria-label="Call Mr. Clog Plumbing"
