@@ -4,7 +4,9 @@ import QuoteForm from "@/components/QuoteForm";
 import ReviewStrip from "@/components/ReviewStrip";
 import { reviewTagForService } from "@/lib/review-tags";
 import Link from "next/link";
+import Image from "next/image";
 import { services, getService } from "@/lib/services";
+import { photosForService } from "@/lib/service-photos";
 import { PhoneCallIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
@@ -38,6 +40,8 @@ export default async function ServicePage({
   const service = getService(slug);
   if (!service) notFound();
 
+  const { hero: heroPhoto, proof: proofPhoto } = photosForService(slug);
+
   return (
     <>
       {/* FAQ Schema */}
@@ -63,9 +67,24 @@ export default async function ServicePage({
         className="relative pt-16 flex items-center min-h-[50vh]"
         style={{ background: "var(--color-dark)" }}
       >
+        {heroPhoto && (
+          <Image
+            src={heroPhoto.src}
+            alt={heroPhoto.alt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+            style={{ objectPosition: heroPhoto.focus ?? "center" }}
+          />
+        )}
         <div
           className="absolute inset-0"
-          style={{ background: "linear-gradient(135deg, rgba(26,31,46,0.97) 0%, rgba(26,159,255,0.15) 100%)" }}
+          style={{
+            background: heroPhoto
+              ? "linear-gradient(105deg, rgba(26,31,46,0.95) 0%, rgba(26,31,46,0.82) 55%, rgba(26,159,255,0.45) 100%)"
+              : "linear-gradient(135deg, rgba(26,31,46,0.97) 0%, rgba(26,159,255,0.15) 100%)",
+          }}
           aria-hidden="true"
         />
         <div className="relative section-container py-16 md:py-24">
@@ -108,6 +127,25 @@ export default async function ServicePage({
             <p className="text-gray-600 leading-relaxed text-base">
               {service.description}
             </p>
+            {proofPhoto && (
+              <figure className="mt-8">
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                  <Image
+                    src={proofPhoto.src}
+                    alt={proofPhoto.alt}
+                    fill
+                    sizes="(min-width: 768px) 45vw, 100vw"
+                    className="object-cover"
+                    style={{ objectPosition: proofPhoto.focus ?? "center" }}
+                  />
+                </div>
+                {proofPhoto.caption && (
+                  <figcaption className="text-sm text-gray-500 mt-3 leading-relaxed">
+                    {proofPhoto.caption}
+                  </figcaption>
+                )}
+              </figure>
+            )}
           </div>
           <div className="bg-blue-50 rounded-2xl p-8">
             <h3 className="font-logo font-bold text-xl mb-5" style={{ color: "var(--color-dark)" }}>
