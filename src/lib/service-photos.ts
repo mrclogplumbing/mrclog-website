@@ -12,10 +12,11 @@
  * middle of the frame ends up with text across their face. Photos that fail
  * that test still earn their keep in `proof`.
  *
- * `proof` holds one or two images that sit in the body with visible captions,
- * shown at full fidelity. Detail shots belong here — a drain camera screen or
- * a worn tap cartridge is unreadable stretched across a banner but carries a
- * page at proper size. Two images render side by side.
+ * `proof` holds images that sit in the body with visible captions, shown at
+ * full fidelity. Detail shots belong here — a drain camera screen or a worn
+ * tap cartridge is unreadable stretched across a banner but carries a page at
+ * proper size. A single image runs the width of the column; two or more fall
+ * into a two-column grid, which is what a before-and-after pair wants.
  *
  * Services not listed here keep the plain gradient hero. Adding a photo later
  * means adding a row — nothing else changes.
@@ -130,6 +131,18 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
   "taps-and-toilets": {
     proof: [
       {
+        src: "/photos/kitchen-tap-before.webp",
+        alt: "Worn chrome swan-neck kitchen mixer tap on an existing double-bowl sink",
+        caption:
+          "Before: the original mixer, stiff and weeping at the base.",
+      },
+      {
+        src: "/photos/kitchen-tap-after.webp",
+        alt: "New brushed-finish gooseneck mixer tap fitted to the same double-bowl kitchen sink",
+        caption:
+          "After: a new gooseneck mixer in the same sink. The sink and benchtop were fine — only the tap needed replacing.",
+      },
+      {
         src: "/photos/tap-cartridge-old-vs-new.webp",
         alt: "A worn, scaled-up tap cartridge next to a clean replacement cartridge",
         caption:
@@ -150,10 +163,16 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
     },
     proof: [
       {
-        src: "/photos/shower-rail-upgrade.webp",
-        alt: "New rain shower head and hand shower on a rail, installed in an older tiled bathroom",
+        src: "/photos/shower-before.webp",
+        alt: "Original wall-mounted shower rose and cross handles in a yellow-tiled bathroom",
         caption:
-          "Not every bathroom needs gutting. A new rail shower in an original tiled bathroom, done in a morning.",
+          "Before: the original rose and cross handles, in a bathroom the owners were happy with otherwise.",
+      },
+      {
+        src: "/photos/shower-after.webp",
+        alt: "The same shower recess fitted with a rain head and hand shower on a rail",
+        caption:
+          "After: a rain head and hand shower on a rail, same tiles, same recess. Not every bathroom needs gutting.",
       },
     ],
   },
