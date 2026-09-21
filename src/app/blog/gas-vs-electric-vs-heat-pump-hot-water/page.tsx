@@ -100,7 +100,7 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
                   <PhoneCallIcon size={16} />
                   Call {PHONE}
                 </a>
-                <Link href="/services/hot-water" className="btn-outline-white">Hot Water Services</Link>
+                <Link href="/services/hot-water-systems" className="btn-outline-white">Hot Water Services</Link>
               </div>
             </div>
           </article>

@@ -118,7 +118,7 @@ export default function AboutPage() {
             <div className="p-6 rounded-2xl bg-blue-50">
               <div className="flex items-center gap-1 mb-3">
                 {[1,2,3,4,5].map(i => <StarIcon key={i} size={16} />)}
-                <span className="text-sm font-semibold text-gray-700 ml-1">5.0 Google Rating</span>
+                <span className="text-sm font-semibold text-gray-700 ml-1">{reviewSummary.ratingValue} Google Rating</span>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed italic">
                 &ldquo;Absolutely brilliant service. Called at 11pm with a burst pipe and they were here within 45 minutes. Professional, honest pricing, and sorted the problem quickly. Can&rsquo;t recommend enough.&rdquo;

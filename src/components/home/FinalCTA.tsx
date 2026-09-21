@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
+import { reviewSummary } from "@/lib/reviews-summary";
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
@@ -48,7 +49,7 @@ export default function FinalCTA() {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-5 text-sm" style={{ color: "rgba(255,255,255,0.8)" }}>
-          {["5.0 Google Rating", "$0 Call-Out Fee", "Respond in 30 mins", "Available 24/7"].map(item => (
+          {[`${reviewSummary.ratingValue} Google Rating`, "$0 Call-Out Fee", "Respond in 30 mins", "Available 24/7"].map(item => (
             <span key={item} className="flex items-center gap-1.5">
               <CheckIcon />{item}
             </span>
