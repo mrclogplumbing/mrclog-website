@@ -1,14 +1,14 @@
 import { MetadataRoute } from 'next';
 import { activeOffers } from '@/lib/offers';
 import { services } from '@/lib/services';
-import { locations } from '@/lib/locations';
+import { allAreas } from '@/lib/areas';
 import { posts } from '@/lib/blog';
 
 const BASE_URL = 'https://www.mrclog.com.au';
 
 const servicesSlugs = services.map((s) => s.slug);
 
-const locationSlugs = locations.map((l) => l.slug);
+const locationSlugs = allAreas.map((a) => a.slug);
 
 const blogSlugs = posts.map((p) => p.slug);
 
