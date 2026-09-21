@@ -1,65 +1,16 @@
 import { MetadataRoute } from 'next';
 import { activeOffers } from '@/lib/offers';
+import { services } from '@/lib/services';
+import { locations } from '@/lib/locations';
+import { posts } from '@/lib/blog';
 
 const BASE_URL = 'https://www.mrclog.com.au';
 
-const servicesSlugs = [
-  'emergency-plumbing',
-  'blocked-drains',
-  'hot-water-systems',
-  'taps-and-toilets',
-  'pipe-relining',
-  'leak-detection',
-  'jet-blasting',
-  'gas-fitting',
-  'bathroom-renovations',
-  'roof-plumbing',
-  'stormwater-drainage',
-  'cctv-drain-inspection',
-  'kitchen-plumbing',
-  'laundry-plumbing',
-  'backflow-prevention',
-  'water-pressure',
-];
+const servicesSlugs = services.map((s) => s.slug);
 
-const locationSlugs = [
-  'inner-west',
-  'eastern-suburbs',
-  'north-shore',
-  'hills-district',
-  'south-sydney',
-  'western-sydney',
-  'northern-beaches',
-  'sydney-cbd',
-  'ryde-macquarie-park',
-  'canterbury-bankstown',
-  'lower-north-shore',
-];
+const locationSlugs = locations.map((l) => l.slug);
 
-const blogSlugs = [
-  'why-does-my-drain-smell',
-  'backflow-prevention-testing-explained',
-  'pipe-relining-vs-pipe-replacement',
-  'gutters-downpipes-storm-season-checklist',
-  'why-your-toilet-keeps-running',
-  'how-to-detect-a-hidden-water-leak',
-  'blocked-stormwater-drains',
-  'winter-plumbing-checklist-sydney',
-  'why-hot-water-struggles-in-winter',
-  'why-is-my-drain-blocked',
-  'gas-leak-or-not',
-  'how-much-does-a-leaking-tap-cost',
-  'what-to-do-in-a-plumbing-emergency',
-  'how-to-choose-a-plumber-in-sydney',
-  'signs-your-hot-water-system-is-failing',
-  'how-to-prevent-blocked-drains',
-  'gas-vs-electric-vs-heat-pump-hot-water',
-  'tree-roots-in-drains',
-  'water-pressure-too-high-or-too-low',
-  'burst-pipe-first-5-minutes',
-  'how-to-read-your-sydney-water-bill',
-  'bathroom-renovation-plumbing-checklist',
-];
+const blogSlugs = posts.map((p) => p.slug);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
