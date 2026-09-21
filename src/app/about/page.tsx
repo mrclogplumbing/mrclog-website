@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { PhoneCallIcon, CheckCircleIcon, StarIcon } from "@/components/ui/ServiceIcons";
 import { reviewSummary } from "@/lib/reviews-summary";
+import { reviewsForTag } from "@/lib/reviews";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
@@ -46,6 +47,21 @@ const stats = [
   { value: reviewSummary.ratingValue, label: "Google Rating" },
   { value: "24/7", label: "Always Available" },
   { value: "$0", label: "Call-Out Fee" },
+];
+
+/**
+ * Two verified Google reviews, read from the same file the reviews page
+ * and every service page use.
+ *
+ * What was here before were two invented testimonials — "Sarah M., Newtown"
+ * and "Tom K., Bondi" — left over from the site's original build. Neither
+ * person appears in the Google profile. Publishing a testimonial nobody gave
+ * is misleading conduct under the Australian Consumer Law, quite apart from
+ * being unnecessary: the real reviews are better.
+ */
+const aboutReviews = [
+  ...reviewsForTag("Emergency", 1),
+  ...reviewsForTag("Bathroom", 1),
 ];
 
 export default function AboutPage() {
@@ -116,22 +132,24 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="space-y-4">
-            <div className="p-6 rounded-2xl bg-blue-50">
-              <div className="flex items-center gap-1 mb-3">
-                {[1,2,3,4,5].map(i => <StarIcon key={i} size={16} />)}
-                <span className="text-sm font-semibold text-gray-700 ml-1">{reviewSummary.ratingValue} Google Rating</span>
+            {aboutReviews.map((r, i) => (
+              <div key={r.name + r.when} className={`p-6 rounded-2xl ${i === 0 ? "bg-blue-50" : "bg-gray-50"}`}>
+                {i === 0 && (
+                  <div className="flex items-center gap-1 mb-3">
+                    {[1, 2, 3, 4, 5].map((n) => <StarIcon key={n} size={16} />)}
+                    <span className="text-sm font-semibold text-gray-700 ml-1">
+                      {reviewSummary.ratingValue} Google Rating
+                    </span>
+                  </div>
+                )}
+                <p className="text-gray-700 text-sm leading-relaxed italic">
+                  &ldquo;{r.text}&rdquo;
+                </p>
+                <p className="text-xs text-gray-400 mt-3 font-semibold">
+                  — {r.name}, {r.when} on Google
+                </p>
               </div>
-              <p className="text-gray-700 text-sm leading-relaxed italic">
-                &ldquo;Absolutely brilliant service. Called at 11pm with a burst pipe and they were here within 45 minutes. Professional, honest pricing, and sorted the problem quickly. Can&rsquo;t recommend enough.&rdquo;
-              </p>
-              <p className="text-xs text-gray-400 mt-3 font-semibold">— Sarah M., Newtown</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-gray-50">
-              <p className="text-gray-700 text-sm leading-relaxed italic">
-                &ldquo;Used Mr. Clog for a bathroom renovation and they were fantastic. Turned up when they said they would, gave us a clear quote, and did a great job. Would definitely use again.&rdquo;
-              </p>
-              <p className="text-xs text-gray-400 mt-3 font-semibold">— Tom K., Bondi</p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
