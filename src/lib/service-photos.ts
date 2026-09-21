@@ -201,6 +201,16 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
       },
     ],
   },
+  "water-pressure": {
+    proof: [
+      {
+        src: "/photos/water-service-copper-upgrade.webp",
+        alt: "Old galvanised water service pipe beside its new copper replacement in an open trench, with a new brass garden tap fitted",
+        caption:
+          "Old galvanised service on the left, its copper replacement on the right. Galvanised pipe rusts closed from the inside, which is why pressure in older Sydney homes drops off over the years.",
+      },
+    ],
+  },
   "stormwater-drainage": {
     proof: [
       {
@@ -208,6 +218,12 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
         alt: "Mr. Clog plumber feeding a hose up a narrow side passage beside a house, with a drain machine and an open trench along the wall",
         caption:
           "Working a line down the side passage of a Sydney home. Access this tight is the normal case, not the exception.",
+      },
+      {
+        src: "/photos/drainage-excavation.webp",
+        alt: "Open drainage excavation across a Sydney yard with new inspection risers standing proud, broken concrete stacked to one side and orange safety mesh around the dig",
+        caption:
+          "A larger dig with new inspection openings in. Concrete is lifted and stacked rather than broken into the soil, and the excavation is fenced while it is open.",
       },
     ],
   },
