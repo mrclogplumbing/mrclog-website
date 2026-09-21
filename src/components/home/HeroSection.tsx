@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { reviewSummary } from "@/lib/reviews-summary";
 
 const PHONE = "(02) 9139 8945";
@@ -36,10 +37,39 @@ export default function HeroSection() {
       style={{ background: "var(--color-dark)" }}
       aria-label="Hero"
     >
-      {/* Background gradient overlay */}
+      {/* A real Mr. Clog job, not a stock photo. */}
+      <Image
+        src="/photos/excavation-waterfront.webp"
+        alt="Mr. Clog excavator digging a trench at a waterfront property on Sydney's north shore at sunset"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+        style={{ objectPosition: "center 55%" }}
+      />
+      {/*
+        Two overlays, because the headline sits in a different place at each
+        width. On desktop the text is a column on the left, so the overlay is
+        weighted left and lifts towards the right to leave the view visible.
+        On a phone the text spans the full width, so a left-to-right gradient
+        puts the entire screen in its dark end and the photograph disappears —
+        there the gradient runs top to bottom instead, heaviest behind the
+        copy and clearing below the buttons.
+      */}
       <div
-        className="absolute inset-0"
-        style={{ background: "linear-gradient(135deg, rgba(26,31,46,0.97) 0%, rgba(26,159,255,0.18) 100%)" }}
+        className="absolute inset-0 hidden md:block"
+        style={{
+          background:
+            "linear-gradient(100deg, rgba(20,25,38,0.95) 0%, rgba(20,25,38,0.90) 40%, rgba(20,25,38,0.62) 75%, rgba(26,159,255,0.30) 100%)",
+        }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute inset-0 md:hidden"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(20,25,38,0.92) 0%, rgba(20,25,38,0.88) 45%, rgba(20,25,38,0.72) 78%, rgba(20,25,38,0.45) 100%)",
+        }}
         aria-hidden="true"
       />
       {/* Decorative blue circle */}
