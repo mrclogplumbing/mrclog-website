@@ -216,7 +216,7 @@ export default function Header() {
           {/* Desktop Right: Phone + CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href={PHONE_HREF}
+              href={PHONE_HREF} data-call-cta
               className="flex items-center gap-1.5 text-sm font-semibold text-gray-800 hover:text-brand-blue transition-colors duration-150"
             >
               <PhoneIcon />
@@ -230,7 +230,7 @@ export default function Header() {
           {/* Mobile: Phone + Hamburger */}
           <div className="flex lg:hidden items-center gap-3">
             <a
-              href={PHONE_HREF}
+              href={PHONE_HREF} data-call-cta
               className="flex items-center gap-1 text-sm font-bold"
               style={{ color: "var(--color-brand-blue)" }}
               aria-label={`Call us: ${PHONE}`}
@@ -324,7 +324,7 @@ export default function Header() {
           </Link>
 
           <div className="pt-2 pb-2 flex flex-col gap-2">
-            <a href={PHONE_HREF} className="btn-outline text-center text-sm py-3">
+            <a href={PHONE_HREF} data-call-cta className="btn-outline text-center text-sm py-3">
               Call {PHONE}
             </a>
             <Link href="/contact" className="btn-primary text-center text-sm py-3">

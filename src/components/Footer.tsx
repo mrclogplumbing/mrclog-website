@@ -57,7 +57,7 @@ export default function Footer() {
             Plumbing emergency? We answer 24/7, 365 days a year.
           </p>
           <a
-            href={PHONE_HREF}
+            href={PHONE_HREF} data-call-cta
             className="inline-flex items-center gap-2 bg-white font-bold rounded-full px-6 py-2.5 text-sm transition-all duration-150 hover:bg-blue-50"
             style={{ color: "var(--color-brand-blue)" }}
           >
@@ -80,7 +80,7 @@ export default function Footer() {
               Sydney&rsquo;s trusted plumbers. 5-star rated, available 24/7, $0 call-out fee.
             </p>
             <div className="mt-5 space-y-2.5">
-              <a href={PHONE_HREF} className="flex items-center gap-2 text-sm font-semibold text-white hover:text-blue-300 transition-colors">
+              <a href={PHONE_HREF} data-call-cta className="flex items-center gap-2 text-sm font-semibold text-white hover:text-blue-300 transition-colors">
                 <PhoneCallIcon size={15} />
                 {PHONE}
               </a>

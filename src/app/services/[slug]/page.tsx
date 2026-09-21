@@ -1,5 +1,8 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import QuoteForm from "@/components/QuoteForm";
+import ReviewStrip from "@/components/ReviewStrip";
+import { reviewTagForService } from "@/lib/review-tags";
 import Link from "next/link";
 import { services, getService } from "@/lib/services";
 import { PhoneCallIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
@@ -191,6 +194,20 @@ export default async function ServicePage({
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Reviews */}
+      <ReviewStrip tag={reviewTagForService(service.slug)} />
+
+      {/* Enquiry form */}
+      <section className="section-container py-16 md:py-20">
+        <div className="max-w-2xl mx-auto">
+          <QuoteForm
+            source={service.label}
+            heading={`Get a Quote for ${service.label}`}
+            blurb="Prefer not to call? Send a few details and we&rsquo;ll come back to you with an upfront fixed price."
+          />
         </div>
       </section>
 

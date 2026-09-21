@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import QuoteForm from "@/components/QuoteForm";
+import ReviewStrip from "@/components/ReviewStrip";
 import Link from "next/link";
 import { locations, getLocation } from "@/lib/locations";
 import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
@@ -208,6 +210,20 @@ export default async function LocationPage({
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Reviews */}
+      <ReviewStrip />
+
+      {/* Enquiry form */}
+      <section className="section-container py-16 md:py-20">
+        <div className="max-w-2xl mx-auto">
+          <QuoteForm
+            source={location.label}
+            heading={`Request a Plumber in ${location.label}`}
+            blurb="Prefer not to call? Send a few details and we&rsquo;ll come back to you with an upfront fixed price."
+          />
         </div>
       </section>
 
