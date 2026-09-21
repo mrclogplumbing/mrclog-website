@@ -7,7 +7,10 @@
  * licensed photo of an American in a clean boiler suit.
  *
  * `hero` sits behind the dark gradient at the top of the page, so it
- * needs to read at a glance and survive being darkened.
+ * needs to read at a glance and survive being darkened. It also needs the
+ * subject off to one side: the headline is left-aligned, so a person standing
+ * in the middle of the frame ends up with text across their face. Photos that
+ * fail that test still earn their keep as `proof`.
  * `proof` sits in the body with a visible caption, so detail shots and
  * screens work well there.
  *
@@ -60,7 +63,7 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
     hero: {
       src: "/photos/burst-water-main-repair.webp",
       alt: "Mr. Clog plumber excavating a burst water main in a Sydney front yard",
-      focus: "center 40%",
+      focus: "center 24%",
     },
     proof: FLEXI_HOSE,
   },
@@ -69,37 +72,41 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
     proof: CCTV_ROOTS,
   },
   "jet-blasting": {
-    hero: {
+    // No hero. The subject stands dead centre in this photo, so the
+    // left-aligned headline lands across his face. Heroes need the person
+    // on one side; centred compositions belong in the body.
+    proof: {
       src: "/photos/jet-blasting-backyard.webp",
       alt: "Mr. Clog plumber running a high-pressure jetter hose into a backyard drain at a Sydney family home",
-      focus: "center 40%",
+      focus: "center 42%",
+      caption:
+        "Jetting a blocked line in a backyard in Sydney's south. We work around the kids' swing set and leave the lawn as we found it.",
     },
-    proof: ROOTS_REMOVED,
   },
   "cctv-drain-inspection": {
-    hero: CCTV_ROOTS,
-    proof: ROOTS_REMOVED,
+    // No hero. The camera screen is the strongest evidence on the site but it
+    // turns to mush stretched across a wide banner — it earns its place in the
+    // body at full fidelity instead.
+    proof: CCTV_ROOTS,
   },
   "pipe-relining": {
     hero: {
       src: "/photos/tree-roots-cleared.webp",
       alt: "Mr. Clog plumber holding tree roots cleared from a damaged sewer pipe",
-      focus: "center 40%",
+      focus: "center 32%",
     },
     proof: CCTV_ROOTS,
   },
   "leak-detection": {
-    hero: {
+    proof: {
       src: "/photos/office-water-damage.webp",
       alt: "Soaked carpet across a Sydney office floor after a concealed water leak",
+      focus: "center 60%",
+      caption:
+        "A concealed leak found in a Sydney office. By the time it shows on the floor it has usually been running for weeks.",
     },
-    proof: FLEXI_HOSE,
   },
   "taps-and-toilets": {
-    hero: {
-      src: "/photos/tap-cartridge-replacement.webp",
-      alt: "Mr. Clog plumber replacing the cartridge in a basin mixer tap",
-    },
     proof: {
       src: "/photos/tap-cartridge-old-vs-new.webp",
       alt: "A worn, scaled-up tap cartridge next to a clean replacement cartridge",
