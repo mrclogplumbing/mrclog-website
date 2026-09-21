@@ -10,13 +10,13 @@
  * follows. Keep them honest: these figures are published as structured data,
  * and overstating them is a Google policy problem as well as a trust one.
  *
- * Last checked against the live Google profile: 25 August 2026
+ * Last checked against the live Google profile: 21 September 2026
  */
 export const reviewSummary = {
   /** Average star rating, as shown on the Google Business Profile. */
   ratingValue: "4.9",
   /** Total number of Google reviews. */
-  reviewCount: 29,
+  reviewCount: 31,
   /**
    * Public Google Business Profile, so visitors can verify the rating
    * themselves rather than taking the site's word for it.
@@ -30,5 +30,5 @@ export const reviewSummary = {
   reviewUrl: "https://g.page/r/CVDiDNRCxg7ZEAE/review",
 };
 
-/** e.g. "29 Google reviews" — used in body copy. */
+/** e.g. "31 Google reviews" — used in body copy. */
 export const reviewCountLabel = `${reviewSummary.reviewCount} Google reviews`;
