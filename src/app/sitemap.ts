@@ -37,6 +37,8 @@ const locationSlugs = [
 ];
 
 const blogSlugs = [
+  'why-does-my-drain-smell',
+  'backflow-prevention-testing-explained',
   'pipe-relining-vs-pipe-replacement',
   'gutters-downpipes-storm-season-checklist',
   'why-your-toilet-keeps-running',
