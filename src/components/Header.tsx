@@ -144,7 +144,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-18">
 
           {/* Logo */}
-          <Logo variant="dark" height={62} />
+          <Logo variant="dark" height={76} />
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
