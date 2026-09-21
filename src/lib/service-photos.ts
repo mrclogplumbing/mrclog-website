@@ -102,7 +102,15 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
   "cctv-drain-inspection": {
     // The camera screen is the strongest evidence on the site but turns to
     // mush stretched across a banner. It earns its place in the body instead.
-    proof: [CCTV_ROOTS],
+    proof: [
+      CCTV_ROOTS,
+      {
+        src: "/photos/cctv-camera-debris.webp",
+        alt: "Drain camera screen showing a pipe coated in scale and debris at 0.60 metres from the inspection point",
+        caption:
+          "A different line at 0.60 m, its walls furred with scale and debris. The camera shows how much pipe is left before anyone quotes a repair.",
+      },
+    ],
   },
   "pipe-relining": {
     hero: {
@@ -181,6 +189,21 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
       src: "/photos/gutter-rust-replacement.webp",
       alt: "Rusted-through guttering along a Sydney roofline, with a Mr. Clog plumber below preparing to replace it",
       focus: "center 42%",
+    },
+    proof: [
+      {
+        src: "/photos/gutter-new-length.webp",
+        alt: "New Colorbond gutter length laid out on the lawn with the downpipe outlet fitted, alongside tin snips, screws and a drill",
+        caption:
+          "The replacement length for the roofline above, outlet fitted and ready to go up. Gutter is measured and made up on site, not ordered in and waited for.",
+      },
+    ],
+  },
+  "laundry-plumbing": {
+    hero: {
+      src: "/photos/laundry-fitout.webp",
+      alt: "Mr. Clog plumber connecting the waste under a new laundry benchtop, with washer, dryer and a black undermount sink installed",
+      focus: "center 55%",
     },
   },
   "kitchen-plumbing": {
