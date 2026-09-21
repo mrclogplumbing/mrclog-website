@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "@/components/ui/Logo";
 import { PhoneCallIcon, StarIcon } from "@/components/ui/ServiceIcons";
+import { reviewSummary } from "@/lib/reviews-summary";
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
@@ -13,7 +14,7 @@ const serviceLinks = [
   { label: "Taps & Toilets",       href: "/services/taps-and-toilets" },
   { label: "Pipe Relining",        href: "/services/pipe-relining" },
   { label: "Leak Detection",       href: "/services/leak-detection" },
-  { label: "Jet Blasting",        href: "/services/jett-blasting" },
+  { label: "Jet Blasting",        href: "/services/jet-blasting" },
   { label: "Gas Fitting",          href: "/services/gas-fitting" },
   { label: "Bathroom Renovations", href: "/services/bathroom-renovations" },
   { label: "Roof Plumbing",        href: "/services/roof-plumbing" },
@@ -94,7 +95,7 @@ export default function Footer() {
             </div>
             <div className="mt-5 flex items-center gap-1.5">
               {[1,2,3,4,5].map(i => <StarIcon key={i} size={14} />)}
-              <span className="text-xs ml-1" style={{ color: "rgba(255,255,255,0.65)" }}>5.0 Google Rating</span>
+              <span className="text-xs ml-1" style={{ color: "rgba(255,255,255,0.65)" }}>{reviewSummary.ratingValue} Google Rating</span>
             </div>
           </div>
 

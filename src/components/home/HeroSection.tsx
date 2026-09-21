@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { reviewSummary } from "@/lib/reviews-summary";
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
@@ -59,7 +60,7 @@ export default function HeroSection() {
             <span className="flex items-center gap-0.5">
               {[1,2,3,4,5].map(i => <StarIcon key={i} />)}
             </span>
-            <span>5.0 Google Rating · 18 Reviews</span>
+            <span>{reviewSummary.ratingValue} Google Rating · {reviewSummary.reviewCount} Reviews</span>
           </div>
 
           {/* H1 */}

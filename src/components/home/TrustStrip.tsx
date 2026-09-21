@@ -1,3 +1,5 @@
+import { reviewSummary } from "@/lib/reviews-summary";
+
 function ClockIcon() {
   return (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A9FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -35,7 +37,7 @@ function ShieldIcon() {
 const items = [
   { Icon: ClockIcon, text: "Same-Day Available" },
   { Icon: ZeroFeeIcon, text: "$0 Call-Out Fee" },
-  { Icon: StarSolidIcon, text: "5.0 Google Rated" },
+  { Icon: StarSolidIcon, text: `${reviewSummary.ratingValue} Google Rated` },
   { Icon: ShieldIcon, text: "Licensed & Insured" },
 ];
 
