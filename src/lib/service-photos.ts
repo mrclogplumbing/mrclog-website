@@ -182,6 +182,33 @@ export const servicePhotos: Record<string, ServicePhotoSet> = {
         caption:
           "After: a rain head and hand shower on a rail, same tiles, same recess. Not every bathroom needs gutting.",
       },
+      {
+        src: "/photos/copper-soldering-roughin.webp",
+        alt: "Mr. Clog plumber soldering copper pipework at floor level during a bathroom rough-in, before the walls are tiled",
+        caption:
+          "Rough-in on a full fit-out: copper soldered in place before anything is tiled over. This is the part nobody sees and the part that has to be right.",
+      },
+    ],
+  },
+  "hot-water-systems": {
+    // No hero: the technician stands left of centre, where the headline goes.
+    proof: [
+      {
+        src: "/photos/hot-water-cylinder-replacement.webp",
+        alt: "Mr. Clog plumber in a branded hoodie connecting a new stainless hot water cylinder beside the old unit it replaces",
+        caption:
+          "A new cylinder going in beside the one it replaces. Most hot water changeovers are done and running the same day.",
+      },
+    ],
+  },
+  "stormwater-drainage": {
+    proof: [
+      {
+        src: "/photos/side-passage-drain-line.webp",
+        alt: "Mr. Clog plumber feeding a hose up a narrow side passage beside a house, with a drain machine and an open trench along the wall",
+        caption:
+          "Working a line down the side passage of a Sydney home. Access this tight is the normal case, not the exception.",
+      },
     ],
   },
   "roof-plumbing": {
