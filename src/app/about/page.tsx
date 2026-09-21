@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { PhoneCallIcon, CheckCircleIcon, StarIcon } from "@/components/ui/ServiceIcons";
 import { reviewSummary } from "@/lib/reviews-summary";
 
@@ -172,6 +173,20 @@ export default function AboutPage() {
               The People Behind Mr. Clog
             </h2>
           </div>
+          <figure className="max-w-5xl mx-auto mb-12">
+            <Image
+              src="/photos/team-matthew-anthony.webp"
+              alt="Matthew and Anthony of Mr. Clog Plumbing standing either side of a freestanding bath in a completed Sydney bathroom"
+              width={1600}
+              height={1200}
+              sizes="(min-width: 1024px) 64rem, 100vw"
+              className="w-full h-auto rounded-2xl shadow-sm"
+              priority
+            />
+            <figcaption className="text-sm text-gray-500 mt-3 text-center">
+              Matthew (left) and Anthony (right) on a completed bathroom in Sydney.
+            </figcaption>
+          </figure>
           <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm flex flex-col md:flex-row gap-8 items-start">
               <div className="w-20 h-20 rounded-full flex items-center justify-center flex-shrink-0 text-3xl font-bold text-white font-logo" style={{ background: "var(--color-brand-blue)" }}>
