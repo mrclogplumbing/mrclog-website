@@ -8,6 +8,7 @@ import Image from "next/image";
 import { services, getService } from "@/lib/services";
 import { photosForService } from "@/lib/service-photos";
 import { blockedDrainSuburbLinks } from "@/lib/blocked-drain-areas";
+import { pipeReliningSuburbLinks } from "@/lib/pipe-relining-areas";
 import { PhoneCallIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
@@ -42,7 +43,12 @@ export default async function ServicePage({
   if (!service) notFound();
 
   const { hero: heroPhoto, proof: proofPhotos = [] } = photosForService(slug);
-  const drainSuburbs = slug === "blocked-drains" ? blockedDrainSuburbLinks() : [];
+  const suburbLinks =
+    slug === "blocked-drains"
+      ? { prefix: "blocked-drains", items: blockedDrainSuburbLinks() }
+      : slug === "pipe-relining"
+        ? { prefix: "pipe-relining", items: pipeReliningSuburbLinks() }
+        : null;
 
   return (
     <>
@@ -188,7 +194,7 @@ export default async function ServicePage({
       </section>
 
       {/* Suburb pages, on the blocked drains service only */}
-      {drainSuburbs.length > 0 && (
+      {suburbLinks && suburbLinks.items.length > 0 && (
         <section style={{ background: "var(--color-grey-100)" }} className="py-16 md:py-20">
           <div className="section-container">
             <div className="text-center mb-10">
@@ -196,17 +202,17 @@ export default async function ServicePage({
                 By Suburb
               </p>
               <h2 className="font-logo font-bold text-3xl md:text-4xl" style={{ color: "var(--color-dark)" }}>
-                Blocked Drains Near You
+                {service.label} Near You
               </h2>
               <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-sm">
-                What blocks a drain in Newtown is not what blocks one in Castle Hill. These pages cover what actually causes blockages in each area.
+                {`What matters in Newtown is not what matters in Castle Hill. These pages cover what is specific to each area.`}
               </p>
             </div>
             <div className="flex flex-wrap gap-2 justify-center max-w-4xl mx-auto">
-              {drainSuburbs.map((sub) => (
+              {suburbLinks.items.map((sub) => (
                 <Link
                   key={sub.slug}
-                  href={`/blocked-drains/${sub.slug}`}
+                  href={`/${suburbLinks.prefix}/${sub.slug}`}
                   className="px-4 py-2 rounded-full text-sm font-semibold bg-white border no-underline transition-colors hover:bg-blue-50"
                   style={{ borderColor: "rgba(26,159,255,0.45)", color: "var(--color-brand-blue)" }}
                 >
