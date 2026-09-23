@@ -3,9 +3,9 @@ import Script from "next/script";
 /**
  * Google Analytics 4, plus click tracking on phone links.
  *
- * Renders nothing unless NEXT_PUBLIC_GA_ID is set, so the site works
- * normally before analytics is configured and starts reporting the moment
- * the variable is added in Vercel — no code change needed.
+ * This is Google's standard gtag.js tag for the Mr. Clog GA4 property
+ * (G-J1TRXMCXCQ). NEXT_PUBLIC_GA_ID in Vercel overrides the ID if the
+ * property ever changes.
  *
  * Phone tracking: any anchor carrying data-call-cta, or any tel: link,
  * fires a "phone_call_click" event. That is the closest thing to a
@@ -16,8 +16,7 @@ import Script from "next/script";
  * Sent as a beacon because the native form post navigates away.
  */
 export default function Analytics() {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID;
-  if (!gaId) return null;
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-J1TRXMCXCQ";
 
   return (
     <>

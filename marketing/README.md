@@ -34,10 +34,9 @@ notification. That summary is the record of what went live, and so is
    connection access to `mrclogplumbing/mrclog-website`, with permission to
    push to `main`.
 2. **Google Search Console.** Verify `mrclog.com.au` as a Domain property.
-3. **Google Analytics 4.** Create a property and put its Measurement ID
-   (`G-...`) in Vercel as `NEXT_PUBLIC_GA_ID`. The site starts reporting
-   phone taps (`phone_call_click`) and form enquiries (`generate_lead`) on
-   the next deploy.
+3. **Google Analytics 4.** Done: property `G-J1TRXMCXCQ` is set in
+   `src/components/Analytics.tsx`. It reports phone taps
+   (`phone_call_click`) and form enquiries (`generate_lead`).
 4. **Google Cloud service account**, so the agents can read Search
    Console:
    - create a project, enable the *Google Search Console API*, create a
