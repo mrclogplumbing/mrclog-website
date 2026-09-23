@@ -4,6 +4,13 @@ const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
 const FORMSPREE = "https://formspree.io/f/xwvwawnp";
 
+/** Optional urgency choice. Values arrive verbatim in the enquiry email. */
+const URGENCY_OPTIONS = [
+  "Emergency - need someone now",
+  "In the next few days",
+  "Just a quote / planning ahead",
+];
+
 interface QuoteFormProps {
   /**
    * Where the enquiry came from, e.g. "Blocked Drains" or "Inner West".
@@ -84,6 +91,26 @@ export default function QuoteForm({ source, heading, blurb }: QuoteFormProps) {
             style={{ ["--tw-ring-color" as string]: "var(--color-brand-blue)" }}
           />
         </div>
+
+        <fieldset>
+          <legend className="block text-sm font-semibold text-gray-700 mb-1.5">How urgent is it?</legend>
+          <div className="grid sm:grid-cols-3 gap-2">
+            {URGENCY_OPTIONS.map((option, i) => (
+              <label key={option} htmlFor={`qf-urgency-${source}-${i}`} className="block cursor-pointer">
+                <input
+                  id={`qf-urgency-${source}-${i}`}
+                  type="radio"
+                  name="urgency"
+                  value={option}
+                  className="peer sr-only"
+                />
+                <span className="flex items-center justify-center text-center min-h-[44px] px-3 py-2 rounded-xl border border-gray-300 text-sm text-gray-700 transition-colors hover:border-[var(--color-brand-blue)] peer-checked:border-[var(--color-brand-blue)] peer-checked:bg-[var(--color-brand-blue)] peer-checked:text-white peer-checked:font-semibold peer-focus-visible:ring-2 peer-focus-visible:ring-[var(--color-brand-blue)] peer-focus-visible:ring-offset-2">
+                  {option}
+                </span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
 
         <div>
           <label htmlFor={`qf-message-${source}`} className="block text-sm font-semibold text-gray-700 mb-1.5">
