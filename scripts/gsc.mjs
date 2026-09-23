@@ -12,7 +12,7 @@
  *
  * Env:
  *   GSC_SA_KEY_B64  base64 of the service account JSON key
- *   GSC_SITE        property, e.g. "sc-domain:mrclog.com.au"
+ *   GSC_SITE        property, e.g. "https://www.mrclog.com.au/"
  *
  * Usage:
  *   node scripts/gsc.mjs [days=28] > gsc.json
