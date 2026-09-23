@@ -12,6 +12,13 @@ const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
 const EMAIL = "info@mrclog.com.au";
 
+/** Optional urgency choice. Values arrive verbatim in the enquiry email. */
+const URGENCY_OPTIONS = [
+  "Emergency - need someone now",
+  "In the next few days",
+  "Just a quote / planning ahead",
+];
+
 function MailIcon() {
   return (
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A9FFF" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -236,6 +243,26 @@ export default function ContactPage() {
                     <option>Other</option>
                   </select>
                 </div>
+
+                <fieldset>
+                  <legend className="block text-sm font-semibold text-gray-700 mb-1.5">How urgent is it?</legend>
+                  <div className="grid sm:grid-cols-3 gap-2">
+                    {URGENCY_OPTIONS.map((option, i) => (
+                      <label key={option} htmlFor={`contact-urgency-${i}`} className="block cursor-pointer">
+                        <input
+                          id={`contact-urgency-${i}`}
+                          type="radio"
+                          name="urgency"
+                          value={option}
+                          className="peer sr-only"
+                        />
+                        <span className="flex items-center justify-center text-center min-h-[44px] px-3 py-2 rounded-xl border border-gray-300 text-sm text-gray-700 transition-colors hover:border-[var(--color-brand-blue)] peer-checked:border-[var(--color-brand-blue)] peer-checked:bg-[var(--color-brand-blue)] peer-checked:text-white peer-checked:font-semibold peer-focus-visible:ring-2 peer-focus-visible:ring-[var(--color-brand-blue)] peer-focus-visible:ring-offset-2">
+                          {option}
+                        </span>
+                      </label>
+                    ))}
+                  </div>
+                </fieldset>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1.5" htmlFor="message">
