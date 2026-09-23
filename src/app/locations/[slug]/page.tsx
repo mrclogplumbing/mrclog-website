@@ -2,11 +2,13 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import QuoteForm from "@/components/QuoteForm";
 import ReviewStrip from "@/components/ReviewStrip";
+import JobStories from "@/components/JobStories";
 import Link from "next/link";
 import { allAreas, getArea, suburbPageFor } from "@/lib/areas";
 import { getBlockedDrainArea } from "@/lib/blocked-drain-areas";
 import { getPipeReliningArea } from "@/lib/pipe-relining-areas";
 import { getHotWaterArea } from "@/lib/hot-water-areas";
+import { storiesForSuburb } from "@/lib/job-stories";
 import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
@@ -180,6 +182,9 @@ export default async function LocationPage({
           </div>
         </section>
       )}
+
+      {/* Recent jobs, from the owner's own photos and notes */}
+      <JobStories heading={`Recent Jobs in ${location.label}`} stories={storiesForSuburb(slug)} show="service" />
 
       {/* Suburbs */}
       <section style={{ background: "var(--color-grey-100)" }} className="py-16 md:py-20">

@@ -2,11 +2,13 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import QuoteForm from "@/components/QuoteForm";
 import ReviewStrip from "@/components/ReviewStrip";
+import JobStories from "@/components/JobStories";
 import { reviewTagForService } from "@/lib/review-tags";
 import Link from "next/link";
 import Image from "next/image";
 import { services, getService } from "@/lib/services";
 import { photosForService } from "@/lib/service-photos";
+import { storiesForService } from "@/lib/job-stories";
 import { blockedDrainSuburbLinks } from "@/lib/blocked-drain-areas";
 import { pipeReliningSuburbLinks } from "@/lib/pipe-relining-areas";
 import { hotWaterSuburbLinks } from "@/lib/hot-water-areas";
@@ -195,6 +197,9 @@ export default async function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* Recent jobs, from the owner's own photos and notes */}
+      <JobStories heading={`Recent ${service.label} Jobs`} stories={storiesForService(slug)} show="suburb" />
 
       {/* Suburb pages, on the blocked drains service only */}
       {suburbLinks && suburbLinks.items.length > 0 && (

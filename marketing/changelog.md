@@ -4,6 +4,7 @@ Every change the agents make, newest first. The monthly SEO pass uses the
 dates here to judge whether a change worked, so every published change
 gets a line. Prefixes: blog, web, refresh, revert.
 
+- 2026-09-23 web: job stories system (owner approved) - no visible change until first upload
 - 2026-09-23 web: /contact form - optional urgency choice (owner approved)
 - 2026-09-23 web: QuoteForm - optional urgency choice (owner approved)
 - 2026-09-23 web: /locations/dee-why - new suburb page for Dee Why under /locations/northern-beaches (owner-approved batch of 15)
