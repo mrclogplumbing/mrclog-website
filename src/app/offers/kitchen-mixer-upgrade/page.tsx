@@ -212,7 +212,7 @@ export default function KitchenMixerUpgradeOfferPage() {
               A brand new tap for $399
             </h2>
             <p className="text-base leading-relaxed mb-6" style={{ color: "var(--color-grey-600)" }}>
-              Fill in the form and we&rsquo;ll confirm your booking — usually within 30 minutes during the day. Prefer to talk? Call us any time.
+              Fill in the form and we&rsquo;ll confirm your booking — usually within 2 hours during business hours. Prefer to talk? Call us any time.
             </p>
             <a href={PHONE_HREF} className="inline-flex items-center gap-3 p-5 rounded-2xl border border-gray-100 bg-white shadow-sm hover:shadow-md transition-shadow group mb-6">
               <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: "var(--color-brand-blue-light)" }}>
@@ -244,7 +244,7 @@ export default function KitchenMixerUpgradeOfferPage() {
             <h3 className="font-logo font-bold text-2xl mb-2" style={{ color: "var(--color-dark)" }}>
               Book My Upgrade
             </h3>
-            <p className="text-sm text-gray-500 mb-6">We reply to enquiries within 30 minutes during the day.</p>
+            <p className="text-sm text-gray-500 mb-6">We reply to enquiries within 2 hours during business hours.</p>
 
             <form action="https://formspree.io/f/xwvwawnp" method="POST" className="space-y-4">
               <input type="hidden" name="_subject" value="Kitchen Mixer Upgrade booking" />

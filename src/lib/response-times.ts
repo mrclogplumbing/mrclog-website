@@ -16,9 +16,9 @@
  *                defensible under the Australian Consumer Law. Sixty minutes
  *                is what the emergency page already promised.
  *
- *   `enquiry`  — how long until someone replies to a web form. Thirty
- *                minutes is realistic, and it is what the forms meant all
- *                along; the wording just did not say so.
+ *   `enquiry`  — how long until someone replies to a web form or email.
+ *                The owner confirmed two hours (24 Sep 2026); the contact
+ *                page had been saying both 2 hours and 30 minutes.
  *
  * Keep them honest. If the real numbers change, change them here.
  */
@@ -28,7 +28,7 @@ export const responseTimes = {
   /** Short form for stat tiles and chips. */
   arrivalShort: "<60min",
   /** Time to reply to a website enquiry during the day. */
-  enquiry: "within 30 minutes",
+  enquiry: "within 2 hours",
   /** Short form for chips. */
-  enquiryShort: "30 min reply",
+  enquiryShort: "2 hr reply",
 };

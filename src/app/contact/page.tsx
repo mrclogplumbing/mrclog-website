@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
   title: "Contact Us | Get a Free Quote | Sydney",
   description:
-    "Contact Mr. Clog Plumbing for a free quote or to book a plumber in Sydney. Call (02) 9139 8945 or fill in the form — we respond within 30 minutes.",
+    "Contact Mr. Clog Plumbing for a free quote or to book a plumber in Sydney. Call (02) 9139 8945 or fill in the form — we reply within 2 hours.",
 };
 
 const PHONE = "(02) 9139 8945";
@@ -157,7 +157,7 @@ export default function ContactPage() {
               <h2 className="font-logo font-bold text-2xl mb-2" style={{ color: "var(--color-dark)" }}>
                 Get a Free Quote
               </h2>
-              <p className="text-sm text-gray-500 mb-6">We reply to enquiries within 30 minutes during the day.</p>
+              <p className="text-sm text-gray-500 mb-6">We reply to enquiries within 2 hours during business hours.</p>
 
               <form
                 action="https://formspree.io/f/xwvwawnp"

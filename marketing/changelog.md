@@ -4,6 +4,7 @@ Every change the agents make, newest first. The monthly SEO pass uses the
 dates here to judge whether a change worked, so every published change
 gets a line. Prefixes: blog, web, refresh, revert.
 
+- 2026-09-24 web: / (home hero) - fixed page spilling past the screen edge on phones (menu + call icon were off-screen); written-enquiry reply time set to 2 hours everywhere (was 30 minutes on home, contact form, offer pages; owner approved)
 - 2026-09-23 web: /services/24-hour-plumber - new service page for nights, weekends and public holidays, cross-linked with /services/emergency-plumbing (target: "24 hour plumber sydney", "after hours plumber sydney"; owner approved)
 - 2026-09-23 web: /services/toilet-cistern-replacement - new service page, cross-linked with /services/taps-and-toilets and the two toilet posts (target: "toilet cistern replacement"; owner approved)
 - 2026-09-23 blog: added /blog/hot-water-not-working (target query: "hot water not working"; owner approved)

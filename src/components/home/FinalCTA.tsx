@@ -28,7 +28,7 @@ export default function FinalCTA() {
           Got a Plumbing Problem Right Now?
         </h2>
         <p className="font-display text-lg md:text-xl mb-8 max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.85)" }}>
-          Don&rsquo;t wait. Call us or get a free quote and we&rsquo;ll get back to you within 30 minutes.
+          Don&rsquo;t wait. Call us or get a free quote and we&rsquo;ll get back to you within 2 hours.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

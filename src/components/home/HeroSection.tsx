@@ -34,7 +34,7 @@ function StarIcon({ filled = true }: { filled?: boolean }) {
 export default function HeroSection() {
   return (
     <section
-      className="relative flex items-center min-h-[90vh] pt-16"
+      className="relative flex items-center min-h-[90vh] pt-16 overflow-hidden"
       style={{ background: "var(--color-dark)" }}
       aria-label="Hero"
     >
