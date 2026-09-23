@@ -27,8 +27,13 @@ This is a Next.js 14 App Router site. Every blog post is a hand-built
 
 ## Step 1 — Pick two topics that do not already exist
 
-Read the `posts` array at the top of `src/app/blog/page.tsx` first. It is
-the authoritative list of what already exists. Do not duplicate a topic,
+Start with `marketing/topic-queue.md`. The weekly seo-research run ranks
+topics there from Search Console data. Take the top two unticked topics,
+unless one now duplicates a post that exists. If the queue is empty, pick
+topics yourself using the rules below.
+
+Then read the `posts` array in `src/lib/blog.ts`. It is the authoritative
+list of what already exists. Do not duplicate a topic,
 and do not write a near-identical angle on one (e.g. a second "how to
 prevent blocked drains" piece).
 
@@ -106,6 +111,13 @@ colour classes.
 - Escape apostrophes and quotes in JSX text as `&rsquo;` `&ldquo;`
   `&rdquo;` and `&amp;` — bare `'` and `"` will fail the build.
 
+## Step 3b — Add images
+
+Follow `.claude/skills/blog-images/SKILL.md`: one lead image under the
+Quick Answer box (a real job photo if one fits, otherwise a generated
+one), and at most two more in the body. Point `openGraph.images` at the
+lead image.
+
 ## Step 4 — Create the file
 
 `src/app/blog/<slug>/page.tsx` — slug is lowercase, hyphenated, keyword-led,
@@ -129,7 +141,8 @@ one silently drifted and left five pages out of the sitemap.
 
 The `date` in the blog index, the hero date, `publishedTime` in metadata,
 and `datePublished` in `BlogPostSchema` must all be **the same day** —
-use today's actual date.
+use today's actual date in Sydney (`TZ=Australia/Sydney date`). The
+machine's clock is UTC, which is a day behind at 7am Sydney time.
 
 ## Step 6 — Verify before committing
 
@@ -205,6 +218,13 @@ Pull with `--rebase` before pushing — the owner may have changed the site
 since this session started, and a stale push will be rejected. If the
 rebase produces conflicts you cannot resolve cleanly, stop and fall back
 to the branch-and-report path above rather than forcing anything.
+
+In the same commit, tick the topics off in `marketing/topic-queue.md`
+and add one line per post to the top of `marketing/changelog.md`:
+
+```
+- 2026-09-29 blog: added /blog/<slug> (target query: "<query>")
+```
 
 After pushing, state plainly what went live: each post's title, slug, and
 live URL (`https://www.mrclog.com.au/blog/<slug>`). The owner reads that
