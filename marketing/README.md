@@ -33,7 +33,7 @@ notification. That summary is the record of what went live, and so is
    because routines run on the account that creates them. Give its GitHub
    connection access to `mrclogplumbing/mrclog-website`, with permission to
    push to `main`.
-2. **Google Search Console.** Verify `mrclog.com.au` as a Domain property.
+2. **Google Search Console.** Done: URL-prefix property `https://www.mrclog.com.au/`.
 3. **Google Analytics 4.** Done: property `G-J1TRXMCXCQ` is set in
    `src/components/Analytics.tsx`. It reports phone taps
    (`phone_call_click`) and form enquiries (`generate_lead`).
@@ -53,7 +53,7 @@ Set these on the environment the routines use:
 | Name | Value |
 |---|---|
 | `GSC_SA_KEY_B64` | the service account JSON key, base64 encoded (`base64 -i key.json`) |
-| `GSC_SITE` | `sc-domain:mrclog.com.au` |
+| `GSC_SITE` | `https://www.mrclog.com.au/` (URL-prefix property, verified by public/googled45a9704fe9b5527.html) |
 | `OPENAI_API_KEY` | from step 5 |
 
 Every routine keeps working without these. Research falls back to site
