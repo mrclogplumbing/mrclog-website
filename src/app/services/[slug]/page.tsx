@@ -198,6 +198,34 @@ export default async function ServicePage({
         </div>
       </section>
 
+      {/* Guide sections, on services that have them */}
+      {service.sections && service.sections.length > 0 && (
+        <section className="section-container pb-16 md:pb-20">
+          <div className="max-w-3xl mx-auto space-y-12">
+            {service.sections.map((section) => (
+              <div key={section.heading}>
+                <h2 className="font-logo font-bold text-2xl md:text-3xl mb-3" style={{ color: "var(--color-dark)" }}>
+                  {section.heading}
+                </h2>
+                {section.intro && (
+                  <p className="text-gray-600 leading-relaxed text-base mb-5">{section.intro}</p>
+                )}
+                <div className="space-y-3">
+                  {section.items.map((item) => (
+                    <div key={item.title} className="rounded-2xl p-5 border border-gray-100 bg-white shadow-sm">
+                      <h3 className="font-logo font-bold text-base mb-1" style={{ color: "var(--color-dark)" }}>
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">{item.body}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Recent jobs, from the owner's own photos and notes */}
       <JobStories heading={`Recent ${service.label} Jobs`} stories={storiesForService(slug)} show="suburb" />
 
@@ -261,6 +289,31 @@ export default async function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* Related pages */}
+      {service.related && service.related.length > 0 && (
+        <section className="section-container pt-16 md:pt-20">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-logo font-bold text-2xl mb-5" style={{ color: "var(--color-dark)" }}>
+              Related Pages
+            </h2>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {service.related.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="card p-5 flex flex-col group no-underline"
+                >
+                  <span className="font-logo font-bold text-base mb-1" style={{ color: "var(--color-brand-blue)" }}>
+                    {link.label} &rarr;
+                  </span>
+                  <span className="text-sm text-gray-600 leading-relaxed">{link.desc}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="section-container py-16 md:py-20">

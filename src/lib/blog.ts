@@ -17,6 +17,15 @@ export interface BlogPost {
  */
 export const posts: BlogPost[] = [
   {
+    slug: "hot-water-not-working",
+    title: "Hot Water Not Working? What to Check",
+    excerpt: "No hot water, lukewarm water, or hot water that runs out fast? Safe checks by symptom for electric, gas, heat pump and continuous flow systems, and where to stop and call a plumber.",
+    date: "23 September 2026",
+    category: "Hot Water",
+    readTime: "8 min read",
+    published: true,
+  },
+  {
     slug: "braided-flexi-hose-failure",
     title: "Braided Flexi Hoses: How to Spot One Before It Bursts",
     excerpt: "The braided hoses under your sinks and toilets can fail without warning and flood a home in minutes. Here are the warning signs, a 10-minute check, and what to do if one bursts.",

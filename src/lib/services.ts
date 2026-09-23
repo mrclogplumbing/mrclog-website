@@ -10,6 +10,10 @@ export interface Service {
   metaTitle: string;
   metaDescription: string;
   typicalCost?: string;
+  /** Extra guide sections shown under "About This Service". */
+  sections?: { heading: string; intro?: string; items: { title: string; body: string }[] }[];
+  /** Related pages linked near the bottom of the page. */
+  related?: { href: string; label: string; desc: string }[];
 }
 
 export const services: Service[] = [
@@ -42,6 +46,87 @@ export const services: Service[] = [
     typicalCost: "From $180–$350 depending on job complexity",
   metaTitle: "24/7 Emergency Plumber Sydney | Fast Response",
     metaDescription: "Emergency plumber in Sydney available 24/7. Burst pipes, leaks, flooding — Mr. Clog responds in 60 min or less. $0 call-out fee. Call (02) 9139 8945.",
+    related: [
+      { href: "/services/24-hour-plumber", label: "24 Hour & After Hours Plumber", desc: "Night, weekend or public holiday? What can wait until morning, and what to shut off first." },
+      { href: "/blog/burst-pipe-first-5-minutes", label: "Burst Pipe: The First 5 Minutes", desc: "Step-by-step: stop the water, kill the power, limit the damage." },
+    ],
+  },
+  {
+    slug: "24-hour-plumber",
+    label: "24 Hour & After Hours Plumber",
+    headline: "24 Hour & After Hours Plumber Sydney",
+    subheadline: "Nights, weekends and public holidays: what needs a plumber tonight, and what to do until one arrives.",
+    description:
+      "Pipes rarely choose office hours to fail. A flexi hose lets go at 11pm, the only toilet overflows on a Sunday, the hot water tank splits on a public holiday with the whole family home. Mr. Clog takes calls around the clock, weekends and public holidays included, and sends a licensed plumber out after hours for problems that can't safely wait. Not every fault needs a night-time visit, though. The guide below helps you sort the urgent from the inconvenient, and shows the valves worth knowing before anything goes wrong.",
+    benefits: [
+      "Phones answered 24/7, including weekends and public holidays",
+      "$0 call-out fee at any hour, day or night",
+      "A fixed price before any work starts",
+      "Fully stocked vans, so most jobs are fixed on the first visit",
+      "Licensed & insured plumbers",
+    ],
+    process: [
+      { step: "01", title: "Make It Safe", desc: "Shut the water off at the nearest valve, or get everyone outside if you smell gas. The steps are on this page." },
+      { step: "02", title: "Ring Us", desc: "Tell us what is happening, the address, and what you have already turned off. Any hour is fine." },
+      { step: "03", title: "Price Agreed", desc: "The plumber looks at the problem on site and gives you a fixed price. Nothing starts until you say yes." },
+      { step: "04", title: "Repaired & Tested", desc: "The fault is repaired, the water is turned back on, and everything is checked for leaks before we go." },
+    ],
+    sections: [
+      {
+        heading: "Call Straight Away, Whatever the Time",
+        intro: "These problems get worse by the minute or put people at risk. Don't wait for Monday.",
+        items: [
+          { title: "Water you can't stop", body: "A burst pipe, a split flexi hose or a leak that keeps running after you close the nearest valve. If only the main stop tap stops it, the house has no water until it is fixed." },
+          { title: "Water near electrics", body: "Water coming through a ceiling light, pooling near power points or reaching the switchboard. Keep clear of it and treat the electrical risk first." },
+          { title: "Sewage coming up inside", body: "A floor waste, shower or toilet backing up with waste water. This is a health risk, and flushing or running taps makes it worse." },
+          { title: "A leaking hot water tank", body: "Water running from the tank itself, not just a drip from the relief pipe. A storage tank that has split will keep leaking until it is isolated and replaced." },
+          { title: "A smell of gas", body: "Get everyone outside, leave switches and appliances alone, and ring 000 or your gas distributor's emergency line from outside. Then call a licensed gas fitter." },
+        ],
+      },
+      {
+        heading: "Usually Fine Until Morning",
+        intro: "If you can isolate it and it isn't spreading, it can generally wait for a daytime booking.",
+        items: [
+          { title: "A dripping tap", body: "Annoying and wasteful, but not damaging overnight. Put a cloth in the basin if the noise keeps you awake." },
+          { title: "A toilet that keeps running", body: "Turn off the small isolation valve on the wall behind the toilet. You can still flush once more by pouring a bucket of water into the bowl." },
+          { title: "One blocked toilet when you have another", body: "Stop using it and use the other toilet. If it is the only toilet in the house, it moves up to urgent." },
+          { title: "One slow drain", body: "A single sink or shower draining slowly, with everything else normal, is a local blockage. Avoid using it overnight." },
+          { title: "No hot water, and nothing leaking", body: "We still take these calls at night, and with a baby, an elderly or unwell person in the house it may not be able to wait. If yours can manage until morning, our hot water troubleshooting guide covers the safe checks to try first." },
+        ],
+      },
+      {
+        heading: "Before We Arrive: Where to Turn Things Off",
+        intro: "Find these on a quiet afternoon, not at midnight with a torch in your teeth.",
+        items: [
+          { title: "Fixture isolation valves", body: "Most toilets, basins, kitchen sinks and dishwashers have a small valve on the supply pipe underneath or behind them. Turning it off stops the water to that fixture only, so the rest of the house keeps running." },
+          { title: "The main stop tap", body: "Usually beside the water meter near the front boundary, sometimes in a ground-level box. Turn it clockwise to shut off the whole property. Old taps can be stiff, so check yours turns before you need it." },
+          { title: "The hot water system", body: "If the tank is leaking, close the cold water valve on the inlet pipe at the unit. For an electric system, switch off its circuit at the switchboard, but only if you can reach it without standing in water." },
+          { title: "The gas meter", body: "The meter has a valve on the pipe coming into it. If it is safe to reach, turning the lever a quarter turn so it sits across the pipe closes the supply. If the smell is strong, leave first, then call from outside." },
+          { title: "The electricity", body: "If water has reached power points, lights or the switchboard, switch off the main switch only if you can do it from dry ground. If you can't, stay away and ring 000, then call a licensed electrician." },
+        ],
+      },
+      {
+        heading: "How After-Hours Pricing Works",
+        items: [
+          { title: "No call-out fee", body: "Our call-out fee is $0 at any time, including nights, weekends and public holidays." },
+          { title: "A fixed price first", body: "The plumber assesses the problem and gives you a fixed price for the work before starting, so you decide whether to go ahead knowing the full cost." },
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Will someone actually answer at 2am?", a: "Yes. Our phones are answered 24 hours a day, every day of the year, including weekends and public holidays." },
+      { q: "Is there a call-out fee on weekends or public holidays?", a: "No. The call-out fee is $0 at any hour. You also get a fixed price for the work before anything starts." },
+      { q: "My toilet is running at midnight. Should I call now?", a: "Usually not. Turn off the isolation valve behind the toilet and book a daytime visit. Call straight away if water is escaping onto the floor and the valve won't stop it." },
+      { q: "What should I have ready when I call?", a: "Your address, what is happening and where, what you have already turned off, and whether water is near any electrics. Mention anything about access too, such as strata parking, a locked gate or pets." },
+      { q: "Do you cover my suburb after hours?", a: "Our 24/7 service covers the Sydney metro area. Tell us your suburb when you call." },
+    ],
+    metaTitle: "24 Hour & After Hours Plumber Sydney",
+    metaDescription: "After hours plumber in Sydney for nights, weekends and public holidays. What can't wait, what to shut off first, and $0 call-out fee at any hour.",
+    related: [
+      { href: "/services/emergency-plumbing", label: "Emergency Plumbing", desc: "Burst pipes, major leaks and flooding: our emergency plumbing service." },
+      { href: "/blog/what-to-do-in-a-plumbing-emergency", label: "What to Do in a Plumbing Emergency", desc: "A calm plan for burst pipes, flooding, sewage and gas." },
+      { href: "/blog/hot-water-not-working", label: "Hot Water Not Working?", desc: "Safe checks by symptom before you book a hot water repair." },
+    ],
   },
   {
     slug: "blocked-drains",
@@ -132,6 +217,78 @@ export const services: Service[] = [
     typicalCost: "From $120–$250 for washer replacement to full install",
   metaTitle: "Tap & Toilet Repairs Sydney",
     metaDescription: "Dripping taps and running toilets fixed fast across Sydney. Mr. Clog — quality repairs, $0 call-out fee. Call (02) 9139 8945.",
+    related: [
+      { href: "/services/toilet-cistern-replacement", label: "Toilet Cistern Replacement", desc: "When a cistern needs replacing rather than repairing, and the types to choose from." },
+      { href: "/blog/why-your-toilet-keeps-running", label: "Why Your Toilet Keeps Running", desc: "The three worn parts behind most running toilets." },
+      { href: "/blog/toilet-leaking-at-the-base", label: "Toilet Leaking at the Base?", desc: "How to find where the water is really coming from." },
+    ],
+  },
+  {
+    slug: "toilet-cistern-replacement",
+    label: "Toilet Cistern Replacement",
+    headline: "Toilet Cistern Replacement Sydney",
+    subheadline: "Running, cracked or leaking cistern? Find out whether it needs a part or a whole new cistern.",
+    description:
+      "Most cistern faults come down to one worn part, and a new inlet valve, flush valve or seal costs far less than a new cistern. Replacement is the right call when the cistern itself is cracked, when parts for an old model are no longer made, or when you want to trade an old single-flush cistern for a water-efficient dual flush. Mr. Clog repairs and replaces cisterns across Sydney, checks that the new cistern suits your existing pan, and replaces the whole suite when it doesn't.",
+    benefits: [
+      "Cistern and flush mechanism repairs",
+      "Exposed and close-coupled cistern replacements",
+      "Full toilet suite installations",
+      "A fixed price before any work starts",
+      "$0 call-out fee",
+    ],
+    process: [
+      { step: "01", title: "Check the Fault", desc: "We find out whether a part or the cistern itself is at fault, and whether a new cistern will suit your pan." },
+      { step: "02", title: "Fixed Quote", desc: "You get a fixed price for the repair, the new cistern, or a new suite if the pan needs replacing too." },
+      { step: "03", title: "Swap It Over", desc: "We isolate the water, remove the old cistern, and fit the new one with a new seal and supply connection." },
+      { step: "04", title: "Flush Test", desc: "We run full and half flushes and check the inlet, the seal and the pan for leaks." },
+    ],
+    sections: [
+      {
+        heading: "Repair or Replace? Signs to Look For",
+        items: [
+          { title: "Water running into the bowl", body: "Usually a worn flush valve seal or an inlet valve that won't shut off. Both are replaceable parts, so this is normally a repair, not a new cistern." },
+          { title: "Phantom flushing", body: "The cistern refills for a few seconds on its own every so often. That is a slow leak past the flush valve seal, and a new seal or valve usually cures it." },
+          { title: "A cracked cistern", body: "A crack in the porcelain can't be reliably repaired and can open up without warning. A cracked cistern should be replaced." },
+          { title: "Leaking at the base", body: "Often the seal between the cistern and the pan, or the supply connection, rather than the cistern itself. Those are repairs. Replacement only comes into it if the cistern is damaged." },
+          { title: "An old single-flush cistern", body: "Older single-flush cisterns commonly use around 11 litres every flush. Replacing one with a dual flush cistern or suite cuts water use substantially." },
+          { title: "Parts no longer available", body: "Some older and discontinued cisterns take parts that are no longer made. When a repair isn't possible, replacement is the practical answer." },
+        ],
+      },
+      {
+        heading: "Types of Cistern",
+        items: [
+          { title: "Close-coupled", body: "The cistern sits directly on the back of the pan and is bolted to it through a rubber seal. This is the most common type in Sydney homes." },
+          { title: "Exposed wall-mounted", body: "The cistern is fixed to the wall above the pan and joined to it by a flush pipe. Common in older homes and in some accessible bathrooms." },
+          { title: "Concealed (in-wall)", body: "The cistern sits inside the wall, and only the flush plate shows. Most internal parts are serviced through the flush plate opening. Replacing the cistern body usually means opening the wall, so it is normally part of a renovation." },
+          { title: "Dual flush", body: "A full flush and a half flush from two buttons. Dual flush was developed in Australia and is now the standard for new toilets here." },
+          { title: "WELS rating", body: "Toilets sold in Australia carry a WELS label showing a star rating and water use. A 4-star dual flush suite typically uses 4.5 litres for a full flush and 3 litres for a half flush, an average of about 3.5 litres." },
+        ],
+      },
+      {
+        heading: "What the Job Involves",
+        items: [
+          { title: "Matching the pan", body: "The flush volume has to suit the pan. An older pan built for a large single flush may not clear properly with a modern low-volume cistern, which is why an upgrade is often a new suite rather than a cistern alone." },
+          { title: "Isolate and remove", body: "The water is turned off at the isolation valve, the cistern is emptied and disconnected, and the old unit is lifted off." },
+          { title: "Fit and connect", body: "The new cistern goes on with a new seal and fixings, and is connected to the water supply. An old or damaged flexi hose is worth replacing at the same time." },
+          { title: "Licensed work", body: "Replacing a cistern means connecting to the water supply, and a new suite also connects to the sewer. In NSW that is work for a licensed plumber." },
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Can you replace just the cistern and keep my toilet pan?", a: "Often, yes, if a compatible cistern is available and the pan is in good condition. If the pan was designed for a much larger flush, or is cracked, a new suite is the better option." },
+      { q: "My toilet keeps running. Do I need a new cistern?", a: "Usually not. A running toilet is almost always a worn flush valve seal or inlet valve inside the cistern, and both can be replaced." },
+      { q: "What does a WELS star rating mean for a toilet?", a: "It shows how water-efficient the toilet is. More stars means less water per flush. A 4-star dual flush suite typically uses 4.5 litres for a full flush and 3 litres for a half flush." },
+      { q: "Can I replace a toilet cistern myself?", a: "Not legally in NSW. Homeowners can replace some cistern washers, but replacing a cistern or toilet involves connecting to the water supply and is work for a licensed plumber." },
+      { q: "Can you fix a concealed in-wall cistern?", a: "Yes. Most internal parts are reached through the flush plate opening. Replacing the cistern body itself usually means opening the wall, so we will tell you upfront if that applies." },
+    ],
+    metaTitle: "Toilet Cistern Replacement Sydney",
+    metaDescription: "Toilet cistern replacement in Sydney. When to repair or replace, exposed vs concealed cisterns, dual flush and WELS ratings. $0 call-out fee.",
+    related: [
+      { href: "/services/taps-and-toilets", label: "Tap & Toilet Repairs", desc: "Running toilets, dripping taps and cistern repairs." },
+      { href: "/blog/why-your-toilet-keeps-running", label: "Why Your Toilet Keeps Running", desc: "The three worn parts behind most running toilets, and the dye test." },
+      { href: "/blog/toilet-leaking-at-the-base", label: "Toilet Leaking at the Base?", desc: "Condensation, a seal, or the pan connector: how to tell which." },
+    ],
   },
   {
     slug: "pipe-relining",
