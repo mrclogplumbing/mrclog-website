@@ -799,4 +799,514 @@ export const suburbPages: Location[] = [
     metaTitle: "Plumber Hunters Hill | Heritage Drainage & Relining",
     metaDescription: "Local plumber in Hunters Hill, Woolwich and Gladesville. Blocked drains, pipe relining, heritage drainage and stormwater. Call (02) 9139 8945.",
   },
+  {
+    slug: "dee-why",
+    parent: "northern-beaches",
+    label: "Dee Why",
+    headline: "Plumber Dee Why",
+    subheadline: "Unit block plumbing, coastal corrosion and blocked drains across Dee Why, Curl Curl and Collaroy.",
+    description:
+      "Dee Why has a higher share of residents in flats and units than most of the Northern Beaches. Walk-up blocks went up through the 1960s and 70s, taller buildings have followed around the town centre since, and the whole suburb sits between a surf beach and a lagoon.",
+    localContent:
+      "That mix sets the work. In the older walk-ups, a slow drain or a drop in pressure is often a shared problem rather than one flat's, because the waste stack and the water service are common to the building. In the newer towers it is the same question with more floors in between. Down towards the beach and around Dee Why Lagoon, salt air and sandy ground add their own wear, and on the headland the ground turns to sandstone, which changes how any excavation is priced.",
+    suburbs: ["Curl Curl", "Collaroy", "Narrabeen", "Brookvale", "Freshwater", "Manly"],
+    services: ["Blocked Drains", "Emergency Plumbing", "Leak Detection", "Hot Water Systems", "Roof Plumbing", "Taps & Toilets"],
+    commonProblems: [
+      {
+        title: "Common stacks in 1960s and 70s walk-ups",
+        body: "Blocks of this era usually run one waste stack for several flats. When the ground-floor unit gets water backing up into the shower, the cause is often a partial blockage further down the shared line, which makes it an owners corporation matter rather than the tenant's.",
+      },
+      {
+        title: "Salt-worn fittings near the beach",
+        body: "Streets closest to the surf take a steady load of salt spray. Exposed brass, copper and steel, from garden taps to gutters and roof flashings, pits and fails years ahead of the same fitting a few kilometres inland.",
+      },
+      {
+        title: "Water through the ceiling from the flat above",
+        body: "In a unit block, a leak you can see is rarely where the leak is. Failed shower waterproofing or a split flexi hose upstairs can travel along a slab before it shows. Finding the true source first stops two owners paying for the wrong repair.",
+      },
+    ],
+    faqs: [
+      { q: "The flat above is leaking into mine. Who fixes it?", a: "Whoever owns the part that has failed. Fixtures inside a unit are generally the owner's, while common pipework is usually the owners corporation's. We trace the leak to its source and give both parties the same written findings." },
+      { q: "Do you work on strata buildings in Dee Why?", a: "Yes. We work for individual owners, tenants' agents and strata managers, and provide photos or camera footage so a committee can see what was found." },
+      { q: "Why do my outdoor taps keep seizing?", a: "Close to the beach, salt corrodes tap bodies and spindles faster than people expect. A tap with a better-suited finish, and servicing before it seizes completely, usually saves replacing the fitting behind it." },
+    ],
+    metaTitle: "Plumber Dee Why | Unit Blocks, Leaks & Blocked Drains",
+    metaDescription: "Local plumber in Dee Why, Curl Curl and Collaroy. Strata and unit plumbing, leak detection, blocked drains and coastal corrosion repairs. Call (02) 9139 8945.",
+  },
+  {
+    slug: "bondi-junction",
+    parent: "eastern-suburbs",
+    label: "Bondi Junction",
+    headline: "Plumber Bondi Junction",
+    subheadline: "High-rise, heritage semis and shopfront plumbing across Bondi Junction, Waverley and Queens Park.",
+    description:
+      "Bondi Junction is two suburbs in one. Around the rail and bus interchange and the Oxford Street mall it is towers, offices and shops; a couple of streets back it is Victorian and Federation terraces and semis, with interwar flat blocks between them. Waverley Council covers the lot.",
+    localContent:
+      "The towers and the terraces need opposite approaches. In a high-rise the job is usually about finding which floor, which riser and whose responsibility, and working within building management rules to shut anything off. In the older streets it is about pipe that has been in the ground for a century: earthenware sewer with root intrusion, and cast iron or galvanised pipework that has corroded from the inside.",
+    suburbs: ["Waverley", "Queens Park", "Bronte", "Woollahra", "Bondi", "Randwick"],
+    services: ["Blocked Drains", "Leak Detection", "Emergency Plumbing", "Pipe Relining", "Hot Water Systems", "Kitchen Plumbing"],
+    commonProblems: [
+      {
+        title: "Tower plumbing and building shut-downs",
+        body: "Residential towers around the interchange feed apartments through shared risers and pressure-reducing valves. Isolating water for a repair can affect several floors, so it has to be arranged with the building manager rather than done on the spot.",
+      },
+      {
+        title: "Earthenware sewer behind the semis",
+        body: "The older semis and terraces in the streets off Ebley Street and Bondi Road still often drain through their original clay pipe. Where a street tree or a backyard gum sits close to the line, roots in the joints are the usual reason a toilet or floor waste backs up.",
+      },
+      {
+        title: "Food outlets on shared drainage",
+        body: "Cafés and takeaways along the mall and the side streets send fats and oils into drains that may also serve the flats above. Grease sets further down the line, so the back-up can appear in a unit rather than in the kitchen that caused it.",
+      },
+    ],
+    faqs: [
+      { q: "Can you work in my apartment building without shutting off the whole tower?", a: "Usually yes. Most apartments have their own isolation valve. Where a riser has to be isolated, we arrange the time with building management so other residents get notice." },
+      { q: "My semi shares a drain with next door. Is that normal?", a: "In older Bondi Junction semis it is common. A camera inspection shows where the shared section starts and where the fault sits, which is what decides who is responsible." },
+      { q: "Do you do commercial plumbing around the mall?", a: "Yes. We work in shops, cafés and offices as well as homes, and can schedule work around trading hours." },
+    ],
+    metaTitle: "Plumber Bondi Junction | Apartments, Semis & Shops",
+    metaDescription: "Local plumber in Bondi Junction, Waverley and Queens Park. High-rise and strata plumbing, blocked drains, leak detection and emergency repairs. Call (02) 9139 8945.",
+  },
+  {
+    slug: "paddington",
+    parent: "eastern-suburbs",
+    label: "Paddington",
+    headline: "Plumber Paddington",
+    subheadline: "Victorian terrace plumbing, box gutters and drainage across Paddington, Edgecliff and Woollahra.",
+    description:
+      "Paddington is one of Sydney's largest runs of Victorian terraces, mostly built between the 1840s and the 1890s on steep streets that fall away from Oxford Street. The suburb is split along Oxford Street between Woollahra Council to the north and the City of Sydney to the south, and much of it is a heritage conservation area.",
+    localContent:
+      "Plumbing in a Paddington terrace is shaped by the building's age, its roof and its slope. The roofs hide box gutters behind parapets that overflow inside rather than outside when they block. The drainage is old enough to be earthenware with lead or cast iron above ground. And because many streets drop steeply, a terrace can have its sewer connection at one end and its stormwater running hard towards the other. Where there is a rear lane, it is usually the best way in.",
+    suburbs: ["Edgecliff", "Woollahra", "Darlinghurst", "Surry Hills", "Centennial Park", "Bondi Junction"],
+    services: ["Roof Plumbing", "Blocked Drains", "Pipe Relining", "Leak Detection", "Bathroom Renovations", "Stormwater Drainage"],
+    commonProblems: [
+      {
+        title: "Box gutters behind parapets",
+        body: "Terrace roofs drain into narrow box gutters hidden behind the front parapet or along the party wall. When leaves or a failed outlet block them, water has nowhere to go but into the ceiling. Stains on the upstairs front room after rain usually point here first.",
+      },
+      {
+        title: "Original drainage under a heritage home",
+        body: "Many terraces still run nineteenth-century earthenware beneath the back courtyard, often with later additions tacked on. Relining the line from inside avoids lifting sandstone flagging or brick paving that is expensive or difficult to replace in a conservation area.",
+      },
+      {
+        title: "Upstairs bathrooms added later",
+        body: "Most terraces were built without an upstairs bathroom. The ones added since often run waste through tight floor spaces with minimal fall, and a slow-draining shower on the first floor is frequently a design limit rather than a blockage.",
+      },
+    ],
+    faqs: [
+      { q: "Water is coming through my ceiling but only in heavy rain. What is it?", a: "In a Paddington terrace, a blocked or undersized box gutter is the most likely cause. We check the gutter, its outlet and the rainhead before looking for anything more complicated." },
+      { q: "Do I need council approval for drainage work on a heritage terrace?", a: "Routine repairs generally do not. Work that alters the fabric of a heritage item or the streetscape can, and which council applies depends on which side of Oxford Street you are on. We will tell you before starting if we think approval is needed." },
+      { q: "Can you get equipment in without going through the house?", a: "If your terrace backs onto a lane, usually yes. Otherwise we come through the front with drop sheets down." },
+    ],
+    metaTitle: "Plumber Paddington | Terrace Plumbing & Box Gutters",
+    metaDescription: "Local plumber in Paddington, Edgecliff and Woollahra. Victorian terrace plumbing, box gutters, blocked drains and pipe relining. Call (02) 9139 8945.",
+  },
+  {
+    slug: "north-sydney",
+    parent: "lower-north-shore",
+    label: "North Sydney",
+    headline: "Plumber North Sydney",
+    subheadline: "Office, strata and older-home plumbing across North Sydney, Waverton and McMahons Point.",
+    description:
+      "North Sydney is one of Sydney's main office centres, with towers along Miller, Walker and Berry Streets, and a growing number of apartment buildings around the Victoria Cross Metro station. Behind them are streets of Victorian and Federation houses on sandstone ridges that fall towards the harbour and Lavender Bay.",
+    localContent:
+      "Commercial and residential work sit side by side here. In the office towers and mixed-use buildings, plumbing faults usually mean tenancy fit-outs, shared risers and work booked around building hours. In the older streets it is the sandstone that matters: rock sits close to the surface, so trenching is slow, and a relined pipe is often a better answer than a dug-up one. North Sydney Council is the local authority for both.",
+    suburbs: ["Waverton", "McMahons Point", "Lavender Bay", "Crows Nest", "Cammeray", "Neutral Bay"],
+    services: ["Emergency Plumbing", "Leak Detection", "Blocked Drains", "Pipe Relining", "Backflow Prevention", "Hot Water Systems"],
+    commonProblems: [
+      {
+        title: "Tenancy fit-outs on shared building services",
+        body: "Office kitchens and bathrooms added during fit-outs connect into risers that serve the whole building. A slow drain or a leak on one floor can originate in a connection made years ago by someone else, and locating it needs access to more than one tenancy.",
+      },
+      {
+        title: "Sandstone under older homes",
+        body: "The ridges through North Sydney are sandstone with little soil cover. Replacing a damaged sewer line by digging means cutting rock, so a camera inspection to see whether relining will work is worth doing before anyone quotes an excavation.",
+      },
+      {
+        title: "Steep blocks falling to the harbour",
+        body: "Houses on the slopes towards Lavender Bay and the harbour shed stormwater quickly. Where a pit has silted or a line has lost its fall, the result in a storm is water pooling against the downhill wall of the house.",
+      },
+    ],
+    faqs: [
+      { q: "Do you work in North Sydney office buildings after hours?", a: "Yes. Commercial work that needs water isolated is usually best done outside business hours, and we schedule it with building management." },
+      { q: "Can you test backflow devices in North Sydney buildings?", a: "Yes. Testable backflow prevention devices generally need an annual test by an accredited plumber, and we can test, repair and lodge the results." },
+      { q: "Will fixing my sewer mean digging through rock?", a: "Not necessarily. If the pipe is intact enough to line, relining through existing access points avoids cutting sandstone altogether. A camera inspection tells us which." },
+    ],
+    metaTitle: "Plumber North Sydney | Commercial, Strata & Relining",
+    metaDescription: "Local plumber in North Sydney, Waverton and McMahons Point. Commercial and strata plumbing, backflow testing, pipe relining and emergency repairs. Call (02) 9139 8945.",
+  },
+  {
+    slug: "crows-nest",
+    parent: "lower-north-shore",
+    label: "Crows Nest",
+    headline: "Plumber Crows Nest",
+    subheadline: "Restaurant, apartment and Federation cottage plumbing across Crows Nest, St Leonards and Wollstonecraft.",
+    description:
+      "Crows Nest is a village of restaurants and cafés along Willoughby Road and the Pacific Highway, surrounded by Federation cottages, interwar flats and, increasingly, apartment towers. The Metro station that opened in 2024 has brought rezoning and new building to the precinct around it. The suburb sits within North Sydney Council.",
+    localContent:
+      "The food strip is what sets Crows Nest apart from its neighbours. A concentration of commercial kitchens within a few blocks means grease is a constant presence in the local drainage, and a restaurant's drain problem can also be the problem of the flats above it. Away from Willoughby Road, the Federation and interwar houses bring the usual older-Sydney mix of clay sewer, established trees and galvanised water services.",
+    suburbs: ["St Leonards", "Wollstonecraft", "Naremburn", "Cammeray", "North Sydney", "Artarmon"],
+    services: ["Blocked Drains", "Kitchen Plumbing", "Jet Blasting", "CCTV Drain Inspection", "Hot Water Systems", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Grease in commercial kitchen drains",
+        body: "Restaurant kitchens send fats and oils down drains that cool and set them within metres. A grease arrestor that is overdue for pumping, or a line that has not been jetted, blocks at the worst possible time: in the middle of a busy service.",
+      },
+      {
+        title: "Shop-top housing on one drainage line",
+        body: "Older shop-top buildings along Willoughby Road put flats over shops, sharing a sewer connection. When a blockage forms, the tenancy downstairs and the residents upstairs are often both affected, and establishing which use caused it needs a camera, not a guess.",
+      },
+      {
+        title: "Galvanised water services in older cottages",
+        body: "Federation and interwar cottages that have not been re-piped may still draw water through galvanised steel. It narrows with rust over decades, so the first sign is usually weak pressure when two taps are running at once.",
+      },
+    ],
+    faqs: [
+      { q: "Can you jet our restaurant drains outside trading hours?", a: "Yes. We schedule commercial drain cleaning before opening or after close so the kitchen does not lose a service." },
+      { q: "Why does the drain in my flat back up when the café downstairs is busy?", a: "If the two share a line, grease from the kitchen can narrow the pipe downstream of both. A camera inspection shows where the build-up is and gives the building something definite to act on." },
+      { q: "Is weak pressure in an old Crows Nest house fixable?", a: "Usually. If the cause is a galvanised service, replacing it with copper or modern polyethylene restores flow. We test pressure at the meter first to rule out a supply issue." },
+    ],
+    metaTitle: "Plumber Crows Nest | Restaurant & Home Plumbing",
+    metaDescription: "Local plumber in Crows Nest, St Leonards and Wollstonecraft. Commercial kitchen drains, blocked drains, water pressure and hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "sydney-cbd-city",
+    parent: "sydney-cbd",
+    label: "Sydney CBD",
+    headline: "Plumber in the Sydney CBD",
+    subheadline: "Apartment towers, sandstone heritage buildings and commercial tenancies in the city centre itself.",
+    description:
+      "This page is about the city centre proper, from Circular Quay down to Central and from Darling Harbour across to Hyde Park. It is mostly office towers and residential high-rise, with nineteenth-century sandstone and brick buildings still standing between them, and it is administered by the City of Sydney.",
+    localContent:
+      "Almost nothing in the CBD is a standalone building with one owner, so most plumbing jobs start with the question of access and responsibility rather than the pipe itself. Residential towers bring apartment-level faults such as failed tap cartridges, cracked flexi hoses and leaking shower wastes, with a lot of people living directly underneath. The heritage buildings bring pipework that has been altered by every tenant for a century and needs tracing before it can be trusted.",
+    suburbs: ["The Rocks", "Barangaroo", "Haymarket", "Pyrmont", "Ultimo", "Surry Hills"],
+    services: ["Emergency Plumbing", "Leak Detection", "Taps & Toilets", "Hot Water Systems", "Backflow Prevention", "Blocked Drains"],
+    commonProblems: [
+      {
+        title: "Leaks into the apartment below",
+        body: "In a tower, a leak inside one apartment is soon a problem for the one underneath. Shower wastes, toilet seals and flexi hoses are the usual sources. Isolating the apartment quickly and then tracing the source limits both the damage and the argument afterwards.",
+      },
+      {
+        title: "Apartment hot water in tight cupboards",
+        body: "City apartments often have a small electric storage heater squeezed into a laundry or hallway cupboard, or draw from central plant shared across the building. Which one you have decides whether a cold shower is your repair or the building's.",
+      },
+      {
+        title: "Heritage buildings with layered pipework",
+        body: "Sandstone and brick buildings from the 1800s have been re-plumbed piecemeal as uses changed from warehouses to offices to restaurants. Old lines are sometimes left in place but disconnected, so tracing which pipe is live comes before any repair.",
+      },
+    ],
+    faqs: [
+      { q: "Do I call the building manager or a plumber first?", a: "For anything leaking into another apartment or common area, tell the building manager straight away and turn off your own isolation valve. We can then work with the manager on access and on anything that involves shared services." },
+      { q: "Do you need a loading dock booking to work in my building?", a: "Many CBD buildings require one for trades. If yours does, let us know the rules when you book and we will arrive within them." },
+      { q: "Do you work on heritage-listed buildings in the city?", a: "Yes. We work within the building's conservation requirements and will tell you upfront if a change to visible pipework or fabric may need approval." },
+    ],
+    metaTitle: "Plumber in the Sydney CBD | Apartments & Heritage Buildings",
+    metaDescription: "Plumber for the Sydney city centre. Apartment leaks, hot water, strata and commercial plumbing, and heritage building work. Available 24/7. Call (02) 9139 8945.",
+  },
+  {
+    slug: "blacktown",
+    parent: "western-sydney",
+    label: "Blacktown",
+    headline: "Plumber Blacktown",
+    subheadline: "Reactive clay, post-war housing and granny flat plumbing across Blacktown, Seven Hills and Doonside.",
+    description:
+      "Blacktown grew fast after the Second World War. Housing Commission estates and privately built brick veneer and fibro homes went up across the district through the 1950s, 60s and 70s, mostly on full-sized blocks. Blacktown City Council now oversees a suburb where many of those houses are being extended, subdivided or replaced.",
+    localContent:
+      "The ground is the starting point. Blacktown sits on the Cumberland Plain, on clay derived from Wianamatta shale that swells when wet and shrinks when dry, and that movement cracks rigid pipe and pulls joints apart over the years. On top of that, the houses are now old enough for their original drainage and water services to be near the end of their life, just as owners add granny flats and second bathrooms that ask more of them.",
+    suburbs: ["Seven Hills", "Toongabbie", "Quakers Hill", "Mount Druitt", "St Marys", "Kings Langley"],
+    services: ["Blocked Drains", "Pipe Relining", "CCTV Drain Inspection", "Hot Water Systems", "Water Pressure", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Pipes cracked by moving clay",
+        body: "Reactive clay heaves in wet years and shrinks in droughts. Clay and early PVC sewer lines laid in the post-war decades crack or separate at the joints as it does, and roots then find the gaps. A drain that blocks after a dry spell breaks is a common pattern.",
+      },
+      {
+        title: "Granny flats on old connections",
+        body: "Secondary dwellings are a common way to use Blacktown's large blocks, and each one adds fixtures to a sewer line designed for a single house. Before building, a camera inspection of the existing line shows whether it can take the extra load.",
+      },
+      {
+        title: "Asbestos in fibro homes",
+        body: "Fibro houses from the 1950s and 60s are very likely to contain bonded asbestos cement sheeting, and some properties of that era also have asbestos cement pipe. Plumbing work that means cutting into a wall or disturbing old pipe needs to be planned around it, not discovered halfway through.",
+      },
+    ],
+    faqs: [
+      { q: "My drain blocked after a long dry spell. Why?", a: "Clay soil shrinks as it dries, and a pipe that was sound can shift and open a joint. Roots follow the moisture. A camera inspection shows whether it is a one-off clear or a section that needs relining." },
+      { q: "Can my sewer line handle a granny flat?", a: "Often, but not always. We camera the existing line and check its condition and grade before the new connection is made, which is much cheaper than finding out after the flat is built." },
+      { q: "Is it safe to work on plumbing in a fibro house?", a: "Yes, with the right precautions. Bonded asbestos sheeting is low-risk left alone. We avoid cutting it where we can, and where removal is needed it must be done by a licensed asbestos removalist." },
+    ],
+    metaTitle: "Plumber Blacktown | Blocked Drains & Pipe Relining",
+    metaDescription: "Local plumber in Blacktown, Seven Hills and Toongabbie. Blocked drains, clay soil pipe damage, granny flat plumbing and hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "penrith",
+    parent: "western-sydney",
+    label: "Penrith",
+    headline: "Plumber Penrith",
+    subheadline: "Hot water, drainage and heat-stressed plumbing across Penrith, Kingswood and Jamisontown.",
+    description:
+      "Penrith sits on the Nepean River at the foot of the Blue Mountains. It grew from a small town into a regional city after the war, with most of its housing built between the 1950s and the 1980s, and newer estates and apartments since. Penrith City Council covers the suburb and its floodplain.",
+    localContent:
+      "Two things about Penrith shape its plumbing. The first is heat: it is one of the hottest parts of Sydney in summer, which is hard on hot water systems, exposed pipework and anything plastic that sits in the sun. The second is the ground, which ranges from alluvial soil near the river to reactive shale clay further east, and each treats buried pipe differently. The lower parts of town are also mapped as Nepean River floodplain, which matters for anything built at ground level.",
+    suburbs: ["Kingswood", "Jamisontown", "South Penrith", "Emu Plains", "St Marys", "Cambridge Park"],
+    services: ["Hot Water Systems", "Blocked Drains", "Stormwater Drainage", "Water Pressure", "Emergency Plumbing", "Leak Detection"],
+    commonProblems: [
+      {
+        title: "Hot water systems working hard in the heat",
+        body: "Outdoor storage heaters, their valves and any exposed plastic pipe sit in full sun through summers that regularly pass 40 degrees. Heat and sunlight age plastic fittings and pipe lagging faster, so checking the relief valve, the anode and exposed pipework on a schedule is worth more here than in milder suburbs.",
+      },
+      {
+        title: "Clay movement on the eastern side",
+        body: "Away from the river, Penrith sits on Wianamatta shale clay that shrinks hard in a heatwave and swells after heavy rain. Sewer and stormwater lines laid in the sixties and seventies crack at the joints as the ground moves.",
+      },
+      {
+        title: "Stormwater in heavy rain",
+        body: "Low, flat blocks and big summer storms test stormwater lines that cope the rest of the year. Water pooling against a slab, or downpipes overflowing at the base, usually means a blocked or collapsed line rather than too much rain.",
+      },
+    ],
+    faqs: [
+      { q: "Why does my hot water relief valve keep dripping?", a: "A small discharge during heating is normal. Constant dripping usually means the valve is worn or the mains pressure is high. We check the valve and the incoming pressure." },
+      { q: "Is my property in a flood zone?", a: "Penrith City Council and the NSW SES publish flood maps for the Nepean River. Check those for your address; we can then advise on where to position a new hot water unit or other equipment." },
+      { q: "Do you cover the new estates around Penrith as well as the older streets?", a: "Yes. The work differs: older homes more often need drainage repairs, and newer ones more often need fixtures, hot water or warranty-related diagnosis." },
+    ],
+    metaTitle: "Plumber Penrith | Hot Water & Blocked Drains",
+    metaDescription: "Local plumber in Penrith, Kingswood and Jamisontown. Hot water systems, blocked drains, stormwater and emergency plumbing. Call (02) 9139 8945.",
+  },
+  {
+    slug: "liverpool",
+    parent: "liverpool-fairfield",
+    label: "Liverpool",
+    headline: "Plumber Liverpool",
+    subheadline: "City-centre apartments, older homes and commercial plumbing across Liverpool, Warwick Farm and Casula.",
+    description:
+      "Liverpool is one of the oldest European towns in Australia, founded by Governor Macquarie in 1810 at the head of the Georges River. Today it is a regional city centre with a rising skyline of apartments and offices, ringed by post-war houses on larger blocks. Liverpool City Council covers the suburb.",
+    localContent:
+      "The work divides by distance from the station. In the city centre it is apartment and commercial plumbing: shared waste stacks, hot water in units, restaurants and shops on common drainage. Further out it is the housing built from the 1950s onwards, on clay that moves with the seasons, with sewer and water services that have now been in the ground for sixty years or more.",
+    suburbs: ["Warwick Farm", "Casula", "Moorebank", "Chipping Norton", "Lurnea", "Prestons"],
+    services: ["Blocked Drains", "Emergency Plumbing", "Hot Water Systems", "Pipe Relining", "Kitchen Plumbing", "Leak Detection"],
+    commonProblems: [
+      {
+        title: "Shared stacks in new apartment blocks",
+        body: "Several units draining slowly together points to the common stack, not an individual apartment. Clearing it is a strata job, and a camera record of where the blockage sat helps the building prevent the next one.",
+      },
+      {
+        title: "Sixty-year-old drainage on moving ground",
+        body: "Post-war homes around the centre drain through pipe laid on reactive clay. Seasonal ground movement opens joints and lets roots in, which is why blockages here tend to recur rather than happen once.",
+      },
+      {
+        title: "Commercial kitchens in the city centre",
+        body: "Restaurants and takeaways through the Liverpool centre generate grease that builds up in their drains and grease arrestors. Regular pumping and jetting costs far less than a blockage that closes a kitchen.",
+      },
+    ],
+    faqs: [
+      { q: "My whole apartment floor has slow drains. Who pays?", a: "If the fault is in the shared stack it is normally a strata cost. We locate the blockage and provide the building with a written report." },
+      { q: "Why does my drain keep blocking in the same spot?", a: "In older Liverpool homes it is usually roots re-entering an open joint. Clearing works temporarily; relining that section stops it recurring. A camera inspection tells you which is worth doing." },
+      { q: "Do you do commercial plumbing in the Liverpool CBD?", a: "Yes, including kitchen drains, grease-related blockages and tenancy work, and we can schedule around trading hours." },
+    ],
+    metaTitle: "Plumber Liverpool | Blocked Drains & Strata Plumbing",
+    metaDescription: "Local plumber in Liverpool, Warwick Farm and Casula. Blocked drains, strata and apartment plumbing, hot water and commercial work. Call (02) 9139 8945.",
+  },
+  {
+    slug: "campbelltown",
+    parent: "macarthur",
+    label: "Campbelltown",
+    headline: "Plumber Campbelltown",
+    subheadline: "Blocked drains, hot water and older-home plumbing across Campbelltown, Leumeah and Ambarvale.",
+    description:
+      "Campbelltown was laid out as a Macquarie town in 1820, but most of what stands today dates from the 1970s and 80s, when it was declared a growth area and filled with detached homes on quarter-acre blocks. Campbelltown City Council now oversees a regional centre where apartments are going up near the station and Macarthur Square.",
+    localContent:
+      "Houses from the seventies and eighties have reached the age where their original fittings and pipework are wearing out together. Many hot water units have already been replaced at least once, taps and toilet cisterns need rebuilding, and sewer lines on the local shale clay have had forty-odd years of ground movement to crack and take on roots. Most of that is predictable, which makes it cheaper to deal with before it fails.",
+    suburbs: ["Leumeah", "Ambarvale", "Bradbury", "Rosemeadow", "Minto", "Ingleburn"],
+    services: ["Blocked Drains", "Hot Water Systems", "Taps & Toilets", "Pipe Relining", "Water Pressure", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Growth-era drainage on shale clay",
+        body: "Depending on the year they were built, homes here drain through clay pipe or early PVC. Both suffer as the reactive clay around them shifts between wet and dry years, and cracked or displaced joints are where roots get in.",
+      },
+      {
+        title: "Hot water units due for replacement",
+        body: "Many homes still have an electric storage heater in the position the builder chose decades ago. When it fails, it is worth asking whether a like-for-like swap is the right choice or whether gas, heat pump or solar suits the household better.",
+      },
+      {
+        title: "Ageing taps, valves and cisterns",
+        body: "Four decades of hard use shows in dripping taps, running toilets and seized stop valves. A seized stop valve matters most, because it is what you need to turn off in an emergency.",
+      },
+    ],
+    faqs: [
+      { q: "Should I replace my hot water system before it fails?", a: "If it is past its expected service life and showing rust or a weeping relief valve, planning the replacement avoids an urgent swap on a cold morning. We can inspect it and tell you honestly whether it has life left." },
+      { q: "Are clay pipes still used in Campbelltown homes?", a: "In older homes, yes. Many 1970s houses were built with clay sewer pipe, while later ones generally used PVC. A camera inspection shows which you have and its condition." },
+      { q: "Do you cover the newer suburbs around Campbelltown?", a: "Yes. We work across the Macarthur region, from the older Campbelltown streets to the newer estates." },
+    ],
+    metaTitle: "Plumber Campbelltown | Blocked Drains & Hot Water",
+    metaDescription: "Local plumber in Campbelltown, Leumeah and Ambarvale. Blocked drains, hot water replacement, taps and toilets and emergency plumbing. Call (02) 9139 8945.",
+  },
+  {
+    slug: "hornsby",
+    parent: "north-shore",
+    label: "Hornsby",
+    headline: "Plumber Hornsby",
+    subheadline: "Bushland blocks, steep drainage and apartment plumbing across Hornsby, Waitara and Asquith.",
+    description:
+      "Hornsby grew up as a railway junction town where the main northern line meets the North Shore line. Its town centre now has apartment buildings along the Pacific Highway, while the surrounding streets are post-war and older houses on the edge of steep bushland gullies. Hornsby Shire Council covers the area.",
+    localContent:
+      "The bush is the defining feature. Many Hornsby homes back onto sandstone gullies, with large eucalypts overhead and the ground falling steeply behind the house. That means gutters and downpipes that fill with leaves and bark, stormwater that has to be carried safely down a slope, and sewer lines that often run through the back of the block towards the gully. Nearer the station, the plumbing is the more familiar apartment work of shared services and strata responsibilities.",
+    suburbs: ["Waitara", "Asquith", "Normanhurst", "Wahroonga", "Mount Colah", "Hornsby Heights"],
+    services: ["Roof Plumbing", "Stormwater Drainage", "Blocked Drains", "Hot Water Systems", "Emergency Plumbing", "CCTV Drain Inspection"],
+    commonProblems: [
+      {
+        title: "Leaf-choked gutters and downpipes",
+        body: "Eucalypts shed leaves and bark all year. Gutters that fill quickly overflow into eaves, and debris washed into downpipes blocks the stormwater line below. Regular clearing and suitable guards cut down on both.",
+      },
+      {
+        title: "Stormwater on steep bushland blocks",
+        body: "Water running off a roof and down a steep block has to be discharged in a controlled way. Where a line has broken or its outlet has scoured out, the slope below erodes and water can end up under the house instead.",
+      },
+      {
+        title: "Sewer lines through the back of the block",
+        body: "On lots that fall to a gully, the sewer often runs away from the street through the rear of the property, under gardens and established trees. Roots and hard access make a camera inspection the sensible first step.",
+      },
+    ],
+    faqs: [
+      { q: "How often should gutters be cleared in Hornsby?", a: "It depends on the trees above your roof. Homes under large eucalypts often need clearing more than once a year. Overflow at the corners in rain is the sign it is overdue." },
+      { q: "Water pools under my house after rain. What causes it?", a: "On a sloping block, usually stormwater from above that is not being collected or is escaping a broken line. We trace where it is coming from before recommending anything." },
+      { q: "Do you work on apartment buildings near Hornsby station?", a: "Yes, for individual owners and for strata managers." },
+    ],
+    metaTitle: "Plumber Hornsby | Stormwater, Gutters & Blocked Drains",
+    metaDescription: "Local plumber in Hornsby, Waitara and Asquith. Stormwater on steep blocks, gutters and downpipes, blocked drains and hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "epping",
+    parent: "ryde-macquarie-park",
+    label: "Epping",
+    headline: "Plumber Epping",
+    subheadline: "Apartment towers, established homes and bushland drainage across Epping, Eastwood and Carlingford.",
+    description:
+      "Epping has changed more than most suburbs in the last decade. Rezoning around the station brought apartment towers to what had been streets of Federation, interwar and post-war houses, many of which remain further out. Most of the suburb moved from Hornsby Shire into the City of Parramatta in 2016.",
+    localContent:
+      "It is really two plumbing markets. Around the station, newer towers raise strata questions: shared stacks, pressure-reducing valves and whose fault a leak is. In the established streets towards Terrys Creek and the bushland reserves, it is older homes with mature trees, clay sewer lines and stormwater running downhill to the creek valleys. The houses sit on shale-capped ridge with sandstone below, so digging can hit rock sooner than people expect.",
+    suburbs: ["Eastwood", "Carlingford", "Marsfield", "North Ryde", "Denistone", "Macquarie Park"],
+    services: ["Blocked Drains", "Leak Detection", "Pipe Relining", "Stormwater Drainage", "Hot Water Systems", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Leaks in new apartment towers",
+        body: "In a newer building, a leak into the unit below can come from a shower, a hose or the building's own services. Establishing the source quickly matters, particularly while building defect warranties may still apply.",
+      },
+      {
+        title: "Roots in established streets",
+        body: "The older homes have large gardens and mature trees close to original clay sewer. Root intrusion at the joints is the most common cause of repeat blockages here.",
+      },
+      {
+        title: "Stormwater falling to the creek valleys",
+        body: "Streets that slope towards Terrys Creek and Devlins Creek carry stormwater downhill fast. A blocked pit or a failed line shows up as flooding at the low side of the property during heavy rain.",
+      },
+    ],
+    faqs: [
+      { q: "My apartment is only a few years old and is leaking. Is it a defect?", a: "Possibly. We can find the source and document it with photos, which you or your strata manager can use when raising a defect claim with the builder." },
+      { q: "Is Epping in Parramatta or Hornsby council now?", a: "Most of Epping has been in the City of Parramatta since 2016. North Epping stayed with Hornsby Shire. It matters mainly for stormwater and development approvals." },
+      { q: "Can you reline a sewer under a large garden?", a: "Usually yes, through existing access points, which avoids digging up established trees or landscaping." },
+    ],
+    metaTitle: "Plumber Epping | Apartments, Relining & Stormwater",
+    metaDescription: "Local plumber in Epping, Eastwood and Carlingford. Apartment leaks, blocked drains, pipe relining and stormwater. Call (02) 9139 8945.",
+  },
+  {
+    slug: "strathfield",
+    parent: "western-sydney",
+    label: "Strathfield",
+    headline: "Plumber Strathfield",
+    subheadline: "Federation homes on large blocks, relining and apartment plumbing across Strathfield, Homebush and Burwood.",
+    description:
+      "Strathfield is known for its Federation houses: large Queen Anne homes and grand estates built around 1900 on generous blocks, with heritage conservation areas protecting many of them. Apartment buildings cluster around the station and the town centre. The Municipality of Strathfield has governed the area since 1885.",
+    localContent:
+      "Big old houses on big old blocks means long runs of original pipe. A Strathfield sewer line can travel a long way from the house to the connection, under decades-old gardens and trees that have had a century to find it. The water service is often just as long and, in homes that have not been re-piped, just as old. Heritage controls add a reason to favour repairs that avoid excavation near a protected building or its garden.",
+    suburbs: ["Homebush", "Burwood", "Concord", "Flemington", "Strathfield South", "Enfield"],
+    services: ["Pipe Relining", "Blocked Drains", "CCTV Drain Inspection", "Water Pressure", "Bathroom Renovations", "Hot Water Systems"],
+    commonProblems: [
+      {
+        title: "Long sewer runs under mature gardens",
+        body: "On Federation-era blocks the sewer can run a long distance before it reaches the main, passing under trees planted when the house was new. Roots in the joints are common, and relining the affected lengths avoids lifting established landscaping.",
+      },
+      {
+        title: "Old water services losing pressure",
+        body: "Long water services laid in galvanised steel lose bore as they rust. In a large house the drop is most noticeable upstairs or at the far end from the meter.",
+      },
+      {
+        title: "Renovating around a heritage home",
+        body: "Adding bathrooms to a Federation house means finding a path for new waste and water without damaging period features. It is worth planning the plumbing before the design is finalised.",
+      },
+    ],
+    faqs: [
+      { q: "My heritage home needs a new sewer line. Do I have to dig?", a: "Often not. If the old pipe is intact enough to line, relining through existing access points avoids excavating near the house or its garden. A camera inspection tells us if it will work." },
+      { q: "Why is my pressure worse upstairs?", a: "Height costs some pressure, but a large drop usually means an old, narrowed water service. Replacing it restores flow throughout the house." },
+      { q: "Do you work on apartment buildings near Strathfield station?", a: "Yes, for owners, tenants and strata managers." },
+    ],
+    metaTitle: "Plumber Strathfield | Pipe Relining & Heritage Homes",
+    metaDescription: "Local plumber in Strathfield, Homebush and Burwood. Pipe relining, blocked drains, water pressure and plumbing for Federation homes. Call (02) 9139 8945.",
+  },
+  {
+    slug: "burwood",
+    parent: "western-sydney",
+    label: "Burwood",
+    headline: "Plumber Burwood",
+    subheadline: "High-rise, restaurant and Federation home plumbing across Burwood, Croydon and Enfield.",
+    description:
+      "Burwood was a stopping point on the road between Sydney and Parramatta and filled with Victorian and Federation houses in the late 1800s and early 1900s. Appian Way, a street of Federation homes, is state heritage listed. The town centre around the station, Westfield and Burwood Road is now dense with apartment towers and restaurants, under Burwood Council.",
+    localContent:
+      "Burwood's town centre packs towers, food courts and a long run of restaurants into a few blocks, which puts heavy demand on drainage and makes grease a constant factor. A short walk away, the residential streets are much older and quieter, and their plumbing problems are the ones that come with age: clay sewer with roots, and bathrooms and kitchens running on pipework that predates the current owners by generations.",
+    suburbs: ["Croydon", "Enfield", "Strathfield", "Concord", "Ashfield", "Croydon Park"],
+    services: ["Blocked Drains", "Kitchen Plumbing", "Jet Blasting", "Leak Detection", "Pipe Relining", "Hot Water Systems"],
+    commonProblems: [
+      {
+        title: "Grease on the restaurant strip",
+        body: "The concentration of restaurants around Burwood Road means commercial kitchen drains need regular jetting and grease arrestors need regular pumping. When either is missed, the blockage usually comes during service.",
+      },
+      {
+        title: "Water damage between high-rise apartments",
+        body: "In the newer towers, a failed hose, seal or shower waste becomes a problem for the apartment below. Isolating the leak and pinning down its source quickly limits the damage and settles responsibility.",
+      },
+      {
+        title: "Original drainage in older houses",
+        body: "Victorian and Federation houses in the residential streets often still use their original clay sewer. Roots at the joints and sections that have shifted cause recurring blockages until the line is relined or replaced.",
+      },
+    ],
+    faqs: [
+      { q: "Can you service our restaurant's drains before we open?", a: "Yes. We schedule commercial jetting early or late so it does not interrupt trade." },
+      { q: "Who is responsible for a leak from the apartment above?", a: "Usually whoever owns the part that failed, which may be the owner upstairs or the owners corporation. We find the source and document it so it can be settled." },
+      { q: "Do you work on heritage homes in Burwood?", a: "Yes, and we favour methods such as relining that avoid disturbing period features or gardens." },
+    ],
+    metaTitle: "Plumber Burwood | Restaurants, Apartments & Homes",
+    metaDescription: "Local plumber in Burwood, Croydon and Enfield. Commercial kitchen drains, apartment leaks, blocked drains and pipe relining. Call (02) 9139 8945.",
+  },
+  {
+    slug: "glebe",
+    parent: "inner-west",
+    label: "Glebe",
+    headline: "Plumber Glebe",
+    subheadline: "Victorian terraces, fig tree roots and low-lying drainage across Glebe, Forest Lodge and Annandale.",
+    description:
+      "Glebe runs along a ridge following Glebe Point Road, with streets of Victorian terraces falling away towards Blackwattle Bay on one side and Rozelle Bay on the other. Wentworth Park, on its eastern edge, was once Blackwattle Swamp and was filled in during the late 1870s. The suburb is within the City of Sydney.",
+    localContent:
+      "Glebe's big figs and plane trees are part of its character and part of its plumbing. Their roots travel a long way and find the joints in old earthenware sewer lines under the terraces. The other factor is the fall of the land: streets near the bays and Wentworth Park sit low, and stormwater from the ridge ends up there in a storm.",
+    suburbs: ["Forest Lodge", "Annandale", "Ultimo", "Pyrmont", "Camperdown", "Chippendale"],
+    services: ["Blocked Drains", "Pipe Relining", "CCTV Drain Inspection", "Stormwater Drainage", "Roof Plumbing", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Fig and plane tree roots",
+        body: "Glebe's large street and park trees have extensive root systems, and old clay sewer joints are an easy source of water for them. Blockages caused by roots come back after clearing, so relining is often the lasting fix.",
+      },
+      {
+        title: "Low-lying streets near the bays",
+        body: "Properties near Blackwattle Bay and Wentworth Park sit at the bottom of the catchment. Stormwater arrives quickly from the ridge and, if a pit or line is blocked, backs up rather than drains.",
+      },
+      {
+        title: "Terrace roofs and rear additions",
+        body: "Victorian terraces often have box gutters, internal downpipes and rear additions that tie into the original roof. Blockages or failed joints there send water into ceilings rather than onto the ground.",
+      },
+    ],
+    faqs: [
+      { q: "Why does my Glebe terrace keep getting blocked drains?", a: "Most often roots from nearby trees entering the old clay sewer at the joints. A camera inspection confirms it and shows whether relining will stop it." },
+      { q: "My courtyard floods in heavy rain. Can that be fixed?", a: "Usually. It is often a blocked grate, a collapsed line or a pit that is too small for the area draining into it. We find the cause before quoting." },
+      { q: "Do you work on terraces with no side access?", a: "Yes. We bring equipment through the house with floor protection, or use a rear lane where there is one." },
+    ],
+    metaTitle: "Plumber Glebe | Terrace Drains & Root Removal",
+    metaDescription: "Local plumber in Glebe, Forest Lodge and Annandale. Blocked drains, tree root removal, pipe relining and stormwater for Victorian terraces. Call (02) 9139 8945.",
+  },
 ];

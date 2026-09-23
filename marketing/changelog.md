@@ -4,6 +4,21 @@ Every change the agents make, newest first. The monthly SEO pass uses the
 dates here to judge whether a change worked, so every published change
 gets a line. Prefixes: blog, web, refresh, revert.
 
+- 2026-09-23 web: /locations/dee-why - new suburb page for Dee Why under /locations/northern-beaches (owner-approved batch of 15)
+- 2026-09-23 web: /locations/bondi-junction - new suburb page for Bondi Junction under /locations/eastern-suburbs (owner-approved batch of 15)
+- 2026-09-23 web: /locations/paddington - new suburb page for Paddington under /locations/eastern-suburbs (owner-approved batch of 15)
+- 2026-09-23 web: /locations/north-sydney - new suburb page for North Sydney under /locations/lower-north-shore (owner-approved batch of 15)
+- 2026-09-23 web: /locations/crows-nest - new suburb page for Crows Nest under /locations/lower-north-shore (owner-approved batch of 15)
+- 2026-09-23 web: /locations/sydney-cbd-city - new suburb page for Sydney CBD under /locations/sydney-cbd (owner-approved batch of 15)
+- 2026-09-23 web: /locations/blacktown - new suburb page for Blacktown under /locations/western-sydney (owner-approved batch of 15)
+- 2026-09-23 web: /locations/penrith - new suburb page for Penrith under /locations/western-sydney (owner-approved batch of 15)
+- 2026-09-23 web: /locations/liverpool - new suburb page for Liverpool under /locations/liverpool-fairfield (owner-approved batch of 15)
+- 2026-09-23 web: /locations/campbelltown - new suburb page for Campbelltown under /locations/macarthur (owner-approved batch of 15)
+- 2026-09-23 web: /locations/hornsby - new suburb page for Hornsby under /locations/north-shore (owner-approved batch of 15)
+- 2026-09-23 web: /locations/epping - new suburb page for Epping under /locations/ryde-macquarie-park (owner-approved batch of 15)
+- 2026-09-23 web: /locations/strathfield - new suburb page for Strathfield under /locations/western-sydney (owner-approved batch of 15)
+- 2026-09-23 web: /locations/burwood - new suburb page for Burwood under /locations/western-sydney (owner-approved batch of 15)
+- 2026-09-23 web: /locations/glebe - new suburb page for Glebe under /locations/inner-west (owner-approved batch of 15)
 - 2026-09-23 blog: added /blog/braided-flexi-hose-failure (target query: "braided flexi hose failure")
 - 2026-09-23 blog: added /blog/toilet-leaking-at-the-base (target query: "toilet leaking at the base")
 - 2026-09-22 owner: Put the guarantee where customers can read it
