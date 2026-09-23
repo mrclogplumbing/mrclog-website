@@ -64,7 +64,8 @@ page, the query, and what you would change.
 
 ## 5. Write the report
 
-Write `marketing/reports/<YYYY>-W<ww>.md` (ISO week). Keep it short
+Write `marketing/reports/<YYYY>-W<ww>.md` (ISO week, in Sydney time:
+`TZ=Australia/Sydney date +%G-W%V`). Keep it short
 enough to read on a phone, in plain words for a business owner, not an
 SEO specialist:
 
@@ -95,5 +96,8 @@ Anthony" section. The owner reads that in the notification.
 
 ## Monthly
 
-On the first Monday of the month (day of month 1–7), run the
+The routine starts at 7am Monday in Sydney, which is still Sunday in UTC,
+the clock this machine uses. Check the date with
+`TZ=Australia/Sydney date`, never plain `date`. On the first Monday of
+the month in Sydney (day of month 1–7), run the
 `seo-monthly` skill after this one, in the same session.

@@ -68,7 +68,8 @@ selected.
 
 **Research (Mon 7am Sydney)**
 > Follow .claude/skills/seo-research/SKILL.md for mrclog.com.au. If today
-> is the first Monday of the month, then follow
+> is the first Monday of the month in Sydney (check with
+> `TZ=Australia/Sydney date`, not plain `date`, which is UTC), then follow
 > .claude/skills/seo-monthly/SKILL.md. Finish with the summary for
 > Anthony.
 
@@ -81,11 +82,16 @@ selected.
 > Follow .claude/skills/website-enhancement/SKILL.md and make one
 > improvement to mrclog.com.au. Finish with the three-line summary.
 
-If the scheduler asks for cron in UTC: Sydney is UTC+11 from October to
-early April and UTC+10 otherwise. For 7am during daylight saving, use
-`0 20 * * 0` (Mon), `0 20 * * 1` (Tue) and `0 20 * * 2` (Wed). Move each by
-one hour when daylight saving ends. If the scheduler takes a time zone,
-choose Australia/Sydney and skip the conversion.
+If the scheduler takes a time zone, choose Australia/Sydney and skip the
+conversion. If it asks for cron in UTC, 7am Sydney is the evening before
+in UTC:
+
+| | Mon | Tue | Wed |
+|---|---|---|---|
+| Daylight saving (first Sunday in Oct to first Sunday in Apr, UTC+11) | `0 20 * * 0` | `0 20 * * 1` | `0 20 * * 2` |
+| Rest of the year (UTC+10) | `0 21 * * 0` | `0 21 * * 1` | `0 21 * * 2` |
+
+UTC cron has to be changed by hand at each daylight saving switch.
 
 If a blog routine already exists, point it at the blog prompt above
 rather than creating a second one.

@@ -141,7 +141,8 @@ one silently drifted and left five pages out of the sitemap.
 
 The `date` in the blog index, the hero date, `publishedTime` in metadata,
 and `datePublished` in `BlogPostSchema` must all be **the same day** —
-use today's actual date.
+use today's actual date in Sydney (`TZ=Australia/Sydney date`). The
+machine's clock is UTC, which is a day behind at 7am Sydney time.
 
 ## Step 6 — Verify before committing
 
