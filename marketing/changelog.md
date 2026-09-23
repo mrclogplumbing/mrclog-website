@@ -4,6 +4,8 @@ Every change the agents make, newest first. The monthly SEO pass uses the
 dates here to judge whether a change worked, so every published change
 gets a line. Prefixes: blog, web, refresh, revert.
 
+- 2026-09-23 blog: added /blog/braided-flexi-hose-failure (target query: "braided flexi hose failure")
+- 2026-09-23 blog: added /blog/toilet-leaking-at-the-base (target query: "toilet leaking at the base")
 - 2026-09-22 owner: Put the guarantee where customers can read it
 - 2026-09-22 owner: Finish the hot water suburb pages
 - 2026-09-22 owner: Add pipe relining pages for 25 suburbs

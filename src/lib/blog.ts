@@ -17,6 +17,24 @@ export interface BlogPost {
  */
 export const posts: BlogPost[] = [
   {
+    slug: "braided-flexi-hose-failure",
+    title: "Braided Flexi Hoses: How to Spot One Before It Bursts",
+    excerpt: "The braided hoses under your sinks and toilets can fail without warning and flood a home in minutes. Here are the warning signs, a 10-minute check, and what to do if one bursts.",
+    date: "23 September 2026",
+    category: "Emergency Plumbing",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
+    slug: "toilet-leaking-at-the-base",
+    title: "Toilet Leaking at the Base? The Five Usual Causes",
+    excerpt: "Water around the toilet can be condensation, a dripping connection, a failed seal, or waste water from the pan connector. Here is how to tell which one you have.",
+    date: "23 September 2026",
+    category: "Taps & Toilets",
+    readTime: "6 min read",
+    published: true,
+  },
+  {
     slug: "why-does-my-drain-smell",
     title: "Why Does My Drain Smell? The Five Usual Causes",
     excerpt: "A smelly drain is telling you something. Here are the five things that actually cause it, how to tell which one you have, and the 30-second fix that solves a good share of them.",
