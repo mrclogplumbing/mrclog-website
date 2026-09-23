@@ -34,10 +34,6 @@ const jakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.mrclog.com.au"),
   alternates: { canonical: "/" },
-  icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-  },
   title: {
     default: "Mr. Clog | Sydney's #1 Plumber | (02) 9139 8945 | 24/7 Emergency",
     template: "%s | Mr. Clog Plumbing",
