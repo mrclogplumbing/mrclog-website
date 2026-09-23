@@ -29,8 +29,14 @@ That's it. It goes live the next morning.
 - **Avoid faces, house numbers, street signs and number plates.** The
   agent will reject or crop them anyway, but it's quicker if they're not
   there.
-- **Location data is removed.** Phone photos store where they were taken.
-  That's stripped before anything goes on the site.
+- **Turn off photo location first (important).** Phone photos store
+  where they were taken, i.e. the customer's address. The website copies
+  have it stripped, but this GitHub project is public, so the photos you
+  upload here can be downloaded with their location for as long as the
+  project's history exists. Before your first upload, stop your camera
+  saving location: iPhone: Settings > Privacy & Security > Location
+  Services > Camera > Never. Android: open the Camera app > Settings >
+  turn off Location tags. (Or make the GitHub project private.)
 - **The story only says what you wrote.** Nothing gets added or made to
   sound bigger. If your note is too short to write it up honestly (for
   example, no suburb), the photos wait in the folder and you'll get a

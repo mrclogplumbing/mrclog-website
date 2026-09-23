@@ -96,6 +96,13 @@ rest. List each in the summary with the reason.
 Every published photo must have **all metadata stripped** (EXIF, GPS,
 XMP, ICC comments). Phone photos embed the customer's location.
 
+The repository is public, so the originals in the inbox (and in git
+history) are downloadable with their metadata. Check each original for
+GPS (`sharp(file).metadata()` then look for `exif`, or `exiftool -gps:all`
+if installed). If any upload carries GPS, say so at the top of the
+summary and remind Anthony to turn off camera location (see the README)
+or make the repository private. Never rewrite git history yourself.
+
 ```bash
 npm install --no-save sharp   # never changes package.json or the lockfile
 ```
