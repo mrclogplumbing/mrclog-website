@@ -12,10 +12,14 @@ going in plain words.
 ## 1. Get the data
 
 ```bash
-node scripts/gsc.mjs 28 > /tmp/gsc.json
+node scripts/gsc.mjs 28 > /tmp/gsc.json      # searches
+node scripts/ga4.mjs 28 > /tmp/ga4.json      # visits and leads
+node scripts/clarity.mjs 3 > /tmp/clarity.json  # one call only: 10 a day allowed
 ```
 
-Exit code 2 means Search Console is not connected yet. Carry on without
+Exit code 2 from any script means that account is not connected yet. Say
+which ones are missing at the top of the report and work with the rest.
+Exit code 2 from `gsc.mjs` means Search Console is not connected yet. Carry on without
 it: build the queue from the site itself (services and suburbs with no
 supporting post) and seasonal Sydney timing, and say at the top of the
 report that no search data was available.
@@ -36,6 +40,20 @@ From `/tmp/gsc.json`:
   monthly refresh.
 - **Wins.** Pages and queries that grew. Say what changed on them if
   `marketing/changelog.md` records it.
+
+From `/tmp/ga4.json`:
+
+- **Leads.** `phone_call_click` plus `generate_lead` by page, this window
+  against the previous one. Leads are the number that matters most, so
+  lead with them in the report.
+- **Pages that get visits but no leads.** These are strong website-fix
+  candidates.
+
+From `/tmp/clarity.json`:
+
+- Pages with rage clicks, dead clicks, a high quick-back rate, or
+  script errors. A dead click on something that looks like a button is a
+  good website fix.
 
 Ignore branded queries ("mr clog", "mrclog") when picking topics.
 Report their trend, though, because they track word of mouth.
@@ -59,7 +77,8 @@ storms and gutters in spring, hot water in autumn.
 
 Choose the single best candidate for the Wednesday website-enhancement
 run. Usually that is the striking-distance page with the most
-impressions. Write it into the report under "Website: this week" with the
+impressions, or a page with plenty of visits and few leads, or a Clarity
+friction point on an important page. Write it into the report under "Website: this week" with the
 page, the query, and what you would change.
 
 ## 5. Write the report
@@ -74,7 +93,8 @@ SEO specialist:
 **In one line:** <the headline, e.g. "Clicks up 18%, blocked drain suburb pages doing most of the work">
 
 ## Numbers (last 28 days vs the 28 before)
-Clicks, impressions, average position: this window, previous window, change.
+Leads (phone taps + form enquiries), then search clicks, impressions and
+average position: this window, previous window, change.
 
 ## What is working
 ## What slipped

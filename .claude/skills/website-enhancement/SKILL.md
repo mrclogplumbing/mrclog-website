@@ -19,7 +19,12 @@ In order:
 2. Otherwise, the best candidate from fresh Search Console data
    (`node scripts/gsc.mjs 28`). That is a striking-distance query, positions
    8–20, on a page you are allowed to change.
-3. Otherwise, a fix from the site itself: a broken internal link, a
+3. Otherwise, a friction point from Clarity
+   (`node scripts/clarity.mjs 3`, which makes one call; do not repeat it).
+   Look for dead clicks on something that looks tappable, rage clicks, or
+   script errors on a page that gets traffic. Check GA4 leads by page too
+   (`node scripts/ga4.mjs 28`).
+4. Otherwise, a fix from the site itself: a broken internal link, a
    missing alt text, a page title over 60 characters, a meta description
    over 160 characters, a service or location page with no FAQ.
 

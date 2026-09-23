@@ -7,14 +7,16 @@ description: Monthly SEO pass for mrclog.com.au. Checks whether last month's blo
 
 ## 1. Did last month's changes work?
 
-Pull 28-day data (`node scripts/gsc.mjs 28`). For every
+Pull 28-day data (`node scripts/gsc.mjs 28` and `node scripts/ga4.mjs 28`). For every
 `marketing/changelog.md` entry from 28–60 days ago, compare the page
 against the previous window:
 
-- **Worked:** clicks or average position clearly improved. Keep it.
+- **Worked:** leads, clicks or average position clearly improved. Keep
+  it. Leads count most: a change that lifts leads but not clicks worked.
 - **No change yet, or too little data:** leave it, and check again next
   month.
-- **Hurt:** clicks fell by 30% or more from at least 30 previous clicks,
+- **Hurt:** leads from the page fell, or clicks fell by 30% or more from
+  at least 30 previous clicks,
   and nothing else explains it, such as a sitewide drop or a season. Revert
   that `web:` change with `git revert <sha>`. Never revert a blog post; if a
   post is underperforming, it becomes a refresh candidate instead. Log the

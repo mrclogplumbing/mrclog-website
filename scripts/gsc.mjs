@@ -7,12 +7,11 @@
  * search for, not guesses.
  *
  * Auth is a Google service account owned by Mr. Clog, added as a user on
- * the Search Console property. No dependencies: the JWT is signed with
- * node:crypto.
+ * the Search Console property. See scripts/lib/google-auth.mjs.
  *
  * Env:
- *   GSC_SA_KEY_B64  base64 of the service account JSON key
- *   GSC_SITE        property, e.g. "sc-domain:mrclog.com.au"
+ *   GOOGLE_SA_KEY_B64  base64 of the service account JSON key
+ *   GSC_SITE           property, e.g. "sc-domain:mrclog.com.au"
  *
  * Usage:
  *   node scripts/gsc.mjs [days=28] > gsc.json
@@ -25,49 +24,15 @@
  * Exits 2 with a plain message if the env vars are missing, so a skill can
  * fall back to working without Search Console instead of crashing.
  */
-import { createSign } from "node:crypto";
+import { googleAccessToken, serviceAccountKey } from "./lib/google-auth.mjs";
 
 const days = Number(process.argv[2] ?? 28);
-const keyB64 = process.env.GSC_SA_KEY_B64;
+const key = serviceAccountKey();
 const site = process.env.GSC_SITE;
 
-if (!keyB64 || !site) {
-  console.error("GSC_SA_KEY_B64 or GSC_SITE not set; Search Console unavailable.");
+if (!key || !site) {
+  console.error("GOOGLE_SA_KEY_B64 or GSC_SITE not set; Search Console unavailable.");
   process.exit(2);
-}
-
-const key = JSON.parse(Buffer.from(keyB64, "base64").toString("utf8"));
-
-function b64url(input) {
-  return Buffer.from(input).toString("base64url");
-}
-
-async function accessToken() {
-  const now = Math.floor(Date.now() / 1000);
-  const header = b64url(JSON.stringify({ alg: "RS256", typ: "JWT" }));
-  const claims = b64url(
-    JSON.stringify({
-      iss: key.client_email,
-      scope: "https://www.googleapis.com/auth/webmasters.readonly",
-      aud: "https://oauth2.googleapis.com/token",
-      iat: now,
-      exp: now + 3600,
-    }),
-  );
-  const signer = createSign("RSA-SHA256");
-  signer.update(`${header}.${claims}`);
-  const jwt = `${header}.${claims}.${signer.sign(key.private_key, "base64url")}`;
-
-  const res = await fetch("https://oauth2.googleapis.com/token", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({
-      grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
-      assertion: jwt,
-    }),
-  });
-  if (!res.ok) throw new Error(`Token request failed: ${res.status} ${await res.text()}`);
-  return (await res.json()).access_token;
 }
 
 // Search Console data lags about three days; ending there avoids reading
@@ -111,7 +76,7 @@ function merge(current, previous) {
     .sort((a, b) => b.impressions - a.impressions);
 }
 
-const token = await accessToken();
+const token = await googleAccessToken(key, "https://www.googleapis.com/auth/webmasters.readonly");
 const current = range(0);
 const previous = range(days);
 

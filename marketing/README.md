@@ -24,7 +24,8 @@ notification. That summary is the record of what went live, and so is
 - `changelog.md`: every published change, newest first
 - `reports/`: one short search report per week
 - `../.claude/skills/`: the instructions each routine follows
-- `../scripts/`: `gsc.mjs` (Search Console), `smoke.mjs` (page checks),
+- `../scripts/`: `gsc.mjs` (Search Console), `ga4.mjs` (visits and leads),
+  `clarity.mjs` (where visitors get stuck), `smoke.mjs` (page checks),
   `generate-image.mjs` (blog images)
 
 ## Accounts (all Mr. Clog's own)
@@ -37,15 +38,24 @@ notification. That summary is the record of what went live, and so is
 3. **Google Analytics 4.** Create a property and put its Measurement ID
    (`G-...`) in Vercel as `NEXT_PUBLIC_GA_ID`. The site starts reporting
    phone taps (`phone_call_click`) and form enquiries (`generate_lead`) on
-   the next deploy.
-4. **Google Cloud service account**, so the agents can read Search
-   Console:
-   - create a project, enable the *Google Search Console API*, create a
-     service account and download a JSON key
+   the next deploy. In GA4, mark both events as key events.
+4. **Microsoft Clarity.** Create a project for `www.mrclog.com.au`. Put
+   its project ID in Vercel as `NEXT_PUBLIC_CLARITY_ID`. Then go to
+   Settings, Data Export, and choose *Generate new API token* for the
+   agents.
+5. **Google Cloud service account**, one for both Google tools:
+   - create a project, enable the *Google Search Console API* and the
+     *Google Analytics Data API*, create a service account, and download a
+     JSON key
    - in Search Console, go to Settings, then Users and permissions, and add
      the service account's email as a *Restricted* user
-5. **OpenAI API key** for blog images. Add a monthly spend limit; expect a
+   - in GA4, go to Admin, then Property access management, and add the same
+     email as a *Viewer*
+6. **OpenAI API key** for blog images. Add a monthly spend limit; expect a
    few dollars a month.
+
+After adding the two `NEXT_PUBLIC_` variables in Vercel, redeploy once so
+the tags load.
 
 ## Cloud environment variables
 
@@ -53,9 +63,11 @@ Set these on the environment the routines use:
 
 | Name | Value |
 |---|---|
-| `GSC_SA_KEY_B64` | the service account JSON key, base64 encoded (`base64 -i key.json`) |
+| `GOOGLE_SA_KEY_B64` | the service account JSON key, base64 encoded (`base64 -i key.json`) |
 | `GSC_SITE` | `sc-domain:mrclog.com.au` |
-| `OPENAI_API_KEY` | from step 5 |
+| `GA4_PROPERTY_ID` | the numeric property ID from GA4, under Admin and then Property details (not the `G-` ID) |
+| `CLARITY_API_TOKEN` | the Clarity data export token from step 4 |
+| `OPENAI_API_KEY` | from step 6 |
 
 Every routine keeps working without these. Research falls back to site
 and seasonal topics, and posts publish without generated images. Each run
