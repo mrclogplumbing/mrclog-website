@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
-  title: "Contact Us | Get a Free Quote | Sydney",
+  title: pageTitle("Contact Us | Get a Free Quote | Sydney"),
   description:
     "Contact Mr. Clog Plumbing for a free quote or to book a plumber in Sydney. Call (02) 9139 8945 or fill in the form — we reply within 2 hours.",
 };
@@ -52,7 +53,7 @@ export default function ContactPage() {
         />
         <div className="relative section-container py-14 md:py-20">
           <div className="max-w-2xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue-bright)" }}>
               Get in Touch
             </p>
             <h1
@@ -64,6 +65,17 @@ export default function ContactPage() {
             <p className="font-display text-lg text-white/80">
               Free quotes, fast responses. We&rsquo;re available 24/7 for emergencies.
             </p>
+            {/* On phones and tablets the form sits below the contact cards,
+                about two screens down, so give people who came here for a
+                quote a way straight to it. Desktop shows both side by side. */}
+            <div className="mt-6 flex flex-col sm:flex-row gap-3 lg:hidden">
+              <a href="#quote-form" className="btn-primary px-8 py-4 text-base text-center">
+                Get a Quote: Jump to the Form &darr;
+              </a>
+              <a href={PHONE_HREF} className="btn-ghost-white px-8 py-4 text-base text-center">
+                Or Call {PHONE}
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -87,9 +99,9 @@ export default function ContactPage() {
                   <PhoneCallIcon size={20} />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-0.5">Phone</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-0.5">Phone</p>
                   <p className="font-logo font-bold text-lg group-hover:text-blue-500 transition-colors" style={{ color: "var(--color-dark)" }}>{PHONE}</p>
-                  <p className="text-xs text-gray-400">Available 24/7, 365 days a year</p>
+                  <p className="text-xs text-gray-500">Available 24/7, 365 days a year</p>
                 </div>
               </a>
 
@@ -101,9 +113,9 @@ export default function ContactPage() {
                   <MailIcon />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-0.5">Email</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-0.5">Email</p>
                   <p className="font-logo font-bold text-lg group-hover:text-blue-500 transition-colors" style={{ color: "var(--color-dark)" }}>{EMAIL}</p>
-                  <p className="text-xs text-gray-400">We reply within 2 hours during business hours</p>
+                  <p className="text-xs text-gray-500">We reply within 2 hours during business hours</p>
                 </div>
               </a>
 
@@ -112,9 +124,9 @@ export default function ContactPage() {
                   <MapPinIcon size={20} />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-0.5">Service Area</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-0.5">Service Area</p>
                   <p className="font-logo font-bold text-lg" style={{ color: "var(--color-dark)" }}>All Sydney Metro Areas</p>
-                  <p className="text-xs text-gray-400">Inner West, Eastern Suburbs, North Shore, Hills, South & West</p>
+                  <p className="text-xs text-gray-500">Inner West, Eastern Suburbs, North Shore, Hills, South & West</p>
                 </div>
               </div>
 
@@ -123,9 +135,9 @@ export default function ContactPage() {
                   <ClockIcon />
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-0.5">Hours</p>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-0.5">Hours</p>
                   <p className="font-logo font-bold text-lg" style={{ color: "var(--color-dark)" }}>24 Hours, 7 Days</p>
-                  <p className="text-xs text-gray-400">Emergency line always open — $0 call-out fee</p>
+                  <p className="text-xs text-gray-500">Emergency line always open — $0 call-out fee</p>
                 </div>
               </div>
             </div>
@@ -152,7 +164,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact form */}
-          <div>
+          <div id="quote-form" className="scroll-mt-28">
             <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
               <h2 className="font-logo font-bold text-2xl mb-2" style={{ color: "var(--color-dark)" }}>
                 Get a Free Quote
@@ -240,6 +252,9 @@ export default function ContactPage() {
                     <option>Gas Fitting</option>
                     <option>Bathroom Renovations</option>
                     <option>Roof Plumbing</option>
+                    <option>24 Hour Plumber</option>
+                    <option>Toilet Cistern Replacement</option>
+                    <option>Strata &amp; Commercial Plumbing</option>
                     <option>Other</option>
                   </select>
                 </div>
@@ -284,7 +299,7 @@ export default function ContactPage() {
                   Send Enquiry →
                 </button>
 
-                <p className="text-xs text-center text-gray-400">
+                <p className="text-xs text-center text-gray-500">
                   Or call us directly: <a href={PHONE_HREF} className="font-semibold" style={{ color: "var(--color-brand-blue)" }}>{PHONE}</a>
                 </p>
               </form>

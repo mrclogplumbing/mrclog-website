@@ -87,7 +87,7 @@ export const suburbPages: Location[] = [
       { q: "Do you handle Sydney Water requirements for drainage work?", a: "Yes. Any work connecting to the sewer or affecting stormwater is done to Sydney Water and council requirements, and we tell you upfront when approvals are needed." },
     ],
     metaTitle: "Plumber Marrickville | Blocked Drains & Stormwater",
-    metaDescription: "Local plumber in Marrickville, Dulwich Hill and Sydenham. Blocked drains, stormwater, hot water and 24/7 emergency plumbing. $0 call-out fee. Call (02) 9139 8945.",
+    metaDescription: "Local plumber in Marrickville, Dulwich Hill and Sydenham. Blocked drains, stormwater, hot water and 24/7 emergency plumbing. $0 call-out. Call (02) 9139 8945.",
   },
   {
     slug: "leichhardt",
@@ -686,7 +686,7 @@ export const suburbPages: Location[] = [
     parent: "parramatta",
     label: "Parramatta CBD",
     headline: "Plumber Parramatta CBD",
-    subheadline: "Apartment and commercial plumbing across the Parramatta CBD, Harris Park and Westmead.",
+    subheadline: "Apartment towers, strata buildings and commercial tenancies in the Parramatta city centre.",
     description:
       "The Parramatta CBD has changed faster than almost anywhere in Sydney. High-rise apartments and commercial towers now sit among older terraces and post-war homes, and the plumbing problems reflect both.",
     localContent:
@@ -703,8 +703,12 @@ export const suburbPages: Location[] = [
       { q: "Do you provide reports for strata committees?", a: "Yes — camera footage plus a written report with located depth and distance." },
       { q: "How quickly can you reach Parramatta?", a: "Usually within 30–60 minutes. We are available 24/7 with no call-out fee." },
     ],
-    metaTitle: "Plumber Parramatta CBD | Apartment & Strata Plumbing",
-    metaDescription: "Local plumber in the Parramatta CBD, Harris Park and Westmead. Blocked drains, strata plumbing, CCTV inspection and emergency repairs. Call (02) 9139 8945.",
+    metaTitle: "Plumber Parramatta CBD | Towers & Strata",
+    metaDescription: "Plumber for the Parramatta CBD: apartment towers, strata buildings, shared stacks and commercial tenancies. CCTV reports for strata. Call (02) 9139 8945.",
+    seeAlso: {
+      slug: "parramatta",
+      text: "In Westmead, Granville, Merrylands or another suburb around Parramatta? Our Parramatta & Surrounding Suburbs page covers the wider area.",
+    },
   },
   {
     slug: "campsie",
@@ -865,7 +869,7 @@ export const suburbPages: Location[] = [
       { q: "Do you do commercial plumbing around the mall?", a: "Yes. We work in shops, cafés and offices as well as homes, and can schedule work around trading hours." },
     ],
     metaTitle: "Plumber Bondi Junction | Apartments, Semis & Shops",
-    metaDescription: "Local plumber in Bondi Junction, Waverley and Queens Park. High-rise and strata plumbing, blocked drains, leak detection and emergency repairs. Call (02) 9139 8945.",
+    metaDescription: "Plumber in Bondi Junction, Waverley and Queens Park. High-rise and strata plumbing, blocked drains, leak detection and emergency repairs. Call (02) 9139 8945.",
   },
   {
     slug: "paddington",
@@ -933,7 +937,7 @@ export const suburbPages: Location[] = [
       { q: "Will fixing my sewer mean digging through rock?", a: "Not necessarily. If the pipe is intact enough to line, relining through existing access points avoids cutting sandstone altogether. A camera inspection tells us which." },
     ],
     metaTitle: "Plumber North Sydney | Commercial, Strata & Relining",
-    metaDescription: "Local plumber in North Sydney, Waverton and McMahons Point. Commercial and strata plumbing, backflow testing, pipe relining and emergency repairs. Call (02) 9139 8945.",
+    metaDescription: "Plumber in North Sydney, Waverton and McMahons Point. Commercial and strata plumbing, backflow testing, relining and emergency repairs. Call (02) 9139 8945.",
   },
   {
     slug: "crows-nest",
@@ -973,7 +977,7 @@ export const suburbPages: Location[] = [
     slug: "sydney-cbd-city",
     parent: "sydney-cbd",
     label: "Sydney CBD",
-    headline: "Plumber in the Sydney CBD",
+    headline: "Plumber for the Sydney CBD City Centre",
     subheadline: "Apartment towers, sandstone heritage buildings and commercial tenancies in the city centre itself.",
     description:
       "This page is about the city centre proper, from Circular Quay down to Central and from Darling Harbour across to Hyde Park. It is mostly office towers and residential high-rise, with nineteenth-century sandstone and brick buildings still standing between them, and it is administered by the City of Sydney.",
@@ -1000,8 +1004,12 @@ export const suburbPages: Location[] = [
       { q: "Do you need a loading dock booking to work in my building?", a: "Many CBD buildings require one for trades. If yours does, let us know the rules when you book and we will arrive within them." },
       { q: "Do you work on heritage-listed buildings in the city?", a: "Yes. We work within the building's conservation requirements and will tell you upfront if a change to visible pipework or fabric may need approval." },
     ],
-    metaTitle: "Plumber in the Sydney CBD | Apartments & Heritage Buildings",
-    metaDescription: "Plumber for the Sydney city centre. Apartment leaks, hot water, strata and commercial plumbing, and heritage building work. Available 24/7. Call (02) 9139 8945.",
+    metaTitle: "Sydney CBD City Centre Plumber | Towers & Strata",
+    metaDescription: "Plumber for the Sydney city centre, Circular Quay to Central: apartment towers, strata buildings, offices and heritage sandstone. 24/7. Call (02) 9139 8945.",
+    seeAlso: {
+      slug: "sydney-cbd",
+      text: "In Surry Hills, Darlinghurst, Redfern, Pyrmont or elsewhere around the city? Our Sydney CBD & Inner City page covers the wider inner-city suburbs.",
+    },
   },
   {
     slug: "blacktown",

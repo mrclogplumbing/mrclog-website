@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home",
+  title: pageTitle("Winter Plumbing Checklist: How to Prepare Your Sydney Home"),
   description:
-    "Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here is a simple checklist to prepare your home before the cold hits.",
+    "Sydney winters are mild but still cause burst pipes, hot water failures and blocked drains. A simple checklist to prepare your home before the cold hits.",
   openGraph: {
     type: "article",
     title: "Winter Plumbing Checklist: How to Prepare Your Sydney Home",
-    description: "Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here is a simple checklist to prepare your home before the cold hits.",
+    description: "Sydney winters are mild but still cause burst pipes, hot water failures and blocked drains. A simple checklist to prepare your home before the cold hits.",
     url: "https://www.mrclog.com.au/blog/winter-plumbing-checklist-sydney",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-06-03",
@@ -42,7 +43,7 @@ export default function BlogWinterPlumbingChecklistPage() {
       <BlogPostSchema
         slug="winter-plumbing-checklist-sydney"
         title="Winter Plumbing Checklist: How to Prepare Your Sydney Home for Cold Weather"
-        description="Sydney winters are mild, but they still cause burst pipes, hot water failures, and blocked drains. Here is a simple checklist to prepare your home before the cold hits."
+        description="Sydney winters are mild but still cause burst pipes, hot water failures and blocked drains. A simple checklist to prepare your home before the cold hits."
         datePublished="2026-06-03"
         faqs={[{"q":"Do pipes really freeze in Sydney?","a":"It is rare, but it happens — particularly in the Hills District, Blue Mountains fringe, and homes with exposed external pipework. Even a few degrees below zero overnight is enough to crack older copper or PVC pipes."},{"q":"When should I get my hot water system serviced?","a":"Before winter. Sediment buildup and ageing elements are the most common reasons systems fail in June and July, when demand is highest. A quick service in autumn is far cheaper than an emergency callout in July."}]}
       />
@@ -52,7 +53,7 @@ export default function BlogWinterPlumbingChecklistPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Seasonal</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Seasonal</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>3 June 2026 · 4 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

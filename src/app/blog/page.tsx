@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { posts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Plumbing Tips & Advice | Sydney",
+  title: pageTitle("Plumbing Tips & Advice | Sydney"),
   description:
     "Plumbing tips, how-to guides, and advice from Sydney's trusted plumbers. Read the Mr. Clog blog for expert insights on blocked drains, hot water, and more.",
   openGraph: {
@@ -71,7 +72,7 @@ export default function BlogPage() {
         />
         <div className="relative section-container py-14 md:py-20">
           <div className="max-w-2xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue-bright)" }}>
               Expert Advice
             </p>
             <h1

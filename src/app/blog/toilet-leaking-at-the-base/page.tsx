@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
@@ -6,13 +7,13 @@ import BlogPostSchema from "@/components/blog/BlogPostSchema";
 import BlogFigure from "@/components/blog/BlogFigure";
 
 export const metadata: Metadata = {
-  title: "Toilet Leaking at the Base? The Five Usual Causes",
+  title: pageTitle("Toilet Leaking at the Base? The Five Usual Causes"),
   description:
-    "Water pooling around the base of your toilet can be condensation, a dripping connection, a failed seal, or waste water from the pan connector. Here is how to tell which, and when to call a plumber.",
+    "Toilet leaking at the base? It can be condensation, a dripping connection, a failed seal or the pan connector. How to tell which, and when to call a plumber.",
   openGraph: {
     type: "article",
     title: "Toilet Leaking at the Base? The Five Usual Causes",
-    description: "Water pooling around the base of your toilet can be condensation, a dripping connection, a failed seal, or waste water from the pan connector. Here is how to tell which, and when to call a plumber.",
+    description: "Toilet leaking at the base? It can be condensation, a dripping connection, a failed seal or the pan connector. How to tell which, and when to call a plumber.",
     url: "https://www.mrclog.com.au/blog/toilet-leaking-at-the-base",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-09-23",
@@ -44,7 +45,7 @@ export default function BlogToiletLeakingAtTheBasePage() {
       <BlogPostSchema
         slug="toilet-leaking-at-the-base"
         title="Toilet Leaking at the Base? The Five Usual Causes"
-        description="Water pooling around the base of your toilet can be condensation, a dripping connection, a failed seal, or waste water from the pan connector. Here is how to tell which, and when to call a plumber."
+        description="Toilet leaking at the base? It can be condensation, a dripping connection, a failed seal or the pan connector. How to tell which, and when to call a plumber."
         datePublished="2026-09-23"
         faqs={[{"q":"Why is there water around my toilet only after I flush?","a":"Water that appears only after a flush usually comes from the cistern-to-pan seal or the pan connector that joins the toilet to the drain. Both are only under load while water is moving through them. Because a pan connector leak can be waste water, keep the area clean and have a plumber look at it soon."},{"q":"Can I just run silicone around the base of the toilet?","a":"Not to fix a leak. Silicone around the base holds the pan in place and keeps the edge clean, but sealing over a leak traps the water underneath, where it soaks into the floor and subfloor out of sight. Find and fix the source first."},{"q":"Is a toilet leaking at the base an emergency?","a":"Usually not, but it should not wait long. A constant supply leak can be stopped at the toilet's isolation valve in the meantime. A leak from the pan connector can mean waste water on the floor, which is a hygiene problem and should be fixed promptly."}]}
       />
@@ -54,7 +55,7 @@ export default function BlogToiletLeakingAtTheBasePage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Taps &amp; Toilets</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Taps &amp; Toilets</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>23 September 2026 · 6 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

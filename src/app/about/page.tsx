@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import Image from "next/image";
 import { PhoneCallIcon, CheckCircleIcon, StarIcon } from "@/components/ui/ServiceIcons";
@@ -7,7 +8,7 @@ import { reviewsForTag } from "@/lib/reviews";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/about" },
-  title: "About Us | Sydney's Trusted Local Plumbers",
+  title: pageTitle("About Us | Sydney's Trusted Local Plumbers"),
   description:
     "Learn about Mr. Clog — Sydney's trusted local plumbers. 5-star rated, fully licensed, available 24/7. $0 call-out fee across all Sydney metro areas.",
 };
@@ -79,7 +80,7 @@ export default function AboutPage() {
         />
         <div className="relative section-container py-14 md:py-20">
           <div className="max-w-2xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue-bright)" }}>
               Our Story
             </p>
             <h1
@@ -102,7 +103,7 @@ export default function AboutPage() {
             {stats.map((stat) => (
               <div key={stat.label}>
                 <p className="font-logo font-extrabold text-3xl md:text-4xl">{stat.value}</p>
-                <p className="font-display text-sm text-white/80 mt-1">{stat.label}</p>
+                <p className="font-display text-sm text-white/90 mt-1">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -293,7 +294,7 @@ export default function AboutPage() {
           <h2 className="font-logo font-extrabold text-white text-3xl md:text-4xl mb-3">
             Ready to Work With Us?
           </h2>
-          <p className="text-white/80 mb-8 font-display">
+          <p className="text-white mb-8 font-display">
             Call now or get a free quote — $0 call-out fee, 24/7 availability.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

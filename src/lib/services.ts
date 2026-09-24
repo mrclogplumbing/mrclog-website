@@ -619,6 +619,10 @@ export const services: Service[] = [
     typicalCost: "From $120–$300 for test only to device install",
   metaTitle: "Backflow Prevention Testing Sydney | Certified Testers",
     metaDescription: "Backflow prevention testing, certification, and installation across Sydney. Certified testers, compliance certificates. Mr. Clog — Call (02) 9139 8945.",
+    related: [
+      { href: "/services/strata-and-commercial-plumbing", label: "Strata & Commercial Plumbing", desc: "Backflow testing alongside shared drains, hot water plant and leaks for strata and business premises." },
+      { href: "/blog/backflow-prevention-testing-explained", label: "Backflow Testing Explained", desc: "What backflow is, who needs a device, and what the annual test involves." },
+    ],
   },
   {
     slug: "water-pressure",
@@ -649,6 +653,69 @@ export const services: Service[] = [
     typicalCost: "From $150–$350 for diagnosis to regulator install",
   metaTitle: "Low Water Pressure Plumber Sydney | PLV Repairs",
     metaDescription: "Fix low water pressure across Sydney. PLV testing and replacement, leak detection, pressure boosters. Mr. Clog — $0 call-out fee. Call (02) 9139 8945.",
+  },
+  {
+    slug: "strata-and-commercial-plumbing",
+    label: "Strata & Commercial Plumbing",
+    headline: "Strata & Commercial Plumbing Sydney",
+    subheadline: "For strata managers, body corporates, apartment blocks, offices, shops, cafés and restaurants.",
+    description:
+      "Plumbing in a shared or working building is as much about access, responsibility and records as it is about pipes. Mr. Clog works with strata managers, owners corporations (body corporates) and building managers on apartment blocks, and with the owners and tenants of offices, shops and hospitality venues across Sydney. We find where a fault actually sits, so it is clear whether it belongs to a lot owner, the owners corporation or a tenant, and we put what we found in writing, with photos or camera footage.",
+    benefits: [
+      "Faults located, so lot and common property responsibility is clear",
+      "Written reports with photos or CCTV footage for strata committees",
+      "Planned water shut-offs arranged with the building manager",
+      "Phones answered 24/7 for after-hours emergencies",
+      "A fixed price before any work starts",
+      "Licensed & insured plumbers",
+    ],
+    process: [
+      { step: "01", title: "Tell Us the Problem", desc: "The strata manager, building manager, owner or tenant rings or emails with the address, the units or tenancies affected, and how we get in." },
+      { step: "02", title: "Locate the Fault", desc: "We find where the fault sits, inside a lot or in common property, and check which other units or tenancies it affects." },
+      { step: "03", title: "Fixed Quote", desc: "You get a fixed price before any work starts, so it can be approved by whoever is responsible for the repair." },
+      { step: "04", title: "Repair & Report", desc: "We carry out and test the repair, then send a written summary with photos or camera footage for your records." },
+    ],
+    sections: [
+      {
+        heading: "Who We Work With",
+        items: [
+          { title: "Strata managers and owners corporations", body: "Common property plumbing in residential buildings: shared stacks and drains, stormwater, roof drainage and hot water plant. We can take instructions from the managing agent and arrange access with residents." },
+          { title: "Apartment blocks and townhouse complexes", body: "Faults inside a lot, faults in common property, and the grey areas between them. The strata plan and by-laws decide who is responsible for what, so we report exactly where the fault is." },
+          { title: "Offices", body: "Amenities, kitchenettes, hot water units, leaks and blocked drains in office tenancies and in the building's shared services." },
+          { title: "Retail shops", body: "Amenities, sinks, hot water and leaks in shops and shopping strips, including tenancies where the landlord and the tenant each look after part of the plumbing." },
+          { title: "Cafés, restaurants and bars", body: "Kitchen drains blocked with grease, hot water that can't keep up with service, leaking taps and pre-rinse sprays, and the call when something fails in the middle of a busy night." },
+        ],
+      },
+      {
+        heading: "Common Strata & Commercial Jobs",
+        items: [
+          { title: "Shared stacks and drains", body: "When several units report slow drains at once, the fault is usually in a shared stack or main drain, not in any one apartment. We clear it from the right access point and use a drain camera to show what caused it." },
+          { title: "Backflow prevention testing", body: "Testable backflow devices on fire services, irrigation and commercial equipment need testing every year by a certified tester, with the results lodged with Sydney Water. We test, repair and replace devices." },
+          { title: "Hot water plant", body: "Central hot water plant, banks of storage heaters and individual unit heaters. We work out whether a cold shower is a fault in the apartment or in the building's plant, because that decides who pays." },
+          { title: "Leaks between units", body: "Water coming through a ceiling from the unit above. We trace the source, whether a shower waste, a toilet seal, a flexi hose or a pipe in the wall, so the strata manager can tell whether it is the lot owner's repair or common property." },
+          { title: "After-hours access", body: "Burst pipes and overflowing drains don't keep business hours. We take calls 24/7 and work with building managers, concierges and on-call contacts to get in and shut off the right section." },
+          { title: "Tenant and resident coordination", body: "Shutting off water or getting into several apartments or tenancies takes planning. We agree times with the building manager in advance, so residents and tenants can be told before the water goes off." },
+        ],
+      },
+    ],
+    faqs: [
+      { q: "Who pays for a plumbing problem in a strata building?", a: "It depends on where the fault is. Generally, pipes that serve only one lot and sit within it are the lot owner's responsibility, and pipes in common property or serving more than one lot belong to the owners corporation. The strata plan and by-laws decide the details. We locate the fault and report exactly where it is, so the strata manager can decide." },
+      { q: "Can you work directly with our strata manager or building manager?", a: "Yes. We can take instructions from the managing agent, send the quote to them for approval, and arrange access with the building manager and residents." },
+      { q: "Do you provide written reports for strata committees?", a: "Yes. Camera footage or photos plus a written report showing where the fault is, what caused it, and what we recommend." },
+      { q: "Do you test backflow prevention devices?", a: "Yes. Registered testable devices need testing every 12 months by a certified tester. We test them, repair or replace failed devices, and lodge the results with Sydney Water." },
+      { q: "Can planned work be done outside trading hours?", a: "Often, yes. Emergencies are handled 24/7, and planned work can be booked at a time that suits the business, where the job and the building's access rules allow it." },
+      { q: "Is there a call-out fee for strata or commercial jobs?", a: "No. The $0 call-out fee applies to strata and commercial jobs too, and you get a fixed price before any work starts." },
+    ],
+    metaTitle: "Strata & Commercial Plumbing Sydney",
+    metaDescription: "Strata and commercial plumber in Sydney for strata managers, apartment blocks, offices, shops and restaurants. Shared drains, backflow, hot water plant, leaks.",
+    related: [
+      { href: "/services/backflow-prevention", label: "Backflow Prevention Testing", desc: "Annual testing, repairs and Sydney Water lodgement for testable devices." },
+      { href: "/services/blocked-drains", label: "Blocked Drains", desc: "Shared stacks, main drains and kitchen drains cleared, with CCTV to show the cause." },
+      { href: "/services/leak-detection", label: "Leak Detection", desc: "Finding the source of a leak into the unit below without opening every wall." },
+      { href: "/services/hot-water-systems", label: "Hot Water Systems", desc: "Unit heaters and building hot water plant repaired and replaced." },
+      { href: "/services/cctv-drain-inspection", label: "CCTV Drain Inspection", desc: "Camera footage that shows where a fault is and who is responsible for it." },
+      { href: "/services/24-hour-plumber", label: "24 Hour & After Hours Plumber", desc: "Nights, weekends and public holidays: what can't wait, and what to shut off first." },
+    ],
   },
 ];
 

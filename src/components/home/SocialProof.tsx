@@ -47,7 +47,7 @@ export default function SocialProof() {
             {[1,2,3,4,5].map(i => <StarIcon key={i} size={20} />)}
           </div>
           <span className="font-logo font-bold text-lg" style={{ color: "var(--color-black)" }}>{reviewSummary.ratingValue}</span>
-          <span style={{ color: "var(--color-grey-600)" }} className="text-sm">based on {reviewCountLabel}</span>
+          <span className="text-sm text-gray-600">based on {reviewCountLabel}</span>
         </div>
 
         {/* Review cards */}
@@ -85,7 +85,7 @@ export default function SocialProof() {
               {[1,2,3,4,5].map(i => <StarIcon key={i} size={20} />)}
             </div>
             <p className="font-logo font-bold text-3xl mb-0.5" style={{ color: "var(--color-dark)" }}>{reviewSummary.ratingValue}</p>
-            <p className="text-sm text-gray-500 mb-5">Based on {reviewCountLabel}</p>
+            <p className="text-sm text-gray-600 mb-5">Based on {reviewCountLabel}</p>
             <a
               href={reviewSummary.profileUrl}
               target="_blank"

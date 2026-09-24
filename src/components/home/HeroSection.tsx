@@ -38,13 +38,20 @@ export default function HeroSection() {
       style={{ background: "var(--color-dark)" }}
       aria-label="Hero"
     >
-      {/* A real Mr. Clog job, not a stock photo. */}
+      {/*
+        A real Mr. Clog job, not a stock photo. It is the page's largest
+        element (LCP), so it loads with priority. On phones the photo sits
+        under a 72-92% dark overlay, so a lighter file is indistinguishable:
+        "67vw" below 768px and quality 55 roughly halve the download on a
+        3x phone screen. Desktop still gets the full-width image.
+      */}
       <Image
         src="/photos/excavation-waterfront.webp"
         alt="Mr. Clog excavator digging a trench at a waterfront property on Sydney's north shore at sunset"
         fill
         priority
-        sizes="100vw"
+        quality={55}
+        sizes="(max-width: 767px) 67vw, 100vw"
         className="object-cover"
         style={{ objectPosition: "center 55%" }}
       />
@@ -99,12 +106,12 @@ export default function HeroSection() {
             className="font-logo font-extrabold text-white mb-4"
             style={{ fontSize: "clamp(2.5rem, 6vw, 3.75rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}
           >
-            Sydney&rsquo;s Most Trusted Plumbers
+            Local Sydney Plumbers
           </h1>
 
           {/* Subheadline */}
           <p className="font-display text-lg md:text-xl font-medium mb-5" style={{ color: "rgba(255,255,255,0.85)" }}>
-            5-Star Rated &nbsp;·&nbsp; Available 24/7 &nbsp;·&nbsp; $0 Call-Out Fee, Any Hour &nbsp;·&nbsp; Fully Licensed &amp; Insured
+            Available 24/7 &nbsp;·&nbsp; $0 Call-Out Fee, Any Hour &nbsp;·&nbsp; Fully Licensed &amp; Insured
           </p>
 
           {/* Trust bar */}

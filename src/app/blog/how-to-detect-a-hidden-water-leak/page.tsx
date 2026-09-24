@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How to Detect a Hidden Water Leak Before It Costs You Thousands",
+  title: pageTitle("How to Detect a Hidden Water Leak Before It Costs You"),
   description:
-    "A hidden water leak can rot timber, ruin ceilings, and waste thousands of litres before you ever see a drop. Here is how to detect one early using the meter test and six warning signs.",
+    "A hidden water leak can rot timber, ruin ceilings and waste thousands of litres before you see a drop. Find one early with the meter test and six warning signs.",
   openGraph: {
     type: "article",
-    title: "How to Detect a Hidden Water Leak Before It Costs You Thousands",
-    description: "A hidden water leak can rot timber, ruin ceilings, and waste thousands of litres before you ever see a drop. Here is how to detect one early using the meter test and six warning signs.",
+    title: "How to Detect a Hidden Water Leak Before It Costs You",
+    description: "A hidden water leak can rot timber, ruin ceilings and waste thousands of litres before you see a drop. Find one early with the meter test and six warning signs.",
     url: "https://www.mrclog.com.au/blog/how-to-detect-a-hidden-water-leak",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-07-16",
@@ -41,7 +42,7 @@ export default function BlogHowToDetectAHiddenWaterLeakPage() {
       <BlogPostSchema
         slug="how-to-detect-a-hidden-water-leak"
         title="How to Detect a Hidden Water Leak Before It Costs You Thousands"
-        description="A hidden water leak can rot timber, ruin ceilings, and waste thousands of litres before you ever see a drop. Here is how to detect one early using the meter test and six warning signs."
+        description="A hidden water leak can rot timber, ruin ceilings and waste thousands of litres before you see a drop. Find one early with the meter test and six warning signs."
         datePublished="2026-07-16"
         faqs={[{"q":"How can I tell if I have a hidden water leak?","a":"The quickest check is the water meter test: turn off every tap and water-using appliance, note the meter reading, then check it again after two hours with no water used. If the numbers have moved, water is leaking somewhere in your system."},{"q":"Can a plumber find a leak without digging up my floor?","a":"Yes. Modern leak detection uses acoustic listening equipment, thermal imaging, and pressure testing to pinpoint a leak to within centimetres, so only the affected area needs to be opened up. This is far cheaper and less destructive than exploratory digging."}]}
       />
@@ -51,7 +52,7 @@ export default function BlogHowToDetectAHiddenWaterLeakPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Leak Detection</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Leak Detection</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>16 July 2026 · 4 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

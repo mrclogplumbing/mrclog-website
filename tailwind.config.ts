@@ -10,9 +10,11 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          blue: "#1A9FFF",
-          "blue-hover": "#0080E0",
-          "blue-pressed": "#0068C0",
+          // Matches --color-brand-blue in globals.css (AA contrast shade).
+          blue: "#0068C0",
+          "blue-hover": "#00589F",
+          "blue-pressed": "#004A87",
+          "blue-bright": "#1A9FFF",
           "blue-light": "#E8F5FF",
         },
         dark: "#1A1A2E",

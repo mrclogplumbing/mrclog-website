@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/privacy" },
-  title: "Privacy Policy",
+  title: pageTitle("Privacy Policy"),
   description: "Privacy Policy for Mr. Clog Plumbing. Learn how we collect, use, and protect your personal information.",
 };
 

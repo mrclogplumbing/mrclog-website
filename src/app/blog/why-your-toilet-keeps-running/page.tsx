@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Your Toilet Keeps Running (and How to Fix It)",
+  title: pageTitle("Why Your Toilet Keeps Running (and How to Fix It)"),
   description:
-    "A toilet that keeps running wastes thousands of litres a month and quietly inflates your water bill. Here is what causes it, how to diagnose it, and when to call a plumber.",
+    "A toilet that keeps running wastes thousands of litres a month and inflates your water bill. What causes it, how to diagnose it, and when to call a plumber.",
   openGraph: {
     type: "article",
     title: "Why Your Toilet Keeps Running (and How to Fix It)",
-    description: "A toilet that keeps running wastes thousands of litres a month and quietly inflates your water bill. Here is what causes it, how to diagnose it, and when to call a plumber.",
+    description: "A toilet that keeps running wastes thousands of litres a month and inflates your water bill. What causes it, how to diagnose it, and when to call a plumber.",
     url: "https://www.mrclog.com.au/blog/why-your-toilet-keeps-running",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-07-16",
@@ -42,7 +43,7 @@ export default function BlogWhyYourToiletKeepsRunningPage() {
       <BlogPostSchema
         slug="why-your-toilet-keeps-running"
         title="Why Your Toilet Keeps Running (and How to Fix It)"
-        description="A toilet that keeps running wastes thousands of litres a month and quietly inflates your water bill. Here is what causes it, how to diagnose it, and when to call a plumber."
+        description="A toilet that keeps running wastes thousands of litres a month and inflates your water bill. What causes it, how to diagnose it, and when to call a plumber."
         datePublished="2026-07-16"
         faqs={[{"q":"Is a running toilet an emergency?","a":"No, but it is not something to ignore either. A constantly running toilet can waste 100 to 200 litres a day, which adds up to a noticeably higher water bill within a single billing cycle. It is worth fixing within a week or two."},{"q":"Can I fix a running toilet myself?","a":"Often yes. A worn flapper or a float set too high are simple DIY repairs with parts from any hardware store. If the fill valve is faulty, the cistern is cracked, or the problem returns after a repair, it is time to call a licensed plumber."}]}
       />
@@ -52,7 +53,7 @@ export default function BlogWhyYourToiletKeepsRunningPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Taps &amp; Toilets</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Taps &amp; Toilets</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>16 July 2026 · 4 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

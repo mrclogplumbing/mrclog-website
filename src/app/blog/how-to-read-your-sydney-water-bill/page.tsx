@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How to Read Your Sydney Water Bill (and Spot a Hidden Leak)",
-  description: "Your Sydney Water bill tells a story most people miss. Here is how to read it properly — and how to spot a hidden leak that could be quietly draining hundreds of litres a day.",
+  title: pageTitle("How to Read Your Sydney Water Bill (and Spot a Hidden Leak)"),
+  description: "Your Sydney Water bill tells a story most people miss. How to read it properly, and how to spot a hidden leak that could be draining hundreds of litres a day.",
   openGraph: {
     type: "article",
     title: "How to Read Your Sydney Water Bill (and Spot a Hidden Leak)",
-    description: "Your Sydney Water bill tells a story most people miss. Here is how to read it properly — and how to spot a hidden leak that could be quietly draining hundreds of litres a day.",
+    description: "Your Sydney Water bill tells a story most people miss. How to read it properly, and how to spot a hidden leak that could be draining hundreds of litres a day.",
     url: "https://www.mrclog.com.au/blog/how-to-read-your-sydney-water-bill",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-05-20",
@@ -41,7 +42,7 @@ export default function BlogReadWaterBillPage() {
       <BlogPostSchema
         slug="how-to-read-your-sydney-water-bill"
         title="How to Read Your Sydney Water Bill (and Spot a Hidden Leak)"
-        description="Your Sydney Water bill tells a story most people miss. Here is how to read it properly — and how to spot a hidden leak that could be quietly draining hundreds of litres a day."
+        description="Your Sydney Water bill tells a story most people miss. How to read it properly, and how to spot a hidden leak that could be draining hundreds of litres a day."
         datePublished="2026-05-20"
         faqs={[
           { q: "How do I know if I have a hidden leak?", a: "Do the 15-minute meter test: turn off every tap in the house, write down your meter reading, wait 15 minutes without using any water, and read it again. If the numbers have moved, you have a leak somewhere on your property." },
@@ -54,7 +55,7 @@ export default function BlogReadWaterBillPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Plumbing Advice</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Plumbing Advice</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 &middot; 4 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>How to Read Your Sydney Water Bill</h1>

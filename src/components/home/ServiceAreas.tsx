@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 
 // Service area zones plotted on a simplified Sydney map SVG

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import ServiceSuburbPage from "@/components/ServiceSuburbPage";
 import { hotWaterAreas, getHotWaterArea } from "@/lib/hot-water-areas";
 import { getBlockedDrainArea } from "@/lib/blocked-drain-areas";
@@ -22,8 +23,8 @@ export async function generateMetadata({
   if (!area || !place) return {};
   return {
     alternates: { canonical: `/hot-water/${suburb}` },
-    title: `Hot Water Systems ${place.label} | Repairs & Same-Day Replacement`,
-    description: `No hot water in ${place.label}? Mr. Clog repairs and replaces hot water systems across ${place.label}, usually same day. $0 call-out fee, any hour. Call (02) 9139 8945.`,
+    title: pageTitle(`Hot Water Systems ${place.label} | Repairs & Replacement`),
+    description: `No hot water in ${place.label}? Hot water repairs and replacements, usually same day. $0 call-out fee, any hour. Call (02) 9139 8945.`,
   };
 }
 

@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import ServiceSuburbPage from "@/components/ServiceSuburbPage";
 import { pipeReliningAreas, getPipeReliningArea } from "@/lib/pipe-relining-areas";
 import { getBlockedDrainArea } from "@/lib/blocked-drain-areas";
@@ -22,8 +23,8 @@ export async function generateMetadata({
   if (!area || !place) return {};
   return {
     alternates: { canonical: `/pipe-relining/${suburb}` },
-    title: `Pipe Relining ${place.label} | No-Dig Drain Repair`,
-    description: `Pipe relining in ${place.label} — repair a cracked or root-damaged drain without excavating. CCTV inspection first, fixed price before we start. Call (02) 9139 8945.`,
+    title: pageTitle(`Pipe Relining ${place.label} | No-Dig Drain Repair`),
+    description: `Pipe relining in ${place.label}: fix a cracked or root-damaged drain without digging. CCTV inspection first, fixed price upfront. Call (02) 9139 8945.`,
   };
 }
 

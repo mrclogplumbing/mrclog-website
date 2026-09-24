@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { activeOffers } from "@/lib/offers";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/offers" },
-  title: "Special Offers & Promotions",
+  title: pageTitle("Special Offers & Promotions"),
   description:
-    "Current plumbing specials and promotions from Mr. Clog. Save on inspections, repairs and more — licensed Sydney plumbers, 24/7, $0 call-out fee. Call (02) 9139 8945.",
+    "Current plumbing specials from Mr. Clog. Save on inspections, repairs and more with licensed Sydney plumbers, 24/7, $0 call-out fee. Call (02) 9139 8945.",
 };
 
 const PHONE = "(02) 9139 8945";
@@ -24,7 +25,7 @@ export default function OffersIndexPage() {
         />
         <div className="relative section-container py-14 md:py-20">
           <div className="max-w-2xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue-bright)" }}>
               Specials & Promotions
             </p>
             <h1

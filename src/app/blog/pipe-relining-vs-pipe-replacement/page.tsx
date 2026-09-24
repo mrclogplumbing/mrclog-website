@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need?",
+  title: pageTitle("Pipe Relining vs Pipe Replacement: Which Do You Need?"),
   description:
-    "Relining repairs a damaged pipe from the inside without digging. Replacement means excavation. Here is how to tell which one your Sydney home actually needs, and what to ask before you commit.",
+    "Pipe relining repairs a damaged pipe from the inside without digging; replacement means excavation. How to tell which one your Sydney home actually needs.",
   openGraph: {
     type: "article",
-    title: "Pipe Relining vs Pipe Replacement: Which Does Your Home Need?",
-    description: "Relining repairs a damaged pipe from the inside without digging. Replacement means excavation. Here is how to tell which one your Sydney home actually needs, and what to ask before you commit.",
+    title: "Pipe Relining vs Pipe Replacement: Which Do You Need?",
+    description: "Pipe relining repairs a damaged pipe from the inside without digging; replacement means excavation. How to tell which one your Sydney home actually needs.",
     url: "https://www.mrclog.com.au/blog/pipe-relining-vs-pipe-replacement",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-08-25",
@@ -42,7 +43,7 @@ export default function BlogPipeReliningVsPipeReplacementPage() {
       <BlogPostSchema
         slug="pipe-relining-vs-pipe-replacement"
         title="Pipe Relining vs Pipe Replacement: Which Does Your Home Need?"
-        description="Relining repairs a damaged pipe from the inside without digging. Replacement means excavation. Here is how to tell which one your Sydney home actually needs, and what to ask before you commit."
+        description="Pipe relining repairs a damaged pipe from the inside without digging; replacement means excavation. How to tell which one your Sydney home actually needs."
         datePublished="2026-08-25"
         faqs={[{"q":"How long does pipe relining last?","a":"A properly installed liner is designed to last decades — most manufacturers rate the cured resin liner at around 50 years. The critical variables are surface preparation, correct resin mix, and a full cure, which is why the quality of the installer matters more than the brand of liner."},{"q":"Does pipe relining require digging up my garden?","a":"In most cases no. Relining is done through existing access points such as an inspection opening or a boundary shaft, which is the main reason homeowners choose it over excavation when the pipe runs under a driveway, established garden, or paving."},{"q":"Is relining always cheaper than replacing the pipe?","a":"Not always. Relining itself is usually the less disruptive option, but the honest comparison includes reinstatement — the cost of putting back the concrete, paving, or landscaping that excavation destroys. For a pipe under an open lawn, replacement can be competitive. For one under a driveway, relining is typically well ahead."}]}
       />
@@ -52,7 +53,7 @@ export default function BlogPipeReliningVsPipeReplacementPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Pipe Relining</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Pipe Relining</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>25 August 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

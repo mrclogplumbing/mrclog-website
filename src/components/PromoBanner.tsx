@@ -43,7 +43,7 @@ export default function PromoBanner() {
   return (
     <div
       className="promo-banner fixed top-0 inset-x-0 z-[60] text-white"
-      style={{ background: "linear-gradient(90deg, #0080E0 0%, #1A9FFF 100%)" }}
+      style={{ background: "linear-gradient(90deg, #00589F 0%, #0068C0 100%)" }}
       role="region"
       aria-label="Current promotion"
     >

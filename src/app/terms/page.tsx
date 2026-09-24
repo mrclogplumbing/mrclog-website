@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/terms" },
-  title: "Terms of Service",
+  title: pageTitle("Terms of Service"),
   description: "Terms of Service for Mr. Clog Plumbing. Read our terms and conditions for plumbing services across Sydney.",
 };
 

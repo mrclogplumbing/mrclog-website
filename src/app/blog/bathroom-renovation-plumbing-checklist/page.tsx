@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Bathroom Renovation Plumbing Checklist for Sydney Homes",
-  description: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly. Get it wrong and you will pay for it twice. Here is the checklist every Sydney homeowner needs.",
+  title: pageTitle("Bathroom Renovation Plumbing Checklist for Sydney Homes"),
+  description: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly; get it wrong and you pay twice. The checklist Sydney homeowners need.",
   openGraph: {
     type: "article",
     title: "Bathroom Renovation Plumbing Checklist for Sydney Homes",
-    description: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly. Get it wrong and you will pay for it twice. Here is the checklist every Sydney homeowner needs.",
+    description: "Planning a bathroom renovation? Get the plumbing right and the project flows smoothly; get it wrong and you pay twice. The checklist Sydney homeowners need.",
     url: "https://www.mrclog.com.au/blog/bathroom-renovation-plumbing-checklist",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-05-20",
@@ -42,7 +43,7 @@ export default function BlogBathroomRenoPage() {
       <BlogPostSchema
         slug="bathroom-renovation-plumbing-checklist"
         title="Bathroom Renovation Plumbing Checklist for Sydney Homes"
-        description="Planning a bathroom renovation? Get the plumbing right and the project flows smoothly. Get it wrong and you will pay for it twice. Here is the checklist every Sydney homeowner needs."
+        description="Planning a bathroom renovation? Get the plumbing right and the project flows smoothly; get it wrong and you pay twice. The checklist Sydney homeowners need."
         datePublished="2026-05-20"
         faqs={[
           { q: "Do I need a licensed plumber for a bathroom renovation?", a: "Yes. In NSW any work involving water supply, drainage, or gas must be carried out by a licensed plumber. They must also issue a Certificate of Compliance for the work, which you need for insurance and resale." },
@@ -55,7 +56,7 @@ export default function BlogBathroomRenoPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Bathroom Renovations</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Bathroom Renovations</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 &middot; 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>Bathroom Renovation Plumbing Checklist</h1>

@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Backflow Prevention: Does Your Property Need Annual Testing?",
+  title: pageTitle("Backflow Prevention: Does Your Property Need Annual Testing?"),
   description:
-    "Backflow devices protect drinking water from contamination, and testable ones generally need checking every year by an accredited plumber. Here is what backflow is, who it applies to, and what a test involves.",
+    "Backflow devices protect drinking water, and testable ones generally need an annual test by an accredited plumber. What backflow is and who it applies to.",
   openGraph: {
     type: "article",
     title: "Backflow Prevention: Does Your Property Need Annual Testing?",
-    description: "Backflow devices protect drinking water from contamination, and testable ones generally need checking every year by an accredited plumber. Here is what backflow is, who it applies to, and what a test involves.",
+    description: "Backflow devices protect drinking water, and testable ones generally need an annual test by an accredited plumber. What backflow is and who it applies to.",
     url: "https://www.mrclog.com.au/blog/backflow-prevention-testing-explained",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-09-21",
@@ -43,7 +44,7 @@ export default function BlogBackflowPreventionTestingExplainedPage() {
       <BlogPostSchema
         slug="backflow-prevention-testing-explained"
         title="Backflow Prevention: Does Your Property Need Annual Testing?"
-        description="Backflow devices protect drinking water from contamination, and testable ones generally need checking every year by an accredited plumber. Here is what backflow is, who it applies to, and what a test involves."
+        description="Backflow devices protect drinking water, and testable ones generally need an annual test by an accredited plumber. What backflow is and who it applies to."
         datePublished="2026-09-21"
         faqs={[{"q":"How often does a backflow device need testing?","a":"Testable backflow prevention devices are generally required to be tested every twelve months by a plumber holding backflow accreditation, with the results submitted to the relevant water authority. Requirements vary by device type and by property, so confirm your obligations with Sydney Water or your local council."},{"q":"Do I need a backflow device on a normal house?","a":"Most standard homes do not. Requirements are usually triggered by something that creates a cross-connection risk — an irrigation system, a rainwater tank plumbed into the house supply, a fire service, a pool auto-fill, or commercial equipment. If your home has any of those, it is worth checking."},{"q":"What happens if I do not have it tested?","a":"Two things. Practically, an untested device may have failed without anyone noticing, which leaves the drinking water unprotected. Administratively, water authorities can follow up on overdue testing for registered devices. Neither is expensive to avoid; both are unpleasant to deal with after the fact."}]}
       />
@@ -53,7 +54,7 @@ export default function BlogBackflowPreventionTestingExplainedPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Backflow Prevention</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Backflow Prevention</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>21 September 2026 · 6 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

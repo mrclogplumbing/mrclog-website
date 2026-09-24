@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
@@ -6,13 +7,13 @@ import BlogPostSchema from "@/components/blog/BlogPostSchema";
 import BlogFigure from "@/components/blog/BlogFigure";
 
 export const metadata: Metadata = {
-  title: "Braided Flexi Hoses: How to Spot One Before It Bursts",
+  title: pageTitle("Braided Flexi Hoses: How to Spot One Before It Bursts"),
   description:
-    "Braided flexi hoses under your sinks and toilets fail without warning and can flood a home in minutes. Here is how to check yours, the warning signs, and what to do if one lets go.",
+    "Braided flexi hoses under sinks and toilets can fail without warning and flood a home in minutes. How to check yours, the warning signs, and what to do.",
   openGraph: {
     type: "article",
     title: "Braided Flexi Hoses: How to Spot One Before It Bursts",
-    description: "Braided flexi hoses under your sinks and toilets fail without warning and can flood a home in minutes. Here is how to check yours, the warning signs, and what to do if one lets go.",
+    description: "Braided flexi hoses under sinks and toilets can fail without warning and flood a home in minutes. How to check yours, the warning signs, and what to do.",
     url: "https://www.mrclog.com.au/blog/braided-flexi-hose-failure",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-09-23",
@@ -43,7 +44,7 @@ export default function BlogBraidedFlexiHoseFailurePage() {
       <BlogPostSchema
         slug="braided-flexi-hose-failure"
         title="Braided Flexi Hoses: How to Spot One Before It Bursts"
-        description="Braided flexi hoses under your sinks and toilets fail without warning and can flood a home in minutes. Here is how to check yours, the warning signs, and what to do if one lets go."
+        description="Braided flexi hoses under sinks and toilets can fail without warning and flood a home in minutes. How to check yours, the warning signs, and what to do."
         datePublished="2026-09-23"
         faqs={[{"q":"How often should braided flexi hoses be replaced?","a":"There is no single rule, so follow the manufacturer's guidance for the hose you have. As a practical habit, check every hose in the house once a year and replace any showing rust, fraying, kinks or weeping at the fittings straight away. Hoses that have been in place for many years are worth replacing as a set."},{"q":"Why did my flexi hose burst when it looked fine?","a":"The part that holds the water is a rubber tube inside the braid, and it ages out of sight. Corrosion from cleaning products stored under the sink, a tight bend or twist from installation, and high mains pressure all weaken it. The braid can look clean right up until the inner tube gives way."},{"q":"Is a burst flexi hose an emergency?","a":"Yes. A burst hose releases mains-pressure water continuously until it is turned off. Close the isolation valve under the fixture or the main stop tap at the meter first, then call a plumber."}]}
       />
@@ -53,7 +54,7 @@ export default function BlogBraidedFlexiHoseFailurePage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Emergency Plumbing</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Emergency Plumbing</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>23 September 2026 · 6 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

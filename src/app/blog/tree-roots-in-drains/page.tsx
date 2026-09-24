@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It)",
+  title: pageTitle("Tree Roots in Drains: Why They Keep Coming Back"),
   description:
-    "If your drain keeps blocking every few months, tree roots are almost always the culprit. Here is how they get in, and the three real fixes — from temporary to permanent.",
+    "If your drain keeps blocking every few months, tree roots are almost always the culprit. How they get in, and the three real fixes, from temporary to permanent.",
   openGraph: {
     type: "article",
-    title: "Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It)",
-    description: "If your drain keeps blocking every few months, tree roots are almost always the culprit. Here is how they get in, and the three real fixes — from temporary to permanent.",
+    title: "Tree Roots in Drains: Why They Keep Coming Back",
+    description: "If your drain keeps blocking every few months, tree roots are almost always the culprit. How they get in, and the three real fixes, from temporary to permanent.",
     url: "https://www.mrclog.com.au/blog/tree-roots-in-drains",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-05-20",
@@ -45,7 +46,7 @@ export default function BlogTreeRootsInDrainsPage() {
       <BlogPostSchema
         slug="tree-roots-in-drains"
         title="Tree Roots in Your Drains: Why It Keeps Happening (and How to Stop It)"
-        description="If your drain keeps blocking every few months, tree roots are almost always the culprit. Here is how they get in, and the three real fixes — from temporary to permanent."
+        description="If your drain keeps blocking every few months, tree roots are almost always the culprit. How they get in, and the three real fixes, from temporary to permanent."
         datePublished="2026-05-20"
         faqs={[{"q":"Will cutting down the tree fix the problem?","a":"Not always. Root systems can survive for months after a tree is removed, and existing damage to the pipe still allows new roots from neighbouring vegetation to enter. The pipe itself needs to be sealed for a permanent fix."},{"q":"How do I know if I have tree roots in my drain?","a":"Repeat blockages every few months, gurgling sounds, slow draining across multiple fixtures, and unexplained soggy patches in the lawn are classic signs. A CCTV drain inspection will confirm it."}]}
       />
@@ -55,7 +56,7 @@ export default function BlogTreeRootsInDrainsPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Blocked Drains</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Blocked Drains</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

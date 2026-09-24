@@ -67,7 +67,7 @@ export default function ReviewStrip({ tag = "General" }: { tag?: ReviewTag }) {
                 </span>
                 <span className="text-sm">
                   <span className="font-semibold" style={{ color: "var(--color-dark)" }}>{r.name}</span>
-                  <span className="block text-xs text-gray-400">{r.when}</span>
+                  <span className="block text-xs text-gray-500">{r.when}</span>
                 </span>
               </figcaption>
             </figure>

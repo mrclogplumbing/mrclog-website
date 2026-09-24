@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import ServiceSuburbPage from "@/components/ServiceSuburbPage";
 import { blockedDrainAreas, getBlockedDrainArea } from "@/lib/blocked-drain-areas";
 import { getPipeReliningArea } from "@/lib/pipe-relining-areas";
@@ -22,8 +23,8 @@ export async function generateMetadata({
   if (!area || !place) return {};
   return {
     alternates: { canonical: `/blocked-drains/${suburb}` },
-    title: `Blocked Drains ${place.label} | Same-Day Drain Clearing`,
-    description: `Blocked drain in ${place.label}? Mr. Clog clears blocked drains across ${place.label} with CCTV inspection and high-pressure jetting. $0 call-out fee, any hour. Call (02) 9139 8945.`,
+    title: pageTitle(`Blocked Drains ${place.label} | Same-Day Drain Clearing`),
+    description: `Blocked drain in ${place.label}? Cleared with CCTV inspection and high-pressure jetting. $0 call-out fee, any hour. Call (02) 9139 8945.`,
   };
 }
 

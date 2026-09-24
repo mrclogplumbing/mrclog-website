@@ -4,9 +4,14 @@
 
 :root {
   /* ── BRAND COLOURS ── */
-  --color-brand-blue: #1A9FFF;
-  --color-brand-blue-hover: #0080E0;
-  --color-brand-blue-pressed: #0068C0;
+  /* Buttons, links and blue text use the deeper brand shade so white text on
+     blue, and blue text on white, both pass WCAG AA (4.5:1). The original
+     sky blue #1A9FFF failed at 2.8:1 (Lighthouse, 24 Sep 2026). It is kept as
+     --color-brand-blue-bright for decoration only: icons, glows, gradients. */
+  --color-brand-blue: #0068C0;
+  --color-brand-blue-hover: #00589F;
+  --color-brand-blue-pressed: #004A87;
+  --color-brand-blue-bright: #1A9FFF;
   --color-brand-blue-light: #E8F5FF;
 
   /* ── NEUTRALS ── */
@@ -168,6 +173,12 @@
   .btn-ghost-white:hover {
     background: rgba(255, 255, 255, 0.15);
     border-color: white;
+  }
+
+  /* Blog post CTAs use this name. It was never defined, so the button text
+     fell back to dark grey on the dark CTA panel (1.2:1 contrast). */
+  .btn-outline-white {
+    @apply btn-ghost-white;
   }
 
   /* ── SECTION WRAPPER ── */

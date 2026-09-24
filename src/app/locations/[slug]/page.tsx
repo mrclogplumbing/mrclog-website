@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import QuoteForm from "@/components/QuoteForm";
 import ReviewStrip from "@/components/ReviewStrip";
 import JobStories from "@/components/JobStories";
 import Link from "next/link";
-import { allAreas, getArea, suburbPageFor } from "@/lib/areas";
+import { allAreas, getArea, suburbPageFor, suburbsInRegion } from "@/lib/areas";
 import { getBlockedDrainArea } from "@/lib/blocked-drain-areas";
 import { getPipeReliningArea } from "@/lib/pipe-relining-areas";
 import { getHotWaterArea } from "@/lib/hot-water-areas";
@@ -13,6 +14,21 @@ import { PhoneCallIcon, MapPinIcon, CheckCircleIcon } from "@/components/ui/Serv
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
+const BASE = "https://www.mrclog.com.au";
+
+/**
+ * Up to `count` other suburb pages in the same region, for the "nearby"
+ * links. Suburbs this page already names as neighbours come first, then the
+ * rest of the region alphabetically, so a new suburb page is picked up
+ * without anyone editing a list.
+ */
+function neighbourPages(slug: string, regionSlug: string, named: string[], count = 4) {
+  const siblings = suburbsInRegion(regionSlug).filter((s) => s.slug !== slug);
+  const lower = named.map((n) => n.toLowerCase());
+  const near = siblings.filter((s) => lower.includes(s.label.toLowerCase()));
+  const rest = siblings.filter((s) => !lower.includes(s.label.toLowerCase()));
+  return [...near, ...rest].slice(0, count);
+}
 
 export async function generateStaticParams() {
   return allAreas.map((a) => ({ slug: a.slug }));
@@ -28,7 +44,7 @@ export async function generateMetadata({
   if (!location) return {};
   return {
     alternates: { canonical: `/locations/${slug}` },
-    title: location.metaTitle,
+    title: pageTitle(location.metaTitle),
     description: location.metaDescription,
   };
 }
@@ -43,6 +59,20 @@ export default async function LocationPage({
   if (!location) notFound();
 
   const parentRegion = location.parent ? getArea(location.parent) : undefined;
+  const seeAlso = location.seeAlso ? getArea(location.seeAlso.slug) : undefined;
+  // Suburb pages that mention strata or commercial work link to that service.
+  const mentionsStrata = /strata|commercial/i.test(`${location.metaTitle} ${location.headline}`);
+  const neighbours = parentRegion
+    ? neighbourPages(slug, parentRegion.slug, location.suburbs)
+    : [];
+  // On a region page, every suburb page filed under it.
+  const regionSuburbPages = parentRegion ? [] : suburbsInRegion(slug);
+  // Matches the visible breadcrumb in the hero.
+  const breadcrumb = [
+    { name: "Service Areas", path: "/locations" },
+    ...(parentRegion ? [{ name: parentRegion.label, path: `/locations/${parentRegion.slug}` }] : []),
+    { name: location.label, path: `/locations/${slug}` },
+  ];
   // Service pages that exist for this specific suburb, for the cross-links.
   const suburbServices = [
     getBlockedDrainArea(slug) && { href: `/blocked-drains/${slug}`, label: "Blocked Drains" },
@@ -52,6 +82,21 @@ export default async function LocationPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: breadcrumb.map((c, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: c.name,
+              item: `${BASE}${c.path}`,
+            })),
+          }),
+        }}
+      />
       {location.faqs && location.faqs.length > 0 && (
         <script
           type="application/ld+json"
@@ -83,17 +128,20 @@ export default async function LocationPage({
         />
         <div className="relative section-container py-16 md:py-24">
           <div className="max-w-3xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue-bright)" }}>
               Mr. Clog Plumbing
             </p>
-            {parentRegion && (
-              <p className="font-display text-sm mb-3">
-                <Link href={`/locations/${parentRegion.slug}`} className="text-white/70 hover:text-white no-underline">
-                  {parentRegion.label}
-                </Link>
-                <span className="text-white/40"> / {location.label}</span>
-              </p>
-            )}
+            <nav aria-label="Breadcrumb" className="font-display text-sm mb-3">
+              {breadcrumb.slice(0, -1).map((c) => (
+                <span key={c.path}>
+                  <Link href={c.path} className="text-white/70 hover:text-white no-underline">
+                    {c.name}
+                  </Link>
+                  <span className="text-white/60"> / </span>
+                </span>
+              ))}
+              <span className="text-white/60" aria-current="page">{location.label}</span>
+            </nav>
             <h1
               className="font-logo font-extrabold text-white mb-4"
               style={{ fontSize: "clamp(2rem, 5vw, 3.25rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}
@@ -118,6 +166,20 @@ export default async function LocationPage({
           </div>
         </div>
       </section>
+
+      {/* Which page is which, where a region and a suburb page overlap */}
+      {location.seeAlso && seeAlso && (
+        <section className="section-container pt-10">
+          <div className="max-w-3xl rounded-2xl p-5 border" style={{ borderColor: "rgba(26,159,255,0.35)", background: "var(--color-brand-blue-light)" }}>
+            <p className="text-sm text-gray-700 leading-relaxed">
+              {location.seeAlso.text}{" "}
+              <Link href={`/locations/${seeAlso.slug}`} className="font-semibold" style={{ color: "var(--color-brand-blue)" }}>
+                {seeAlso.headline} &rarr;
+              </Link>
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Description + Services */}
       <section className="section-container py-16 md:py-20">
@@ -153,6 +215,20 @@ export default async function LocationPage({
                 </li>
               ))}
             </ul>
+            {mentionsStrata && (
+              <Link
+                href="/services/strata-and-commercial-plumbing"
+                className="mt-6 block rounded-xl p-4 bg-white border no-underline transition-colors hover:bg-blue-50"
+                style={{ borderColor: "rgba(26,159,255,0.35)" }}
+              >
+                <span className="font-semibold text-sm block" style={{ color: "var(--color-dark)" }}>
+                  Strata &amp; commercial plumbing
+                </span>
+                <span className="text-sm font-semibold mt-1 block" style={{ color: "var(--color-brand-blue)" }}>
+                  For strata managers, apartment blocks, offices and shops &rarr;
+                </span>
+              </Link>
+            )}
           </div>
         </div>
       </section>
@@ -219,9 +295,54 @@ export default async function LocationPage({
               );
             })}
           </div>
-          <p className="text-center text-sm text-gray-500 mt-6">
+          <p className="text-center text-sm text-gray-600 mt-6">
             Don&rsquo;t see your suburb? <a href={PHONE_HREF} style={{ color: "var(--color-brand-blue)" }} className="font-semibold">Call us</a> — we likely cover it.
           </p>
+          {regionSuburbPages.length > 0 && (
+            <div className="mt-10 max-w-4xl mx-auto text-center">
+              <h3 className="font-logo font-bold text-xl mb-4" style={{ color: "var(--color-dark)" }}>
+                Suburb Guides in {location.label}
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {regionSuburbPages.map((sub) => (
+                  <Link
+                    key={sub.slug}
+                    href={`/locations/${sub.slug}`}
+                    className="px-4 py-2 rounded-full text-sm font-semibold bg-white border no-underline transition-colors hover:bg-blue-50"
+                    style={{ borderColor: "rgba(26,159,255,0.45)", color: "var(--color-brand-blue)" }}
+                  >
+                    Plumber {sub.label} &rarr;
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+          {parentRegion && neighbours.length > 0 && (
+            <div className="mt-10 max-w-4xl mx-auto text-center">
+              <h3 className="font-logo font-bold text-xl mb-4" style={{ color: "var(--color-dark)" }}>
+                More Suburbs in {parentRegion.label}
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {neighbours.map((sub) => (
+                  <Link
+                    key={sub.slug}
+                    href={`/locations/${sub.slug}`}
+                    className="px-4 py-2 rounded-full text-sm font-semibold bg-white border no-underline transition-colors hover:bg-blue-50"
+                    style={{ borderColor: "rgba(26,159,255,0.45)", color: "var(--color-brand-blue)" }}
+                  >
+                    Plumber {sub.label} &rarr;
+                  </Link>
+                ))}
+                <Link
+                  href={`/locations/${parentRegion.slug}`}
+                  className="px-4 py-2 rounded-full text-sm font-semibold bg-white border no-underline transition-colors hover:bg-blue-50"
+                  style={{ borderColor: "rgba(26,159,255,0.45)", color: "var(--color-brand-blue)" }}
+                >
+                  All of {parentRegion.label} &rarr;
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </section>
 
@@ -295,7 +416,7 @@ export default async function LocationPage({
           <h2 className="font-logo font-extrabold text-white text-3xl md:text-4xl mb-3">
             Need a Plumber in {location.label}?
           </h2>
-          <p className="text-white/80 mb-8 font-display">
+          <p className="text-white mb-8 font-display">
             Call now — $0 call-out fee, available 24/7 across {location.label}.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

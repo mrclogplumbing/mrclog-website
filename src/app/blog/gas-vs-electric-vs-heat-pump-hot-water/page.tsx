@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home?",
+  title: pageTitle("Gas vs Electric vs Heat Pump Hot Water for Sydney Homes"),
   description:
-    "Choosing a hot water system is a 10-year decision. Compare gas, electric, and heat pump systems for Sydney homes — running costs, install costs, and reliability.",
+    "Choosing a hot water system is a 10-year decision. Compare gas, electric and heat pump systems for Sydney homes: running costs, install costs and reliability.",
   openGraph: {
     type: "article",
-    title: "Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home?",
-    description: "Choosing a hot water system is a 10-year decision. Compare gas, electric, and heat pump systems for Sydney homes — running costs, install costs, and reliability.",
+    title: "Gas vs Electric vs Heat Pump Hot Water for Sydney Homes",
+    description: "Choosing a hot water system is a 10-year decision. Compare gas, electric and heat pump systems for Sydney homes: running costs, install costs and reliability.",
     url: "https://www.mrclog.com.au/blog/gas-vs-electric-vs-heat-pump-hot-water",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-05-20",
@@ -44,7 +45,7 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
       <BlogPostSchema
         slug="gas-vs-electric-vs-heat-pump-hot-water"
         title="Gas vs Electric vs Heat Pump Hot Water: Which Is Best for Your Sydney Home?"
-        description="Choosing a hot water system is a 10-year decision. Compare gas, electric, and heat pump systems for Sydney homes — running costs, install costs, and reliability."
+        description="Choosing a hot water system is a 10-year decision. Compare gas, electric and heat pump systems for Sydney homes: running costs, install costs and reliability."
         datePublished="2026-05-20"
         faqs={[{"q":"Which hot water system is cheapest to run?","a":"For most Sydney homes, a heat pump system has the lowest ongoing running cost, especially when paired with rooftop solar."},{"q":"Are heat pumps noisy?","a":"Heat pumps make a low hum similar to a split-system air conditioner unit. They should be installed with adequate clearance and ideally away from bedroom windows."}]}
       />
@@ -54,7 +55,7 @@ export default function BlogGasVsElectricVsHeatPumpPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Hot Water</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Hot Water</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

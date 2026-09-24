@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Does My Drain Smell? The Five Usual Causes",
+  title: pageTitle("Why Does My Drain Smell? The Five Usual Causes"),
   description:
-    "A smelly drain is telling you something. Here are the five things that actually cause it, how to tell which one you have, and the fixes that work — from a 30-second one to the ones that need a plumber.",
+    "Why does your drain smell? The five usual causes, how to tell which one you have, and the fixes that work, from a 30-second one to those that need a plumber.",
   openGraph: {
     type: "article",
     title: "Why Does My Drain Smell? The Five Usual Causes",
-    description: "A smelly drain is telling you something. Here are the five things that actually cause it, how to tell which one you have, and the fixes that work — from a 30-second one to the ones that need a plumber.",
+    description: "Why does your drain smell? The five usual causes, how to tell which one you have, and the fixes that work, from a 30-second one to those that need a plumber.",
     url: "https://www.mrclog.com.au/blog/why-does-my-drain-smell",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-09-21",
@@ -42,7 +43,7 @@ export default function BlogWhyDoesMyDrainSmellPage() {
       <BlogPostSchema
         slug="why-does-my-drain-smell"
         title="Why Does My Drain Smell? The Five Usual Causes"
-        description="A smelly drain is telling you something. Here are the five things that actually cause it, how to tell which one you have, and the fixes that work — from a 30-second one to the ones that need a plumber."
+        description="Why does your drain smell? The five usual causes, how to tell which one you have, and the fixes that work, from a 30-second one to those that need a plumber."
         datePublished="2026-09-21"
         faqs={[{"q":"Why does my drain smell worse in summer?","a":"Warmth accelerates the bacteria feeding on the grease, hair and soap film inside your pipes, so the same buildup produces a much stronger odour once the weather turns. Water in unused traps also evaporates faster, which lets sewer gas rise through a drain that was fine all winter."},{"q":"Is a smelly drain dangerous?","a":"An occasional whiff from a dry trap is a nuisance rather than a hazard. A persistent sewer smell is worth acting on: it means sewer gas is entering your home somewhere it should not, which can indicate a damaged pipe or a venting fault. If the smell is strong, constant, or comes with gurgling and slow drainage, have it looked at."},{"q":"Will bleach fix a smelly drain?","a":"Rarely, and it can make things worse. Bleach passes straight through and does little to the grease film coating the pipe walls, which is where the smell usually lives. It also will not touch a dry trap, a blocked vent or a cracked pipe. Hot water and a physical clean address far more causes."}]}
       />
@@ -52,7 +53,7 @@ export default function BlogWhyDoesMyDrainSmellPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Blocked Drains</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Blocked Drains</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>21 September 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

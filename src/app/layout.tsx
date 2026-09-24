@@ -35,11 +35,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.mrclog.com.au"),
   alternates: { canonical: "/" },
   title: {
-    default: "Mr. Clog | Sydney's #1 Plumber | (02) 9139 8945 | 24/7 Emergency",
+    default: "Local Sydney Plumbers 24/7 | Mr. Clog | (02) 9139 8945",
     template: "%s | Mr. Clog Plumbing",
   },
-  description:
-    "Sydney's trusted plumbers. 5-star rated, available 24/7, $0 call-out fee. Blocked drains, emergency plumbing, hot water & more. Call (02) 9139 8945 now.",
+  description: `Local Sydney plumbers, ${reviewSummary.ratingValue}★ on Google from ${reviewSummary.reviewCount} reviews. 24/7, $0 call-out fee. Blocked drains, hot water & more. Call (02) 9139 8945.`,
   keywords: [
     "plumber Sydney",
     "emergency plumber Sydney",
@@ -54,17 +53,16 @@ export const metadata: Metadata = {
     url: "https://www.mrclog.com.au",
     siteName: "Mr. Clog Plumbing",
     title: {
-      default: "Mr. Clog | Sydney's #1 Plumber | 24/7 Emergency",
+      default: "Mr. Clog | Local Sydney Plumbers, 24/7",
       template: "%s | Mr. Clog Plumbing",
     },
-    description:
-      "Sydney's trusted plumbers. 5-star rated, available 24/7, $0 call-out fee.",
+    description: `Local Sydney plumbers. ${reviewSummary.ratingValue}★ on Google, available 24/7, $0 call-out fee.`,
     images: [{ url: "/og-default.png", width: 1200, height: 630, alt: "Mr. Clog Plumbing" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mr. Clog | Sydney's #1 Plumber",
-    description: "Sydney's trusted plumbers. 5-star rated, 24/7, $0 call-out fee.",
+    title: "Mr. Clog | Local Sydney Plumbers",
+    description: `Local Sydney plumbers. ${reviewSummary.ratingValue}★ on Google, 24/7, $0 call-out fee.`,
     images: ["/og-default.png"],
   },
   robots: {
@@ -128,7 +126,7 @@ export default function RootLayout({
               "reviewCount": String(reviewSummary.reviewCount),
               "bestRating": "5"
             },
-            "description": "Sydney\'s trusted local plumbers. 5-star rated, available 24/7, $0 call-out fee. Blocked drains, emergency plumbing, hot water systems and more.",
+            "description": "Local Sydney plumbers, available 24/7 with a $0 call-out fee. Blocked drains, emergency plumbing, hot water systems and more.",
             "image": "https://www.mrclog.com.au/og-default.png",
             "sameAs": []
           })

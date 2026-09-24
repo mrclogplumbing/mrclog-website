@@ -25,6 +25,13 @@ export interface Location {
    * link back up is a structure search engines can read.
    */
   parent?: string;
+  /**
+   * A closely related area page to point readers to, shown as a callout
+   * near the top. Used where a region and a suburb page could be confused
+   * (e.g. the Sydney CBD & Inner City region and the Sydney CBD city-centre
+   * page), so each says clearly which area it covers and links to the other.
+   */
+  seeAlso?: { slug: string; text: string };
 }
 
 export const locations: Location[] = [
@@ -263,11 +270,15 @@ export const locations: Location[] = [
   },
   {
     slug: "sydney-cbd",
-    label: "Sydney CBD & City",
-    headline: "Plumber Sydney CBD",
-    subheadline: "Fast plumbing across the city, Surry Hills, Darlinghurst, Redfern and surrounds.",
+    label: "Sydney CBD & Inner City",
+    headline: "Plumber Sydney CBD & Inner City",
+    subheadline: "Plumbing across the ring of suburbs around the city: Surry Hills, Darlinghurst, Redfern, Pyrmont, Potts Point, Alexandria and surrounds.",
     description:
-      "Mr. Clog services Sydney CBD and the immediate inner-city. We’re used to high-rise apartments, retail and office plumbing, and the tight access of inner-city streets. 24/7 emergency response across the city core.",
+      "This page covers the wider inner city around the CBD: the terraces of Surry Hills, Darlinghurst and Redfern, the apartment precincts of Pyrmont, Ultimo, Zetland and Waterloo, the harbourside flats of Potts Point and Elizabeth Bay, and the warehouse conversions of Alexandria and Chippendale. We’re used to high-rise apartments, retail and office plumbing, and the tight access of inner-city streets, with 24/7 emergency response across the area.",
+    seeAlso: {
+      slug: "sydney-cbd-city",
+      text: "In the city centre itself, between Circular Quay and Central? Our Sydney CBD page covers office towers, strata apartment buildings and heritage sandstone buildings.",
+    },
     suburbs: [
       "Sydney CBD", "Surry Hills", "Darlinghurst", "Redfern",
       "Waterloo", "Zetland", "Alexandria", "Erskineville",
@@ -284,8 +295,8 @@ export const locations: Location[] = [
       { q: "Can you handle commercial plumbing in city offices?", a: "Yes — we service office buildings, retail tenants, hospitality venues, and shopfronts across the city core." },
       { q: "How fast can you reach the CBD for an emergency?", a: "Usually within 30–60 minutes — we cover the city 24/7 and will give you an accurate ETA when you call." },
     ],
-    metaTitle: "Plumber Sydney CBD | 24/7 City Plumber",
-    metaDescription: "24/7 plumber for Sydney CBD, Surry Hills, Darlinghurst, Redfern, Pyrmont and the city core. $0 call-out fee. Call (02) 9139 8945.",
+    metaTitle: "Plumber Sydney CBD & Inner City | 24/7",
+    metaDescription: "24/7 plumber for Sydney's inner city: Surry Hills, Darlinghurst, Redfern, Pyrmont, Potts Point, Alexandria and more. $0 call-out fee. Call (02) 9139 8945.",
     localContent:
       "Sydney CBD plumbing is a different game — high-rise apartment towers, hospitality fit-outs, retail tenancies, and the heritage buildings of The Rocks all sit within a few kilometres. Mr. Clog regularly services strata buildings, office tenancies, and hospitality venues across the City of Sydney. We’re familiar with the access constraints, after-hours work requirements, and trade waste regulations that make CBD plumbing more complex than suburban work.",
     commonProblems: [
@@ -466,10 +477,14 @@ export const locations: Location[] = [
   {
     slug: "parramatta",
     label: "Parramatta",
-    headline: "Plumber Parramatta Sydney",
-    subheadline: "Local plumbing across Parramatta, Westmead, Harris Park and the Parramatta CBD.",
+    headline: "Plumber Parramatta & Surrounding Suburbs",
+    subheadline: "Local plumbing for homes and businesses across Westmead, Harris Park, Granville, Merrylands, North Parramatta and the suburbs around Parramatta.",
     description:
-      "Mr. Clog services Parramatta — Sydney’s second CBD — along with the surrounding suburbs. We work with apartment towers, family homes, hospital and university precincts, and the area’s many small businesses.",
+      "This page covers the wider Parramatta area, from Westmead and Northmead to Granville, Merrylands and Rydalmere. Most of it is suburban: post-war family homes and older Federation streets, along with the hospital and university precincts and the area’s many small businesses.",
+    seeAlso: {
+      slug: "parramatta-cbd",
+      text: "In the Parramatta CBD itself? Our Parramatta CBD page covers apartment towers, strata buildings and commercial tenancies in the city centre.",
+    },
     suburbs: [
       "Parramatta", "Harris Park", "Westmead", "North Parramatta",
       "Rosehill", "Granville", "Merrylands", "Wentworthville",
@@ -486,7 +501,7 @@ export const locations: Location[] = [
       { q: "Can you handle commercial plumbing in Westmead?", a: "Yes — we service medical and commercial properties in the Westmead health and education precinct." },
       { q: "Are you available 24/7 in Parramatta?", a: "Yes — 24/7 emergency plumbing across Parramatta and the wider area with $0 call-out fee." },
     ],
-    metaTitle: "Plumber Parramatta | Westmead, Harris Park | 24/7",
+    metaTitle: "Plumber Parramatta & Surrounds | 24/7",
     metaDescription: "Local plumber for Parramatta and surrounds. Parramatta CBD, Westmead, Harris Park, Granville, Merrylands and more. 24/7, $0 call-out. Call (02) 9139 8945.",
     localContent:
       "Parramatta is Sydney’s second CBD with one of the densest mixes of property types anywhere in the city: high-rise residential and commercial towers in the CBD, the Westmead health and education precinct, post-war family homes in Harris Park and Granville, and the older Federation properties in North Parramatta and Northmead. Mr. Clog services City of Parramatta and Cumberland Council areas, and we’re set up for both the access requirements of high-rise plumbing and the heritage drainage of older streets.",

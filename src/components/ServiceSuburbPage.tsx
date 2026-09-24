@@ -53,7 +53,8 @@ export default function ServiceSuburbPage({
             alt={heroPhoto.alt}
             fill
             priority
-            sizes="100vw"
+            quality={60}
+            sizes="(max-width: 767px) 67vw, 100vw"
             className="object-cover"
             style={{ objectPosition: heroPhoto.focus ?? "center" }}
           />
@@ -257,7 +258,7 @@ export default function ServiceSuburbPage({
           <h2 className="font-logo font-extrabold text-white text-3xl md:text-4xl mb-3">
             {`${serviceLabel} in ${place.label}?`}
           </h2>
-          <p className="text-white/80 mb-8 font-display">
+          <p className="text-white mb-8 font-display">
             {calloutFee.line}. Available 24/7, 365 days a year.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

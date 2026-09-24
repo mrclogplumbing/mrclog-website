@@ -14,6 +14,12 @@ import Script from "next/script";
  * Form tracking: any form posting to Formspree fires "generate_lead" with
  * the form's hidden source field, so enquiries can be traced to a page.
  * Sent as a beacon because the native form post navigates away.
+ *
+ * Speed: the gtag.js library (~175 KB) loads with "lazyOnload", after the
+ * page has finished loading, so it no longer competes with the hero image
+ * for the phone's CPU. The small inline snippets still run straight away:
+ * they queue into window.dataLayer, and gtag.js sends the queue when it
+ * arrives, so no page view or early click is lost.
  */
 export default function Analytics() {
   const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-J1TRXMCXCQ";
@@ -22,7 +28,7 @@ export default function Analytics() {
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
       <Script id="ga-init" strategy="afterInteractive">
         {`

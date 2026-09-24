@@ -59,7 +59,7 @@ export default function WhyChooseUs() {
       <div className="section-container">
 
         <div className="text-center mb-12">
-          <p className="font-display text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--color-brand-blue)" }}>
+          <p className="font-display text-sm font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--color-brand-blue-bright)" }}>
             Why Mr. Clog
           </p>
           <h2 className="font-logo font-extrabold text-3xl md:text-4xl text-white">

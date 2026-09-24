@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives",
-  description: "A burst pipe can dump hundreds of litres into your home in minutes. Here is exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives.",
+  title: pageTitle("Burst Pipe at Home: The First 5 Minutes"),
+  description: "A burst pipe can dump hundreds of litres into your home in minutes. Exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives.",
   openGraph: {
     type: "article",
-    title: "Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives",
-    description: "A burst pipe can dump hundreds of litres into your home in minutes. Here is exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives.",
+    title: "Burst Pipe at Home: The First 5 Minutes",
+    description: "A burst pipe can dump hundreds of litres into your home in minutes. Exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives.",
     url: "https://www.mrclog.com.au/blog/burst-pipe-first-5-minutes",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-05-20",
@@ -43,7 +44,7 @@ export default function BlogBurstPipePage() {
       <BlogPostSchema
         slug="burst-pipe-first-5-minutes"
         title="Burst Pipe at Home: The First 5 Minutes Before the Plumber Arrives"
-        description="A burst pipe can dump hundreds of litres into your home in minutes. Here is exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives."
+        description="A burst pipe can dump hundreds of litres into your home in minutes. Exactly what to do in the first 5 minutes to stop the damage, before the plumber arrives."
         datePublished="2026-05-20"
         faqs={[
           { q: "Where is my water main shut-off valve?", a: "In most Sydney homes it is at the front of the property near the boundary, in a small concrete pit with a metal cover. Inside the pit you will find a tap-style valve — turn it clockwise to shut off all water to the house." },
@@ -56,7 +57,7 @@ export default function BlogBurstPipePage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Emergency Plumbing</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Emergency Plumbing</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>20 May 2026 &middot; 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>Burst Pipe at Home: The First 5 Minutes</h1>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { CheckCircleIcon, PhoneCallIcon, StarIcon } from "@/components/ui/ServiceIcons";
 import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
@@ -8,9 +9,9 @@ const PHONE_HREF = "tel:+61291398945";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/offers/household-plumbing-health-check" },
-  title: "Household Plumbing Health Check $149.99",
+  title: pageTitle("Household Plumbing Health Check $149.99"),
   description:
-    "Mr. Clog's 10-point Household Plumbing Health Check — a whole-home inspection by a licensed Sydney plumber for $149.99 incl GST. Catch small problems before they become big bills. Call (02) 9139 8945.",
+    "Mr. Clog's 10-point Household Plumbing Health Check: a whole-home inspection by a licensed Sydney plumber for $149.99 incl GST. Call (02) 9139 8945.",
 };
 
 // The 10-point inspection — displayed as a tick-off checklist.

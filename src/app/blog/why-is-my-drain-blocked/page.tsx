@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Is My Drain Blocked? The Most Common Causes",
+  title: pageTitle("Why Is My Drain Blocked? The Most Common Causes"),
   description:
     "A blocked drain is almost always caused by one of five things. Learn what causes blocked drains in Australian homes and when to call a plumber.",
   openGraph: {
@@ -54,7 +55,7 @@ export default function Blog1Page() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Blocked Drains</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Blocked Drains</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>7 April 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

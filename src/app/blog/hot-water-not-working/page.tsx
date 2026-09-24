@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
@@ -6,7 +7,7 @@ import BlogPostSchema from "@/components/blog/BlogPostSchema";
 import BlogFigure from "@/components/blog/BlogFigure";
 
 export const metadata: Metadata = {
-  title: "Hot Water Not Working? What to Check",
+  title: pageTitle("Hot Water Not Working? What to Check"),
   description:
     "No hot water, lukewarm water or hot water running out fast? Safe checks by symptom for electric, gas, heat pump and continuous flow systems.",
   openGraph: {
@@ -53,7 +54,7 @@ export default function BlogHotWaterNotWorkingPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Hot Water</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Hot Water</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>23 September 2026 · 8 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

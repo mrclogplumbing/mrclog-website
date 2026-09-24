@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { CheckCircleIcon, PhoneCallIcon, StarIcon } from "@/components/ui/ServiceIcons";
 import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
@@ -8,9 +9,9 @@ const PHONE_HREF = "tel:+61291398945";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/offers/kitchen-mixer-upgrade" },
-  title: "Kitchen Mixer Upgrade $399 Supplied & Installed",
+  title: pageTitle("Kitchen Mixer Upgrade $399 Supplied & Installed"),
   description:
-    "Tired tap? Upgrade to a premium chrome gooseneck kitchen mixer — supplied and installed by a licensed Sydney plumber for a fixed $399 incl GST, usually in under an hour. Call (02) 9139 8945.",
+    "Upgrade to a chrome gooseneck kitchen mixer, supplied and installed by a licensed Sydney plumber for a fixed $399 incl GST. Call (02) 9139 8945.",
 };
 
 // What's covered by the fixed $399 price.

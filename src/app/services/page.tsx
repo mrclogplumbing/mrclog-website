@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { services } from "@/lib/services";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/services" },
-  title: "Plumbing Services Sydney | Full Service List",
+  title: pageTitle("Plumbing Services Sydney | Full Service List"),
   description:
-    "Every plumbing service Mr. Clog offers across Sydney — emergency plumbing, blocked drains, hot water, gas fitting, pipe relining and more. 24/7, $0 call-out fee.",
+    "Every plumbing service Mr. Clog offers across Sydney: emergency plumbing, blocked drains, hot water, gas fitting, pipe relining and more. 24/7, $0 call-out fee.",
 };
 
 export default function ServicesIndexPage() {
@@ -24,7 +25,7 @@ export default function ServicesIndexPage() {
         />
         <div className="relative section-container py-14 md:py-20">
           <div className="max-w-2xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue-bright)" }}>
               What We Do
             </p>
             <h1

@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off)",
+  title: pageTitle("How to Choose a Plumber in Sydney Without Getting Ripped Off"),
   description:
     "Choosing the wrong plumber can cost you hundreds. Here is exactly what to check before you hire \u2014 licence, insurance, pricing, and red flags.",
   openGraph: {
     type: "article",
-    title: "How to Choose a Plumber in Sydney (Without Getting Ripped Off)",
+    title: "How to Choose a Plumber in Sydney Without Getting Ripped Off",
     description: "Choosing the wrong plumber can cost you hundreds. Here is exactly what to check before you hire — licence, insurance, pricing, and red flags.",
     url: "https://www.mrclog.com.au/blog/how-to-choose-a-plumber-in-sydney",
     siteName: "Mr. Clog Plumbing",
@@ -55,7 +56,7 @@ export default function BlogChoosePlumberPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Plumbing Advice</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Plumbing Advice</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>8 May 2026 · 5 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

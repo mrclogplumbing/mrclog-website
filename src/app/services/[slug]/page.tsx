@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import QuoteForm from "@/components/QuoteForm";
 import ReviewStrip from "@/components/ReviewStrip";
 import JobStories from "@/components/JobStories";
@@ -16,6 +17,7 @@ import { PhoneCallIcon, CheckCircleIcon } from "@/components/ui/ServiceIcons";
 
 const PHONE = "(02) 9139 8945";
 const PHONE_HREF = "tel:+61291398945";
+const BASE = "https://www.mrclog.com.au";
 
 export async function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -31,7 +33,7 @@ export async function generateMetadata({
   if (!service) return {};
   return {
     alternates: { canonical: `/services/${slug}` },
-    title: service.metaTitle,
+    title: pageTitle(service.metaTitle),
     description: service.metaDescription,
   };
 }
@@ -75,6 +77,20 @@ export default async function ServicePage({
           }),
         }}
       />
+      {/* Breadcrumb schema, matching the visible breadcrumb in the hero */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Services", item: `${BASE}/services` },
+              { "@type": "ListItem", position: 2, name: service.label, item: `${BASE}/services/${slug}` },
+            ],
+          }),
+        }}
+      />
       {/* Hero */}
       <section
         className="relative pt-16 flex items-center min-h-[50vh]"
@@ -86,7 +102,8 @@ export default async function ServicePage({
             alt={heroPhoto.alt}
             fill
             priority
-            sizes="100vw"
+            quality={60}
+            sizes="(max-width: 767px) 67vw, 100vw"
             className="object-cover"
             style={{ objectPosition: heroPhoto.focus ?? "center" }}
           />
@@ -102,9 +119,16 @@ export default async function ServicePage({
         />
         <div className="relative section-container py-16 md:py-24">
           <div className="max-w-3xl">
-            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue)" }}>
+            <p className="font-display text-sm font-semibold uppercase tracking-wider mb-3" style={{ color: "var(--color-brand-blue-bright)" }}>
               Mr. Clog Plumbing
             </p>
+            <nav aria-label="Breadcrumb" className="font-display text-sm mb-3">
+              <Link href="/services" className="text-white/70 hover:text-white no-underline">
+                Services
+              </Link>
+              <span className="text-white/60"> / </span>
+              <span className="text-white/60" aria-current="page">{service.label}</span>
+            </nav>
             <h1
               className="font-logo font-extrabold text-white mb-4"
               style={{ fontSize: "clamp(2rem, 5vw, 3.25rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}
@@ -180,7 +204,7 @@ export default async function ServicePage({
               <div className="mb-4 p-3 rounded-xl" style={{ background: "rgba(26,159,255,0.08)", border: "1px solid rgba(26,159,255,0.2)" }}>
                 <p className="text-xs font-semibold uppercase tracking-wider mb-1" style={{ color: "var(--color-brand-blue)" }}>Typical Cost</p>
                 <p className="text-sm font-medium text-gray-800">{service.typicalCost}</p>
-                <p className="text-xs text-gray-400 mt-0.5">Get an exact quote — call us or submit a request.</p>
+                <p className="text-xs text-gray-600 mt-0.5">Get an exact quote — call us or submit a request.</p>
               </div>
             )}
             <div className="mt-6 pt-5" style={{ borderTop: "1px solid rgba(26,159,255,0.2)" }}>
@@ -359,7 +383,7 @@ export default async function ServicePage({
           <h2 className="font-logo font-extrabold text-white text-3xl md:text-4xl mb-3">
             Ready to Book?
           </h2>
-          <p className="text-white/80 mb-8 font-display">
+          <p className="text-white mb-8 font-display">
             Call now for fast, reliable service — $0 call-out fee, available 24/7.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Gutters and Downpipes: The Storm Season Checklist for Sydney Homes",
+  title: pageTitle("Gutters and Downpipes: A Storm Season Checklist for Sydney"),
   description:
-    "Sydney storm season arrives fast in spring, and blocked gutters cause more ceiling damage than leaking roofs do. Here is a practical checklist to get your gutters, downpipes, and flashings ready before the first big downpour.",
+    "Blocked gutters cause more ceiling damage in Sydney storm season than leaking roofs. A checklist for gutters, downpipes and flashings before the first downpour.",
   openGraph: {
     type: "article",
-    title: "Gutters and Downpipes: The Storm Season Checklist for Sydney Homes",
-    description: "Sydney storm season arrives fast in spring, and blocked gutters cause more ceiling damage than leaking roofs do. Here is a practical checklist to get your gutters, downpipes, and flashings ready before the first big downpour.",
+    title: "Gutters and Downpipes: A Storm Season Checklist for Sydney",
+    description: "Blocked gutters cause more ceiling damage in Sydney storm season than leaking roofs. A checklist for gutters, downpipes and flashings before the first downpour.",
     url: "https://www.mrclog.com.au/blog/gutters-downpipes-storm-season-checklist",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-08-25",
@@ -42,7 +43,7 @@ export default function BlogGuttersDownpipesStormSeasonChecklistPage() {
       <BlogPostSchema
         slug="gutters-downpipes-storm-season-checklist"
         title="Gutters and Downpipes: The Storm Season Checklist for Sydney Homes"
-        description="Sydney storm season arrives fast in spring, and blocked gutters cause more ceiling damage than leaking roofs do. Here is a practical checklist to get your gutters, downpipes, and flashings ready before the first big downpour."
+        description="Blocked gutters cause more ceiling damage in Sydney storm season than leaking roofs. A checklist for gutters, downpipes and flashings before the first downpour."
         datePublished="2026-08-25"
         faqs={[{"q":"How often should gutters be cleaned in Sydney?","a":"Twice a year suits most homes — once before storm season in early spring and once in late autumn after leaf fall. Homes under gum trees or with a lot of overhanging cover often need it quarterly, because gum leaves and bark strip build up far faster than most people expect."},{"q":"Why does water overflow the front of my gutter during heavy rain?","a":"Usually one of three things: the gutter is blocked with debris, the downpipe below it cannot clear water fast enough, or the gutter has sagged so water pools instead of running to the outlet. If it only happens in very heavy rain and the gutter is clean, the downpipe or stormwater line is the likely restriction."},{"q":"Is a leaking gutter a roof plumber job or a general handyman job?","a":"Gutters, downpipes, flashings, and the stormwater connection are roof plumbing work, and in NSW that is licensed plumbing work. A licensed roof plumber can also confirm whether the water entering your ceiling is a gutter problem or a roof problem, which is not always obvious from inside."}]}
       />
@@ -52,7 +53,7 @@ export default function BlogGuttersDownpipesStormSeasonChecklistPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Roof Plumbing</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Roof Plumbing</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>25 August 2026 · 6 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

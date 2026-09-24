@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import Link from "next/link";
 import { PhoneCallIcon } from "@/components/ui/ServiceIcons";
 import TableOfContents from "@/components/blog/TableOfContents";
 import BlogPostSchema from "@/components/blog/BlogPostSchema";
 
 export const metadata: Metadata = {
-  title: "Why Your Hot Water Struggles in Winter (and How to Fix It)",
+  title: pageTitle("Why Your Hot Water Struggles in Winter (and How to Fix It)"),
   description:
-    "Lukewarm showers, water that runs out fast, or no hot water at all? Here is why hot water systems struggle every Sydney winter — and what to do before yours fails.",
+    "Lukewarm showers, water that runs out fast, or no hot water at all? Why hot water systems struggle every Sydney winter, and what to do before yours fails.",
   openGraph: {
     type: "article",
     title: "Why Your Hot Water Struggles in Winter (and How to Fix It)",
-    description: "Lukewarm showers, water that runs out fast, or no hot water at all? Here is why hot water systems struggle every Sydney winter — and what to do before yours fails.",
+    description: "Lukewarm showers, water that runs out fast, or no hot water at all? Why hot water systems struggle every Sydney winter, and what to do before yours fails.",
     url: "https://www.mrclog.com.au/blog/why-hot-water-struggles-in-winter",
     siteName: "Mr. Clog Plumbing",
     publishedTime: "2026-06-03",
@@ -42,7 +43,7 @@ export default function BlogHotWaterWinterPage() {
       <BlogPostSchema
         slug="why-hot-water-struggles-in-winter"
         title="Why Your Hot Water Struggles in Winter (and How to Fix It)"
-        description="Lukewarm showers, water that runs out fast, or no hot water at all? Here is why hot water systems struggle every Sydney winter — and what to do before yours fails."
+        description="Lukewarm showers, water that runs out fast, or no hot water at all? Why hot water systems struggle every Sydney winter, and what to do before yours fails."
         datePublished="2026-06-03"
         faqs={[{"q":"Why does my hot water run out faster in winter?","a":"Two reasons. The mains water entering your tank in winter is much colder, so it takes more energy to heat — and once you mix it with the cold tap to get a comfortable shower temperature, you draw the hot side down faster. A tank that gave you three good showers in summer might only manage two in July."},{"q":"Is it cheaper to fix or replace an old hot water system?","a":"If your unit is under 8 years old, repair almost always wins. Past 10–12 years, replacement usually pays for itself within a couple of years through lower running costs and no more emergency callouts. Anything over 15 years should be replaced — it is living on borrowed time."}]}
       />
@@ -52,7 +53,7 @@ export default function BlogHotWaterWinterPage() {
         <div className="relative section-container py-12 md:py-18">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue)" }}>Hot Water</span>
+              <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "rgba(26,159,255,0.2)", color: "var(--color-brand-blue-bright)" }}>Hot Water</span>
               <span className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>3 June 2026 · 4 min read</span>
             </div>
             <h1 className="font-logo font-extrabold text-white mb-3" style={{ fontSize: "clamp(1.8rem, 4.5vw, 3rem)", lineHeight: "1.1", letterSpacing: "-0.02em" }}>

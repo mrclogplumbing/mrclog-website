@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import { pageTitle } from "@/lib/seo";
 import { responseTimes } from "@/lib/response-times";
 import { reviews } from "@/lib/reviews";
 import ReviewsList from "./ReviewsList";
 import { reviewSummary, reviewCountLabel } from "@/lib/reviews-summary";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews",
+  title: pageTitle("Customer Reviews"),
   description:
-    "Real Google reviews for Mr. Clog Plumbing. Sydney homeowners share their experience with our emergency plumbing, blocked drains, hot water, and bathroom renovation work.",
+    "Real Google reviews for Mr. Clog Plumbing from Sydney customers: emergency plumbing, blocked drains, hot water and bathroom renovation work.",
   alternates: { canonical: "/reviews" },
   openGraph: {
     title: "Customer Reviews",
