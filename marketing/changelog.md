@@ -4,6 +4,21 @@ Every change the agents make, newest first. The monthly SEO pass uses the
 dates here to judge whether a change worked, so every published change
 gets a line. Prefixes: blog, web, refresh, revert.
 
+- 2026-09-25 web: /locations/concord - new suburb page for Concord under /locations/western-sydney (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/concord-west - new suburb page for Concord West under /locations/western-sydney (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/drummoyne - new suburb page for Drummoyne under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/homebush - new suburb page for Homebush under /locations/western-sydney (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/haberfield - new suburb page for Haberfield under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/lidcombe - new suburb page for Lidcombe under /locations/western-sydney (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/flemington - new suburb page for Flemington under /locations/western-sydney (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/summer-hill - new suburb page for Summer Hill under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/lilyfield - new suburb page for Lilyfield under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/rozelle - new suburb page for Rozelle under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/annandale - new suburb page for Annandale under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/dulwich-hill - new suburb page for Dulwich Hill under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/petersham - new suburb page for Petersham under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/stanmore - new suburb page for Stanmore under /locations/inner-west (suburb rollout routine, owner approved)
+- 2026-09-25 web: /locations/kellyville - new suburb page for Kellyville under /locations/hills-district (suburb rollout routine, owner approved)
 - 2026-09-24 web: site speed - hero photo on /, /services/* and suburb-service pages served lighter on phones (sizes + quality), Google Analytics library now loads after the page (lazyOnload), home service-area map no longer ships as client JS (owner approved, site review 24 Sep item 1)
 - 2026-09-24 web: /locations/sydney-cbd vs /locations/sydney-cbd-city and /locations/parramatta vs /locations/parramatta-cbd - region pages now "Sydney CBD & Inner City" / "Parramatta & Surrounding Suburbs", suburb pages the city-centre cores; new titles, H1s, metas, intros and a cross-link callout on each (owner approved)
 - 2026-09-24 web: titles and meta descriptions across the sitemap - all titles now 60 characters or fewer (brand suffix shortened or dropped when it doesn't fit, src/lib/seo.ts), all descriptions 160 or fewer, incl. blocked-drains/hot-water/pipe-relining suburb templates, 17 blog posts, offers, reviews, services (owner approved)

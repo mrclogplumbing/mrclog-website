@@ -1317,4 +1317,514 @@ export const suburbPages: Location[] = [
     metaTitle: "Plumber Glebe | Terrace Drains & Root Removal",
     metaDescription: "Local plumber in Glebe, Forest Lodge and Annandale. Blocked drains, tree root removal, pipe relining and stormwater for Victorian terraces. Call (02) 9139 8945.",
   },
+  {
+    slug: "concord",
+    parent: "western-sydney",
+    label: "Concord",
+    headline: "Plumber Concord",
+    subheadline: "Our home suburb — interwar bungalows, blocked drains and hot water across Concord, Cabarita and Mortlake.",
+    description:
+      "Mr. Clog is based in Concord, so this is the suburb we know best. Most of it filled in between the wars, when big estates were cut up and streets such as Finch, Evelyn, Corby and Edith Avenues were laid out down to Canada Bay. The typical house is a solid-brick bungalow with a hip roof, twin front gables and a brick verandah. The suburb is part of the City of Canada Bay.",
+    localContent:
+      "A Concord bungalow is now around a century old, and its plumbing usually is too unless someone has already replaced it. That means clay sewer running under the back garden, a water service that may still be galvanised steel, and a bathroom that has been renovated over the top of the original waste pipes. Concord calls itself the Parkland Suburb, and between the reserves, the Parramatta River bays and the established gardens, there is no shortage of trees looking for water. Because we are based here, Concord jobs are close to home for us.",
+    suburbs: ["Concord West", "Cabarita", "Mortlake", "Breakfast Point", "North Strathfield", "Five Dock"],
+    services: ["Blocked Drains", "Pipe Relining", "Hot Water Systems", "Water Pressure", "Emergency Plumbing", "Bathroom Renovations"],
+    commonProblems: [
+      {
+        title: "Interwar clay sewer under the garden",
+        body: "The bungalows built across Concord in the 1920s and 1930s drain through earthenware pipe with a joint every short length. After a century of garden trees growing over them, roots in those joints are the most common reason a Concord sewer backs up. A camera shows whether the pipe is sound enough to reline.",
+      },
+      {
+        title: "Galvanised water service in an unrenovated home",
+        body: "Many interwar homes were plumbed in galvanised steel, which rusts and narrows from the inside. The usual sign is a shower that gets weaker year by year, or brown water after the taps have sat unused. Replacing the service from the meter fixes the cause rather than the symptom.",
+      },
+      {
+        title: "New bathrooms on old waste lines",
+        body: "Concord homes have often been extended or had bathrooms added at the back, joined onto drainage laid when the house was built. When a newer bathroom drains slowly or gurgles, the fault is frequently where new pipe meets old, not in the fixture itself.",
+      },
+    ],
+    faqs: [
+      { q: "Are you actually local to Concord?", a: "Yes. Mr. Clog is based in Concord, and Concord, Cabarita, Mortlake and North Strathfield are the streets closest to home." },
+      { q: "My bungalow still has its original pipes. Should I replace them before they fail?", a: "Not blindly. A camera inspection of the sewer and a pressure test of the water service show what condition they are actually in, so you only spend money where it is needed." },
+      { q: "Can you reline a sewer under a driveway or established garden?", a: "Usually, yes. Relining is done through existing access points, so the driveway and garden stay where they are. If a section has collapsed completely, we will show you the footage and explain why it needs digging." },
+    ],
+    metaTitle: "Plumber Concord | Local Concord-Based Plumber",
+    metaDescription: "Mr. Clog is based in Concord. Blocked drains, pipe relining, hot water and emergency plumbing for Concord, Cabarita and Mortlake. Call (02) 9139 8945.",
+  },
+  {
+    slug: "concord-west",
+    parent: "western-sydney",
+    label: "Concord West",
+    headline: "Plumber Concord West",
+    subheadline: "Blocked drains, stormwater and hot water across Concord West, North Strathfield and Rhodes.",
+    description:
+      "Concord West sits between Concord, Rhodes and North Strathfield, with Powells Creek along its western side and Concord Repatriation General Hospital at its northern end. It became a suburb in its own right in 1993 and is in the City of Canada Bay. Mr. Clog is based next door in Concord.",
+    localContent:
+      "Powells Creek shapes a lot of Concord West. It starts as a concrete stormwater channel in Strathfield, turns into a mangrove-lined estuary at Bressington Park and runs on through Bicentennial Park into Homebush Bay. Canada Bay Council has studied flooding on the land near the creek at Concord West and North Strathfield, and that is where stormwater problems show up first in heavy rain. Away from the creek the jobs are the everyday ones for an established suburb: roots in older sewer lines, hot water units reaching the end of their life, and leaks in homes that have been renovated more than once.",
+    suburbs: ["Concord", "North Strathfield", "Rhodes", "Liberty Grove", "Homebush", "Mortlake"],
+    services: ["Stormwater Drainage", "Blocked Drains", "Hot Water Systems", "CCTV Drain Inspection", "Leak Detection", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Stormwater near Powells Creek",
+        body: "Properties on the low ground towards Powells Creek and Bressington Park have less fall to get rid of stormwater, and when the creek runs high, the water has nowhere to go. A silted pit or a blocked line on one of these blocks shows up as water sitting against the house during a storm.",
+      },
+      {
+        title: "Roots in the older sewer lines",
+        body: "Homes on the older streets still drain through clay pipe, and the parks and reserves that make Concord West green also send roots into those joints. A blockage that returns after each clearing is a sign to look at relining.",
+      },
+      {
+        title: "Mixed housing, mixed pipework",
+        body: "Concord West has older houses, knock-down rebuilds and townhouses on the same streets. A newer home can still connect to an older shared or council line, so a blockage is not always inside your own boundary. A camera tells you where it is.",
+      },
+    ],
+    faqs: [
+      { q: "My yard floods when Powells Creek is up. Can a plumber help?", a: "We can make sure your own stormwater lines, pits and grates are clear, sized correctly and falling the right way, which is what stops water sitting against the house. Flooding of the creek itself is a council and catchment matter." },
+      { q: "How close are you to Concord West?", a: "Mr. Clog is based in neighbouring Concord, so Concord West is on our doorstep." },
+      { q: "Do you work in Rhodes apartments too?", a: "Yes. We work for unit owners, tenants and strata managers in Rhodes as well as Concord West." },
+    ],
+    metaTitle: "Plumber Concord West | Drains, Stormwater & Hot Water",
+    metaDescription: "Local plumber in Concord West, North Strathfield and Rhodes, based next door in Concord. Blocked drains, stormwater and hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "drummoyne",
+    parent: "inner-west",
+    label: "Drummoyne",
+    headline: "Plumber Drummoyne",
+    subheadline: "Waterfront homes, apartments and heritage houses across Drummoyne, Five Dock and Russell Lea.",
+    description:
+      "Drummoyne is a peninsula, with the Parramatta River around three sides, Iron Cove on one flank and Five Dock Bay on the other. It is the administrative centre of the City of Canada Bay. The Drummoyne Park Estate was subdivided in the early 1880s and built up with Victorian Italianate houses and then Federation homes, and over recent decades many waterfront houses have made way for apartments and townhouses. Mr. Clog is based in nearby Concord.",
+    localContent:
+      "Plumbing in Drummoyne splits roughly by street. Along the water, much of the work is in apartment buildings and townhouse complexes, where a leak or a blocked stack affects more than one owner. Inland, the older houses have the problems of their age: clay sewer, original water services, and bathrooms added long after the house was built. The fall of the land down to the river matters too. Stormwater runs downhill fast, and a blocked line on a sloping block overflows rather than draining slowly.",
+    suburbs: ["Five Dock", "Russell Lea", "Abbotsford", "Rodd Point", "Chiswick", "Rozelle"],
+    services: ["Blocked Drains", "Leak Detection", "Stormwater Drainage", "Hot Water Systems", "Pipe Relining", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Leaks between apartments",
+        body: "In the apartment blocks along the water, a failed shower seal, flexible hose or waste pipe shows up in the ceiling of the unit below. Finding the source quickly limits the damage and settles whether it is a private repair or a strata matter.",
+      },
+      {
+        title: "Stormwater on sloping blocks",
+        body: "The land falls towards the river on most sides of the peninsula. When a stormwater line or pit on a sloping block is blocked, heavy rain goes over the top and towards the house or the neighbour below.",
+      },
+      {
+        title: "Victorian and Federation houses on original drainage",
+        body: "The older houses inland still often run their first sewer line. Roots at the clay joints and sections that have dropped are the usual causes of a blockage that keeps coming back.",
+      },
+    ],
+    faqs: [
+      { q: "Water is coming through my ceiling from the unit above. What should I do?", a: "Tell your neighbour and your strata manager straight away, and turn off the water to the affected fixture if you can. We find where the leak starts and document it, so repairs and responsibility can be sorted out." },
+      { q: "Are you local to Drummoyne?", a: "Yes. Mr. Clog is based in Concord, just along the river." },
+      { q: "Do you work on heritage homes in Drummoyne?", a: "Yes. Part of the Drummoyne shopping centre is a heritage conservation area, and we favour repairs such as relining that do not disturb period features." },
+    ],
+    metaTitle: "Plumber Drummoyne | Apartments, Leaks & Drains",
+    metaDescription: "Local plumber in Drummoyne, Five Dock and Russell Lea, based in nearby Concord. Leak detection, blocked drains, stormwater and hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "homebush",
+    parent: "western-sydney",
+    label: "Homebush",
+    headline: "Plumber Homebush",
+    subheadline: "Heritage Village homes and new apartment blocks across Homebush, North Strathfield and Homebush West.",
+    description:
+      "Homebush is really two suburbs split by the railway. South of the line is the Village, subdivided from the Underwood Estate in 1878, with Victorian and Edwardian houses and heritage conservation areas along Abbotsford Road and Meredith Street. North of the line, where the abattoir and brickworks operated until the late 1980s, is mostly apartments built this century. It is in the Strathfield Municipal Council area, a short drive from our base in Concord.",
+    localContent:
+      "The two halves of Homebush need very different plumbing. In the Village, the work is on old houses: original clay sewer, galvanised water services and bathrooms that need planning around heritage fabric. North of the railway, it is apartment plumbing: shared stacks, hot water plant, leaks between units and strata responsibility. Powells Creek runs along the north and east of the suburb and Saleyards Creek along the west, both draining towards Homebush Bay.",
+    suburbs: ["North Strathfield", "Strathfield", "Homebush West", "Concord West", "Flemington", "Sydney Olympic Park"],
+    services: ["Blocked Drains", "Leak Detection", "Pipe Relining", "Hot Water Systems", "Water Pressure", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Old sewer lines in the Village",
+        body: "Houses from the 1880s to the early 1900s south of the railway often still drain through their first earthenware sewer. Roots and shifted joints cause recurring blockages, and relining avoids digging through heritage gardens.",
+      },
+      {
+        title: "Shared stacks in the newer apartment blocks",
+        body: "In the apartments north of the line, several units drain into one stack. A blockage low in the building backs up into the lowest units first, even though they may not have caused it.",
+      },
+      {
+        title: "Pressure loss in older water services",
+        body: "Older homes that still have galvanised pipe lose flow as it corrodes internally. It tends to show first at the fixture furthest from the meter.",
+      },
+    ],
+    faqs: [
+      { q: "Do you work on heritage homes in the Homebush Village?", a: "Yes. We plan work around the heritage conservation areas and favour methods such as relining that leave period features alone." },
+      { q: "My apartment's floor waste is backing up. Is it my problem?", a: "Often it is a blockage in the shared stack below you rather than in your unit. We find where it is so the owner or the owners corporation can deal with it." },
+      { q: "Are you close to Homebush?", a: "Yes. Mr. Clog is based in Concord, just to the north." },
+    ],
+    metaTitle: "Plumber Homebush | Heritage Homes & Apartments",
+    metaDescription: "Local plumber in Homebush and North Strathfield, based nearby in Concord. Blocked drains, apartment leaks, pipe relining and hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "haberfield",
+    parent: "inner-west",
+    label: "Haberfield",
+    headline: "Plumber Haberfield",
+    subheadline: "Federation garden-suburb plumbing across Haberfield, Five Dock and Ashfield.",
+    description:
+      "Haberfield was built from 1901 as a planned garden suburb, marketed as 'slumless, laneless and publess'. It has around 1,500 detached double-brick Federation and bungalow houses on long, narrow lots, with slate or Marseilles tile roofs and leadlight windows. The whole suburb is a heritage conservation area under Inner West Council. Mr. Clog is based a few minutes away in Concord.",
+    localContent:
+      "No back lanes is part of what makes Haberfield what it is, and it also shapes every plumbing job here. Access to the rear of the property is down the side of the house, so drainage work is planned around the side path, the garden and the heritage fabric of the house. The houses are all roughly the same age, which means their plumbing tends to wear out in the same ways: original clay sewer lines, galvanised water services and roof drainage on slate and terracotta roofs. The suburb is bordered by Iron Cove, Hawthorne Canal and Iron Cove Creek, and sits in both the Hawthorne Canal and Dobroyd Canal flood catchments.",
+    suburbs: ["Five Dock", "Ashfield", "Summer Hill", "Leichhardt", "Lilyfield", "Rodd Point"],
+    services: ["Pipe Relining", "Blocked Drains", "CCTV Drain Inspection", "Roof Plumbing", "Stormwater Drainage", "Bathroom Renovations"],
+    commonProblems: [
+      {
+        title: "No rear lane for access",
+        body: "Haberfield was designed without back lanes, so everything reaches the back yard down the side of the house. Relining through an existing access point is often the practical choice over excavating a long sewer run that way.",
+      },
+      {
+        title: "Century-old sewer on long lots",
+        body: "Lots here are about 150 feet deep, so drainage runs are long, passing under garden beds and paths. A run that long in original earthenware has many joints for roots to find.",
+      },
+      {
+        title: "Gutters and downpipes on heritage roofs",
+        body: "Slate and Marseilles tile roofs need care to work on, and their box gutters and downpipes are often original. A blocked or corroded outlet sends water into the ceiling or down the wall rather than into the stormwater.",
+      },
+    ],
+    faqs: [
+      { q: "Does heritage protection limit plumbing work in Haberfield?", a: "Routine repairs are not usually affected, but anything that changes the look of the house or its setting may need approval. We tell you before we start if something needs council sign-off." },
+      { q: "How do you get equipment in without a back lane?", a: "Down the side path, with protection for paths and garden. Relining is often chosen because it needs little room to work." },
+      { q: "Are you local?", a: "Yes. Mr. Clog is based in Concord, a few minutes away." },
+    ],
+    metaTitle: "Plumber Haberfield | Federation Homes & Relining",
+    metaDescription: "Local plumber in Haberfield and Five Dock, based nearby in Concord. Pipe relining, blocked drains and roof plumbing for Federation homes. Call (02) 9139 8945.",
+  },
+  {
+    slug: "lidcombe",
+    parent: "western-sydney",
+    label: "Lidcombe",
+    headline: "Plumber Lidcombe",
+    subheadline: "Blocked drains, stormwater and apartment plumbing across Lidcombe, Berala and Rookwood.",
+    description:
+      "Lidcombe grew up around Rookwood Cemetery, which opened in 1868, and was known as Rookwood until it was renamed in the 1910s. Industry followed, and so did housing, including the Marne Park soldiers' settlement of almost 100 homes built in 1920–22. The old Lidcombe Hospital precinct is now residential. Most of the suburb is in Cumberland Council, with a small industrial area in the north in the City of Parramatta. Mr. Clog is based nearby in Concord.",
+    localContent:
+      "Haslams Creek is the local factor to know. It rises in Rookwood, runs through Lidcombe in lined channels and pipes, and drains to Homebush Bay. Cumberland Council's Haslams Creek flood study records both overbank flooding and pipe drainage surcharging, so stormwater that backs up in a storm is a known local problem, not just bad luck. For homes, the work ranges from the older houses built between the wars to its apartment blocks, which make up a large share of Lidcombe's homes, where shared drainage and leaks between units are the common calls.",
+    suburbs: ["Berala", "Auburn", "Rookwood", "Silverwater", "Flemington", "Newington"],
+    services: ["Stormwater Drainage", "Blocked Drains", "Leak Detection", "Hot Water Systems", "Pipe Relining", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Stormwater surcharging near Haslams Creek",
+        body: "When the creek and the pipes feeding it are full, stormwater backs up through pits and gullies. We check that your own lines and pits are clear and have the right fall, so they empty as soon as the system can take them.",
+      },
+      {
+        title: "Interwar homes on original drainage",
+        body: "Homes from Lidcombe's 1920s growth, including those around Marne Park, are now a century old. Their clay sewer and galvanised water pipes are often original and are nearing the end of their working life.",
+      },
+      {
+        title: "Shared drainage in apartment blocks",
+        body: "In Lidcombe's apartment blocks, one blocked stack or failed seal can affect several units. Pinpointing the fault settles whether it is a job for the owner or for strata.",
+      },
+    ],
+    faqs: [
+      { q: "Our street floods in big storms. Can you stop water getting into the house?", a: "We can make sure your property's own stormwater drains, pits and grates are clear and working. Flooding from the creek or the council system itself is a matter for Cumberland Council." },
+      { q: "Do you work with strata in Lidcombe?", a: "Yes, for owners, tenants and strata managers, with camera footage or a written report where it helps." },
+      { q: "How far are you from Lidcombe?", a: "Mr. Clog is based in Concord, a short drive east." },
+    ],
+    metaTitle: "Plumber Lidcombe | Stormwater, Drains & Strata",
+    metaDescription: "Local plumber in Lidcombe, Berala and Auburn, based nearby in Concord. Stormwater, blocked drains, apartment leaks and hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "flemington",
+    parent: "western-sydney",
+    label: "Flemington",
+    headline: "Plumber Flemington",
+    subheadline: "Homes, shops and commercial plumbing across Flemington (Homebush West), Homebush and Lidcombe.",
+    description:
+      "Flemington has officially been called Homebush West since 1992, but most people still call it Flemington. It was the site of cattle saleyards, then Sydney Markets from 1975, and much of its housing was built for workers at the Ford factory that operated there from 1935 to 1994. It is in the Strathfield Municipal Council area, close to our base in Concord.",
+    localContent:
+      "Flemington's plumbing reflects its working history. Houses built for Ford workers are modest homes now decades old, often on their original sewer and water pipes. The shops on The Crescent and Henley Road beside the station are full of Vietnamese and other Asian eateries, grocers and butchers, which means grease and food waste in the drains. Saleyards Creek runs along the Homebush boundary in a concrete channel, lined in the 1930s, and partly under Sydney Markets, and the A3 cuts through the middle of the suburb.",
+    suburbs: ["Homebush", "Lidcombe", "Strathfield", "Rookwood", "Sydney Markets", "Sydney Olympic Park"],
+    services: ["Blocked Drains", "Kitchen Plumbing", "Jet Blasting", "Hot Water Systems", "Pipe Relining", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Grease in food-business drains",
+        body: "Restaurants, butchers and grocers around Flemington station put grease and food waste into their drains every day. Without regular jetting and grease trap servicing, the blockage usually arrives during trade.",
+      },
+      {
+        title: "Older workers' housing on original pipes",
+        body: "Many homes built for Ford workers still have their first sewer and water pipes. Recurring blockages and falling water pressure are the usual signs those pipes are near the end.",
+      },
+      {
+        title: "Mixing home and shop drainage",
+        body: "Shop-top housing and houses converted to businesses often share drainage between a commercial kitchen and a home. A fault in one shows up in the other, so the whole line needs checking.",
+      },
+    ],
+    faqs: [
+      { q: "Is Flemington the same as Homebush West?", a: "Yes. Homebush West has been the official name since 1992, but Flemington is still widely used. We cover both names and the streets around the markets." },
+      { q: "Can you jet our restaurant's drains outside trading hours?", a: "Yes. We schedule commercial drain cleaning early or late so it does not interrupt service." },
+      { q: "Are you nearby?", a: "Yes. Mr. Clog is based in Concord, just north-east of Flemington." },
+    ],
+    metaTitle: "Plumber Flemington | Homebush West Homes & Shops",
+    metaDescription: "Local plumber in Flemington (Homebush West), Homebush and Lidcombe, based in nearby Concord. Blocked drains, grease, hot water. Call (02) 9139 8945.",
+  },
+  {
+    slug: "summer-hill",
+    parent: "inner-west",
+    label: "Summer Hill",
+    headline: "Plumber Summer Hill",
+    subheadline: "Victorian villas, apartments and canal-side drainage across Summer Hill, Lewisham and Ashfield.",
+    description:
+      "Summer Hill grew after its railway station opened in 1879 and was a well-to-do suburb until about 1910. Its heritage conservation areas protect Victorian Italianate and Filigree houses in stuccoed brick, weatherboard cottages, and Federation and interwar homes, while almost two-thirds of its dwellings are now apartments. It is in the Inner West Council area, a short drive from our base in Concord.",
+    localContent:
+      "Hawthorne Canal is the thing to understand about drainage in Summer Hill. Once Long Cove Creek, it runs through Lewisham, Summer Hill, Haberfield and Leichhardt to Iron Cove, and the council's flood study shows flooding concentrated along the canal and along overland flow paths through the streets. Stormwater that backs up in a storm often comes down to where a property sits on one of those paths. The housing adds the rest: very old houses on original drainage, and many apartment blocks with shared plumbing.",
+    suburbs: ["Lewisham", "Ashfield", "Haberfield", "Dulwich Hill", "Petersham", "Croydon"],
+    services: ["Stormwater Drainage", "Blocked Drains", "Pipe Relining", "Leak Detection", "Hot Water Systems", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Overland flow towards Hawthorne Canal",
+        body: "Properties on the overland flow paths towards the canal take water from streets further up in heavy rain. Blocked grates and undersized stormwater lines make it worse, and fixing them is within reach even when the canal is full.",
+      },
+      {
+        title: "Stuccoed Victorian houses on first-generation drainage",
+        body: "Some houses built from the late 1870s onward have drainage that has never been replaced. Cracked earthenware, roots and joints that have pulled apart are all common.",
+      },
+      {
+        title: "Apartment plumbing",
+        body: "With most homes in Summer Hill now apartments, many calls involve shared plumbing: a blocked stack, a leak into the unit below, or a building hot water system. Finding the exact source settles who is responsible.",
+      },
+    ],
+    faqs: [
+      { q: "Water comes into my yard from the street when it pours. Can that be fixed?", a: "Often it can be reduced. We check that your grates, pits and stormwater lines are clear and large enough, and that surface water is directed away from the house." },
+      { q: "Do you work on heritage houses in Summer Hill?", a: "Yes. We plan around the conservation areas and favour repairs such as relining that keep period fabric intact." },
+      { q: "Are you local?", a: "Mr. Clog is based in Concord, close to Summer Hill." },
+    ],
+    metaTitle: "Plumber Summer Hill | Heritage Homes & Stormwater",
+    metaDescription: "Local plumber in Summer Hill, Lewisham and Ashfield, based in nearby Concord. Stormwater, blocked drains, relining and apartment leaks. Call (02) 9139 8945.",
+  },
+  {
+    slug: "lilyfield",
+    parent: "inner-west",
+    label: "Lilyfield",
+    headline: "Plumber Lilyfield",
+    subheadline: "Cottages, semis and low-lying drainage across Lilyfield, Leichhardt and Rozelle.",
+    description:
+      "Lilyfield only became a formal suburb in 1977, and its boundaries were extended to Iron Cove in 1993. The goods railway line splits it in two. The south is small brick and weatherboard cottages, terraces and semi-detached houses, and the north holds Callan Park, Leichhardt Park and the Iron Cove foreshore. Inner West Council looks after the suburb, and Mr. Clog is based nearby in Concord.",
+    localContent:
+      "Whites Creek runs between Lilyfield and Annandale down to Rozelle Bay. It was turned into a brick and concrete channel between 1898 and 1935, and the heritage-listed White's Creek Aqueduct on Piper Street still carries a sewer across it. The council's floodplain plan says most flooding in Lilyfield is overland flow, when pits and pipes overflow in heavy rain. Add small cottages and semis on narrow lots, often sharing drainage, and the local work is a mix of stormwater, old sewer lines and tight access.",
+    suburbs: ["Leichhardt", "Rozelle", "Annandale", "Haberfield", "Rodd Point", "Balmain"],
+    services: ["Stormwater Drainage", "Blocked Drains", "Pipe Relining", "CCTV Drain Inspection", "Hot Water Systems", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Pits and pipes overflowing in storms",
+        body: "With overland flow the main flood risk, a silted pit or blocked stormwater line on your own property makes a big difference. Keeping them clear and correctly graded is where a plumber can help.",
+      },
+      {
+        title: "Semis sharing a sewer line",
+        body: "Semi-detached houses and small cottages often share a drain with the neighbour. When it blocks, both homes are affected, and pinpointing the fault with a camera settles whose side it is on.",
+      },
+      {
+        title: "Weatherboard cottages with raised floors",
+        body: "Many older timber cottages have pipes running under the floor, and a slow leak there can go unnoticed for a long time. Damp smells or a rising water bill are the usual clues.",
+      },
+    ],
+    faqs: [
+      { q: "Why does my drain overflow when it rains hard?", a: "Usually stormwater is getting into the sewer, or your stormwater line or pit is blocked. We camera the line to find which before quoting." },
+      { q: "Can you work in narrow Lilyfield cottages?", a: "Yes. We bring gear through the house with floor protection, or use the side path where there is one." },
+      { q: "Where are you based?", a: "Mr. Clog is based in Concord, and Lilyfield is an easy run in from there." },
+    ],
+    metaTitle: "Plumber Lilyfield | Stormwater & Blocked Drains",
+    metaDescription: "Local plumber in Lilyfield, Leichhardt and Rozelle, based in nearby Concord. Stormwater, blocked drains, relining and emergency plumbing. Call (02) 9139 8945.",
+  },
+  {
+    slug: "rozelle",
+    parent: "inner-west",
+    label: "Rozelle",
+    headline: "Plumber Rozelle",
+    subheadline: "Workers' cottages, terraces and apartments across Rozelle, Balmain and Lilyfield.",
+    description:
+      "Rozelle was Balmain West until 1892. Much of it was subdivided between 1860 and 1882, including Alfred Hancock's 'Homes for the People', many built in weatherboard and corrugated iron and sold to working men on instalments. Today it is a mix of terraces and semis, apartments and houses, with Iron Cove on one side and Rozelle and White Bays on the other. The suburb falls under Inner West Council, and our base in Concord is a short drive away.",
+    localContent:
+      "Rozelle's housing is some of the oldest in the Inner West, and it was built cheaply and quickly for working families. Many of those small homes have been renovated several times, with each round leaving another layer of pipework. That is what shows up here: waste lines joined in odd places, old clay sewer under newer bathrooms, and leaks hidden under timber floors. Around Victoria Road and in the apartment blocks, the calls are more often about shared drainage and leaks between units.",
+    suburbs: ["Balmain", "Lilyfield", "Birchgrove", "Leichhardt", "Annandale", "Drummoyne"],
+    services: ["Blocked Drains", "Leak Detection", "Pipe Relining", "Bathroom Renovations", "Hot Water Systems", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Layers of renovation",
+        body: "Nineteenth-century cottages that have been renovated several times often have new plumbing joined to old in awkward places. A slow drain or a smell that will not go away is often at one of those joins.",
+      },
+      {
+        title: "Original clay sewer",
+        body: "Under the bathrooms and kitchens, the sewer line to the street is frequently still the original earthenware. Roots and cracks cause blockages that return, and relining is often the lasting fix.",
+      },
+      {
+        title: "Hidden leaks under timber floors",
+        body: "Older cottages with suspended floors can leak for months before anyone notices. A rising water bill, a musty smell or a soft floor near a wet area are worth checking.",
+      },
+    ],
+    faqs: [
+      { q: "Should I replace the old plumbing while I'm renovating?", a: "It is the cheapest time to do it. We can camera the sewer and check the water service first, so you know what needs replacing before the walls are closed." },
+      { q: "Do you work on apartments near Victoria Road?", a: "Yes. We take calls from owners, renters and strata managers in Rozelle's apartment buildings." },
+      { q: "Are you nearby?", a: "Yes. Mr. Clog is based in Concord, on the other side of Five Dock and Russell Lea." },
+    ],
+    metaTitle: "Plumber Rozelle | Cottages, Terraces & Apartments",
+    metaDescription: "Local plumber in Rozelle, Balmain and Lilyfield, based in nearby Concord. Blocked drains, leak detection, relining and renovations. Call (02) 9139 8945.",
+  },
+  {
+    slug: "annandale",
+    parent: "inner-west",
+    label: "Annandale",
+    headline: "Plumber Annandale",
+    subheadline: "Victorian villas, terraces and creek-side drainage across Annandale, Stanmore and Camperdown.",
+    description:
+      "Annandale was developed from 1877, when John Young bought the Johnston estate and laid out a grid around Johnston Street, the first 30-metre-wide street in Sydney. Boom-period Victorian villas and Gothic Revival houses sit alongside terraces and semis built for tradespeople and workers, and much of the suburb is a heritage conservation area. Annandale is part of Inner West Council, and Mr. Clog works there from our base in Concord.",
+    localContent:
+      "Annandale sits between two creeks: Johnstons Creek on its eastern boundary and Whites Creek on the west, both turned into brick and concrete channels in the late nineteenth and early twentieth centuries. Inner West Council notes that many natural drainage lines here were built over and piped, which is why low spots flood when the pipes cannot keep up. The houses add their own problems: Victorian drainage, cast iron and clay, and a lot of it still in service.",
+    suburbs: ["Leichhardt", "Stanmore", "Camperdown", "Glebe", "Forest Lodge", "Lilyfield"],
+    services: ["Stormwater Drainage", "Pipe Relining", "Blocked Drains", "CCTV Drain Inspection", "Roof Plumbing", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Built-over drainage lines",
+        body: "Where old watercourses were piped and built over, water still follows its natural course in a big storm. Properties on those low spots need their own stormwater to be clear and flowing to cope.",
+      },
+      {
+        title: "Victorian villa drainage",
+        body: "The large villas from the 1880s and 1890s have long, branching drainage systems, and many are still largely original. Roots, cracked clay and failing cast iron all turn up, often in the same property.",
+      },
+      {
+        title: "Terraces and semis sharing a line",
+        body: "In the terrace and semi streets, a sewer line is often shared with the neighbour. A camera locates the blockage so it is clear whose side it is on before anyone pays.",
+      },
+    ],
+    faqs: [
+      { q: "Why does water pool around my Annandale house in a storm?", a: "Often it is a blocked grate or stormwater line, or the property sits on an old drainage path. We find the cause and tell you what will actually help." },
+      { q: "Do you work on heritage villas in Annandale?", a: "Yes. We favour repairs such as relining that avoid disturbing heritage fabric, and tell you upfront if approval is needed." },
+      { q: "Where are you based?", a: "Mr. Clog is based in Concord, a short drive west of Annandale." },
+    ],
+    metaTitle: "Plumber Annandale | Heritage Homes & Stormwater",
+    metaDescription: "Local plumber in Annandale, Stanmore and Camperdown, based in nearby Concord. Stormwater, pipe relining and blocked drains. Call (02) 9139 8945.",
+  },
+  {
+    slug: "dulwich-hill",
+    parent: "inner-west",
+    label: "Dulwich Hill",
+    headline: "Plumber Dulwich Hill",
+    subheadline: "Federation bungalows, apartments and stormwater across Dulwich Hill, Hurlstone Park and Marrickville.",
+    description:
+      "Dulwich Hill grew after trams arrived in 1889 and the railway in 1895, and much of it is Federation housing. In the south, orchards and market gardens were subdivided in the early 1900s and built out by 1920 with single-storey face-brick bungalows with slate roofs. More than half its homes are now apartments. The light rail runs on the old goods line, and the suburb stretches south to the Cooks River. Dulwich Hill is governed by Inner West Council; Mr. Clog is based in Concord.",
+    localContent:
+      "The south of Dulwich Hill runs down to the Cooks River and is covered by the council's Marrickville South flood study, while parts of the north drain to Hawthorne Canal. That gives the suburb two separate stormwater stories depending on which side of the hill you are on. The Federation bungalows of the South Dulwich Hill conservation area are more than a century old, and slate roofs, original gutters and first-generation clay sewer are still common among them.",
+    suburbs: ["Hurlstone Park", "Marrickville", "Summer Hill", "Lewisham", "Petersham", "Earlwood"],
+    services: ["Stormwater Drainage", "Roof Plumbing", "Blocked Drains", "Pipe Relining", "Hot Water Systems", "Leak Detection"],
+    commonProblems: [
+      {
+        title: "Stormwater on the Cooks River side",
+        body: "Streets falling towards the Cooks River take water from higher up in heavy rain. A blocked line or undersized pit shows up as ponding in the yard or water against the house.",
+      },
+      {
+        title: "Slate roofs and original gutters",
+        body: "Federation bungalows with slate roofs often keep their original gutters and downpipes. Rust, blocked outlets and failed joints send water into eaves and walls, and slate needs care to walk on.",
+      },
+      {
+        title: "Apartment blocks with ageing plumbing",
+        body: "More than half of Dulwich Hill's homes are apartments, where stacks and water pipes are shared. A leak into the unit below or a blocked common drain affects more than one owner.",
+      },
+    ],
+    faqs: [
+      { q: "Can you work on a slate roof?", a: "Yes. We repair and replace gutters and downpipes on slate roofs with care, and we will tell you if slate itself needs a roofer." },
+      { q: "Does the Inner West heritage overlay affect plumbing work?", a: "Most repairs are not affected. Visible changes to a house in a conservation area may need approval, and we flag that before starting." },
+      { q: "Are you local?", a: "Mr. Clog is based in Concord, and Dulwich Hill is well within our local area." },
+    ],
+    metaTitle: "Plumber Dulwich Hill | Federation Homes & Stormwater",
+    metaDescription: "Local plumber in Dulwich Hill, Hurlstone Park and Marrickville, based in nearby Concord. Stormwater, roof plumbing, blocked drains. Call (02) 9139 8945.",
+  },
+  {
+    slug: "petersham",
+    parent: "inner-west",
+    label: "Petersham",
+    headline: "Plumber Petersham",
+    subheadline: "Terraces, Victorian houses and restaurant drains across Petersham, Lewisham and Stanmore.",
+    description:
+      "Petersham is one of the Inner West's oldest suburbs: its railway opened in 1857 and it became a municipality in 1871. It is mostly terraces, with larger Victorian and Edwardian houses around Petersham Park, and the stretch of Audley Street known as Little Portugal. Its council is Inner West Council, and Mr. Clog is based a few suburbs away in Concord.",
+    localContent:
+      "Johnstons Creek begins in Petersham, and the suburb sits in both the Johnstons and Whites Creek flood study area and the Hawthorne Canal catchment. That makes stormwater a real consideration on the lower streets. On the higher ground, the work is about age: terraces and Victorian houses with original clay sewer and cast iron waste. And around the Portuguese restaurants and cafes, commercial kitchens need their drains and grease traps kept clear.",
+    suburbs: ["Lewisham", "Stanmore", "Leichhardt", "Marrickville", "Dulwich Hill", "Summer Hill"],
+    services: ["Blocked Drains", "Kitchen Plumbing", "Jet Blasting", "Pipe Relining", "Stormwater Drainage", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Grease in restaurant drains",
+        body: "Commercial kitchens around Audley Street put grease into their drains daily. Regular jetting and grease trap servicing stop the blockage that otherwise arrives mid-service.",
+      },
+      {
+        title: "Cast iron waste in Victorian homes",
+        body: "Older houses often still have cast iron waste pipes, which rust from the inside. Slow drains, stains on walls near joints and persistent smells are early signs.",
+      },
+      {
+        title: "Stormwater at the head of Johnstons Creek",
+        body: "Lower-lying streets towards the creek collect water in heavy rain. Clear pits and correctly graded stormwater lines are what keep it away from the house.",
+      },
+    ],
+    faqs: [
+      { q: "Can you service our restaurant's drains before opening?", a: "Yes. We schedule commercial drain cleaning outside trading hours." },
+      { q: "My terrace drain keeps blocking. Why?", a: "Usually roots or cracks in the old clay sewer. A camera inspection shows whether relining will fix it for good." },
+      { q: "Where are you based?", a: "Mr. Clog is based in Concord, a few suburbs west of Petersham." },
+    ],
+    metaTitle: "Plumber Petersham | Terraces & Restaurant Drains",
+    metaDescription: "Local plumber in Petersham, Lewisham and Stanmore, based in nearby Concord. Blocked drains, grease jetting, relining and stormwater. Call (02) 9139 8945.",
+  },
+  {
+    slug: "stanmore",
+    parent: "inner-west",
+    label: "Stanmore",
+    headline: "Plumber Stanmore",
+    subheadline: "Victorian villas and Federation cottages across Stanmore, Enmore and Camperdown.",
+    description:
+      "Stanmore was subdivided in the 1880s and 1890s and grew up around its railway station, which opened in 1878, with Victorian villas, terraces, semis and Federation cottages. Several heritage conservation areas cover its northern streets, and Newington College and the Parramatta Road strip sit on its edges. Stanmore is in Inner West Council's area, near our Concord base.",
+    localContent:
+      "Percival Road is a useful dividing line in Stanmore: east of it, stormwater heads to Johnstons Creek, and west of it to Whites Creek, and both are covered by the council's flood study. The housing is almost all late Victorian and Federation, so the plumbing problems are the ones that come with that age. Many of these homes have been renovated inside while the drains under them have not been touched.",
+    suburbs: ["Enmore", "Camperdown", "Annandale", "Petersham", "Newtown", "Leichhardt"],
+    services: ["Pipe Relining", "Blocked Drains", "CCTV Drain Inspection", "Leak Detection", "Hot Water Systems", "Bathroom Renovations"],
+    commonProblems: [
+      {
+        title: "Renovated homes on original drains",
+        body: "A new kitchen or bathroom often drains into a sewer line laid over a century ago. When the old pipe cracks or roots get in, the new fittings are the first to show it.",
+      },
+      {
+        title: "Tight access to terraces and semis",
+        body: "Terraces and semis in Stanmore often have no side access, so equipment comes through the house. No-dig relining through an existing access point avoids lifting floors or courtyards.",
+      },
+      {
+        title: "Stormwater on the low side of each catchment",
+        body: "Streets falling towards Johnstons or Whites Creek take water from higher up in a storm. A blocked grate or line on those properties turns heavy rain into water in the house.",
+      },
+    ],
+    faqs: [
+      { q: "My renovated bathroom drains slowly. Is it the new work?", a: "Not necessarily. The fault is often in the old sewer line the new bathroom drains into. A camera inspection shows where it is." },
+      { q: "Do you work in Stanmore's conservation areas?", a: "Yes. Routine plumbing is rarely affected, and we tell you before starting if anything needs approval." },
+      { q: "Are you local?", a: "Mr. Clog is based in Concord, and Stanmore is one of the Inner West suburbs close to our base." },
+    ],
+    metaTitle: "Plumber Stanmore | Relining & Blocked Drains",
+    metaDescription: "Local plumber in Stanmore, Enmore and Camperdown, based in nearby Concord. Pipe relining, blocked drains and plumbing for older homes. Call (02) 9139 8945.",
+  },
+  {
+    slug: "kellyville",
+    parent: "hills-district",
+    label: "Kellyville",
+    headline: "Plumber Kellyville",
+    subheadline: "Recycled water, new estates and hot water across Kellyville, Beaumont Hills and Kellyville Ridge.",
+    description:
+      "Kellyville was semi-rural for most of the twentieth century. Around 900 homes were built near Acres Road from the 1960s to the 1980s, and new housing estates spread through the suburb from the 1990s. Kellyville Metro station opened in 2019. Cattai, Caddies and Second Ponds Creeks run through it, and it is in The Hills Shire.",
+    localContent:
+      "Kellyville is inside Sydney Water's Rouse Hill recycled water area, one of the oldest and largest residential recycling schemes in the world, with recycled water flowing to homes since 2001. Many homes here have two water supplies: drinking water, and recycled water in purple pipes for toilets, gardens and washing machines. That changes plumbing work. Any alteration has to keep the two systems completely separate, and it is worth knowing which taps are which before you connect a hose or a new appliance. The newer estates also have their own issues as homes pass fifteen or twenty years: hot water systems reaching the end of their life and fittings starting to leak.",
+    suburbs: ["Beaumont Hills", "Kellyville Ridge", "North Kellyville", "Castle Hill", "Bella Vista", "Rouse Hill"],
+    services: ["Hot Water Systems", "Leak Detection", "Blocked Drains", "Water Pressure", "Taps & Toilets", "Emergency Plumbing"],
+    commonProblems: [
+      {
+        title: "Recycled water connections",
+        body: "Homes on the Rouse Hill scheme have purple recycled water pipes alongside the drinking water. Renovations, new appliances and garden work must connect to the right one, and a cross-connection between them is a health risk. Work on these systems should always be done by a licensed plumber.",
+      },
+      {
+        title: "Hot water in 1990s and 2000s estates",
+        body: "Many homes from the first waves of estate building still have their original hot water units. Tanks of that age tend to start leaking or losing performance, and planning a replacement beats a cold shower.",
+      },
+      {
+        title: "Older homes around Acres Road",
+        body: "Houses from the 1960s to the 1980s have older drainage and water pipes than the estates around them. Roots in clay sewer and ageing copper or galvanised pipe are the usual faults.",
+      },
+    ],
+    faqs: [
+      { q: "How do I know if my home has recycled water?", a: "Look for purple pipes, taps and a second meter, usually near the drinking water meter. If you are unsure, we can check and label them." },
+      { q: "Can I drink the recycled water?", a: "No. Recycled water is not for drinking. Sydney Water lists the approved uses, such as toilet flushing, garden watering and washing machines, so check its guidance before using it for anything else." },
+      { q: "Do you cover Kellyville Ridge and North Kellyville too?", a: "Yes, along with Beaumont Hills, Bella Vista and Rouse Hill." },
+    ],
+    metaTitle: "Plumber Kellyville | Hot Water & Recycled Water",
+    metaDescription: "Local plumber in Kellyville, Beaumont Hills and Kellyville Ridge. Hot water, recycled water connections, leak detection and blocked drains. Call (02) 9139 8945.",
+  },
 ];
